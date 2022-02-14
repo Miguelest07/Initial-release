@@ -1,18 +1,18 @@
-module Mux_mod (
-		input i_a,
-		input i_b,
+module Mux_mod #(parameter MuxWide = 1)(
+		input [MuxWide - 1: 0] i_a,
+		input [MuxWide - 1: 0] i_b,
 		input i_state,
-		output o_x
+		output [MuxWide - 1: 0]  o_x 
 );
 
-reg r_x;
+reg [MuxWide - 1: 0] r_x;
 
 always@(i_a or i_b)
 begin
 	case(i_state)
 		1'b0:
 		begin
-			r_x = i_a;
+			r_x = i_a; 
 		end
 		1'b1:
 		begin

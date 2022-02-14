@@ -1,34 +1,83 @@
 Running in Lattice mode
 
-Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synplify.exe
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\diamond\3.12\synpbase
 Hostname:    LAPTOP-GVTSPVCV
-Date:        Mon Feb 14 14:03:12 2022
+Date:        Mon Feb 14 16:13:31 2022
 Version:     Q-2020.03L-SP1
 
-Arguments:   -product synplify_pro -tcl C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/launch_synplify.tcl
+Arguments:   -product synplify_pro -batch xo3l_verilog_xo3l_verilog_synplify.tcl
 ProductType: synplify_pro
 
 
 
 
+log file: "C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srr"
+Running: xo3l_verilog in foreground
 
-No project opened.
-auto_infer_blackbox is not supported in current product.
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\colorbar_gen.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\oddrx4.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\io_controller_tx.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dphy_tx_inst.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_rom.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_encoder.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\byte_packetizer.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\crc16_2lane_bb.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\parallel2byte_bb.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\packetheader_bb.v
-Removed file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v
-TCL script complete: "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/launch_synplify.tcl"
-exit status=0
+Running proj_1|xo3l_verilog
+
+Running Flow: compile (Compile) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:32 2022
+
+Running Flow: compile_flow (Compile Process) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:32 2022
+
+Running: compiler (Compile Input) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:32 2022
+Copied C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_comp.srs to C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srs
+
+compiler completed
+# Mon Feb 14 16:13:39 2022
+
+Return Code: 0
+Run Time:00h:00m:07s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:39 2022
+
+multi_srs_gen completed
+# Mon Feb 14 16:13:39 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_mult.srs to C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srs
+Copied C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srr to C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srf
+Complete: Compile Process on proj_1|xo3l_verilog
+
+Running: premap (Premap) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:39 2022
+
+premap completed with warnings
+# Mon Feb 14 16:13:42 2022
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Compile on proj_1|xo3l_verilog
+
+Running Flow: map (Map) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:42 2022
+
+Running: fpga_mapper (Map & Optimize) on proj_1|xo3l_verilog
+# Mon Feb 14 16:13:42 2022
+fpga_mapper exited with errors
+Job failed on: proj_1|xo3l_verilog
+
+Job: "fpga_mapper" terminated with error status: 2
+See log file: "C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synlog\xo3l_verilog_xo3l_verilog_fpga_mapper.srr"
+# Mon Feb 14 16:13:43 2022
+
+Return Code: 2
+Run Time:00h:00m:01s
+Complete: Map on proj_1|xo3l_verilog
+Complete: Logic Synthesis on proj_1|xo3l_verilog
+Copied C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srr to C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srf
+Error: At line 80 while processing "xo3l_verilog_xo3l_verilog_synplify.tcl"
+2
+TCL script complete: "xo3l_verilog_xo3l_verilog_synplify.tcl"
+TCL script had errors: "xo3l_verilog_xo3l_verilog_synplify.tcl"
+exit status=9
+exit status=9
+Save changes for project:
+C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\proj_1.prj
+batch mode default:no

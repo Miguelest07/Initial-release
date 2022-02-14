@@ -3,14 +3,14 @@ Device = LCMXO3L-6900C;
 Package = CABGA256;
 Performance = 5;
 LUTS_avail = 6864;
-LUTS_used = 826;
+LUTS_used = 845;
 FF_avail = 7071;
 FF_used = 365;
-INPUT_LVCMOS25 = 1;
+INPUT_LVCMOS25 = 2;
 OUTPUT_LVCMOS12 = 4;
 OUTPUT_LVDS25E = 3;
 IO_avail = 207;
-IO_used = 11;
+IO_used = 12;
 EBR_avail = 26;
 EBR_used = 3;
 ; Begin EBR Section

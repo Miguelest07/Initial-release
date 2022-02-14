@@ -11,6 +11,11 @@
 @N: CG179 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":159:78:159:87|Removing redundant assignment.
 @N: CG179 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":163:78:163:83|Removing redundant assignment.
 @N: CG179 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":167:78:167:84|Removing redundant assignment.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":1:7:1:22|Synthesizing module Commando_Inicial in library work.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\DataFlow_Switch.v":1:7:1:21|Synthesizing module DataFlow_Switch in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
@@ -31,13 +36,15 @@
 @N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_2lane in library work.
 @N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1759:7:1759:10|Synthesizing module OSCH in library work.
-@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":99:28:99:33|Input PIXCLK is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":100:28:100:32|Input VSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":102:28:102:29|Input DE is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
-@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":104:12:104:26|Input i_Global_Enable is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\io_controller_tx.v":50:11:50:17|Input reset_n is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":2:7:2:11|Input i_clk is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":4:15:4:21|Input reset_n is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":5:18:5:22|Input CLKOP is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":6:18:6:22|Input CLKOS is unused.
 @N: CL135 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
 @N|Running in 64-bit mode
 
