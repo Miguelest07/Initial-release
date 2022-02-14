@@ -117,7 +117,7 @@ module top #(
                              `elsif HS_1  2
                              `elsif HS_0  1
                              `endif ;  
-     
+       
 generate
     if(DT=='h3E & lane_width==1) 
          pll_pix2byte_RGB888_1lane u_pll_pix2byte_RGB888_1lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
