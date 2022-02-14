@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon Feb 14 16:21:20 2022
+Mon Feb 14 16:45:23 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -23,7 +23,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o xo3l_verilog_xo3l_verilog.twr -gui -msgset C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/promote.xml xo3l_verilog_xo3l_verilog.ncd xo3l_verilog_xo3l_verilog.prf 
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o xo3l_verilog_xo3l_verilog.twr -gui -msgset C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/promote.xml xo3l_verilog_xo3l_verilog.ncd xo3l_verilog_xo3l_verilog.prf 
 Design file:     xo3l_verilog_xo3l_verilog.ncd
 Preference file: xo3l_verilog_xo3l_verilog.prf
 Device,speed:    LCMXO3L-6900C,5
@@ -2480,7 +2480,7 @@ Constraints cover 11848 paths, 7 nets, and 3746 connections (98.45% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon Feb 14 16:21:21 2022
+Mon Feb 14 16:45:24 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -2490,7 +2490,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Report Information
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o xo3l_verilog_xo3l_verilog.twr -gui -msgset C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/promote.xml xo3l_verilog_xo3l_verilog.ncd xo3l_verilog_xo3l_verilog.prf 
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o xo3l_verilog_xo3l_verilog.twr -gui -msgset C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/promote.xml xo3l_verilog_xo3l_verilog.ncd xo3l_verilog_xo3l_verilog.prf 
 Design file:     xo3l_verilog_xo3l_verilog.ncd
 Preference file: xo3l_verilog_xo3l_verilog.prf
 Device,speed:    LCMXO3L-6900C,m

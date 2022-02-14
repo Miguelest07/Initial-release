@@ -1,4 +1,4 @@
-# Mon Feb 14 16:19:24 2022
+# Mon Feb 14 16:44:52 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,32 +11,32 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: LAPTOP-GVTSPVCV
+Hostname: DESKTOP-NE8NF87
 
 Implementation : xo3l_verilog
 Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
 
 @N: MO111 :|Tristate driver w_byte_D1_b_t[0] (in view: work.top(verilog)) on net w_byte_D1_b[0] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver w_byte_D1_b_t[1] (in view: work.top(verilog)) on net w_byte_D1_b[1] (in view: work.top(verilog)) has its enable tied to GND.
@@ -48,55 +48,55 @@ Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapse
 @N: MO111 :|Tristate driver w_byte_D1_b_t[7] (in view: work.top(verilog)) on net w_byte_D1_b[7] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver w_byte_D0_b_t[0] (in view: work.top(verilog)) on net w_byte_D0_b[0] (in view: work.top(verilog)) has its enable tied to GND.
 @N: MO111 :|Tristate driver w_byte_D0_b_t[1] (in view: work.top(verilog)) on net w_byte_D0_b[1] (in view: work.top(verilog)) has its enable tied to GND.
-@W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
-@W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
-@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog) instance color_cntr[11:0] 
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
+@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog) instance color_cntr[11:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
@@ -105,16 +105,16 @@ Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; M
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
-@N: FO126 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
-@N: FX214 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
+@N: FO126 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
+@N: FX214 :"c:\users\roman perez\documents\github\initial-release\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
 
 Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
@@ -135,7 +135,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 
    8		0h:00m:02s		    -1.70ns		 285 /       166
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 183MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
@@ -168,34 +168,34 @@ latches that do not specify sets or resets
 Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 183MB peak: 183MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 183MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 184MB)
 
-Writing Analyst data base C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
+Writing Analyst data base C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 183MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 184MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
+@N: FX1056 |Writing EDF file: C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 188MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 188MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
 
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_DPHY_TX_INST.u_oDDRx4.sclk.
 @W: MT420 |Found inferred clock top|w_pixclk_inferred_clock with period 41.36ns. Please declare a user-defined clock on net w_pixclk.
 @W: MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net genblk2\.u_pll_pix2byte_RGB888_2lane.byte_clk.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Feb 14 16:19:28 2022
+# Timing report written on Mon Feb 14 16:44:56 2022
 #
 
 
@@ -1000,10 +1000,10 @@ u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 187MB peak: 188MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 188MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1044,9 +1044,9 @@ VHI:            5
 VLO:            12
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 66MB peak: 188MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 67MB peak: 189MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Mon Feb 14 16:19:29 2022
+# Mon Feb 14 16:44:56 2022
 
 ###########################################################]

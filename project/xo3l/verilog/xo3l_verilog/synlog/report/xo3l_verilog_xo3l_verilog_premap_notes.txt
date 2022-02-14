@@ -1,9 +1,9 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN115 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\top.v":211:17:211:22|Removing instance Comand (in view: work.top(verilog)) of type view:work.Commando_Inicial(verilog) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\roman perez\documents\github\initial-release\source\verilog\top.v":211:17:211:22|Removing instance Comand (in view: work.top(verilog)) of type view:work.Commando_Inicial(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

@@ -9,11 +9,11 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: LAPTOP-GVTSPVCV
+Hostname: DESKTOP-NE8NF87
 
 Implementation : xo3l_verilog
 
-# Written on Mon Feb 14 16:19:22 2022
+# Written on Mon Feb 14 16:44:50 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
