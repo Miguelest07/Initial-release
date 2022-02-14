@@ -1,0 +1,23 @@
+<BaliSimProject version="1.3" path="../../../simulation/xo2/verilog" stage="0" language="-1" name="rtl_verilog" simType="Active-HDL">
+    <Source worklib="" path="../../../testbench/verilog/mipi_dsi_rx_rgb888_2lane.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/xo2/crc16_2lane.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/xo2/packetheader_2s.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/xo2/parallel2byte_24s_2s_3E.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../source/verilog/xo2/ipexpress/simulation_fifo_24bit_to_24bit.v" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/colorbar_gen.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/dcs_encoder.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/dcs_rom.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/io_controller_tx.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/xo2/oddrx4.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/dphy_tx_inst.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/lp_hs_dly_ctrl.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/byte_packetizer.v" type="VERILOG" include="none"/>
+    <Source worklib="" path="../../../source/verilog/xo2/ipexpress/pll_pix2byte_RGB888_2lane.v" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/top.v" type="VERILOG" include="none"/>
+    <Source worklib="" path="../../../testbench/verilog/Parallel2DSI_tb_2lane.v" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/compiler_directives.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="Parallel2DSI_tb"/>
+</BaliSimProject>

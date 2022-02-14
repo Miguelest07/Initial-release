@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="simulation_fifo_24bit_to_24bit" module="simulation_fifo_24bit_to_24bit" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2014 12 25 22:49:41.416" version="5.7" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="simulation_fifo_24bit_to_24bit.lpc" type="lpc" modified="2014 12 25 22:49:37.909"/>
+		<File name="simulation_fifo_24bit_to_24bit.v" type="top_level_verilog" modified="2014 12 25 22:49:38.312"/>
+		<File name="simulation_fifo_24bit_to_24bit_tmpl.v" type="template_verilog" modified="2014 12 25 22:49:38.313"/>
+		<File name="tb_simulation_fifo_24bit_to_24bit_tmpl.v" type="testbench_verilog" modified="2014 12 25 22:49:38.322"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,47 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 987R, Built Aug  4 2014 10:41:06
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2014.03L-SP1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.fdc
+@L: D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4_scck.rpt 
+Printing clock  summary report in "D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+ICG Latch Removal takes time: 0.000000 [s]. 
+syn_allowed_resources : blockrams=56  set on top level netlist pll_x4
+
+
+@S |Clock Summary
+****************
+
+Start      Requested     Requested     Clock      Clock          
+Clock      Frequency     Period        Type       Group          
+-----------------------------------------------------------------
+System     1.0 MHz       1000.000      system     system_clkgroup
+=================================================================
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 140MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Dec 22 23:25:19 2014
+
+###########################################################]

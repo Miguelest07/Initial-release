@@ -1,0 +1,63 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.3_x64\synpbase\win64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.3_x64\synpbase
+Date:        Sun Dec 21 22:26:52 2014
+Version:     I-2014.03L-SP1 
+
+Arguments:   -product synplify_pro  -batch D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ipexpress/ecp5/pix2byte_RGB888_2lane/pllx4/syn_results/pllx4.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srr"
+
+Running pllx4|syn_results
+
+Running: Compile on pllx4|syn_results
+
+Running: Compile Process on pllx4|syn_results
+
+Running: Compile Input on pllx4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_comp.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srs
+
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on pllx4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_comp.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_s.srs
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:00s
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_mult.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srs
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srr to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srf
+Complete: Compile Process on pllx4|syn_results
+
+Running: Pre-mapping on pllx4|syn_results
+
+premap Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Compile on pllx4|syn_results
+
+Running: Map on pllx4|syn_results
+
+Running: Map & Optimize on pllx4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_m.srm to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srm
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:04s
+Complete: Map on pllx4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srr to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\pllx4.srf
+Complete: Logic Synthesis on pllx4|syn_results
+
+exit status=0
+
+exit status=0
+

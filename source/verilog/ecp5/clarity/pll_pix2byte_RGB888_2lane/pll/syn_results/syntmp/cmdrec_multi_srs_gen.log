@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.3_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  pll  -multisrs  D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_comp.srs  -osyn  D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_mult.srs  -log  D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synlog\pll_multi_srs_gen.srr 
+rc:0 success:1
+D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_comp.srs|i|1419596196|5668
+D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_mult.srs|o|1419596198|4929
+D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synlog\pll_multi_srs_gen.srr|o|1419596198|529
+C:\lscc\diamond\3.3_x64\synpbase\bin\syn_nfilter.exe|i|1406734686|2743296
+C:\lscc\diamond\3.3_x64\synpbase\bin64\syn_nfilter.exe|i|1406734880|6340608

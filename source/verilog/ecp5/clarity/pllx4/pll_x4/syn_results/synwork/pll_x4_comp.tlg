@@ -1,0 +1,11 @@
+Selecting top level module pll_x4
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":757:7:757:9|Synthesizing module VHI
+
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":761:7:761:9|Synthesizing module VLO
+
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL
+
+@N: CG364 :"D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v":8:7:8:12|Synthesizing module pll_x4
+
+@W: CL168 :"D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v":21:8:21:21|Pruning instance scuba_vhi_inst -- not in use ...
+

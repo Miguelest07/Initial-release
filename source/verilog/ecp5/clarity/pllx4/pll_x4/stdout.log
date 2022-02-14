@@ -1,0 +1,63 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.3_x64\synpbase\win64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.3_x64\synpbase
+Date:        Mon Dec 22 23:25:16 2014
+Version:     I-2014.03L-SP1 
+
+Arguments:   -product synplify_pro  -batch D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ecp5/clarity/pllx4/pll_x4/syn_results/pll_x4.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srr"
+
+Running pll_x4|syn_results
+
+Running: Compile on pll_x4|syn_results
+
+Running: Compile Process on pll_x4|syn_results
+
+Running: Compile Input on pll_x4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_comp.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srs
+
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+Running: Multi-srs Generator on pll_x4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_comp.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_s.srs
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_mult.srs to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srs
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srr to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srf
+Complete: Compile Process on pll_x4|syn_results
+
+Running: Pre-mapping on pll_x4|syn_results
+
+premap Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Compile on pll_x4|syn_results
+
+Running: Map on pll_x4|syn_results
+
+Running: Map & Optimize on pll_x4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_m.srm to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srm
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:04s
+Complete: Map on pll_x4|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srr to D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\pll_x4.srf
+Complete: Logic Synthesis on pll_x4|syn_results
+
+exit status=0
+
+exit status=0
+

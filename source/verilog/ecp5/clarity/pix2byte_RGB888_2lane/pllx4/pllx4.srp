@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.3.0.109
+Sun Dec 21 22:26:51 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.3_x64\ispfpga\bin\nt64\scuba.exe -w -n pllx4 -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type pll -fin 75 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -phases 90 -phase_cntl STATIC -rst -lock -fb_mode 1 -fdc D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ipexpress/ecp5/pix2byte_RGB888_2lane/pllx4/pllx4.fdc 
+    Circuit name     : pllx4
+    Module type      : pll
+    Module Version   : 5.6
+    Ports            : 
+	Inputs       : CLKI, RST
+	Outputs      : CLKOP, CLKOS, LOCK
+    I/O buffer       : not inserted
+    EDIF output      : pllx4.edn
+    Verilog output   : pllx4.v
+    Verilog template : pllx4_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : pllx4.srp
+    Element Usage    :
+        EHXPLLL : 1
+    Estimated Resource Usage:

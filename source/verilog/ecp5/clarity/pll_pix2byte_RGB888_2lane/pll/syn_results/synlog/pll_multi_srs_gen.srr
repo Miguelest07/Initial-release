@@ -1,0 +1,10 @@
+Synopsys Netlist Linker, version comp201403sp1p1, Build 043R, built Jul 30 2014
+@N|Running in 64-bit mode
+File D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 26 17:46:38 2014
+
+###########################################################]

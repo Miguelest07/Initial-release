@@ -1,0 +1,96 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+rtl_verilog=.\rtl_verilog\rtl_verilog.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_ecp5um;ovi_machxo2
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+rtl_verilog=.
+work=.
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[Files]
+/..\..\..\..\..\testbench\verilog\mipi_dsi_rx_rgb888_2lane.vo=-1
+/..\..\..\parallel2byte_24s_2s_62.vo=-1
+/..\..\..\packetheader_2s.vo=-1
+/..\..\..\crc16_2lane.vo=-1
+/..\..\..\..\..\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v=-1
+/..\..\..\..\..\source\verilog\ecp5\clarity\pllx4\pllx4.v=-1
+/..\..\..\..\..\source\verilog\xo2\ipexpress\simulation_fifo_24bit_to_24bit.v=-1
+/..\..\..\..\..\source\verilog\colorbar_gen.v=-1
+/..\..\..\..\..\source\verilog\dcs_encoder.v=-1
+/..\..\..\..\..\source\verilog\dcs_rom.v=-1
+/..\..\..\..\..\source\verilog\ecp5\io_controller_tx.v=-1
+/..\..\..\..\..\source\verilog\ecp5\oddrx2.v=-1
+/..\..\..\..\..\source\verilog\ecp5\gearing_converter_fifo.v=-1
+/..\..\..\..\..\source\verilog\ecp5\oddrx4.v=-1
+/..\..\..\..\..\source\verilog\ecp5\dphy_tx_inst.v=-1
+/..\..\..\..\..\source\verilog\lp_hs_dly_ctrl.v=-1
+/..\..\..\..\..\source\verilog\byte_packetizer.v=-1
+/..\..\..\..\..\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v=-1
+/..\..\..\..\..\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll_pix2byte_RGB888_2lane.v=-1
+/..\..\..\..\..\source\verilog\ecp5\top.v=-1
+/..\..\..\..\..\testbench\verilog\Parallel2DSI_tb_2lane.v=-1
+/..\..\..\..\..\source\verilog\ecp5\compiler_directives.v=-1
+
+[Files.Data]
+.\..\..\..\..\testbench\verilog\mipi_dsi_rx_rgb888_2lane.vo=Verilog Source Code
+.\..\..\parallel2byte_24s_2s_62.vo=Verilog Source Code
+.\..\..\packetheader_2s.vo=Verilog Source Code
+.\..\..\crc16_2lane.vo=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\clarity\pllx4\pllx4.v=Verilog Source Code
+.\..\..\..\..\source\verilog\xo2\ipexpress\simulation_fifo_24bit_to_24bit.v=Verilog Source Code
+.\..\..\..\..\source\verilog\colorbar_gen.v=Verilog Source Code
+.\..\..\..\..\source\verilog\dcs_encoder.v=Verilog Source Code
+.\..\..\..\..\source\verilog\dcs_rom.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\io_controller_tx.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\oddrx2.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\gearing_converter_fifo.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\oddrx4.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\dphy_tx_inst.v=Verilog Source Code
+.\..\..\..\..\source\verilog\lp_hs_dly_ctrl.v=Verilog Source Code
+.\..\..\..\..\source\verilog\byte_packetizer.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll_pix2byte_RGB888_2lane.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\top.v=Verilog Source Code
+.\..\..\..\..\testbench\verilog\Parallel2DSI_tb_2lane.v=Verilog Source Code
+.\..\..\..\..\source\verilog\ecp5\compiler_directives.v=Verilog Source Code
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

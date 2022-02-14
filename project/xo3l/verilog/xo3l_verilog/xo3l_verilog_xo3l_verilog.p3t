@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "xo3l_verilog_xo3l_verilog.log"
+-o "xo3l_verilog_xo3l_verilog.csv"
+-pr "xo3l_verilog_xo3l_verilog.prf"

@@ -1,0 +1,1 @@
+@W: MT246 :"d:\desktop\rd_work\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_rgb888_2lane\pll\pll.v":59:12:59:20|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 

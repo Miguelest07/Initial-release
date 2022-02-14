@@ -1,0 +1,11 @@
+C:\lscc\diamond\3.3_x64\synpbase\bin64\c_ver.exe  -osyn  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_comp.srs  -top  pll_x4  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -divnmod -nostructver   -I D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\  -I C:\lscc\diamond\3.3_x64\synpbase\lib   -v2001  -devicelib  C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\ecp5um.v  -devicelib  C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\pmi_def.v  -encrypt  -pro  -dmgen  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v -lib work C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\pmi_def.v -lib work D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v  -log  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synlog\pll_x4_compiler.srr 
+rc:1 success:1
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synwork\pll_x4_comp.srs|o|1419270916|5510
+C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\ecp5um.v|i|1406777724|87767
+C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\pmi_def.v|i|1406777724|40584
+C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v|i|1393914464|85662
+C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\pmi_def.v|i|1409942038|39414
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\pll_x4.v|i|1419270915|3553
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ecp5\clarity\pllx4\pll_x4\syn_results\synlog\pll_x4_compiler.srr|o|1419270916|2035
+C:\lscc\diamond\3.3_x64\synpbase\bin\c_ver.exe|i|1406734600|2306048
+C:\lscc\diamond\3.3_x64\synpbase\bin64\c_ver.exe|i|1406734800|5846016

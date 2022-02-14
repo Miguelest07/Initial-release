@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="xo2_verilog" device="LCMXO2-1200HC-6MG132C" default_implementation="xo2_verilog">
+    <Options/>
+    <Implementation title="xo2_verilog" dir="xo2_verilog" description="xo2_verilog" synthesis="lse" default_strategy="Strategy1">
+        <Options top="top"/>
+        <Source name="../../../source/verilog/compiler_directives.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/xo2/ipexpress/pll_pix2byte_RGB888_2lane.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/colorbar_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/byte_packetizer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/xo2/oddrx4.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/dcs_encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/dcs_rom.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/dphy_tx_inst.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/io_controller_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/lp_hs_dly_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/packetheader_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/crc16_2lane_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/parallel2byte_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="xo2_verilog.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="../../../simulation/xo2/verilog/rtl_verilog/rtl_verilog.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="xo2_verilog1.sty"/>
+</BaliProject>

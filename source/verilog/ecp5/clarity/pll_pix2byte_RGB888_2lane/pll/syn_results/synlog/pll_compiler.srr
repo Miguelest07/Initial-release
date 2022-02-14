@@ -1,0 +1,34 @@
+Synopsys Verilog Compiler, version comp201403sp1p1, Build 043R, built Jul 30 2014
+@N|Running in 64-bit mode
+Copyright (C) 1994-2014 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\ecp5um.v"
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\lucent\pmi_def.v"
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\vlog\umr_capim.v"
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\lscc\diamond\3.3_x64\synpbase\lib\vlog\hypermods.v"
+@I::"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v"
+@I::"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\pmi_def.v"
+@I::"D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v"
+Verilog syntax check successful!
+File D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v changed - recompiling
+Selecting top level module pll
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":757:7:757:9|Synthesizing module VHI
+
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":761:7:761:9|Synthesizing module VLO
+
+@N: CG364 :"C:\lscc\diamond\3.3_x64\cae_library\synthesis\verilog\ecp5um.v":1696:7:1696:13|Synthesizing module EHXPLLL
+
+@N: CG364 :"D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v":8:7:8:9|Synthesizing module pll
+
+@W: CL168 :"D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\pll.v":23:8:23:21|Pruning instance scuba_vhi_inst -- not in use ...
+
+@END
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Dec 26 17:46:36 2014
+
+###########################################################]

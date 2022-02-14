@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.3_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  pllx4  -multisrs  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_comp.srs  -osyn  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_mult.srs  -log  D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synlog\pllx4_multi_srs_gen.srr 
+rc:0 success:1
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_comp.srs|i|1419181013|5541
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synwork\pllx4_mult.srs|o|1419181014|4844
+D:\DESKTOP\RD_WORK\rd1184\rd1184\source\verilog\ipexpress\ecp5\pix2byte_RGB888_2lane\pllx4\syn_results\synlog\pllx4_multi_srs_gen.srr|o|1419181014|377
+C:\lscc\diamond\3.3_x64\synpbase\bin\syn_nfilter.exe|i|1406734686|2743296
+C:\lscc\diamond\3.3_x64\synpbase\bin64\syn_nfilter.exe|i|1406734880|6340608

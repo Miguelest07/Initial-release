@@ -1,0 +1,1043 @@
+# Fri Feb 11 19:39:15 2022
+
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: LAPTOP-GVTSPVCV
+
+Implementation : xo3l_verilog
+Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 128MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 168MB)
+
+@W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
+@N: MO231 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog) instance color_cntr[11:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+
+@N: FO126 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
+@N: FX214 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:03s		    -2.97ns		 270 /       166
+   2		0h:00m:03s		    -2.97ns		 262 /       166
+   3		0h:00m:03s		    -2.35ns		 262 /       166
+
+   4		0h:00m:03s		    -2.78ns		 263 /       166
+   5		0h:00m:03s		    -1.75ns		 264 /       166
+   6		0h:00m:03s		    -2.15ns		 266 /       166
+   7		0h:00m:03s		    -1.70ns		 266 /       166
+
+
+   8		0h:00m:03s		    -1.70ns		 266 /       166
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Warning: Forcing use of GSR for flip-flops and
+latches that do not specify sets or resets
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[5] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[4] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[3] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[2] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[1] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[0] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][15] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][14] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][13] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][12] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][11] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][10] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][9] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][8] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][7] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][6] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][5] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][4] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][3] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][2] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][1] (in view: work.top(verilog))
+   u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 182MB peak: 182MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 146MB peak: 182MB)
+
+Writing Analyst data base C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 182MB peak: 182MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 187MB peak: 187MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_DPHY_TX_INST.u_oDDRx4.sclk.
+@W: MT420 |Found inferred clock top|w_pixclk_inferred_clock with period 41.36ns. Please declare a user-defined clock on net w_pixclk.
+@W: MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net genblk2\.u_pll_pix2byte_RGB888_2lane.byte_clk.
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Fri Feb 11 19:39:21 2022
+#
+
+
+Top view:               top
+Requested Frequency:    24.2 MHz
+Wire load mode:         top
+Paths requested:        3
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -3.164
+
+                                                    Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                                      Frequency     Frequency     Period        Period        Slack      Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+oDDRx4|sclk_inferred_clock                          200.0 MHz     360.7 MHz     5.000         2.772         2.228      inferred     Inferred_clkgroup_0
+pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     200.0 MHz     122.5 MHz     5.000         8.165         -3.164     inferred     Inferred_clkgroup_2
+top|w_pixclk_inferred_clock                         24.2 MHz      102.8 MHz     41.356        9.728         31.629     inferred     Inferred_clkgroup_1
+System                                              200.0 MHz     918.4 MHz     5.000         1.089         3.911      system       system_clkgroup    
+=======================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                            |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                         Ending                                           |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                           System                                           |  5.000       3.911   |  No paths    -      |  No paths    -      |  No paths    -    
+System                                           pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       0.267   |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       System                                           |  5.000       2.875   |  No paths    -      |  No paths    -      |  No paths    -    
+oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  5.000       2.228   |  No paths    -      |  No paths    -      |  No paths    -    
+top|w_pixclk_inferred_clock                      System                                           |  41.356      40.089  |  No paths    -      |  No paths    -      |  No paths    -    
+top|w_pixclk_inferred_clock                      top|w_pixclk_inferred_clock                      |  41.356      31.629  |  No paths    -      |  No paths    -      |  No paths    -    
+top|w_pixclk_inferred_clock                      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       1.117   |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       -3.165  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: oDDRx4|sclk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                          Arrival          
+Instance                         Reference                      Type        Pin     Net            Time        Slack
+                                 Clock                                                                              
+--------------------------------------------------------------------------------------------------------------------
+u_DPHY_TX_INST.u_oDDRx4.FF_3     oDDRx4|sclk_inferred_clock     FD1P3BX     Q       opensync_0     1.108       2.228
+u_DPHY_TX_INST.u_oDDRx4.FF_0     oDDRx4|sclk_inferred_clock     FD1P3DX     Q       FF_0_Q         1.044       2.292
+u_DPHY_TX_INST.u_oDDRx4.FF_2     oDDRx4|sclk_inferred_clock     FD1P3DX     Q       opensync_1     1.044       2.939
+u_DPHY_TX_INST.u_oDDRx4.FF_1     oDDRx4|sclk_inferred_clock     FD1P3DX     Q       opensync_2     0.972       3.923
+====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                            Starting                                                                Required          
+Instance                                    Reference                      Type          Pin      Net               Time         Slack
+                                            Clock                                                                                     
+--------------------------------------------------------------------------------------------------------------------------------------
+u_DPHY_TX_INST.u_oDDRx4.FF_0                oDDRx4|sclk_inferred_clock     FD1P3DX       SP       opensync_cken     4.528        2.228
+u_DPHY_TX_INST.u_oDDRx4.FF_1                oDDRx4|sclk_inferred_clock     FD1P3DX       SP       opensync_cken     4.528        2.228
+u_DPHY_TX_INST.u_oDDRx4.FF_2                oDDRx4|sclk_inferred_clock     FD1P3DX       SP       opensync_cken     4.528        2.228
+u_DPHY_TX_INST.u_oDDRx4.FF_3                oDDRx4|sclk_inferred_clock     FD1P3BX       SP       opensync_cken     4.528        2.228
+u_DPHY_TX_INST.u_oDDRx4.Inst4_ECLKSYNCA     oDDRx4|sclk_inferred_clock     ECLKSYNCA     STOP     xstop             5.000        2.875
+u_DPHY_TX_INST.u_oDDRx4.FF_2                oDDRx4|sclk_inferred_clock     FD1P3DX       D        opensync_0        4.894        3.787
+u_DPHY_TX_INST.u_oDDRx4.FF_1                oDDRx4|sclk_inferred_clock     FD1P3DX       D        opensync_1        4.894        3.851
+u_DPHY_TX_INST.u_oDDRx4.FF_3                oDDRx4|sclk_inferred_clock     FD1P3BX       D        FF_0_Q            4.894        3.851
+u_DPHY_TX_INST.u_oDDRx4.FF_0                oDDRx4|sclk_inferred_clock     FD1P3DX       D        opensync_2        4.894        3.923
+======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.528
+
+    - Propagation time:                      2.301
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.228
+
+    Number of logic level(s):                1
+    Starting point:                          u_DPHY_TX_INST.u_oDDRx4.FF_3 / Q
+    Ending point:                            u_DPHY_TX_INST.u_oDDRx4.FF_0 / SP
+    The start point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DPHY_TX_INST.u_oDDRx4.FF_3       FD1P3BX      Q        Out     1.108     1.108 r     -         
+opensync_0                         Net          -        -       -         -           3         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     AD3      In      0.000     1.108 r     -         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     DO0      Out     1.193     2.301 r     -         
+opensync_cken                      Net          -        -       -         -           4         
+u_DPHY_TX_INST.u_oDDRx4.FF_0       FD1P3DX      SP       In      0.000     2.301 r     -         
+=================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.528
+
+    - Propagation time:                      2.301
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.228
+
+    Number of logic level(s):                1
+    Starting point:                          u_DPHY_TX_INST.u_oDDRx4.FF_3 / Q
+    Ending point:                            u_DPHY_TX_INST.u_oDDRx4.FF_1 / SP
+    The start point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DPHY_TX_INST.u_oDDRx4.FF_3       FD1P3BX      Q        Out     1.108     1.108 r     -         
+opensync_0                         Net          -        -       -         -           3         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     AD3      In      0.000     1.108 r     -         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     DO0      Out     1.193     2.301 r     -         
+opensync_cken                      Net          -        -       -         -           4         
+u_DPHY_TX_INST.u_oDDRx4.FF_1       FD1P3DX      SP       In      0.000     2.301 r     -         
+=================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.472
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.528
+
+    - Propagation time:                      2.301
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.228
+
+    Number of logic level(s):                1
+    Starting point:                          u_DPHY_TX_INST.u_oDDRx4.FF_3 / Q
+    Ending point:                            u_DPHY_TX_INST.u_oDDRx4.FF_2 / SP
+    The start point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            oDDRx4|sclk_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DPHY_TX_INST.u_oDDRx4.FF_3       FD1P3BX      Q        Out     1.108     1.108 r     -         
+opensync_0                         Net          -        -       -         -           3         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     AD3      In      0.000     1.108 r     -         
+u_DPHY_TX_INST.u_oDDRx4.LUT4_1     ROM16X1A     DO0      Out     1.193     2.301 r     -         
+opensync_cken                      Net          -        -       -         -           4         
+u_DPHY_TX_INST.u_oDDRx4.FF_2       FD1P3DX      SP       In      0.000     2.301 r     -         
+=================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                           Starting                                                                                  Arrival           
+Instance                   Reference                                           Type        Pin     Net               Time        Slack 
+                           Clock                                                                                                       
+---------------------------------------------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en        pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3IX     Q       dcs_escape_en     1.272       -3.164
+u_DCS_ROM.wait_cnt[1]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[1]       1.180       -3.072
+u_DCS_ROM.wait_cnt[3]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[3]       1.180       -3.072
+u_DCS_ROM.wait_cnt[4]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[4]       1.180       -3.072
+u_DCS_ROM.wait_cnt[6]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[6]       1.180       -3.072
+u_DCS_ROM.wait_cnt[7]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[7]       1.180       -3.072
+u_DCS_ROM.wait_cnt[8]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[8]       1.180       -3.072
+u_DCS_ROM.wait_cnt[9]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[9]       1.180       -3.072
+u_DCS_ROM.wait_cnt[10]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[10]      1.180       -3.072
+u_DCS_ROM.data_en          pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       dcs_data_en       1.108       -3.001
+=======================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                           Starting                                                                                            Required           
+Instance                   Reference                                           Type        Pin     Net                         Time         Slack 
+                           Clock                                                                                                                  
+--------------------------------------------------------------------------------------------------------------------------------------------------
+u_DCS_ROM.byte_cnt[9]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_9_0_S0     4.894        -3.164
+u_DCS_ROM.byte_cnt[10]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_9_0_S1     4.894        -3.164
+u_DCS_ROM.byte_cnt[7]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_7_0_S0     4.894        -3.022
+u_DCS_ROM.byte_cnt[8]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_7_0_S1     4.894        -3.022
+u_DCS_ROM.byte_cnt[5]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_5_0_S0     4.894        -2.879
+u_DCS_ROM.byte_cnt[6]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_5_0_S1     4.894        -2.879
+u_DCS_ROM.byte_cnt[3]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_3_0_S0     4.894        -2.736
+u_DCS_ROM.byte_cnt[4]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_3_0_S1     4.894        -2.736
+u_DCS_ROM.byte_cnt[1]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_1_0_S0     4.894        -2.593
+u_DCS_ROM.byte_cnt[2]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     D       un1_byte_cnt_cry_1_0_S1     4.894        -2.593
+==================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      8.059
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -3.164
+
+    Number of logic level(s):                9
+    Starting point:                          u_DCS_ROM.escape_en / Q
+    Ending point:                            u_DCS_ROM.byte_cnt[10] / D
+    The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en                 FD1S3IX      Q        Out     1.272     1.272 r     -         
+dcs_escape_en                       Net          -        -       -         -           18        
+u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     B        In      0.000     1.272 r     -         
+u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     Z        Out     1.017     2.289 f     -         
+data_en_RNI5KSK                     Net          -        -       -         -           1         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     A        In      0.000     2.289 f     -         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.305 f     -         
+G_1                                 Net          -        -       -         -           1         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.305 f     -         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.394 f     -         
+escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.394 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.939 r     -         
+un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.939 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     6.082 r     -         
+un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     6.082 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.224 r     -         
+un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.224 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.367 r     -         
+un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.367 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.510 r     -         
+un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.510 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S1       Out     1.549     8.059 r     -         
+un1_byte_cnt_cry_9_0_S1             Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[10]              FD1S3AX      D        In      0.000     8.059 r     -         
+==================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      8.059
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -3.164
+
+    Number of logic level(s):                9
+    Starting point:                          u_DCS_ROM.escape_en / Q
+    Ending point:                            u_DCS_ROM.byte_cnt[9] / D
+    The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en                 FD1S3IX      Q        Out     1.272     1.272 r     -         
+dcs_escape_en                       Net          -        -       -         -           18        
+u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     B        In      0.000     1.272 r     -         
+u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     Z        Out     1.017     2.289 f     -         
+data_en_RNI5KSK                     Net          -        -       -         -           1         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     A        In      0.000     2.289 f     -         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.305 f     -         
+G_1                                 Net          -        -       -         -           1         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.305 f     -         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.394 f     -         
+escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.394 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.939 r     -         
+un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.939 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     6.082 r     -         
+un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     6.082 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.224 r     -         
+un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.224 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.367 r     -         
+un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.367 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.510 r     -         
+un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.510 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S0       Out     1.549     8.059 r     -         
+un1_byte_cnt_cry_9_0_S0             Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[9]               FD1S3AX      D        In      0.000     8.059 r     -         
+==================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      7.967
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.072
+
+    Number of logic level(s):                9
+    Starting point:                          u_DCS_ROM.wait_cnt[1] / Q
+    Ending point:                            u_DCS_ROM.byte_cnt[10] / D
+    The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+u_DCS_ROM.wait_cnt[1]               FD1S3AX      Q        Out     1.180     1.180 r     -         
+wait_cnt[1]                         Net          -        -       -         -           5         
+u_DCS_ROM.wait_cnt_RNIPBOA[1]       ORCALUT4     A        In      0.000     1.180 r     -         
+u_DCS_ROM.wait_cnt_RNIPBOA[1]       ORCALUT4     Z        Out     1.017     2.197 f     -         
+wait_cnt_RNIPBOA[1]                 Net          -        -       -         -           1         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     C        In      0.000     2.197 f     -         
+u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.213 f     -         
+G_1                                 Net          -        -       -         -           1         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.213 f     -         
+u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.302 f     -         
+escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.302 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.847 r     -         
+un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.847 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     5.989 r     -         
+un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     5.989 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.132 r     -         
+un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.132 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.275 r     -         
+un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.275 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.418 r     -         
+un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.418 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S1       Out     1.549     7.967 r     -         
+un1_byte_cnt_cry_9_0_S1             Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[10]              FD1S3AX      D        In      0.000     7.967 r     -         
+==================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: top|w_pixclk_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                            Arrival           
+Instance                                Reference                       Type        Pin     Net             Time        Slack 
+                                        Clock                                                                                 
+------------------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.pixcnt[0]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[0]       1.188       31.629
+genblk4\.u_colorbar_gen.pixcnt[1]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[1]       1.180       31.637
+genblk4\.u_colorbar_gen.pixcnt[2]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[2]       1.180       31.637
+genblk4\.u_colorbar_gen.pixcnt[3]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[3]       1.180       31.637
+genblk4\.u_colorbar_gen.pixcnt[9]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[9]       1.180       32.517
+genblk4\.u_colorbar_gen.pixcnt[8]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[8]       1.148       32.550
+genblk4\.u_colorbar_gen.pixcnt[5]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[5]       1.188       32.645
+genblk4\.u_colorbar_gen.pixcnt[4]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[4]       1.180       32.654
+genblk4\.u_colorbar_gen.linecnt[8]      top|w_pixclk_inferred_clock     FD1S3AX     Q       linecnt[8]      1.148       32.702
+genblk4\.u_colorbar_gen.linecnt[10]     top|w_pixclk_inferred_clock     FD1S3AX     Q       linecnt[10]     1.148       32.702
+==============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                                 Required           
+Instance                                Reference                       Type        Pin     Net                  Time         Slack 
+                                        Clock                                                                                       
+------------------------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[10]     top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[10]     41.445       31.629
+genblk4\.u_colorbar_gen.linecnt[8]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[8]      41.445       31.771
+genblk4\.u_colorbar_gen.linecnt[6]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[6]      41.445       31.914
+genblk4\.u_colorbar_gen.linecnt[9]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[9]       41.251       32.051
+genblk4\.u_colorbar_gen.linecnt[3]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[3]      41.445       32.057
+genblk4\.u_colorbar_gen.linecnt[4]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[4]      41.445       32.057
+genblk4\.u_colorbar_gen.linecnt[7]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[7]       41.251       32.194
+genblk4\.u_colorbar_gen.linecnt[1]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[1]      41.445       32.200
+genblk4\.u_colorbar_gen.linecnt[5]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[5]       41.251       32.337
+genblk4\.u_colorbar_gen.linecnt[2]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[2]       41.251       32.622
+====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      41.356
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         41.445
+
+    - Propagation time:                      9.816
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 31.629
+
+    Number of logic level(s):                11
+    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[0] / Q
+    Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
+    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.pixcnt[0]                   FD1S3AX      Q        Out     1.188     1.188 r     -         
+pixcnt[0]                                           Net          -        -       -         -           6         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     A        In      0.000     1.188 r     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.205 f     -         
+un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.205 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.221 f     -         
+N_55                                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.221 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.518 f     -         
+un5_pixcnt                                          Net          -        -       -         -           13        
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.518 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.535 r     -         
+N_12_i                                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.535 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.080 r     -         
+un2_linecnt_cry_0                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.080 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.222 r     -         
+un2_linecnt_cry_2                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.222 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.365 r     -         
+un2_linecnt_cry_4                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.365 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.508 r     -         
+un2_linecnt_cry_6                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.508 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.651 r     -         
+un2_linecnt_cry_8                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.651 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.200 r     -         
+un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.200 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.816 r     -         
+un65_linecnt[10]                                    Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.816 r     -         
+==================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      41.356
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         41.445
+
+    - Propagation time:                      9.809
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 31.637
+
+    Number of logic level(s):                11
+    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[1] / Q
+    Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
+    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.pixcnt[1]                   FD1S3AX      Q        Out     1.180     1.180 r     -         
+pixcnt[1]                                           Net          -        -       -         -           5         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     B        In      0.000     1.180 r     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.197 f     -         
+un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
+N_55                                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
+un5_pixcnt                                          Net          -        -       -         -           13        
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
+N_12_i                                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
+un2_linecnt_cry_0                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.072 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.214 r     -         
+un2_linecnt_cry_2                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.214 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.357 r     -         
+un2_linecnt_cry_4                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.357 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.500 r     -         
+un2_linecnt_cry_6                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.500 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.643 r     -         
+un2_linecnt_cry_8                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.643 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.192 r     -         
+un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.192 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.809 r     -         
+un65_linecnt[10]                                    Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.809 r     -         
+==================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      41.356
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         41.445
+
+    - Propagation time:                      9.809
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 31.637
+
+    Number of logic level(s):                11
+    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[2] / Q
+    Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
+    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+
+Instance / Net                                                   Pin      Pin               Arrival     No. of    
+Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.pixcnt[2]                   FD1S3AX      Q        Out     1.180     1.180 r     -         
+pixcnt[2]                                           Net          -        -       -         -           5         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     C        In      0.000     1.180 r     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.197 f     -         
+un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
+N_55                                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
+genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
+un5_pixcnt                                          Net          -        -       -         -           13        
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
+N_12_i                                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
+un2_linecnt_cry_0                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.072 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.214 r     -         
+un2_linecnt_cry_2                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.214 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.357 r     -         
+un2_linecnt_cry_4                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.357 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.500 r     -         
+un2_linecnt_cry_6                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.500 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.643 r     -         
+un2_linecnt_cry_8                                   Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.643 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.192 r     -         
+un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.192 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.809 r     -         
+un65_linecnt[10]                                    Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.809 r     -         
+==================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                                                  Arrival          
+Instance                              Reference     Type                        Pin             Net             Time        Slack
+                                      Clock                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt_en      hs_en           0.000       0.267
+u_BYTE_PACKETIZER.u_parallel2byte     System        parallel2byte_24s_2s_62     HSYNC_end       HSYNC_end       0.000       2.823
+u_BYTE_PACKETIZER.u_parallel2byte     System        parallel2byte_24s_2s_62     HSYNC_start     HSYNC_start     0.000       2.823
+u_BYTE_PACKETIZER.u_parallel2byte     System        parallel2byte_24s_2s_62     VSYNC_end       VSYNC_end       0.000       2.823
+u_BYTE_PACKETIZER.u_parallel2byte     System        parallel2byte_24s_2s_62     VSYNC_start     VSYNC_start     0.000       2.823
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt[0]      byte_D0[0]      0.000       4.894
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt[1]      byte_D0[1]      0.000       4.894
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt[2]      byte_D0[2]      0.000       4.894
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt[3]      byte_D0[3]      0.000       4.894
+u_BYTE_PACKETIZER.u_packetheader      System        packetheader_2s             bytepkt[4]      byte_D0[4]      0.000       4.894
+=================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                          Starting                                               Required          
+Instance                                  Reference     Type        Pin     Net                  Time         Slack
+                                          Clock                                                                    
+-------------------------------------------------------------------------------------------------------------------
+u_LP_HS_DELAY_CNTRL.hs_extended[5]        System        FD1P3AX     D       hs_extended_s[5]     4.894        0.267
+u_LP_HS_DELAY_CNTRL.hs_extended[3]        System        FD1P3AX     D       hs_extended_s[3]     4.894        0.409
+u_LP_HS_DELAY_CNTRL.hs_extended[4]        System        FD1P3AX     D       hs_extended_s[4]     4.894        0.409
+u_LP_HS_DELAY_CNTRL.hs_extended[1]        System        FD1P3AX     D       hs_extended_s[1]     4.894        0.552
+u_LP_HS_DELAY_CNTRL.hs_extended[2]        System        FD1P3AX     D       hs_extended_s[2]     4.894        0.552
+u_LP_HS_DELAY_CNTRL.hs_en_high_cnt[0]     System        FD1P3AX     SP      N_114_i              4.528        1.847
+u_LP_HS_DELAY_CNTRL.hs_en_high_cnt[1]     System        FD1P3AX     SP      N_114_i              4.528        1.847
+u_LP_HS_DELAY_CNTRL.hs_en_high_cnt[2]     System        FD1P3AX     SP      N_114_i              4.528        1.847
+u_LP_HS_DELAY_CNTRL.hs_en_high_cnt[3]     System        FD1P3AX     SP      N_114_i              4.528        1.847
+u_LP_HS_DELAY_CNTRL.hs_en_high_cnt[4]     System        FD1P3AX     SP      N_114_i              4.528        1.847
+===================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      4.628
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 0.266
+
+    Number of logic level(s):                5
+    Starting point:                          u_BYTE_PACKETIZER.u_packetheader / bytepkt_en
+    Ending point:                            u_LP_HS_DELAY_CNTRL.hs_extended[5] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                   Pin            Pin               Arrival     No. of    
+Name                                         Type                Name           Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+u_BYTE_PACKETIZER.u_packetheader             packetheader_2s     bytepkt_en     Out     0.000     0.000 r     -         
+hs_en                                        Net                 -              -       -         -           5         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            A              In      0.000     0.000 r     -         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            Z              Out     1.249     1.249 f     -         
+hs_extended                                  Net                 -              -       -         -           7         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[0]     CCU2D               A1             In      0.000     1.249 f     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[0]     CCU2D               COUT           Out     1.544     2.793 r     -         
+hs_extended_cry[0]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               CIN            In      0.000     2.793 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               COUT           Out     0.143     2.936 r     -         
+hs_extended_cry[2]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               CIN            In      0.000     2.936 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               COUT           Out     0.143     3.079 r     -         
+hs_extended_cry[4]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               CIN            In      0.000     3.079 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               S0             Out     1.549     4.628 r     -         
+hs_extended_s[5]                             Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              In      0.000     4.628 r     -         
+========================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      4.628
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 0.266
+
+    Number of logic level(s):                5
+    Starting point:                          u_BYTE_PACKETIZER.u_packetheader / bytepkt_en
+    Ending point:                            u_LP_HS_DELAY_CNTRL.hs_extended[5] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                   Pin            Pin               Arrival     No. of    
+Name                                         Type                Name           Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+u_BYTE_PACKETIZER.u_packetheader             packetheader_2s     bytepkt_en     Out     0.000     0.000 r     -         
+hs_en                                        Net                 -              -       -         -           5         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            A              In      0.000     0.000 r     -         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            Z              Out     1.249     1.249 f     -         
+hs_extended                                  Net                 -              -       -         -           7         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[0]     CCU2D               B0             In      0.000     1.249 f     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[0]     CCU2D               COUT           Out     1.544     2.793 r     -         
+hs_extended_cry[0]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               CIN            In      0.000     2.793 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               COUT           Out     0.143     2.936 r     -         
+hs_extended_cry[2]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               CIN            In      0.000     2.936 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               COUT           Out     0.143     3.079 r     -         
+hs_extended_cry[4]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               CIN            In      0.000     3.079 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               S0             Out     1.549     4.628 r     -         
+hs_extended_s[5]                             Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              In      0.000     4.628 r     -         
+========================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.894
+
+    - Propagation time:                      4.485
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 0.409
+
+    Number of logic level(s):                4
+    Starting point:                          u_BYTE_PACKETIZER.u_packetheader / bytepkt_en
+    Ending point:                            u_LP_HS_DELAY_CNTRL.hs_extended[5] / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                   Pin            Pin               Arrival     No. of    
+Name                                         Type                Name           Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+u_BYTE_PACKETIZER.u_packetheader             packetheader_2s     bytepkt_en     Out     0.000     0.000 r     -         
+hs_en                                        Net                 -              -       -         -           5         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            A              In      0.000     0.000 r     -         
+u_LP_HS_DELAY_CNTRL.q_hs_en_RNI1Q6E          ORCALUT4            Z              Out     1.249     1.249 f     -         
+hs_extended                                  Net                 -              -       -         -           7         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               A1             In      0.000     1.249 f     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[1]     CCU2D               COUT           Out     1.544     2.793 r     -         
+hs_extended_cry[2]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               CIN            In      0.000     2.793 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_cry_0[3]     CCU2D               COUT           Out     0.143     2.936 r     -         
+hs_extended_cry[4]                           Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               CIN            In      0.000     2.936 r     -         
+u_LP_HS_DELAY_CNTRL.hs_extended_s_0[5]       CCU2D               S0             Out     1.549     4.485 r     -         
+hs_extended_s[5]                             Net                 -              -       -         -           1         
+u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              In      0.000     4.485 r     -         
+========================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo3l_6900c-5
+
+Register bits: 170 of 54912 (0%)
+PIC Latch:       0
+I/O cells:       8
+
+
+Details:
+CCU2D:          58
+CLKDIVC:        1
+DPR16X4C:       16
+ECLKSYNCA:      2
+EHXPLLJ:        1
+FD1P3AX:        41
+FD1P3AY:        20
+FD1P3BX:        1
+FD1P3DX:        3
+FD1S3AX:        85
+FD1S3AY:        2
+FD1S3IX:        18
+GSR:            1
+IB:             1
+INV:            4
+L6MUX21:        2
+OB:             4
+OBZ:            3
+ODDRX4B:        3
+ORCALUT4:       262
+OSCH:           1
+PFUMX:          20
+PUR:            1
+ROM128X1A:      8
+ROM16X1A:       9
+ROM32X1A:       8
+VHI:            5
+VLO:            8
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 66MB peak: 187MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Fri Feb 11 19:39:21 2022
+
+###########################################################]

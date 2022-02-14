@@ -1,0 +1,64 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.3_x64\synpbase\win64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.3_x64\synpbase
+Date:        Fri Dec 26 17:46:35 2014
+Version:     I-2014.03L-SP1 
+
+Arguments:   -product synplify_pro  -batch D:/DESKTOP/RD_WORK/rd1184/check1/source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll/syn_results/pll.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srr"
+
+Running pll|syn_results
+
+Running: Compile on pll|syn_results
+
+Running: Compile Process on pll|syn_results
+
+Running: Compile Input on pll|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_comp.srs to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srs
+
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:02s
+
+Running: Multi-srs Generator on pll|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_comp.srs to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_s.srs
+
+multi_srs_gen Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_mult.srs to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srs
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srr to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srf
+Complete: Compile Process on pll|syn_results
+
+Running: Pre-mapping on pll|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.fse to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_s.fse
+
+premap Completed
+Return Code: 0
+Run Time:0h:00m:01s
+Complete: Compile on pll|syn_results
+
+Running: Map on pll|syn_results
+
+Running: Map & Optimize on pll|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\synwork\pll_m.srm to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srm
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:05s
+Complete: Map on pll|syn_results
+Copied D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srr to D:\DESKTOP\RD_WORK\rd1184\check1\source\verilog\ecp5\clarity\pll_pix2byte_RGB888_2lane\pll\syn_results\pll.srf
+Complete: Logic Synthesis on pll|syn_results
+
+exit status=0
+
+exit status=0
+

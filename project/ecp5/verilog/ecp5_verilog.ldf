@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="ecp5_verilog" device="LFE5UM-45F-8MG285C" default_implementation="ecp5_verilog">
+    <Options/>
+    <Implementation title="ecp5_verilog" dir="ecp5_verilog" description="ecp5_verilog" synthesis="lse" default_strategy="Strategy1">
+        <Options top="top"/>
+        <Source name="../../../source/verilog/ecp5/compiler_directives.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/dphy_tx_inst.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/gearing_converter_fifo.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/oddrx2.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll_pix2byte_RGB888_2lane.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/oddrx4.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/clarity/pllx4/pllx4.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/dcs_rom.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/dcs_encoder.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/crc16_2lane_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/packetheader_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/parallel2byte_bb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/ecp5/io_controller_tx.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/colorbar_gen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/byte_packetizer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="../../../source/verilog/lp_hs_dly_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ecp5_verilog.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="../../../simulation/ecp5/verilog/rtl_verilog/rtl_verilog.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="ecp5_verilog1.sty"/>
+</BaliProject>

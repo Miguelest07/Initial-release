@@ -1,0 +1,89 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=work
+
+[Library]
+rtl_verilog0=.\rtl_verilog0\rtl_verilog0.lib
+work=.\work\work.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+PriorityLibNames=pmi_work
+LibNames=ovi_machxo3l
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+rtl_verilog0=.
+rtl_verilog=.
+work=.
+
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
+
+[LocalVerilogDirs]
+Count=0
+
+[DefineMacro]
+Global=
+
+[Files]
+/..\..\..\..\..\testbench\verilog\mipi_dsi_rx_rgb888_2lane.vo=-1
+/..\..\..\crc16_2lane.vo=-1
+/..\..\..\packetheader_2s.vo=-1
+/..\..\..\parallel2byte_24s_2s_62.vo=-1
+/..\..\..\..\..\source\verilog\xo3l\ipexpress\simulation_fifo_24bit_to_24bit.v=-1
+/..\..\..\..\..\source\verilog\colorbar_gen.v=-1
+/..\..\..\..\..\source\verilog\dcs_encoder.v=-1
+/..\..\..\..\..\source\verilog\dcs_rom.v=-1
+/..\..\..\..\..\source\verilog\io_controller_tx.v=-1
+/..\..\..\..\..\source\verilog\xo3l\oddrx4.v=-1
+/..\..\..\..\..\source\verilog\dphy_tx_inst.v=-1
+/..\..\..\..\..\source\verilog\lp_hs_dly_ctrl.v=-1
+/..\..\..\..\..\source\verilog\byte_packetizer.v=-1
+/..\..\..\..\..\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v=-1
+/..\..\..\..\..\source\verilog\top.v=-1
+/..\..\..\..\..\testbench\verilog\Parallel2DSI_tb_2lane.v=-1
+/..\..\..\..\..\source\verilog\compiler_directives.v=-1
+
+[Files.Data]
+.\..\..\..\..\testbench\verilog\mipi_dsi_rx_rgb888_2lane.vo=Verilog Source Code
+.\..\..\crc16_2lane.vo=Verilog Source Code
+.\..\..\packetheader_2s.vo=Verilog Source Code
+.\..\..\parallel2byte_24s_2s_62.vo=Verilog Source Code
+.\..\..\..\..\source\verilog\xo3l\ipexpress\simulation_fifo_24bit_to_24bit.v=Verilog Source Code
+.\..\..\..\..\source\verilog\colorbar_gen.v=Verilog Source Code
+.\..\..\..\..\source\verilog\dcs_encoder.v=Verilog Source Code
+.\..\..\..\..\source\verilog\dcs_rom.v=Verilog Source Code
+.\..\..\..\..\source\verilog\io_controller_tx.v=Verilog Source Code
+.\..\..\..\..\source\verilog\xo3l\oddrx4.v=Verilog Source Code
+.\..\..\..\..\source\verilog\dphy_tx_inst.v=Verilog Source Code
+.\..\..\..\..\source\verilog\lp_hs_dly_ctrl.v=Verilog Source Code
+.\..\..\..\..\source\verilog\byte_packetizer.v=Verilog Source Code
+.\..\..\..\..\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v=Verilog Source Code
+.\..\..\..\..\source\verilog\top.v=Verilog Source Code
+.\..\..\..\..\testbench\verilog\Parallel2DSI_tb_2lane.v=Verilog Source Code
+.\..\..\..\..\source\verilog\compiler_directives.v=Verilog Source Code
+

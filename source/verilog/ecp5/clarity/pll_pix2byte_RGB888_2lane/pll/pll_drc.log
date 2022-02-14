@@ -1,0 +1,3 @@
+Results of NGD DRC are available in pll_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file D:/DESKTOP/RD_WORK/rd1184/check1/source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll/pll.ngo.

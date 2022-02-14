@@ -1,0 +1,48 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Synplify OEM project file D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ecp5/clarity/pllx4/pll_x4/syn_results/pll_x4.prj
+#-- Written on Mon Dec 22 23:25:15 2014
+
+
+#device options
+set_option -technology ecp5um
+set_option -part LFE5UM-45F
+set_option -speed_grade 6
+
+#use verilog 2001 standard option
+set_option -vlog_std v2001
+
+#map options
+set_option -frequency 100
+set_option -fanout_limit 50
+set_option -disable_io_insertion true
+set_option -retiming false
+set_option -pipe false
+set_option -pipe false
+set_option -force_gsr false
+
+#simulation options
+set_option -write_verilog true
+set_option -write_vhdl true
+
+#timing analysis options
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#-- add_file options
+add_file -verilog -lib work "C:/lscc/diamond/3.3_x64/cae_library/synthesis/verilog/ecp5um.v"
+add_file -verilog -lib work "C:/lscc/diamond/3.3_x64/cae_library/synthesis/verilog/pmi_def.v"
+add_file -verilog -lib work "D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ecp5/clarity/pllx4/pll_x4/pll_x4.v"
+add_file -constraint {"D:/DESKTOP/RD_WORK/rd1184/rd1184/source/verilog/ecp5/clarity/pllx4/pll_x4/pll_x4.fdc"}
+
+#-- top module name
+set_option -top_module pll_x4
+
+#-- set result format/file last
+project -result_file "pll_x4.edn"
+
+#-- error message log file
+project -log_file pll_x4.srf
+
+#-- run Synplify with 'arrange VHDL file'
+project -run

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="pll_pix2byte_RGB888_2lane" module="pll_pix2byte_RGB888_2lane" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2014 12 18 18:19:59.086" version="5.6" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="pll_pix2byte_RGB888_2lane.lpc" type="lpc" modified="2014 12 18 18:19:57.816"/>
+		<File name="pll_pix2byte_RGB888_2lane.v" type="top_level_verilog" modified="2014 12 18 18:19:57.966"/>
+		<File name="pll_pix2byte_RGB888_2lane_tmpl.v" type="template_verilog" modified="2014 12 18 18:19:57.966"/>
+  </Package>
+</DiamondModule>

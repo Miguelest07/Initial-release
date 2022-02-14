@@ -1,0 +1,92 @@
+#--  Synopsys, Inc.
+#--  Version Q-2020.03L-SP1
+#--  Project file C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\run_options.txt
+#--  Written on Fri Feb 11 19:39:06 2022
+
+
+#project files
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/compiler_directives.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/colorbar_gen.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/top.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/xo3l/oddrx4.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/xo3l/ipexpress/pll_pix2byte_RGB888_2lane.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/lp_hs_dly_ctrl.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/io_controller_tx.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/dphy_tx_inst.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/dcs_rom.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/dcs_encoder.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/byte_packetizer.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/crc16_2lane_bb.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/parallel2byte_bb.v"
+add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/packetheader_bb.v"
+
+
+#implementation: "xo3l_verilog"
+impl -add xo3l_verilog -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 3
+set_option -project_relative_includes 1
+set_option -include_path {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog}
+
+#device options
+set_option -technology MACHXO3L
+set_option -part LCMXO3L_6900C
+set_option -package BG256C
+set_option -speed_grade -5
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "top"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+set_option -hdl_strict_syntax 0
+
+# mapper_without_write_options
+set_option -frequency 200
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr auto
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+set_option -seqshift_no_replicate 0
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./xo3l_verilog_xo3l_verilog.edi"
+
+#set log file 
+set_option log_file "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.srf" 
+impl -active "xo3l_verilog"

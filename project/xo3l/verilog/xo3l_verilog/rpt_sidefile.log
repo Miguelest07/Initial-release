@@ -1,0 +1,67 @@
+
+################### Begin Area Report (top)######################
+Number of register bits => 183 of 4941 (3 % )
+CCU2D => 63
+CLKDIVC => 1
+DPR16X4C => 16
+ECLKSYNCA => 2
+EHXPLLJ => 1
+FD1P3AX => 30
+FD1P3AY => 1
+FD1P3IX => 46
+FD1P3JX => 2
+FD1S3AX => 45
+FD1S3AY => 18
+FD1S3IX => 39
+FD1S3JX => 2
+GSR => 1
+IB => 2
+L6MUX21 => 2
+LUT4 => 282
+OBZ => 9
+ODDRX4B => 3
+PFUMX => 23
+ROM16X1A => 2
+ROM256X1A => 8
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 7
+  Net : genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk, loads : 156
+  Net : PIXCLK_c, loads : 40
+  Net : u_DPHY_TX_INST/u_oDDRx4/sclk, loads : 7
+  Net : u_DPHY_TX_INST/u_oDDRx4/eclkd, loads : 3
+  Net : genblk2.u_pll_pix2byte_RGB888_2lane/CLKOS, loads : 1
+  Net : genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP, loads : 2
+  Net : u_DPHY_TX_INST/u_oDDRx4/eclkc, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 10
+Top 10 highest fanout Clock Enables:
+  Net : genblk4.u_colorbar_gen/PIXCLK_c_enable_12, loads : 12
+  Net : u_DCS_ROM/byte_clk_enable_58, loads : 11
+  Net : u_DPHY_TX_INST/u_oDDRx4/opensync_cken, loads : 4
+  Net : u_DCS_Encoder/byte_clk_enable_62, loads : 2
+  Net : u_BYTE_PACKETIZER/w_edge_detect, loads : 1
+  Net : byte_clk_enable_15, loads : 1
+  Net : byte_clk_enable_60, loads : 1
+  Net : u_LP_HS_DELAY_CNTRL/byte_clk_enable_61, loads : 1
+  Net : byte_clk_enable_16, loads : 1
+  Net : byte_clk_enable_59, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n597, loads : 33
+  Net : u_LP_HS_DELAY_CNTRL/hs_en_high_cnt_15__N_188, loads : 33
+  Net : dcs_escape_en, loads : 29
+  Net : u_DCS_Encoder/q_escape_en, loads : 27
+  Net : n586, loads : 23
+  Net : u_DCS_Encoder/bitcntr_0, loads : 23
+  Net : n585, loads : 22
+  Net : n584, loads : 21
+  Net : n583, loads : 20
+  Net : u_BYTE_PACKETIZER/hs_en, loads : 18
+################### End Clock Report ##################

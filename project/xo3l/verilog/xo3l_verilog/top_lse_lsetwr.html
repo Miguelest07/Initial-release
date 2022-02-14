@@ -1,0 +1,418 @@
+<HTML>
+<HEAD><TITLE>Lattice Synthesis Timing Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Feb 11 18:06:22 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets \u_DPHY_TX_INST/u_oDDRx4/sclk]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets PIXCLK_c]
+            1114 items scored, 545 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 2.598ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \genblk4.u_colorbar_gen/linecnt__i2  (from PIXCLK_c +)
+   Destination:    FD1P3IX    SP             \genblk4.u_colorbar_gen/linecnt__i0  (to PIXCLK_c +)
+
+   Delay:                   7.362ns  (32.7% logic, 67.3% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.362ns data_path \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i0 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 2.598ns
+
+ Path Details: \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \genblk4.u_colorbar_gen/linecnt__i2 (from PIXCLK_c)
+Route         5   e 1.021                                  \genblk4.u_colorbar_gen/linecnt[2]
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i1_3_lut
+Route         2   e 0.798                                  \genblk4.u_colorbar_gen/n6
+LUT4        ---     0.408              D to Z              \genblk4.u_colorbar_gen/i4_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n3211
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i1_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n47
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i7_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n16
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i8_4_lut
+Route        12   e 1.156                                  \genblk4.u_colorbar_gen/PIXCLK_c_enable_12
+                  --------
+                    7.362  (32.7% logic, 67.3% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 2.598ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \genblk4.u_colorbar_gen/linecnt__i2  (from PIXCLK_c +)
+   Destination:    FD1P3IX    SP             \genblk4.u_colorbar_gen/linecnt__i11  (to PIXCLK_c +)
+
+   Delay:                   7.362ns  (32.7% logic, 67.3% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.362ns data_path \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i11 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 2.598ns
+
+ Path Details: \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i11
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \genblk4.u_colorbar_gen/linecnt__i2 (from PIXCLK_c)
+Route         5   e 1.021                                  \genblk4.u_colorbar_gen/linecnt[2]
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i1_3_lut
+Route         2   e 0.798                                  \genblk4.u_colorbar_gen/n6
+LUT4        ---     0.408              D to Z              \genblk4.u_colorbar_gen/i4_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n3211
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i1_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n47
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i7_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n16
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i8_4_lut
+Route        12   e 1.156                                  \genblk4.u_colorbar_gen/PIXCLK_c_enable_12
+                  --------
+                    7.362  (32.7% logic, 67.3% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 2.598ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \genblk4.u_colorbar_gen/linecnt__i2  (from PIXCLK_c +)
+   Destination:    FD1P3IX    SP             \genblk4.u_colorbar_gen/linecnt__i10  (to PIXCLK_c +)
+
+   Delay:                   7.362ns  (32.7% logic, 67.3% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.362ns data_path \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i10 violates
+      5.000ns delay constraint less
+      0.236ns LCE_S requirement (totaling 4.764ns) by 2.598ns
+
+ Path Details: \genblk4.u_colorbar_gen/linecnt__i2 to \genblk4.u_colorbar_gen/linecnt__i10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \genblk4.u_colorbar_gen/linecnt__i2 (from PIXCLK_c)
+Route         5   e 1.021                                  \genblk4.u_colorbar_gen/linecnt[2]
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i1_3_lut
+Route         2   e 0.798                                  \genblk4.u_colorbar_gen/n6
+LUT4        ---     0.408              D to Z              \genblk4.u_colorbar_gen/i4_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n3211
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i1_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n47
+LUT4        ---     0.408              C to Z              \genblk4.u_colorbar_gen/i7_4_lut
+Route         1   e 0.660                                  \genblk4.u_colorbar_gen/n16
+LUT4        ---     0.408              B to Z              \genblk4.u_colorbar_gen/i8_4_lut
+Route        12   e 1.156                                  \genblk4.u_colorbar_gen/PIXCLK_c_enable_12
+                  --------
+                    7.362  (32.7% logic, 67.3% route), 6 logic levels.
+
+Warning: 7.598 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets byte_clk]
+            618 items scored, 618 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.633ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_DCS_ROM/wait_cnt_i14  (from byte_clk +)
+   Destination:    FD1P3AX    D              \u_DCS_ROM/byte_cnt_272__i10  (to byte_clk +)
+
+   Delay:                   9.500ns  (43.2% logic, 56.8% route), 12 logic levels.
+
+ Constraint Details:
+
+      9.500ns data_path \u_DCS_ROM/wait_cnt_i14 to \u_DCS_ROM/byte_cnt_272__i10 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 4.633ns
+
+ Path Details: \u_DCS_ROM/wait_cnt_i14 to \u_DCS_ROM/byte_cnt_272__i10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_DCS_ROM/wait_cnt_i14 (from byte_clk)
+Route         2   e 0.838                                  wait_cnt[14]
+LUT4        ---     0.408              B to Z              \u_DCS_Encoder/i2_2_lut
+Route         1   e 0.660                                  \u_DCS_Encoder/n10
+LUT4        ---     0.408              C to Z              \u_DCS_Encoder/i7_4_lut
+Route         6   e 1.018                                  n1496
+LUT4        ---     0.408              B to Z              \u_DCS_Encoder/i3_4_lut_adj_14
+Route         1   e 0.660                                  \u_DCS_Encoder/n3537
+LUT4        ---     0.408              A to Z              \u_DCS_Encoder/i1_3_lut
+Route         1   e 0.660                                  n3290
+LUT4        ---     0.408              C to Z              \u_DCS_ROM/i2_4_lut
+Route         2   e 0.798                                  \u_DCS_ROM/n3478
+A1_TO_FCO   ---     0.684           A[2] to COUT           \u_DCS_ROM/byte_cnt_272_add_4_1
+Route         1   e 0.020                                  \u_DCS_ROM/n3158
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_3
+Route         1   e 0.020                                  \u_DCS_ROM/n3159
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_5
+Route         1   e 0.020                                  \u_DCS_ROM/n3160
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_7
+Route         1   e 0.020                                  \u_DCS_ROM/n3161
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_9
+Route         1   e 0.020                                  \u_DCS_ROM/n3162
+FCI_TO_F    ---     0.495            CIN to S[2]           \u_DCS_ROM/byte_cnt_272_add_4_11
+Route         1   e 0.660                                  \u_DCS_ROM/n50
+                  --------
+                    9.500  (43.2% logic, 56.8% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 4.633ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_DCS_ROM/wait_cnt_i14  (from byte_clk +)
+   Destination:    FD1P3AX    D              \u_DCS_ROM/byte_cnt_272__i9  (to byte_clk +)
+
+   Delay:                   9.500ns  (43.2% logic, 56.8% route), 12 logic levels.
+
+ Constraint Details:
+
+      9.500ns data_path \u_DCS_ROM/wait_cnt_i14 to \u_DCS_ROM/byte_cnt_272__i9 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 4.633ns
+
+ Path Details: \u_DCS_ROM/wait_cnt_i14 to \u_DCS_ROM/byte_cnt_272__i9
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_DCS_ROM/wait_cnt_i14 (from byte_clk)
+Route         2   e 0.838                                  wait_cnt[14]
+LUT4        ---     0.408              B to Z              \u_DCS_Encoder/i2_2_lut
+Route         1   e 0.660                                  \u_DCS_Encoder/n10
+LUT4        ---     0.408              C to Z              \u_DCS_Encoder/i7_4_lut
+Route         6   e 1.018                                  n1496
+LUT4        ---     0.408              B to Z              \u_DCS_Encoder/i3_4_lut_adj_14
+Route         1   e 0.660                                  \u_DCS_Encoder/n3537
+LUT4        ---     0.408              A to Z              \u_DCS_Encoder/i1_3_lut
+Route         1   e 0.660                                  n3290
+LUT4        ---     0.408              C to Z              \u_DCS_ROM/i2_4_lut
+Route         2   e 0.798                                  \u_DCS_ROM/n3478
+A1_TO_FCO   ---     0.684           A[2] to COUT           \u_DCS_ROM/byte_cnt_272_add_4_1
+Route         1   e 0.020                                  \u_DCS_ROM/n3158
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_3
+Route         1   e 0.020                                  \u_DCS_ROM/n3159
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_5
+Route         1   e 0.020                                  \u_DCS_ROM/n3160
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_7
+Route         1   e 0.020                                  \u_DCS_ROM/n3161
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_9
+Route         1   e 0.020                                  \u_DCS_ROM/n3162
+FCI_TO_F    ---     0.495            CIN to S[2]           \u_DCS_ROM/byte_cnt_272_add_4_11
+Route         1   e 0.660                                  \u_DCS_ROM/n51
+                  --------
+                    9.500  (43.2% logic, 56.8% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 4.633ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_DCS_ROM/wait_cnt_i13  (from byte_clk +)
+   Destination:    FD1P3AX    D              \u_DCS_ROM/byte_cnt_272__i10  (to byte_clk +)
+
+   Delay:                   9.500ns  (43.2% logic, 56.8% route), 12 logic levels.
+
+ Constraint Details:
+
+      9.500ns data_path \u_DCS_ROM/wait_cnt_i13 to \u_DCS_ROM/byte_cnt_272__i10 violates
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 4.633ns
+
+ Path Details: \u_DCS_ROM/wait_cnt_i13 to \u_DCS_ROM/byte_cnt_272__i10
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_DCS_ROM/wait_cnt_i13 (from byte_clk)
+Route         2   e 0.838                                  wait_cnt[13]
+LUT4        ---     0.408              A to Z              \u_DCS_Encoder/i2_2_lut
+Route         1   e 0.660                                  \u_DCS_Encoder/n10
+LUT4        ---     0.408              C to Z              \u_DCS_Encoder/i7_4_lut
+Route         6   e 1.018                                  n1496
+LUT4        ---     0.408              B to Z              \u_DCS_Encoder/i3_4_lut_adj_14
+Route         1   e 0.660                                  \u_DCS_Encoder/n3537
+LUT4        ---     0.408              A to Z              \u_DCS_Encoder/i1_3_lut
+Route         1   e 0.660                                  n3290
+LUT4        ---     0.408              C to Z              \u_DCS_ROM/i2_4_lut
+Route         2   e 0.798                                  \u_DCS_ROM/n3478
+A1_TO_FCO   ---     0.684           A[2] to COUT           \u_DCS_ROM/byte_cnt_272_add_4_1
+Route         1   e 0.020                                  \u_DCS_ROM/n3158
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_3
+Route         1   e 0.020                                  \u_DCS_ROM/n3159
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_5
+Route         1   e 0.020                                  \u_DCS_ROM/n3160
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_7
+Route         1   e 0.020                                  \u_DCS_ROM/n3161
+FCI_TO_FCO  ---     0.130            CIN to COUT           \u_DCS_ROM/byte_cnt_272_add_4_9
+Route         1   e 0.020                                  \u_DCS_ROM/n3162
+FCI_TO_F    ---     0.495            CIN to S[2]           \u_DCS_ROM/byte_cnt_272_add_4_11
+Route         1   e 0.660                                  \u_DCS_ROM/n50
+                  --------
+                    9.500  (43.2% logic, 56.8% route), 12 logic levels.
+
+Warning: 9.633 ns is the maximum delay for this constraint.
+
+
+<A name="mtw1_rs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets                          |             |             |
+\u_DPHY_TX_INST/u_oDDRx4/sclk]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets PIXCLK_c]                |     5.000 ns|     7.598 ns|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets byte_clk]                |     5.000 ns|     9.633 ns|    12 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\genblk4.u_colorbar_gen/PIXCLK_c_enable_|        |        |
+12                                      |      12|     288|     24.76%
+                                        |        |        |
+\genblk4.u_colorbar_gen/n16             |       1|     264|     22.70%
+                                        |        |        |
+\u_LP_HS_DELAY_CNTRL/n8                 |       1|     240|     20.64%
+                                        |        |        |
+\u_LP_HS_DELAY_CNTRL/n446               |      16|     240|     20.64%
+                                        |        |        |
+hs_en_high_cnt_15__N_188                |      34|     240|     20.64%
+                                        |        |        |
+\u_DCS_ROM/n1615                        |       9|     216|     18.57%
+                                        |        |        |
+\u_DCS_ROM/n3495                        |       1|     216|     18.57%
+                                        |        |        |
+\u_DCS_ROM/n3589                        |       1|     216|     18.57%
+                                        |        |        |
+\u_DCS_ROM/wait_cnt_15__N_362           |       8|     216|     18.57%
+                                        |        |        |
+\genblk4.u_colorbar_gen/n47             |       1|     192|     16.51%
+                                        |        |        |
+\genblk4.u_colorbar_gen/linecnt_11__N_60|        |        |
+6                                       |      12|     180|     15.48%
+                                        |        |        |
+n1448                                   |       2|     160|     13.76%
+                                        |        |        |
+\u_DCS_Encoder/n3537                    |       1|     134|     11.52%
+                                        |        |        |
+\u_DCS_ROM/n3478                        |       2|     134|     11.52%
+                                        |        |        |
+n3290                                   |       1|     134|     11.52%
+                                        |        |        |
+\u_DCS_ROM/n3158                        |       1|     122|     10.49%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
+---------------
+
+Timing errors: 1163  Score: 2657126
+
+Constraints cover  6233 paths, 581 nets, and 1449 connections (68.5% coverage)
+
+
+Peak memory: 93130752 bytes, TRCE: 0 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.3_x64/bin/nt64/moduleparser.exe -PROJ rtl_verilog -pf C:/lscc/diamond/3.3_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/lscc/diamond/3.3_x64/cae_library/vhdl_packages/vdbs -lst D:/DESKTOP/RD_WORK/rd1184/check_final/rd1184/simulation/xo2/verilog/rtl_verilog/source_files.lst

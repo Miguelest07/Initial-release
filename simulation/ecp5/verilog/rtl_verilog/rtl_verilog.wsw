@@ -1,0 +1,14 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\testbench\verilog\Parallel2DSI_tb_2lane.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\source\verilog\ecp5\compiler_directives.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\source\verilog\io_controller_tx.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\rtl_verilog.do|]
+TemplateId=6
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\source\verilog\ecp5\dphy_tx_inst.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\source\verilog\dcs_encoder.v|]
+TemplateId=2
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\..\..\..\..\source\verilog\ecp5\top.v|]
+TemplateId=2

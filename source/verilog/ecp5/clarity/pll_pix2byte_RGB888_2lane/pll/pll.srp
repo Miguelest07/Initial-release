@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.3.0.109
+Sat Dec 27 16:23:57 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.3_x64\ispfpga\bin\nt64\scuba.exe -w -n pll -lang verilog -synth synplify -bus_exp 7 -bb -arch sa5p00m -type pll -fin 50 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -phases 90 -fclkos2 75 -fclkos2_tol 0.0 -phases2 0 -phase_cntl STATIC -rst -lock -fb_mode 1 -fdc D:/DESKTOP/RD_WORK/rd1184/check1/source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll/pll.fdc 
+    Circuit name     : pll
+    Module type      : pll
+    Module Version   : 5.6
+    Ports            : 
+	Inputs       : CLKI, RST
+	Outputs      : CLKOP, CLKOS, CLKOS2, LOCK
+    I/O buffer       : not inserted
+    EDIF output      : pll.edn
+    Verilog output   : pll.v
+    Verilog template : pll_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : pll.srp
+    Element Usage    :
+        EHXPLLL : 1
+    Estimated Resource Usage:

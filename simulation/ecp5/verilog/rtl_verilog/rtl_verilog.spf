@@ -1,0 +1,28 @@
+<BaliSimProject version="1.3" path="../../../simulation/ecp5/verilog" stage="0" language="-1" name="rtl_verilog" simType="Active-HDL">
+    <Source worklib="" path="../../../testbench/verilog/mipi_dsi_rx_rgb888_2lane.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/ecp5/parallel2byte_24s_2s_62.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/ecp5/packetheader_2s.vo" type="none" include="none"/>
+    <Source worklib="" path="../../../simulation/ecp5/crc16_2lane.vo" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/clarity/pllx4/pll_x4/pll_x4.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/clarity/pllx4/pllx4.v" type="VERILOG" include="none"/>
+    <Source worklib="" path="../../../source/verilog/xo2/ipexpress/simulation_fifo_24bit_to_24bit.v" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/colorbar_gen.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/dcs_encoder.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/dcs_rom.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/io_controller_tx.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/oddrx2.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/gearing_converter_fifo.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/oddrx4.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/dphy_tx_inst.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/lp_hs_dly_ctrl.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/byte_packetizer.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll/pll.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/clarity/pll_pix2byte_RGB888_2lane/pll_pix2byte_RGB888_2lane.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/top.v" type="VERILOG" include="none"/>
+    <Source worklib="" path="../../../testbench/verilog/Parallel2DSI_tb_2lane.v" type="none" include="none"/>
+    <Source worklib="work" path="../../../source/verilog/ecp5/compiler_directives.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5um ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="Parallel2DSI_tb"/>
+</BaliSimProject>
