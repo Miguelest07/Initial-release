@@ -119,7 +119,7 @@ module top #(
                              `endif ;  
        
 generate
-    if(DT=='h3E & lane_width==1) 
+    if(DT=='h3E & lane_width==1) // se anadio cosas
          pll_pix2byte_RGB888_1lane u_pll_pix2byte_RGB888_1lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
 endgenerate
 generate
