@@ -25,7 +25,7 @@ module Commando_Inicial (
 
 reg [7:0]   r_byte_D1;
 reg [7:0]   r_byte_D0;                                                                        
-reg   [1:0] r_lp1_ou;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+reg   [1:0] r_lp1_out;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
 reg         r_lp1_dir;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 
 reg   [1:0] r_lp0_out;        //LP (Low Power) Data Receiving Signals for Data Lane 0         
 reg       r_lp0_dir;      //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 
@@ -37,7 +37,7 @@ always@(posedge CLKOP)
 begin
 	r_byte_D1 = 'b0;
 	r_byte_D0= 'b0;                                                                        
-	r_lp1_ou= 'b0;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+	r_lp1_out= 'b0;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
 	r_lp1_dir= 'b0;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 normalmente 1
 	r_lp0_out= 'b0;        //LP (Low Power) Data Receiving Signals for Data Lane 0         
 	r_lp0_dir= 'b0;      //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 normalmente 1
@@ -45,5 +45,15 @@ begin
 	r_hs_data_en= 'b0;          //HS (High Speed) Data Enable      
 	r_hsxx_clk_en= 'b0;
 end
+
+assign byte_D1 = r_byte_D1;
+assign byte_D0 = r_byte_D0;                    
+assign lp1_out = r_lp1_out;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+assign lp1_dir = r_lp1_dir;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 
+assign lp0_out = r_lp0_out;       //LP (Low Power) Data Receiving Signals for Data Lane 0         
+assign lp0_dir  = r_lp0_dir;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 
+assign  hs_clk_en = r_hs_clk_en;      //HS (High Speed) Clock Enable                                                          
+assign  hs_data_en = r_hs_data_en;           //HS (High Speed) Data Enable      
+assign  hsxx_clk_en	=r_hsxx_clk_en;
 
 endmodule
