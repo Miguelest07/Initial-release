@@ -46,7 +46,7 @@ begin
 	r_hsxx_clk_en= 'b0;
 end
 
-assign byte_D1 = r_byte_D1;
+assign byte_D1 = r_byte_D1; //change
 assign byte_D0 = r_byte_D0;                    
 assign lp1_out = r_lp1_out;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
 assign lp1_dir = r_lp1_dir;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 

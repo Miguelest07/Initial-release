@@ -238,7 +238,7 @@ DataFlow_Switch DataSPDT (
     .hs_data_en_a(~(|lp_data) & done)     ,            //HS (High Speed) Data Enable      
     .hsxx_clk_en_a(w_hsxx_clk_en_a)	   , 
 	 
-	.byte_D1_b (w_byte_D1_b)         ,
+	.byte_D1_b (w_byte_D1_b)         , 
     .byte_D0_b (w_byte_D0_b)         ,                                                               
     .lp1_out_b(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
 	.lp1_dir_b(w_lp1_dir_b)          ,                                                               
