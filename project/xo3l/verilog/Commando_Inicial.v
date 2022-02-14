@@ -6,7 +6,7 @@ module Commando_Inicial (
     input         CLKOS            ,      //HS Clock + 90 deg phase shift
 	
 	
-     `ifdef HS_1 
+     `ifdef HS_1  
           output [7:0]   byte_D1          ,
           output [7:0]   byte_D0          ,                    
      `endif                                                                                                 
@@ -38,9 +38,9 @@ begin
 	r_byte_D1 = 'b0;
 	r_byte_D0= 'b0;                                                                        
 	r_lp1_ou= 'b0;        //LP (Low Power) Data Receiving Signals for Data Lane 1 
-	r_lp1_dir= 'b0;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 
+	r_lp1_dir= 'b0;       //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 normalmente 1
 	r_lp0_out= 'b0;        //LP (Low Power) Data Receiving Signals for Data Lane 0         
-	r_lp0_dir= 'b0;      //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 
+	r_lp0_dir= 'b0;      //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 normalmente 1
 	r_hs_clk_en= 'b0;       
 	r_hs_data_en= 'b0;          //HS (High Speed) Data Enable      
 	r_hsxx_clk_en= 'b0;
