@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 2 11 19 39 20)
+      (timeStamp 2022 2 14 14 1 26)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "Q-2020.03L-SP1, mapper map202003lat, Build 172R"))
      )
@@ -7726,6 +7726,7 @@
            (port HSYNC (direction INPUT))
            (port DE (direction INPUT))
            (port (array (rename pixdata "PIXDATA[23:0]") 24) (direction INPUT))
+           (port i_Global_Enable (direction INPUT))
          )
          (contents
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
@@ -8235,6 +8236,9 @@
           ))
           (net (rename PIXDATA_23 "PIXDATA[23]") (joined
            (portRef (member pixdata 0))
+          ))
+          (net i_Global_Enable (joined
+           (portRef i_Global_Enable)
           ))
           (net reset_n_c_i (joined
            (portRef Z (instanceRef reset_n_pad_RNI49NB))

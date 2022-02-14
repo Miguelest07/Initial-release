@@ -14,48 +14,49 @@ Hostname: LAPTOP-GVTSPVCV
 Implementation : xo3l_verilog
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 3
+Modified Files: 2
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v (2014-12-26 16:16:54, 2022-02-11 19:38:45)
-3        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v (2014-12-26 16:16:54, 2022-02-11 19:38:45)
-12       C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04)
+21       C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v (N/A, 2022-02-14 13:59:03)
+12       C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 13
 MID:  lib.cell.view
 0        work.BYTE_PACKETIZER.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 1        work.DCS_Encoder.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 2        work.DCS_ROM.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 3        work.DPHY_TX_INST.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 4        work.IO_Controller_TX.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 5        work.LP_HS_DELAY_CNTRL.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 6        work.colorbar_gen.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 7        work.crc16_2lane.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 8        work.oDDRx4.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 9        work.packetheader.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v (2014-12-26 16:16:54, 2022-02-11 19:38:45) <-- Error finding FID for 'C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v' in FDep file
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v (N/A, 2022-02-14 13:59:03) <-- (module definition)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 10       work.parallel2byte.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 11       work.pll_pix2byte_RGB888_2lane.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (may instantiate this module)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (may instantiate this module)
 12       work.top.verilog may have changed because the following files changed:
-                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:35:31, 2022-02-11 19:39:04) <-- (module definition)
+                        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v (2022-02-11 19:39:04, 2022-02-14 14:00:44) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 18
+Unmodified files: 20
 FID:  path (timestamp)
+0        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v (2022-02-11 19:38:45)
 1        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\byte_packetizer.v (2014-12-18 18:15:40)
 2        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\colorbar_gen.v (2022-02-11 18:26:11)
+3        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v (2022-02-11 19:38:45)
 4        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\crc16_2lane_bb.v (2013-07-23 11:04:20)
 5        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_encoder.v (2013-07-16 09:06:42)
 6        C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_rom.v (2013-07-16 09:06:50)
@@ -74,5 +75,6 @@ FID:  path (timestamp)
 20       C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
-Unchanged modules: 0
+Unchanged modules: 1
 MID:  lib.cell.view
+13       work.Commando_Inicial.verilog

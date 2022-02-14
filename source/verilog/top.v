@@ -103,7 +103,7 @@ module top #(
      input [word_width-1:0] PIXDATA,                       //Pixel data bus for parallel interface
 	 input 				i_Global_Enable
 );
-	 wire w_Global_Enable,
+	 wire w_Global_Enable; 
      wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
      wire [7:0] byte_D3_out, byte_D2_out, byte_D1_out, byte_D0_out;
      wire [15:0] word_cnt;
@@ -124,7 +124,7 @@ generate
 endgenerate
 generate
     if(DT=='h3E & lane_width==2) 
-         pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
+         pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(.RST(~reset_n), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
 endgenerate
 generate
     if(DT=='h3E & lane_width==4) 
@@ -327,4 +327,7 @@ generate
         assign w_pixclk  = PIXCLK;
     end
 endgenerate
+
+
+
 endmodule

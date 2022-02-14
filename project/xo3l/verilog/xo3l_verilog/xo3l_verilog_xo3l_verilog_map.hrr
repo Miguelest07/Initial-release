@@ -12,13 +12,13 @@ Report for cell top
                                    EBR	          3        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s	          1         9.9
              pll_pix2byte_RGB888_2lane	          1         0.0
-                     LP_HS_DELAY_CNTRL	          1        32.2
                           DPHY_TX_INST	          1         0.3
                                DCS_ROM	          1        20.4
                            DCS_Encoder	          1         5.2
        BYTE_PACKETIZER_24s_2s_62_0s_1s	          1        31.9
+colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s	          1         9.9
+                     LP_HS_DELAY_CNTRL	          1        32.2
 ---------------------------------------------------
 Report for cell DPHY_TX_INST
    Instance path: top/u_DPHY_TX_INST

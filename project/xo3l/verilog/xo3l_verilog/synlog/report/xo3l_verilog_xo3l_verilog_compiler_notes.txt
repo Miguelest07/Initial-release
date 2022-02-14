@@ -36,6 +36,7 @@
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":102:28:102:29|Input DE is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":104:12:104:26|Input i_Global_Enable is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\io_controller_tx.v":50:11:50:17|Input reset_n is unused.
 @N: CL135 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
 @N|Running in 64-bit mode

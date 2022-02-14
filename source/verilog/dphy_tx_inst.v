@@ -125,7 +125,7 @@ module DPHY_TX_INST (
       `else
            assign bit_clk    = CLKOP;
 	       assign bit_clk_90 = CLKOS;
-	  `endif
+	  `endif 
 	  
       //oDDRx4 u_oDDRx4(.clk_s(sclk), .clkop(bit_clk), .clkos(bit_clk_90), .clkout(hs_clk), .lock_chk(1'b1), .reset(~reset_n), .sclk(sclk), .tx_ready( ), .dataout({byte_D3, byte_D2, byte_D1, byte_D0}), .dout({hs_D3,hs_D2,hs_D1,hs_D0}), .hsxx_clk_en(hsxx_clk_en));
       oDDRx4 u_oDDRx4(.clk_s(sclk), .clkop(bit_clk), .clkos(bit_clk_90), .clkout(hs_clk), .lock_chk(1'b1), .reset(~reset_n), .sclk(sclk), .tx_ready( ), .dataout({byte_D3, byte_D2, byte_D1, byte_D0}), .dout({hs_D3,hs_D2,hs_D1,hs_D0}), .hsxx_clk_en(hsxx_clk_en));

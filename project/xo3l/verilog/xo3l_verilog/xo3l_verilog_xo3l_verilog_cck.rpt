@@ -13,7 +13,7 @@ Hostname: LAPTOP-GVTSPVCV
 
 Implementation : xo3l_verilog
 
-# Written on Fri Feb 11 19:39:14 2022
+# Written on Mon Feb 14 14:01:20 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -89,6 +89,7 @@ p:PIXDATA[21]
 p:PIXDATA[22]
 p:PIXDATA[23]
 p:VSYNC
+p:i_Global_Enable
 p:reset_n
 
 

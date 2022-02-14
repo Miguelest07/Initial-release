@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: LAPTOP-GVTSPVCV
 
-# Fri Feb 11 19:39:06 2022
+# Mon Feb 14 14:01:06 2022
 
 #Implementation: xo3l_verilog
 
@@ -61,7 +61,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\colorbar_gen.v" (library work)
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v" (library work)
 @I:"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog\compiler_directives.v" (library work)
-@W: CG1249 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":253:11:253:15|Redeclaration of implicit signal w_LP0
+@W: CG1249 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":255:11:255:15|Redeclaration of implicit signal w_LP0
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\oddrx4.v" (library work)
 @W: CG1337 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":99:11:99:14|Net clk0 is not declared.
 @W: CG1337 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":100:11:100:14|Net clk2 is not declared.
@@ -82,12 +82,9 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\crc16_2lane_bb.v" (library work)
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\parallel2byte_bb.v" (library work)
 @I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\packetheader_bb.v" (library work)
+@I::"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v" (library work)
 Verilog syntax check successful!
-File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v changed - recompiling
-File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v changed - recompiling
-File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v changed - recompiling
-File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v changed - recompiling
-File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\../../source/verilog/compiler_directives.v changed - recompiling
+Options changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
 
@@ -186,9 +183,10 @@ Running optimization stage 1 on pll_pix2byte_RGB888_2lane .......
 Running optimization stage 1 on colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1759:7:1759:10|Synthesizing module OSCH in library work.
 Running optimization stage 1 on OSCH .......
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":322:49:322:49|Port-width mismatch for port STDBY. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":146:28:146:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":156:28:156:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":324:49:324:49|Port-width mismatch for port STDBY. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":148:28:148:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":158:28:158:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":106:7:106:21|Removing wire w_Global_Enable, as there is no assignment to it.
 Running optimization stage 1 on top .......
 Running optimization stage 2 on OSCH .......
 Running optimization stage 2 on colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s .......
@@ -205,6 +203,7 @@ Running optimization stage 2 on top .......
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":102:28:102:29|Input DE is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":104:12:104:26|Input i_Global_Enable is unused.
 Running optimization stage 2 on DCS_Encoder .......
 @W: CL190 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_encoder.v":89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
@@ -264,12 +263,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 97MB peak: 97MB)
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 100MB peak: 101MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Fri Feb 11 19:39:10 2022
+# Mon Feb 14 14:01:14 2022
 
 ###########################################################]
 ###########################################################[
@@ -292,12 +291,12 @@ Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct
 @N|Running in 64-bit mode
 File C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\layer0.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 98MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 11 19:39:10 2022
+# Mon Feb 14 14:01:15 2022
 
 ###########################################################]
 
@@ -307,12 +306,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:05s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+Process took 0h:00m:07s realtime, 0h:00m:05s cputime
 
 Process completed successfully.
-# Fri Feb 11 19:39:10 2022
+# Mon Feb 14 14:01:15 2022
 
 ###########################################################]
 ###########################################################[
@@ -340,10 +339,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 11 19:39:12 2022
+# Mon Feb 14 14:01:16 2022
 
 ###########################################################]
-# Fri Feb 11 19:39:12 2022
+# Mon Feb 14 14:01:17 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -377,29 +376,29 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 128MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 172MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
 
@@ -468,23 +467,23 @@ Clock Tree ID     Driving Element                                           Driv
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 173MB)
+Starting constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 173MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 173MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 173MB)
+Finished constraint checker (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 93MB peak: 175MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 174MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Fri Feb 11 19:39:15 2022
+Process took 0h:00m:04s realtime, 0h:00m:02s cputime
+# Mon Feb 14 14:01:21 2022
 
 ###########################################################]
-# Fri Feb 11 19:39:15 2022
+# Mon Feb 14 14:01:21 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -518,7 +517,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 136MB)
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 135MB peak: 136MB)
 
 
 
@@ -531,8 +530,12 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -543,10 +546,6 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
@@ -578,16 +577,16 @@ Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; M
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 177MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 177MB)
 
 @N: FO126 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
 @N: FX214 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
@@ -595,7 +594,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -611,7 +610,7 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 
    8		0h:00m:03s		    -1.70ns		 266 /       166
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 181MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
@@ -641,10 +640,10 @@ latches that do not specify sets or resets
    u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 182MB peak: 182MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 181MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 146MB peak: 182MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 144MB peak: 182MB)
 
 Writing Analyst data base C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
@@ -657,7 +656,7 @@ Writing EDIF Netlist and constraint files
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 187MB peak: 187MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 185MB peak: 187MB)
 
 @W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -671,7 +670,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 11 19:39:21 2022
+# Timing report written on Mon Feb 14 14:01:27 2022
 #
 
 
@@ -1476,10 +1475,10 @@ u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 186MB peak: 187MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1524,7 +1523,7 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 66MB peak: 187MB)
 
 Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Fri Feb 11 19:39:21 2022
+# Mon Feb 14 14:01:28 2022
 
 ###########################################################]
 

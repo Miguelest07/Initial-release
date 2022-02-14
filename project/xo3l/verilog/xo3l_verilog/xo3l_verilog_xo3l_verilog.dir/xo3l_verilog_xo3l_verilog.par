@@ -4,11 +4,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Feb 11 19:39:26 2022
+Mon Feb 14 14:02:29 2022
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f xo3l_verilog_xo3l_verilog.p2t
 xo3l_verilog_xo3l_verilog_map.ncd xo3l_verilog_xo3l_verilog.dir
-xo3l_verilog_xo3l_verilog.prf -gui
+xo3l_verilog_xo3l_verilog.prf -gui -msgset
+C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/promote.xml
 
 
 Preference file: xo3l_verilog_xo3l_verilog.prf.
@@ -16,11 +17,11 @@ Preference file: xo3l_verilog_xo3l_verilog.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -0.206       374          0.136        0            25           Completed
+5_1   *      0            -0.206       374          0.136        0            28           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 25 secs 
+Total (real) run time for 1-seed: 28 secs 
 
 par done!
 
