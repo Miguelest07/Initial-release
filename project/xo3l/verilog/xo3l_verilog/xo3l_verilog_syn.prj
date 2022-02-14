@@ -1,6 +1,8 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
-#--  Project file C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\scratchproject.prs
+#--  Project file C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_syn.prj
+#--  Written on Mon Feb 14 14:06:14 2022
+
 
 #project files
 add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/compiler_directives.v"
@@ -18,20 +20,16 @@ add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign
 add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/parallel2byte_bb.v"
 add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/packetheader_bb.v"
 add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/Commando_Inicial.v"
-add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/Mux_mod.v"
-add_file -verilog -vlog_std v2001 "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/DataFlow_Switch.v"
 
 
 #implementation: "xo3l_verilog"
-impl -add "C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog" -type fpga
+impl -add xo3l_verilog -type fpga
 
 #
 #implementation attributes
 
-set_option -vlog_std v2001
-set_option -num_critical_paths 3
+set_option -vlog_std sysv
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/}
 set_option -include_path {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog}
 
 #device options
@@ -49,7 +47,7 @@ set_option -distributed_compile 0
 set_option -hdl_strict_syntax 0
 
 # mapper_without_write_options
-set_option -frequency 200
+set_option -frequency auto
 set_option -srs_instrumentation 1
 
 # mapper_options
@@ -61,7 +59,7 @@ set_option -maxfan 1000
 set_option -disable_io_insertion 0
 set_option -retiming 0
 set_option -pipe 1
-set_option -forcegsr auto
+set_option -forcegsr no
 set_option -fix_gated_and_generated_clocks 1
 set_option -rw_check_on_ram 1
 set_option -update_models_cp 0
@@ -87,8 +85,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.edi"
-
-#set log file 
-set_option log_file "C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.srf" 
+project -result_file "./xo3l_verilog.edi"
 impl -active "xo3l_verilog"

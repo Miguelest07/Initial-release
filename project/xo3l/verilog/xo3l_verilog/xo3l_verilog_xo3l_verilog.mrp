@@ -9,12 +9,13 @@ Command line:   map -a MachXO3L -p LCMXO3L-6900C -t CABGA256 -s 5 -oc Commercial
      xo3l_verilog_xo3l_verilog.ngd -o xo3l_verilog_xo3l_verilog_map.ncd -pr
      xo3l_verilog_xo3l_verilog.prf -mp xo3l_verilog_xo3l_verilog.mrp C:/Users/mi
      gue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/xo3l_veri
-     log.lpf -c 0 -gui 
+     log.lpf -c 0 -gui -msgset C:/Users/migue/Downloads/DSITXReferenceDesign(2)/
+     rd1184/project/xo3l/verilog/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO3L-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00a,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  02/11/22  19:39:24
+Mapped on:  02/14/22  16:20:57
 
 Design Summary
 --------------
@@ -22,17 +23,17 @@ Design Summary
    Number of registers:    365 out of  7485 (5%)
       PFU registers:          365 out of  6864 (5%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:       415 out of  3432 (12%)
-      SLICEs as Logic/ROM:    355 out of  3432 (10%)
+   Number of SLICEs:       424 out of  3432 (12%)
+      SLICEs as Logic/ROM:    364 out of  3432 (11%)
       SLICEs as RAM:           60 out of  2574 (2%)
       SLICEs as Carry:         90 out of  3432 (3%)
-   Number of LUT4s:        826 out of  6864 (12%)
-      Number used as logic LUTs:        526
+   Number of LUT4s:        845 out of  6864 (12%)
+      Number used as logic LUTs:        545
       Number used as distributed RAM:   120
       Number used as ripple logic:      180
       Number used as shift registers:     0
-   Number of PIO sites used: 11 + 4(JTAG) out of 207 (7%)
-      Number of PIO sites used for single ended IOs: 9
+   Number of PIO sites used: 12 + 4(JTAG) out of 207 (8%)
+      Number of PIO sites used for single ended IOs: 10
       Number of PIO sites used for differential IOs: 6 (represented by 3 PIO
      comps in NCD)
    Number of IDDR/ODDR/TDDR cells used: 3 out of 621 (0%)
@@ -59,17 +60,17 @@ Design Summary
    Number of Power Controller:  0 out of 1 (0%)
    Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
    Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
-   Number of DCCA:  0 out of 8 (0%)
 
                                     Page 1
 
 
 
 
-Design:  top                                           Date:  02/11/22  19:39:24
+Design:  top                                           Date:  02/14/22  16:20:57
 
 Design Summary (cont)
 ---------------------
+   Number of DCCA:  0 out of 8 (0%)
    Number of DCMA:  0 out of 2 (0%)
    Number of PLLs:  1 out of 2 (50%)
    Number of DQSDLLs:  0 out of 2 (0%)
@@ -93,7 +94,7 @@ Design Summary (cont)
      genblk2.u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
      Net CLKOP: 2 loads, 2 rising, 0 falling (Driver:
      genblk2.u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
-     Net byte_clk: 219 loads, 219 rising, 0 falling (Driver:
+     Net byte_clk: 218 loads, 218 rising, 0 falling (Driver:
      genblk2.u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
    Number of Clock Enables:  20
      Net u_DPHY_TX_INST/u_oDDRx4/FF_0_Q: 2 loads, 2 LSLICEs
@@ -125,17 +126,17 @@ Design Summary (cont)
    Number of LSRs:  6
      Net reset_n_c: 6 loads, 0 LSLICEs
      Net reset_n_c_i: 2 loads, 0 LSLICEs
-     Net u_DCS_ROM/wait_cnt[1]: 1 loads, 1 LSLICEs
 
                                     Page 2
 
 
 
 
-Design:  top                                           Date:  02/11/22  19:39:24
+Design:  top                                           Date:  02/14/22  16:20:57
 
 Design Summary (cont)
 ---------------------
+     Net u_DCS_ROM/wait_cnt[1]: 1 loads, 1 LSLICEs
      Net u_DCS_ROM/wait_cnt[4]: 1 loads, 1 LSLICEs
      Net hs_en: 8 loads, 8 LSLICEs
      Net u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0: 30 loads, 30
@@ -191,17 +192,17 @@ WARNING - map: EHXPLLJ 'genblk2.u_pll_pix2byte_RGB888_2lane/PLLInst_0' cannot
 WARNING - map: GSR inference not applicable for the design since it contains a
      GSR component. The GSR_NET preference on signal 'reset_n_c_i' will be
      ignored.
-WARNING - map: IO buffer missing for top level port PIXCLK...logic will be
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  02/11/22  19:39:24
+Design:  top                                           Date:  02/14/22  16:20:57
 
 Design Errors/Warnings (cont)
 -----------------------------
+WARNING - map: IO buffer missing for top level port PIXCLK...logic will be
      discarded.
 WARNING - map: IO buffer missing for top level port VSYNC...logic will be
      discarded.
@@ -258,13 +259,13 @@ WARNING - map: IO buffer missing for top level port PIXDATA[23:0](1)...logic
 WARNING - map: IO buffer missing for top level port PIXDATA[23:0](0)...logic
      will be discarded.
 
-
                                     Page 4
 
 
 
 
-Design:  top                                           Date:  02/11/22  19:39:24
+Design:  top                                           Date:  02/14/22  16:20:57
+
 
 IO (PIO) Attributes
 -------------------
@@ -275,15 +276,17 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | DCK                 | OUTPUT    | LVDS25E   |            |
 +---------------------+-----------+-----------+------------+
-| LP1[0]              | OUTPUT    | LVCMOS12  |            |
-+---------------------+-----------+-----------+------------+
 | reset_n             | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| i_Global_Enable     | INPUT     | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LP0[1]              | OUTPUT    | LVCMOS12  |            |
 +---------------------+-----------+-----------+------------+
 | LP0[0]              | OUTPUT    | LVCMOS12  |            |
 +---------------------+-----------+-----------+------------+
 | LP1[1]              | OUTPUT    | LVCMOS12  |            |
++---------------------+-----------+-----------+------------+
+| LP1[0]              | OUTPUT    | LVCMOS12  |            |
 +---------------------+-----------+-----------+------------+
 | D0                  | OUTPUT    | LVDS25E   |            |
 +---------------------+-----------+-----------+------------+
@@ -302,6 +305,11 @@ Block u_BYTE_PACKETIZER/u_parallel2byte/GSR_INST undriven or does not drive
 Block VCC undriven or does not drive anything - clipped.
 Block u_BYTE_PACKETIZER/u_parallel2byte/GND_0 undriven or does not drive
      anything - clipped.
+Block DataSPDT/mux_byte_D1/GND undriven or does not drive anything - clipped.
+Block DataSPDT/mux_byte_D0/GND undriven or does not drive anything - clipped.
+Block DataSPDT/mux_lp1_out/GND undriven or does not drive anything - clipped.
+Block DataSPDT/mux_hsxx_clk_en/GND undriven or does not drive anything -
+     clipped.
 Block u_DCS_Encoder/GND undriven or does not drive anything - clipped.
 Signal u_DPHY_TX_INST/u_oDDRx4/opensync_cken was merged into signal
      u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
@@ -316,6 +324,16 @@ Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst was merged into
      signal u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
 Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 was merged into
      signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
+
+                                    Page 5
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Removed logic (cont)
+--------------------
 Signal u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i was merged into signal
      reset_n_c
 Signal GND undriven or does not drive anything - clipped.
@@ -324,16 +342,6 @@ Signal genblk2.u_pll_pix2byte_RGB888_2lane/GND undriven or does not drive
 Signal u_BYTE_PACKETIZER/VCC undriven or does not drive anything - clipped.
 Signal u_BYTE_PACKETIZER/GND undriven or does not drive anything - clipped.
 Signal u_BYTE_PACKETIZER/byte_D2[0] undriven or does not drive anything -
-
-                                    Page 5
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Removed logic (cont)
---------------------
      clipped.
 Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND undriven or does not
      drive anything - clipped.
@@ -382,6 +390,16 @@ Signal genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO6 undriven or does not drive
 Signal genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO7 undriven or does not drive
      anything - clipped.
 Signal genblk2.u_pll_pix2byte_RGB888_2lane/REFCLK undriven or does not drive
+
+                                    Page 6
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Removed logic (cont)
+--------------------
      anything - clipped.
 Signal genblk2.u_pll_pix2byte_RGB888_2lane/INTLOCK undriven or does not drive
      anything - clipped.
@@ -390,16 +408,6 @@ Signal genblk2.u_pll_pix2byte_RGB888_2lane/un1_u_pll_pix2byte_RGB888_2lane
 Signal genblk2.u_pll_pix2byte_RGB888_2lane/CLKOS3 undriven or does not drive
      anything - clipped.
 Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15] undriven or does not
-
-                                    Page 6
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Removed logic (cont)
---------------------
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15] undriven or does
      not drive anything - clipped.
@@ -448,6 +456,16 @@ Signal u_BYTE_PACKETIZER/byte_data[16] undriven or does not drive anything -
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AlmostFull undriven or
      does not drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AlmostEmpty undriven or
+
+                                    Page 7
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Removed logic (cont)
+--------------------
      does not drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17 undriven or does not
      drive anything - clipped.
@@ -456,16 +474,6 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO8 undriven or does not
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO7 undriven or does not
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO6 undriven or does not
-
-                                    Page 7
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Removed logic (cont)
---------------------
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5 undriven or does not
      drive anything - clipped.
@@ -514,6 +522,16 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1 undriven or does not
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1 undriven or does not
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1 undriven or does not
+
+                                    Page 8
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Removed logic (cont)
+--------------------
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1 undriven or does not
      drive anything - clipped.
@@ -522,16 +540,6 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO4_1 undriven or does not
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO3_1 undriven or does not
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO2_1 undriven or does not
-
-                                    Page 8
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Removed logic (cont)
---------------------
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1 undriven or does not
      drive anything - clipped.
@@ -580,6 +588,16 @@ Signal u_DCS_ROM/un1_byte_cnt_cry_9_0_COUT undriven or does not drive anything -
 Signal genblk4.u_colorbar_gen/color_cntr_cry_0_S0[0] undriven or does not drive
      anything - clipped.
 Signal genblk4.u_colorbar_gen/N_2 undriven or does not drive anything - clipped.
+
+                                    Page 9
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Removed logic (cont)
+--------------------
      
 Signal genblk4.u_colorbar_gen/color_cntr_s_0_S1[11] undriven or does not drive
      anything - clipped.
@@ -588,16 +606,6 @@ Signal genblk4.u_colorbar_gen/color_cntr_s_0_COUT[11] undriven or does not drive
 Signal genblk4.u_colorbar_gen/un7_pixcnt_cry_0_0_S1 undriven or does not drive
      anything - clipped.
 Signal genblk4.u_colorbar_gen/un7_pixcnt_cry_0_0_S0 undriven or does not drive
-
-                                    Page 9
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Removed logic (cont)
---------------------
      anything - clipped.
 Signal genblk4.u_colorbar_gen/N_3 undriven or does not drive anything - clipped.
      
@@ -646,6 +654,16 @@ Memory Usage
 
 /u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO:
     EBRs: 0
+
+                                   Page 10
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Memory Usage (cont)
+-------------------
     RAM SLICEs: 12
     Logic SLICEs: 10
     PFU Registers: 34
@@ -654,16 +672,6 @@ Memory Usage
     RAM SLICEs: 0
     Logic SLICEs: 0
     PFU Registers: 0
-
-                                   Page 10
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Memory Usage (cont)
--------------------
     -Contains EBR pixel2byte_fifo_0_0:  TYPE= FIFO8KB,  Width= 8,  REGMODE=
          NOREG,  RESETMODE= ASYNC,  ASYNC_RESET_RELEASE= SYNC,  GSR= DISABLED
 /u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16:
@@ -712,6 +720,16 @@ Memory Usage (cont)
     PFU Registers: 0
 /u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_13:
     EBRs: 0
+
+                                   Page 11
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+Memory Usage (cont)
+-------------------
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
@@ -720,16 +738,6 @@ Memory Usage (cont)
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
-
-                                   Page 11
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-Memory Usage (cont)
--------------------
 /u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_2:
     EBRs: 0
     RAM SLICEs: 3
@@ -778,6 +786,16 @@ PLL/DLL Summary
 
 PLL 1:                                     Pin/Node Value
   PLL Instance Name:                                genblk2.u_pll_pix2byte_RGB88
+
+                                   Page 12
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+PLL/DLL Summary (cont)
+----------------------
        8_2lane/PLLInst_0
   PLL Type:                                         EHXPLLJ
   Input Clock:                             NODE     w_pixclk
@@ -786,16 +804,6 @@ PLL 1:                                     Pin/Node Value
   Output Clock(S2):                        NODE     byte_clk
   Output Clock(S3):                                 NONE
   Feedback Signal:                         NODE     CLKOP
-
-                                   Page 12
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-PLL/DLL Summary (cont)
-----------------------
   Reset Signal:                            NODE     reset_n_c_i
   M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
@@ -844,6 +852,16 @@ PLL/DLL Summary (cont)
   VCO Bypass A Input:                               VCO_PHASE
   VCO Bypass B Input:                               VCO_PHASE
   VCO Bypass C Input:                               VCO_PHASE
+
+                                   Page 13
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+PLL/DLL Summary (cont)
+----------------------
   VCO Bypass D Input:                               VCO_PHASE
   FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
@@ -852,16 +870,6 @@ PLL/DLL Summary (cont)
   CLKOS Divider:                                    2
   CLKOS2 Divider:                                   8
   CLKOS3 Divider:                                   1
-
-                                   Page 13
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-PLL/DLL Summary (cont)
-----------------------
   Fractional N Divider:                             0
   CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
@@ -910,6 +918,16 @@ ECLKSYNC 2:                                     Pin/Node Value
   ECLKSYNC Type:                                         ECLKSYNCA
   ECLKI Input:                             NODE     CLKOP
   STOP Input:                                       NONE
+
+                                   Page 14
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+ECLKSYNC Summary (cont)
+-----------------------
   ECLKO Output:                            NODE
        u_DPHY_TX_INST/u_oDDRx4/eclkd
 
@@ -918,16 +936,6 @@ ASIC Components
 
 Instance Name: genblk5.u_OSCH
          Type: OSCH
-
-                                   Page 14
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-ASIC Components (cont)
-----------------------
 Instance Name: u_DPHY_TX_INST/u_oDDRx4/Inst3_CLKDIVC
          Type: CLKDIVC
 Instance Name: u_DPHY_TX_INST/u_oDDRx4/Inst4_ECLKSYNCA
@@ -976,6 +984,16 @@ GSR Component:
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][0]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][1]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][2]
+
+                                   Page 15
+
+
+
+
+Design:  top                                           Date:  02/14/22  16:20:57
+
+GSR Usage (cont)
+----------------
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][3]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][4]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][5]
@@ -984,16 +1002,6 @@ GSR Component:
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][8]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][9]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][10]
-
-                                   Page 15
-
-
-
-
-Design:  top                                           Date:  02/11/22  19:39:24
-
-GSR Usage (cont)
-----------------
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][11]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][12]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][13]
@@ -1012,18 +1020,10 @@ GSR Usage (cont)
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 1 secs  
+   Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 64 MB
+   Peak Memory Usage: 65 MB
         
-
-
-
-
-
-
-
-
 
 
 

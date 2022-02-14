@@ -32,6 +32,60 @@ Running optimization stage 1 on BYTE_PACKETIZER_24s_2s_62_0s_1s .......
 @N: CG179 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":163:78:163:83|Removing redundant assignment.
 @N: CG179 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":167:78:167:84|Removing redundant assignment.
 Running optimization stage 1 on LP_HS_DELAY_CNTRL .......
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":1:7:1:22|Synthesizing module Commando_Inicial in library work.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":3:8:3:22|Removing wire o_Global_Enable, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":10:25:10:31|Removing wire byte_D1, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":11:25:11:31|Removing wire byte_D0, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":14:25:14:31|Removing wire lp1_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":15:25:15:31|Removing wire lp1_dir, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":18:25:18:31|Removing wire lp0_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":19:25:19:31|Removing wire lp0_dir, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":21:24:21:32|Removing wire hs_clk_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":22:24:22:33|Removing wire hs_data_en, as there is no assignment to it.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":23:25:23:35|Removing wire hsxx_clk_en, as there is no assignment to it.
+Running optimization stage 1 on Commando_Inicial .......
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":3:8:3:22|*Output o_Global_Enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":10:25:10:31|*Output byte_D1 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":11:25:11:31|*Output byte_D0 has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":14:25:14:31|*Output lp1_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":15:25:15:31|*Output lp1_dir has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":18:25:18:31|*Output lp0_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":19:25:19:31|*Output lp0_dir has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":21:24:21:32|*Output hs_clk_en has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":22:24:22:33|*Output hs_data_en has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL318 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":23:25:23:35|*Output hsxx_clk_en has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_byte_D1[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_byte_D0[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_lp1_ou[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_lp1_dir. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_lp0_out[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_lp0_dir. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_hs_clk_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_hs_data_en. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":36:0:36:5|Pruning unused register r_hsxx_clk_en. Make sure that there are no unused intermediate registers.
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+
+	MuxWide=32'b00000000000000000000000000001000
+   Generated name = Mux_mod_8s
+@W: CG296 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":12:6:12:12|Referenced variable i_state is not in sensitivity list.
+Running optimization stage 1 on Mux_mod_8s .......
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+
+	MuxWide=32'b00000000000000000000000000000010
+   Generated name = Mux_mod_2s
+@W: CG296 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":12:6:12:12|Referenced variable i_state is not in sensitivity list.
+Running optimization stage 1 on Mux_mod_2s .......
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+
+	MuxWide=32'b00000000000000000000000000000001
+   Generated name = Mux_mod_1s
+@W: CG296 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v":12:6:12:12|Referenced variable i_state is not in sensitivity list.
+Running optimization stage 1 on Mux_mod_1s .......
+@N: CG364 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\DataFlow_Switch.v":1:7:1:21|Synthesizing module DataFlow_Switch in library work.
+Running optimization stage 1 on DataFlow_Switch .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
 Running optimization stage 1 on ROM16X1A .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
@@ -96,9 +150,10 @@ Running optimization stage 1 on pll_pix2byte_RGB888_2lane .......
 Running optimization stage 1 on colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s .......
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1759:7:1759:10|Synthesizing module OSCH in library work.
 Running optimization stage 1 on OSCH .......
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":322:49:322:49|Port-width mismatch for port STDBY. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":146:28:146:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":156:28:156:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":403:49:403:49|Port-width mismatch for port STDBY. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":155:28:155:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":165:28:165:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":189:5:189:13|Removing wire w_reset_n, as there is no assignment to it.
 Running optimization stage 1 on top .......
 Running optimization stage 2 on OSCH .......
 Running optimization stage 2 on colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s .......
@@ -110,7 +165,6 @@ Running optimization stage 2 on colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s .
 Running optimization stage 2 on pll_pix2byte_RGB888_2lane .......
 Running optimization stage 2 on EHXPLLJ .......
 Running optimization stage 2 on top .......
-@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":99:28:99:33|Input PIXCLK is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":100:28:100:32|Input VSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
 @N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v":102:28:102:29|Input DE is unused.
@@ -152,6 +206,15 @@ Running optimization stage 2 on VHI .......
 Running optimization stage 2 on FD1P3DX .......
 Running optimization stage 2 on FD1P3BX .......
 Running optimization stage 2 on ROM16X1A .......
+Running optimization stage 2 on DataFlow_Switch .......
+Running optimization stage 2 on Mux_mod_1s .......
+Running optimization stage 2 on Mux_mod_2s .......
+Running optimization stage 2 on Mux_mod_8s .......
+Running optimization stage 2 on Commando_Inicial .......
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":2:7:2:11|Input i_clk is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":4:15:4:21|Input reset_n is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":5:18:5:22|Input CLKOP is unused.
+@N: CL159 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v":6:18:6:22|Input CLKOS is unused.
 Running optimization stage 2 on LP_HS_DELAY_CNTRL .......
 @N: CL135 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
 @W: CL190 :"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.

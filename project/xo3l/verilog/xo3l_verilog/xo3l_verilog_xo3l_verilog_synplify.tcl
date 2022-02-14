@@ -60,6 +60,9 @@ add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign
 add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/crc16_2lane_bb.v}
 add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/parallel2byte_bb.v}
 add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/source/verilog/packetheader_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/Commando_Inicial.v}
+add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/Mux_mod.v}
+add_file -verilog -vlog_std v2001 {C:/Users/migue/Downloads/DSITXReferenceDesign(2)/rd1184/project/xo3l/verilog/DataFlow_Switch.v}
 
 #-- top module name
 set_option -top_module top

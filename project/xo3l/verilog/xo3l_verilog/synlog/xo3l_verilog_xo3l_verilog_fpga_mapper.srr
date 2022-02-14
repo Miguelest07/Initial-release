@@ -1,4 +1,4 @@
-# Fri Feb 11 19:39:15 2022
+# Mon Feb 14 16:19:24 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -36,8 +36,18 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
 
+@N: MO111 :|Tristate driver w_byte_D1_b_t[0] (in view: work.top(verilog)) on net w_byte_D1_b[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[1] (in view: work.top(verilog)) on net w_byte_D1_b[1] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[2] (in view: work.top(verilog)) on net w_byte_D1_b[2] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[3] (in view: work.top(verilog)) on net w_byte_D1_b[3] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[4] (in view: work.top(verilog)) on net w_byte_D1_b[4] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[5] (in view: work.top(verilog)) on net w_byte_D1_b[5] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[6] (in view: work.top(verilog)) on net w_byte_D1_b[6] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D1_b_t[7] (in view: work.top(verilog)) on net w_byte_D1_b[7] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D0_b_t[0] (in view: work.top(verilog)) on net w_byte_D0_b[0] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :|Tristate driver w_byte_D0_b_t[1] (in view: work.top(verilog)) on net w_byte_D0_b[1] (in view: work.top(verilog)) has its enable tied to GND.
 @W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
 @W: BN114 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
 
@@ -45,8 +55,12 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
@@ -57,10 +71,6 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
 @A: BN291 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @N: BN362 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
@@ -92,40 +102,40 @@ Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; M
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 @N: FO126 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
 @N: FX214 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:03s		    -2.97ns		 270 /       166
-   2		0h:00m:03s		    -2.97ns		 262 /       166
-   3		0h:00m:03s		    -2.35ns		 262 /       166
+   1		0h:00m:02s		    -2.97ns		 289 /       166
+   2		0h:00m:02s		    -2.97ns		 281 /       166
+   3		0h:00m:02s		    -2.35ns		 281 /       166
 
-   4		0h:00m:03s		    -2.78ns		 263 /       166
-   5		0h:00m:03s		    -1.75ns		 264 /       166
-   6		0h:00m:03s		    -2.15ns		 266 /       166
-   7		0h:00m:03s		    -1.70ns		 266 /       166
+   4		0h:00m:02s		    -2.78ns		 282 /       166
+   5		0h:00m:02s		    -1.75ns		 283 /       166
+   6		0h:00m:02s		    -2.15ns		 285 /       166
+   7		0h:00m:02s		    -1.70ns		 285 /       166
 
 
-   8		0h:00m:03s		    -1.70ns		 266 /       166
+   8		0h:00m:02s		    -1.70ns		 285 /       166
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
@@ -155,23 +165,23 @@ latches that do not specify sets or resets
    u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 182MB peak: 182MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 183MB peak: 183MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 146MB peak: 182MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 183MB)
 
 Writing Analyst data base C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 182MB peak: 182MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 183MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 187MB peak: 187MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 188MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 188MB)
 
 @W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\migue\downloads\dsitxreferencedesign(2)\rd1184\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -185,7 +195,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 11 19:39:21 2022
+# Timing report written on Mon Feb 14 16:19:28 2022
 #
 
 
@@ -233,7 +243,7 @@ oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock     
 top|w_pixclk_inferred_clock                      System                                           |  41.356      40.089  |  No paths    -      |  No paths    -      |  No paths    -    
 top|w_pixclk_inferred_clock                      top|w_pixclk_inferred_clock                      |  41.356      31.629  |  No paths    -      |  No paths    -      |  No paths    -    
 top|w_pixclk_inferred_clock                      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
-pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       1.117   |  No paths    -      |  No paths    -      |  No paths    -    
+pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       0.668   |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       -3.165  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -664,13 +674,13 @@ genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out   
 un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.205 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.221 f     -         
-N_55                                                Net          -        -       -         -           1         
+N_50                                                Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.221 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.518 f     -         
 un5_pixcnt                                          Net          -        -       -         -           13        
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.518 f     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.535 r     -         
-N_12_i                                              Net          -        -       -         -           1         
+N_26_i                                              Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.535 r     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.080 r     -         
 un2_linecnt_cry_0                                   Net          -        -       -         -           1         
@@ -722,13 +732,13 @@ genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out   
 un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
-N_55                                                Net          -        -       -         -           1         
+N_50                                                Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
 un5_pixcnt                                          Net          -        -       -         -           13        
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
-N_12_i                                              Net          -        -       -         -           1         
+N_26_i                                              Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
 un2_linecnt_cry_0                                   Net          -        -       -         -           1         
@@ -780,13 +790,13 @@ genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out   
 un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
-N_55                                                Net          -        -       -         -           1         
+N_50                                                Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
 genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
 un5_pixcnt                                          Net          -        -       -         -           13        
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
-N_12_i                                              Net          -        -       -         -           1         
+N_26_i                                              Net          -        -       -         -           1         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
 genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
 un2_linecnt_cry_0                                   Net          -        -       -         -           1         
@@ -990,10 +1000,10 @@ u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 187MB peak: 188MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 186MB peak: 187MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 188MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1001,7 +1011,7 @@ Part: lcmxo3l_6900c-5
 
 Register bits: 170 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       8
+I/O cells:       9
 
 
 Details:
@@ -1018,13 +1028,12 @@ FD1S3AX:        85
 FD1S3AY:        2
 FD1S3IX:        18
 GSR:            1
-IB:             1
+IB:             2
 INV:            4
 L6MUX21:        2
-OB:             4
-OBZ:            3
+OBZ:            7
 ODDRX4B:        3
-ORCALUT4:       262
+ORCALUT4:       281
 OSCH:           1
 PFUMX:          20
 PUR:            1
@@ -1032,12 +1041,12 @@ ROM128X1A:      8
 ROM16X1A:       9
 ROM32X1A:       8
 VHI:            5
-VLO:            8
+VLO:            12
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 66MB peak: 187MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 66MB peak: 188MB)
 
-Process took 0h:00m:06s realtime, 0h:00m:06s cputime
-# Fri Feb 11 19:39:21 2022
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Mon Feb 14 16:19:29 2022
 
 ###########################################################]

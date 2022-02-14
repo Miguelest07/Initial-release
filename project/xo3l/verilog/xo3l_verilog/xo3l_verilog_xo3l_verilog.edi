@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2022 2 11 19 39 20)
+      (timeStamp 2022 2 14 16 19 27)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "Q-2020.03L-SP1, mapper map202003lat, Build 172R"))
      )
@@ -111,14 +111,6 @@
          (interface
            (port I (direction INPUT))
            (port T (direction INPUT))
-           (port O (direction OUTPUT))
-         )
-       )
-    )
-    (cell OB (cellType GENERIC)
-       (view PRIM (viewType NETLIST)
-         (interface
-           (port I (direction INPUT))
            (port O (direction OUTPUT))
          )
        )
@@ -307,6 +299,62 @@
            (port ECLKO (direction OUTPUT))
          )
         (property orig_inst_of (string "ECLKSYNCA"))
+       )
+    )
+    (cell IO_Controller_TX (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction INPUT))
+           (port N_56_i_1z (direction OUTPUT))
+           (port Ln (direction INPUT))
+           (port N_57_i_1z (direction OUTPUT))
+           (port i_Global_Enable_c (direction INPUT))
+           (port done (direction INPUT))
+           (port Lp (direction INPUT))
+         )
+         (contents
+          (instance N_57_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (!B A))+D (!C (B+A)))"))
+          )
+          (instance N_56_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (!B A))+D (!C (B+A)))"))
+          )
+          (net Lp (joined
+           (portRef Lp)
+           (portRef A (instanceRef N_57_i))
+          ))
+          (net done (joined
+           (portRef done)
+           (portRef B (instanceRef N_56_i))
+           (portRef B (instanceRef N_57_i))
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef C (instanceRef N_56_i))
+           (portRef C (instanceRef N_57_i))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0))
+           (portRef D (instanceRef N_57_i))
+          ))
+          (net (rename N_57_i_1z "N_57_i") (joined
+           (portRef Z (instanceRef N_57_i))
+           (portRef N_57_i_1z)
+          ))
+          (net Ln (joined
+           (portRef Ln)
+           (portRef A (instanceRef N_56_i))
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1))
+           (portRef D (instanceRef N_56_i))
+          ))
+          (net (rename N_56_i_1z "N_56_i") (joined
+           (portRef Z (instanceRef N_56_i))
+           (portRef N_56_i_1z)
+          ))
+         )
+        (property orig_inst_of (string "IO_Controller_TX"))
        )
     )
     (cell oDDRx4 (cellType GENERIC)
@@ -527,6 +575,377 @@
         (property orig_inst_of (string "oDDRx4"))
        )
     )
+    (cell Mux_mod_1s_4_1 (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction INPUT))
+           (port w_hs_data_en_out_i_1z (direction OUTPUT))
+           (port i_Global_Enable_c (direction INPUT))
+           (port done (direction INPUT))
+         )
+         (contents
+          (instance w_hs_data_en_out_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D+(C+(B+!A)))"))
+          )
+          (net done (joined
+           (portRef done)
+           (portRef A (instanceRef w_hs_data_en_out_i))
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef B (instanceRef w_hs_data_en_out_i))
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1))
+           (portRef C (instanceRef w_hs_data_en_out_i))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0))
+           (portRef D (instanceRef w_hs_data_en_out_i))
+          ))
+          (net (rename w_hs_data_en_out_i_1z "w_hs_data_en_out_i") (joined
+           (portRef Z (instanceRef w_hs_data_en_out_i))
+           (portRef w_hs_data_en_out_i_1z)
+          ))
+         )
+        (property MuxWide (integer 1))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
+    (cell Mux_mod_1s_4_0 (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename lp_clk "lp_clk[1:0]") 2) (direction INPUT))
+           (port w_hs_clk_en_out_i_1z (direction OUTPUT))
+           (port i_Global_Enable_c (direction INPUT))
+           (port done (direction INPUT))
+         )
+         (contents
+          (instance w_hs_clk_en_out_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D+(C+(B+!A)))"))
+          )
+          (net done (joined
+           (portRef done)
+           (portRef A (instanceRef w_hs_clk_en_out_i))
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef B (instanceRef w_hs_clk_en_out_i))
+          ))
+          (net (rename lp_clk_0 "lp_clk[0]") (joined
+           (portRef (member lp_clk 1))
+           (portRef C (instanceRef w_hs_clk_en_out_i))
+          ))
+          (net (rename lp_clk_1 "lp_clk[1]") (joined
+           (portRef (member lp_clk 0))
+           (portRef D (instanceRef w_hs_clk_en_out_i))
+          ))
+          (net (rename w_hs_clk_en_out_i_1z "w_hs_clk_en_out_i") (joined
+           (portRef Z (instanceRef w_hs_clk_en_out_i))
+           (portRef w_hs_clk_en_out_i_1z)
+          ))
+         )
+        (property MuxWide (integer 1))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
+    (cell Mux_mod_1s_4 (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port hsxx_clk_en (direction OUTPUT))
+           (port w_hsxx_clk_en_a (direction INPUT))
+           (port i_Global_Enable_c (direction INPUT))
+         )
+         (contents
+          (instance (rename o_x_0 "o_x[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef A (instanceRef o_x_0))
+          ))
+          (net w_hsxx_clk_en_a (joined
+           (portRef w_hsxx_clk_en_a)
+           (portRef B (instanceRef o_x_0))
+          ))
+          (net hsxx_clk_en (joined
+           (portRef Z (instanceRef o_x_0))
+           (portRef hsxx_clk_en)
+          ))
+         )
+        (property MuxWide (integer 1))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
+    (cell Mux_mod_2s (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction INPUT))
+           (port un1_lp1_out0 (direction OUTPUT))
+           (port un1_lp1_out1 (direction OUTPUT))
+           (port i_Global_Enable_c (direction INPUT))
+         )
+         (contents
+          (instance (rename o_x_0_a2_1 "o_x_0_a2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_0_a2_0 "o_x_0_a2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef A (instanceRef o_x_0_a2_0))
+           (portRef A (instanceRef o_x_0_a2_1))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0))
+           (portRef B (instanceRef o_x_0_a2_1))
+          ))
+          (net un1_lp1_out1 (joined
+           (portRef Z (instanceRef o_x_0_a2_1))
+           (portRef un1_lp1_out1)
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1))
+           (portRef B (instanceRef o_x_0_a2_0))
+          ))
+          (net un1_lp1_out0 (joined
+           (portRef Z (instanceRef o_x_0_a2_0))
+           (portRef un1_lp1_out0)
+          ))
+         )
+        (property MuxWide (integer 2))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
+    (cell Mux_mod_8s_0 (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename byte_d0_out "byte_D0_out[7:0]") 8) (direction OUTPUT))
+           (port (array (rename w_byte_d0_a "w_byte_D0_a[7:0]") 8) (direction INPUT))
+           (port i_Global_Enable_c (direction INPUT))
+         )
+         (contents
+          (instance (rename o_x_7 "o_x[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_6 "o_x[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_5 "o_x[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_4 "o_x[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_3 "o_x[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_2 "o_x[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_1 "o_x[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_0 "o_x[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef A (instanceRef o_x_0))
+           (portRef A (instanceRef o_x_1))
+           (portRef A (instanceRef o_x_2))
+           (portRef A (instanceRef o_x_3))
+           (portRef A (instanceRef o_x_4))
+           (portRef A (instanceRef o_x_5))
+           (portRef A (instanceRef o_x_6))
+           (portRef A (instanceRef o_x_7))
+          ))
+          (net (rename w_byte_D0_a_7 "w_byte_D0_a[7]") (joined
+           (portRef (member w_byte_d0_a 0))
+           (portRef B (instanceRef o_x_7))
+          ))
+          (net (rename byte_D0_out_7 "byte_D0_out[7]") (joined
+           (portRef Z (instanceRef o_x_7))
+           (portRef (member byte_d0_out 0))
+          ))
+          (net (rename w_byte_D0_a_6 "w_byte_D0_a[6]") (joined
+           (portRef (member w_byte_d0_a 1))
+           (portRef B (instanceRef o_x_6))
+          ))
+          (net (rename byte_D0_out_6 "byte_D0_out[6]") (joined
+           (portRef Z (instanceRef o_x_6))
+           (portRef (member byte_d0_out 1))
+          ))
+          (net (rename w_byte_D0_a_5 "w_byte_D0_a[5]") (joined
+           (portRef (member w_byte_d0_a 2))
+           (portRef B (instanceRef o_x_5))
+          ))
+          (net (rename byte_D0_out_5 "byte_D0_out[5]") (joined
+           (portRef Z (instanceRef o_x_5))
+           (portRef (member byte_d0_out 2))
+          ))
+          (net (rename w_byte_D0_a_4 "w_byte_D0_a[4]") (joined
+           (portRef (member w_byte_d0_a 3))
+           (portRef B (instanceRef o_x_4))
+          ))
+          (net (rename byte_D0_out_4 "byte_D0_out[4]") (joined
+           (portRef Z (instanceRef o_x_4))
+           (portRef (member byte_d0_out 3))
+          ))
+          (net (rename w_byte_D0_a_3 "w_byte_D0_a[3]") (joined
+           (portRef (member w_byte_d0_a 4))
+           (portRef B (instanceRef o_x_3))
+          ))
+          (net (rename byte_D0_out_3 "byte_D0_out[3]") (joined
+           (portRef Z (instanceRef o_x_3))
+           (portRef (member byte_d0_out 4))
+          ))
+          (net (rename w_byte_D0_a_2 "w_byte_D0_a[2]") (joined
+           (portRef (member w_byte_d0_a 5))
+           (portRef B (instanceRef o_x_2))
+          ))
+          (net (rename byte_D0_out_2 "byte_D0_out[2]") (joined
+           (portRef Z (instanceRef o_x_2))
+           (portRef (member byte_d0_out 5))
+          ))
+          (net (rename w_byte_D0_a_1 "w_byte_D0_a[1]") (joined
+           (portRef (member w_byte_d0_a 6))
+           (portRef B (instanceRef o_x_1))
+          ))
+          (net (rename byte_D0_out_1 "byte_D0_out[1]") (joined
+           (portRef Z (instanceRef o_x_1))
+           (portRef (member byte_d0_out 6))
+          ))
+          (net (rename w_byte_D0_a_0 "w_byte_D0_a[0]") (joined
+           (portRef (member w_byte_d0_a 7))
+           (portRef B (instanceRef o_x_0))
+          ))
+          (net (rename byte_D0_out_0 "byte_D0_out[0]") (joined
+           (portRef Z (instanceRef o_x_0))
+           (portRef (member byte_d0_out 7))
+          ))
+         )
+        (property MuxWide (integer 8))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
+    (cell Mux_mod_8s (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename byte_d1_out "byte_D1_out[7:0]") 8) (direction OUTPUT))
+           (port (array (rename w_byte_d1_a "w_byte_D1_a[7:0]") 8) (direction INPUT))
+           (port i_Global_Enable_c (direction INPUT))
+         )
+         (contents
+          (instance (rename o_x_2 "o_x[2]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_1 "o_x[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_0 "o_x[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_7 "o_x[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_6 "o_x[6]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_5 "o_x[5]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_4 "o_x[4]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance (rename o_x_3 "o_x[3]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B !A)"))
+          )
+          (instance GND (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef A (instanceRef o_x_3))
+           (portRef A (instanceRef o_x_4))
+           (portRef A (instanceRef o_x_5))
+           (portRef A (instanceRef o_x_6))
+           (portRef A (instanceRef o_x_7))
+           (portRef A (instanceRef o_x_0))
+           (portRef A (instanceRef o_x_1))
+           (portRef A (instanceRef o_x_2))
+          ))
+          (net (rename w_byte_D1_a_2 "w_byte_D1_a[2]") (joined
+           (portRef (member w_byte_d1_a 5))
+           (portRef B (instanceRef o_x_2))
+          ))
+          (net (rename byte_D1_out_2 "byte_D1_out[2]") (joined
+           (portRef Z (instanceRef o_x_2))
+           (portRef (member byte_d1_out 5))
+          ))
+          (net (rename w_byte_D1_a_1 "w_byte_D1_a[1]") (joined
+           (portRef (member w_byte_d1_a 6))
+           (portRef B (instanceRef o_x_1))
+          ))
+          (net (rename byte_D1_out_1 "byte_D1_out[1]") (joined
+           (portRef Z (instanceRef o_x_1))
+           (portRef (member byte_d1_out 6))
+          ))
+          (net (rename w_byte_D1_a_0 "w_byte_D1_a[0]") (joined
+           (portRef (member w_byte_d1_a 7))
+           (portRef B (instanceRef o_x_0))
+          ))
+          (net (rename byte_D1_out_0 "byte_D1_out[0]") (joined
+           (portRef Z (instanceRef o_x_0))
+           (portRef (member byte_d1_out 7))
+          ))
+          (net (rename w_byte_D1_a_7 "w_byte_D1_a[7]") (joined
+           (portRef (member w_byte_d1_a 0))
+           (portRef B (instanceRef o_x_7))
+          ))
+          (net (rename byte_D1_out_7 "byte_D1_out[7]") (joined
+           (portRef Z (instanceRef o_x_7))
+           (portRef (member byte_d1_out 0))
+          ))
+          (net (rename w_byte_D1_a_6 "w_byte_D1_a[6]") (joined
+           (portRef (member w_byte_d1_a 1))
+           (portRef B (instanceRef o_x_6))
+          ))
+          (net (rename byte_D1_out_6 "byte_D1_out[6]") (joined
+           (portRef Z (instanceRef o_x_6))
+           (portRef (member byte_d1_out 1))
+          ))
+          (net (rename w_byte_D1_a_5 "w_byte_D1_a[5]") (joined
+           (portRef (member w_byte_d1_a 2))
+           (portRef B (instanceRef o_x_5))
+          ))
+          (net (rename byte_D1_out_5 "byte_D1_out[5]") (joined
+           (portRef Z (instanceRef o_x_5))
+           (portRef (member byte_d1_out 2))
+          ))
+          (net (rename w_byte_D1_a_4 "w_byte_D1_a[4]") (joined
+           (portRef (member w_byte_d1_a 3))
+           (portRef B (instanceRef o_x_4))
+          ))
+          (net (rename byte_D1_out_4 "byte_D1_out[4]") (joined
+           (portRef Z (instanceRef o_x_4))
+           (portRef (member byte_d1_out 3))
+          ))
+          (net (rename w_byte_D1_a_3 "w_byte_D1_a[3]") (joined
+           (portRef (member w_byte_d1_a 4))
+           (portRef B (instanceRef o_x_3))
+          ))
+          (net (rename byte_D1_out_3 "byte_D1_out[3]") (joined
+           (portRef Z (instanceRef o_x_3))
+           (portRef (member byte_d1_out 4))
+          ))
+         )
+        (property MuxWide (integer 8))
+        (property orig_inst_of (string "Mux_mod"))
+       )
+    )
     (cell parallel2byte_24s_2s_62 (cellType GENERIC)
        (view verilog (viewType NETLIST)
          (interface
@@ -680,8 +1099,15 @@
     (cell DPHY_TX_INST (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction INPUT))
            (port (array (rename byte_d0_out "byte_D0_out[7:0]") 8) (direction INPUT))
            (port (array (rename byte_d1_out "byte_D1_out[7:0]") 8) (direction INPUT))
+           (port Lp (direction INPUT))
+           (port done (direction INPUT))
+           (port i_Global_Enable_c (direction INPUT))
+           (port N_57_i (direction OUTPUT))
+           (port Ln (direction INPUT))
+           (port N_56_i (direction OUTPUT))
            (port reset_n_c_i (direction INPUT))
            (port CLKOP (direction INPUT))
            (port CLKOS (direction INPUT))
@@ -692,6 +1118,8 @@
          )
          (contents
           (instance u_oDDRx4 (viewRef netlist (cellRef oDDRx4))
+          )
+          (instance u_IO_Controller_TX (viewRef netlist (cellRef IO_Controller_TX))
           )
           (net (rename byte_D1_out_0 "byte_D1_out[0]") (joined
            (portRef (member byte_d1_out 7))
@@ -784,6 +1212,38 @@
           (net reset_n_c_i (joined
            (portRef reset_n_c_i)
            (portRef reset_n_c_i (instanceRef u_oDDRx4))
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1))
+           (portRef (member w_data_a 1) (instanceRef u_IO_Controller_TX))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0))
+           (portRef (member w_data_a 0) (instanceRef u_IO_Controller_TX))
+          ))
+          (net N_56_i (joined
+           (portRef N_56_i_1z (instanceRef u_IO_Controller_TX))
+           (portRef N_56_i)
+          ))
+          (net Ln (joined
+           (portRef Ln)
+           (portRef Ln (instanceRef u_IO_Controller_TX))
+          ))
+          (net N_57_i (joined
+           (portRef N_57_i_1z (instanceRef u_IO_Controller_TX))
+           (portRef N_57_i)
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef i_Global_Enable_c (instanceRef u_IO_Controller_TX))
+          ))
+          (net done (joined
+           (portRef done)
+           (portRef done (instanceRef u_IO_Controller_TX))
+          ))
+          (net Lp (joined
+           (portRef Lp)
+           (portRef Lp (instanceRef u_IO_Controller_TX))
           ))
          )
         (property orig_inst_of (string "DPHY_TX_INST"))
@@ -963,11 +1423,11 @@
           (instance un1_linecnt_i_0_5 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D+(C+(B+A)))"))
           )
-          (instance un1_linecnt_i_o6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C+(!B+!A))"))
-          )
           (instance un5_pixcntlto9_0_a3_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (!B !A)))"))
+          )
+          (instance un1_linecnt_i_o6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C+(!B+!A))"))
           )
           (instance hsync_2_0_o3_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C+(!B+!A))"))
@@ -987,11 +1447,11 @@
           (instance un5_pixcntlto9_0_o2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+!A)"))
           )
-          (instance hsync_2_0_a6_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(B A)"))
-          )
           (instance vsync_2_i_o3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+!A)"))
+          )
+          (instance hsync_2_0_a6_0_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(B A)"))
           )
           (instance un1_linecnt_i_o6_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B+!A)"))
@@ -1329,11 +1789,11 @@
            (portRef B (instanceRef un5_pixcntlto9_0_a3_0))
            (portRef C (instanceRef hsync_2_0_RNO))
           ))
-          (net hsync_2_0_RNO (joined
+          (net N_19 (joined
            (portRef Z (instanceRef hsync_2_0_RNO))
            (portRef A (instanceRef hsync_2_0))
           ))
-          (net N_8_i (joined
+          (net N_24_i (joined
            (portRef Z (instanceRef vsync_RNO))
            (portRef D (instanceRef vsync))
           ))
@@ -1434,7 +1894,7 @@
            (portRef Z (instanceRef un12_pixcnt_9))
            (portRef D (instanceRef pixcnt_9))
           ))
-          (net N_10_i (joined
+          (net N_25_i (joined
            (portRef Z (instanceRef lv_RNO))
            (portRef D (instanceRef lv))
           ))
@@ -1669,7 +2129,7 @@
            (portRef B0 (instanceRef color_cntr_s_0_11))
            (portRef (member w_pixdata 0))
           ))
-          (net un1_linecnt_i_o6 (joined
+          (net N_21 (joined
            (portRef Z (instanceRef un1_linecnt_i_o6))
            (portRef A (instanceRef un2_linecnt_cry_0_0_RNO_0))
            (portRef A (instanceRef un38_linecnt_i_0))
@@ -1769,13 +2229,13 @@
            (portRef S0 (instanceRef un7_pixcnt_cry_1_0))
            (portRef A (instanceRef un12_pixcnt_1))
           ))
-          (net un5_pixcntlto9_0_o2 (joined
+          (net N_20 (joined
            (portRef Z (instanceRef un5_pixcntlto9_0_o2))
            (portRef A (instanceRef hsync_2_0_a6_1_0))
            (portRef A (instanceRef lv_2_i_2))
            (portRef A (instanceRef un5_pixcntlto9_0_o6))
           ))
-          (net N_55 (joined
+          (net N_50 (joined
            (portRef Z (instanceRef un5_pixcntlto9_0_a3))
            (portRef B (instanceRef un5_pixcntlto9_0_o6))
           ))
@@ -1828,11 +2288,11 @@
            (portRef Z (instanceRef lv_2_i_a3_0_2_0))
            (portRef A (instanceRef lv_2_i_a3_0_4))
           ))
-          (net N_31_1 (joined
+          (net N_41_1 (joined
            (portRef Z (instanceRef hsync_2_0_a6_0_1))
            (portRef A (instanceRef hsync_2_0_a6_0_4))
           ))
-          (net N_41 (joined
+          (net N_33 (joined
            (portRef Z (instanceRef un1_linecnt_i_o6_0))
            (portRef A (instanceRef un2_linecnt_cry_0_0_RNO))
            (portRef A (instanceRef un1_linecnt_i_0_5))
@@ -1841,11 +2301,11 @@
            (portRef Z (instanceRef un1_linecnt_i_0_3))
            (portRef D (instanceRef un1_linecnt_i_0_5))
           ))
-          (net N_12_i_1 (joined
+          (net N_26_i_1 (joined
            (portRef Z (instanceRef un2_linecnt_cry_0_0_RNO_0))
            (portRef B (instanceRef un2_linecnt_cry_0_0_RNO))
           ))
-          (net N_12_i (joined
+          (net N_26_i (joined
            (portRef Z (instanceRef un2_linecnt_cry_0_0_RNO))
            (portRef B0 (instanceRef un2_linecnt_cry_0_0))
           ))
@@ -1971,12 +2431,10 @@
        (view netlist (viewType NETLIST)
          (interface
            (port bitcntr_RNIJM5S_0 (direction OUTPUT))
-           (port (array (rename lp0_c "LP0_c[1:0]") 2) (direction OUTPUT))
-           (port (array (rename lp1_c "LP1_c[1:0]") 2) (direction INPUT))
            (port (array (rename bitcntr "bitcntr[4:2]") 3) (direction OUTPUT))
            (port (array (rename dcs_data "dcs_data[7:0]") 8) (direction INPUT))
-           (port un1_done_1_i_1z (direction OUTPUT))
-           (port done (direction INPUT))
+           (port Lp (direction OUTPUT))
+           (port Ln (direction OUTPUT))
            (port reset_n_c (direction INPUT))
            (port byte_clk (direction INPUT))
            (port dcs_stop_en (direction INPUT))
@@ -2158,20 +2616,11 @@
           (instance un18_LP_axbxc2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B !A)+C (B+A))"))
           )
-          (instance un1_done_1_i (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C+(B+A))"))
-          )
-          (instance (rename LP_4_u_i_a2_0_0_1 "LP_4_u_i_a2_0_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (!B !A)+C !A)"))
-          )
           (instance (rename LP_5_u_i_a2_0_0_0 "LP_5_u_i_a2_0_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C (!B !A)+C !A)"))
           )
-          (instance (rename w_LP0_i_m2_1 "w_LP0_i_m2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C A)"))
-          )
-          (instance (rename w_LP0_i_m2_0 "w_LP0_i_m2[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C B+C A)"))
+          (instance (rename LP_4_u_i_a2_0_0_1 "LP_4_u_i_a2_0_0[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (!B !A)+C !A)"))
           )
           (instance start_escape_0_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B A)"))
@@ -2368,8 +2817,8 @@
           ))
           (net dcs_stop_en (joined
            (portRef dcs_stop_en)
-           (portRef B (instanceRef LP_5_u_i_a2_0_0_0))
            (portRef B (instanceRef LP_4_u_i_a2_0_0_1))
+           (portRef B (instanceRef LP_5_u_i_a2_0_0_0))
            (portRef D (instanceRef q_stop_en))
           ))
           (net byte_clk (joined
@@ -2404,8 +2853,8 @@
           ))
           (net q_stop_en (joined
            (portRef Q (instanceRef q_stop_en))
-           (portRef C (instanceRef LP_5_u_i_a2_0_0_0))
            (portRef C (instanceRef LP_4_u_i_a2_0_0_1))
+           (portRef C (instanceRef LP_5_u_i_a2_0_0_0))
           ))
           (net reset_n_c (joined
            (portRef reset_n_c)
@@ -2479,7 +2928,7 @@
            (portRef Q (instanceRef q_oneh_data_31))
            (portRef B (instanceRef q_oneh_data_pmux_6_i_m2_bm))
           ))
-          (net N_63_i (joined
+          (net N_60_i (joined
            (portRef Z (instanceRef bitcntr_RNO_0))
            (portRef D (instanceRef bitcntr_0))
           ))
@@ -2495,7 +2944,7 @@
            (portRef C (instanceRef LP_5_u_i_m2_0))
            (portRef A (instanceRef bitcntr_RNO_0))
           ))
-          (net N_64_i (joined
+          (net N_61_i (joined
            (portRef Z (instanceRef bitcntr_RNO_1))
            (portRef D (instanceRef bitcntr_1))
           ))
@@ -2508,7 +2957,7 @@
            (portRef B (instanceRef un18_LP_c4))
            (portRef B (instanceRef LP_4_u_i_a2_1_1))
           ))
-          (net N_65_i (joined
+          (net N_62_i (joined
            (portRef Z (instanceRef bitcntr_RNO_2))
            (portRef D (instanceRef bitcntr_2))
           ))
@@ -2520,7 +2969,7 @@
            (portRef C (instanceRef LP_4_u_i_a2_1_1))
            (portRef (member bitcntr 2))
           ))
-          (net N_66_i (joined
+          (net N_63_i (joined
            (portRef Z (instanceRef bitcntr_RNO_3))
            (portRef D (instanceRef bitcntr_3))
           ))
@@ -2546,25 +2995,25 @@
            (portRef C (instanceRef LP_RNO_0))
            (portRef (member bitcntr 0))
           ))
-          (net N_62_i (joined
+          (net N_59_i (joined
            (portRef Z (instanceRef LP_RNO_0))
            (portRef D (instanceRef LP_0))
           ))
           (net Ln (joined
            (portRef Q (instanceRef LP_0))
-           (portRef B (instanceRef w_LP0_i_m2_0))
            (portRef A (instanceRef LP_5_u_i_a2_0_0_0))
+           (portRef Ln)
           ))
-          (net N_61_i (joined
+          (net N_58_i (joined
            (portRef Z (instanceRef LP_RNO_1))
            (portRef D (instanceRef LP_1))
           ))
           (net Lp (joined
            (portRef Q (instanceRef LP_1))
-           (portRef B (instanceRef w_LP0_i_m2_1))
            (portRef A (instanceRef LP_4_u_i_a2_0_0_1))
+           (portRef Lp)
           ))
-          (net N_110 (joined
+          (net N_117 (joined
            (portRef Z (instanceRef LP_5_u_i_m2_0))
            (portRef A (instanceRef LP_RNO_0))
           ))
@@ -2582,7 +3031,7 @@
            (portRef D (instanceRef LP_RNO_1))
            (portRef D (instanceRef LP_RNO_0))
           ))
-          (net N_109 (joined
+          (net N_116 (joined
            (portRef Z (instanceRef LP_4_u_i_m2_1))
            (portRef A (instanceRef LP_RNO_1))
           ))
@@ -2616,32 +3065,32 @@
            (portRef SD (instanceRef q_oneh_data_pmux_1_7_i_m2))
            (portRef C (instanceRef bitcntr_RNO_1))
           ))
-          (net N_95 (joined
+          (net N_102 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_1_7_i_m2))
            (portRef A (instanceRef LP_5_u_i_m2_0))
           ))
-          (net N_129 (joined
+          (net N_139 (joined
            (portRef Z (instanceRef LP_4_u_i_a2_1_1))
            (portRef B (instanceRef LP_4_u_i_m2_1))
            (portRef B (instanceRef LP_5_u_i_m2_0))
           ))
-          (net N_102 (joined
+          (net N_109 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_7_i_m2))
            (portRef A (instanceRef LP_4_u_i_m2_1))
           ))
-          (net N_96 (joined
+          (net N_103 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_1_6_i_m2))
            (portRef D1 (instanceRef q_oneh_data_pmux_1_7_i_m2))
           ))
-          (net N_97 (joined
+          (net N_104 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_1_5_i_m2))
            (portRef D0 (instanceRef q_oneh_data_pmux_1_7_i_m2))
           ))
-          (net N_103 (joined
+          (net N_110 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_6_i_m2))
            (portRef D1 (instanceRef q_oneh_data_pmux_7_i_m2))
           ))
-          (net N_104 (joined
+          (net N_111 (joined
            (portRef Z (instanceRef q_oneh_data_pmux_5_i_m2))
            (portRef D0 (instanceRef q_oneh_data_pmux_7_i_m2))
           ))
@@ -2676,34 +3125,6 @@
           (net q_oneh_data_pmux_1_5_i_m2_bm (joined
            (portRef Z (instanceRef q_oneh_data_pmux_1_5_i_m2_bm))
            (portRef ALUT (instanceRef q_oneh_data_pmux_1_5_i_m2))
-          ))
-          (net (rename LP1_c_0 "LP1_c[0]") (joined
-           (portRef (member lp1_c 1))
-           (portRef A (instanceRef w_LP0_i_m2_0))
-           (portRef A (instanceRef un1_done_1_i))
-          ))
-          (net (rename LP1_c_1 "LP1_c[1]") (joined
-           (portRef (member lp1_c 0))
-           (portRef A (instanceRef w_LP0_i_m2_1))
-           (portRef B (instanceRef un1_done_1_i))
-          ))
-          (net done (joined
-           (portRef done)
-           (portRef C (instanceRef w_LP0_i_m2_0))
-           (portRef C (instanceRef w_LP0_i_m2_1))
-           (portRef C (instanceRef un1_done_1_i))
-          ))
-          (net (rename un1_done_1_i_1z "un1_done_1_i") (joined
-           (portRef Z (instanceRef un1_done_1_i))
-           (portRef un1_done_1_i_1z)
-          ))
-          (net (rename LP0_c_1 "LP0_c[1]") (joined
-           (portRef Z (instanceRef w_LP0_i_m2_1))
-           (portRef (member lp0_c 0))
-          ))
-          (net (rename LP0_c_0 "LP0_c[0]") (joined
-           (portRef Z (instanceRef w_LP0_i_m2_0))
-           (portRef (member lp0_c 1))
           ))
           (net (rename bitcntr_RNIJM5S_0 "bitcntr_RNIJM5S[1]") (joined
            (portRef Z (instanceRef bitcntr_RNIJM5S_1))
@@ -2899,12 +3320,6 @@
           (instance done_2_4 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!B !A)"))
           )
-          (instance current_data_20_3_RNI8IS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
-          )
-          (instance current_data_2160_3_RNI1UCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C !B+C (!B+A))"))
-          )
           (instance current_data_20_2_RNI6IS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
           )
@@ -2923,12 +3338,6 @@
           (instance current_data_2160_0_RNIOTCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C !B+C (!B+A))"))
           )
-          (instance current_data_20_7_RNIGIS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
-          )
-          (instance current_data_2160_7_RNIDUCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C !B+C (!B+A))"))
-          )
           (instance current_data_20_5_RNICIS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
           )
@@ -2939,6 +3348,18 @@
            (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
           )
           (instance current_data_2160_4_RNI4UCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C !B+C (!B+A))"))
+          )
+          (instance current_data_20_3_RNI8IS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
+          )
+          (instance current_data_2160_3_RNI1UCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C !B+C (!B+A))"))
+          )
+          (instance current_data_20_7_RNIGIS21 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C+A)+D (!C (!B+!A)+C (!B A)))"))
+          )
+          (instance current_data_2160_7_RNIDUCR1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!C !B+C (!B+A))"))
           )
           (instance un15_wait_cntlto11_i_a2_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -3589,13 +4010,13 @@
           (net (rename byte_cnt_7 "byte_cnt[7]") (joined
            (portRef Q (instanceRef byte_cnt_7))
            (portRef A0 (instanceRef un1_byte_cnt_cry_7_0))
+           (portRef A (instanceRef current_data_20_7_RNIGIS21))
+           (portRef A (instanceRef current_data_20_3_RNI8IS21))
            (portRef A (instanceRef current_data_20_4_RNIAIS21))
            (portRef A (instanceRef current_data_20_5_RNICIS21))
-           (portRef A (instanceRef current_data_20_7_RNIGIS21))
            (portRef A (instanceRef current_data_20_0_RNI2IS21))
            (portRef A (instanceRef current_data_20_1_RNI4IS21))
            (portRef A (instanceRef current_data_20_2_RNI6IS21))
-           (portRef A (instanceRef current_data_20_3_RNI8IS21))
            (portRef C (instanceRef done_2_6))
            (portRef D (instanceRef byte_cnt_RNIQNFM_7))
            (portRef A (instanceRef current_data_20_6_RNIEIS21))
@@ -3644,7 +4065,7 @@
            (portRef Q (instanceRef stop_en))
            (portRef dcs_stop_en)
           ))
-          (net N_174 (joined
+          (net N_185 (joined
            (portRef Z (instanceRef un15_wait_cntlto11_i_a2))
            (portRef A (instanceRef wait_cnt_lm_0_11))
            (portRef A (instanceRef wait_cnt_lm_0_10))
@@ -3834,13 +4255,13 @@
           ))
           (net current_data_2en1_0lt7 (joined
            (portRef Z (instanceRef byte_cnt_RNITR7B_5))
+           (portRef B (instanceRef current_data_20_7_RNIGIS21))
+           (portRef B (instanceRef current_data_20_3_RNI8IS21))
            (portRef B (instanceRef current_data_20_4_RNIAIS21))
            (portRef B (instanceRef current_data_20_5_RNICIS21))
-           (portRef B (instanceRef current_data_20_7_RNIGIS21))
            (portRef B (instanceRef current_data_20_0_RNI2IS21))
            (portRef B (instanceRef current_data_20_1_RNI4IS21))
            (portRef B (instanceRef current_data_20_2_RNI6IS21))
-           (portRef B (instanceRef current_data_20_3_RNI8IS21))
            (portRef B (instanceRef current_data_20_6_RNIEIS21))
           ))
           (net current_data_20_6 (joined
@@ -3853,13 +4274,13 @@
           ))
           (net current_data_2en1_1_e (joined
            (portRef Z (instanceRef byte_cnt_RNIQNFM_7))
+           (portRef A (instanceRef current_data_2160_7_RNIDUCR1))
+           (portRef A (instanceRef current_data_2160_3_RNI1UCR1))
            (portRef A (instanceRef current_data_2160_4_RNI4UCR1))
            (portRef A (instanceRef current_data_2160_5_RNI7UCR1))
-           (portRef A (instanceRef current_data_2160_7_RNIDUCR1))
            (portRef A (instanceRef current_data_2160_0_RNIOTCR1))
            (portRef A (instanceRef current_data_2160_1_RNIRTCR1))
            (portRef A (instanceRef current_data_2160_2_RNIUTCR1))
-           (portRef A (instanceRef current_data_2160_3_RNI1UCR1))
           ))
           (net escape_enc_0 (joined
            (portRef Z (instanceRef escape_enc_0))
@@ -3907,22 +4328,6 @@
           (net un15_wait_cntlto11_i_a2_4 (joined
            (portRef Z (instanceRef un15_wait_cntlto11_i_a2_4))
            (portRef C (instanceRef un15_wait_cntlto11_i_a2))
-          ))
-          (net current_data_20_3 (joined
-           (portRef DO0 (instanceRef current_data_20_3))
-           (portRef C (instanceRef current_data_20_3_RNI8IS21))
-          ))
-          (net current_data_2128_3 (joined
-           (portRef DO0 (instanceRef current_data_2128_3))
-           (portRef D (instanceRef current_data_20_3_RNI8IS21))
-          ))
-          (net (rename current_data_23mux_iv_1_0 "current_data_23mux_iv_1[0]") (joined
-           (portRef Z (instanceRef current_data_20_3_RNI8IS21))
-           (portRef B (instanceRef current_data_2160_3_RNI1UCR1))
-          ))
-          (net current_data_2160_3 (joined
-           (portRef DO0 (instanceRef current_data_2160_3))
-           (portRef C (instanceRef current_data_2160_3_RNI1UCR1))
           ))
           (net current_data_20_2 (joined
            (portRef DO0 (instanceRef current_data_20_2))
@@ -3972,22 +4377,6 @@
            (portRef DO0 (instanceRef current_data_2160_0))
            (portRef C (instanceRef current_data_2160_0_RNIOTCR1))
           ))
-          (net current_data_20_7 (joined
-           (portRef DO0 (instanceRef current_data_20_7))
-           (portRef C (instanceRef current_data_20_7_RNIGIS21))
-          ))
-          (net current_data_2128_7 (joined
-           (portRef DO0 (instanceRef current_data_2128_7))
-           (portRef D (instanceRef current_data_20_7_RNIGIS21))
-          ))
-          (net (rename current_data_27mux_iv_1_0 "current_data_27mux_iv_1[0]") (joined
-           (portRef Z (instanceRef current_data_20_7_RNIGIS21))
-           (portRef B (instanceRef current_data_2160_7_RNIDUCR1))
-          ))
-          (net current_data_2160_7 (joined
-           (portRef DO0 (instanceRef current_data_2160_7))
-           (portRef C (instanceRef current_data_2160_7_RNIDUCR1))
-          ))
           (net current_data_20_5 (joined
            (portRef DO0 (instanceRef current_data_20_5))
            (portRef C (instanceRef current_data_20_5_RNICIS21))
@@ -4019,6 +4408,38 @@
           (net current_data_2160_4 (joined
            (portRef DO0 (instanceRef current_data_2160_4))
            (portRef C (instanceRef current_data_2160_4_RNI4UCR1))
+          ))
+          (net current_data_20_3 (joined
+           (portRef DO0 (instanceRef current_data_20_3))
+           (portRef C (instanceRef current_data_20_3_RNI8IS21))
+          ))
+          (net current_data_2128_3 (joined
+           (portRef DO0 (instanceRef current_data_2128_3))
+           (portRef D (instanceRef current_data_20_3_RNI8IS21))
+          ))
+          (net (rename current_data_23mux_iv_1_0 "current_data_23mux_iv_1[0]") (joined
+           (portRef Z (instanceRef current_data_20_3_RNI8IS21))
+           (portRef B (instanceRef current_data_2160_3_RNI1UCR1))
+          ))
+          (net current_data_2160_3 (joined
+           (portRef DO0 (instanceRef current_data_2160_3))
+           (portRef C (instanceRef current_data_2160_3_RNI1UCR1))
+          ))
+          (net current_data_20_7 (joined
+           (portRef DO0 (instanceRef current_data_20_7))
+           (portRef C (instanceRef current_data_20_7_RNIGIS21))
+          ))
+          (net current_data_2128_7 (joined
+           (portRef DO0 (instanceRef current_data_2128_7))
+           (portRef D (instanceRef current_data_20_7_RNIGIS21))
+          ))
+          (net (rename current_data_27mux_iv_1_0 "current_data_27mux_iv_1[0]") (joined
+           (portRef Z (instanceRef current_data_20_7_RNIGIS21))
+           (portRef B (instanceRef current_data_2160_7_RNIDUCR1))
+          ))
+          (net current_data_2160_7 (joined
+           (portRef DO0 (instanceRef current_data_2160_7))
+           (portRef C (instanceRef current_data_2160_7_RNIDUCR1))
           ))
           (net un15_wait_cntlto11_i_a2_1 (joined
            (portRef Z (instanceRef un15_wait_cntlto11_i_a2_1))
@@ -4130,17 +4551,242 @@
         (property orig_inst_of (string "DCS_ROM"))
        )
     )
+    (cell DataFlow_Switch (cellType GENERIC)
+       (view netlist (viewType NETLIST)
+         (interface
+           (port (array (rename lp_clk "lp_clk[1:0]") 2) (direction INPUT))
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction INPUT))
+           (port (array (rename w_byte_d0_a "w_byte_D0_a[7:0]") 8) (direction INPUT))
+           (port (array (rename byte_d0_out "byte_D0_out[7:0]") 8) (direction OUTPUT))
+           (port (array (rename w_byte_d1_a "w_byte_D1_a[7:0]") 8) (direction INPUT))
+           (port (array (rename byte_d1_out "byte_D1_out[7:0]") 8) (direction OUTPUT))
+           (port w_hs_data_en_out_i (direction OUTPUT))
+           (port done (direction INPUT))
+           (port w_hs_clk_en_out_i (direction OUTPUT))
+           (port w_hsxx_clk_en_a (direction INPUT))
+           (port hsxx_clk_en (direction OUTPUT))
+           (port un1_lp1_out1 (direction OUTPUT))
+           (port un1_lp1_out0 (direction OUTPUT))
+           (port i_Global_Enable_c (direction INPUT))
+         )
+         (contents
+          (instance mux_byte_D1 (viewRef netlist (cellRef Mux_mod_8s))
+           (property MuxWide (integer 8))
+          )
+          (instance mux_byte_D0 (viewRef netlist (cellRef Mux_mod_8s_0))
+           (property MuxWide (integer 8))
+          )
+          (instance mux_lp1_out (viewRef netlist (cellRef Mux_mod_2s))
+           (property MuxWide (integer 2))
+          )
+          (instance mux_hsxx_clk_en (viewRef netlist (cellRef Mux_mod_1s_4))
+           (property MuxWide (integer 1))
+          )
+          (instance mux_hs_clk_en (viewRef netlist (cellRef Mux_mod_1s_4_0))
+           (property MuxWide (integer 1))
+          )
+          (instance mux_hs_data_en (viewRef netlist (cellRef Mux_mod_1s_4_1))
+           (property MuxWide (integer 1))
+          )
+          (net (rename byte_D1_out_0 "byte_D1_out[0]") (joined
+           (portRef (member byte_d1_out 7) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 7))
+          ))
+          (net (rename byte_D1_out_1 "byte_D1_out[1]") (joined
+           (portRef (member byte_d1_out 6) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 6))
+          ))
+          (net (rename byte_D1_out_2 "byte_D1_out[2]") (joined
+           (portRef (member byte_d1_out 5) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 5))
+          ))
+          (net (rename byte_D1_out_3 "byte_D1_out[3]") (joined
+           (portRef (member byte_d1_out 4) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 4))
+          ))
+          (net (rename byte_D1_out_4 "byte_D1_out[4]") (joined
+           (portRef (member byte_d1_out 3) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 3))
+          ))
+          (net (rename byte_D1_out_5 "byte_D1_out[5]") (joined
+           (portRef (member byte_d1_out 2) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 2))
+          ))
+          (net (rename byte_D1_out_6 "byte_D1_out[6]") (joined
+           (portRef (member byte_d1_out 1) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 1))
+          ))
+          (net (rename byte_D1_out_7 "byte_D1_out[7]") (joined
+           (portRef (member byte_d1_out 0) (instanceRef mux_byte_D1))
+           (portRef (member byte_d1_out 0))
+          ))
+          (net (rename w_byte_D1_a_0 "w_byte_D1_a[0]") (joined
+           (portRef (member w_byte_d1_a 7))
+           (portRef (member w_byte_d1_a 7) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_1 "w_byte_D1_a[1]") (joined
+           (portRef (member w_byte_d1_a 6))
+           (portRef (member w_byte_d1_a 6) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_2 "w_byte_D1_a[2]") (joined
+           (portRef (member w_byte_d1_a 5))
+           (portRef (member w_byte_d1_a 5) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_3 "w_byte_D1_a[3]") (joined
+           (portRef (member w_byte_d1_a 4))
+           (portRef (member w_byte_d1_a 4) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_4 "w_byte_D1_a[4]") (joined
+           (portRef (member w_byte_d1_a 3))
+           (portRef (member w_byte_d1_a 3) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_5 "w_byte_D1_a[5]") (joined
+           (portRef (member w_byte_d1_a 2))
+           (portRef (member w_byte_d1_a 2) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_6 "w_byte_D1_a[6]") (joined
+           (portRef (member w_byte_d1_a 1))
+           (portRef (member w_byte_d1_a 1) (instanceRef mux_byte_D1))
+          ))
+          (net (rename w_byte_D1_a_7 "w_byte_D1_a[7]") (joined
+           (portRef (member w_byte_d1_a 0))
+           (portRef (member w_byte_d1_a 0) (instanceRef mux_byte_D1))
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef i_Global_Enable_c)
+           (portRef i_Global_Enable_c (instanceRef mux_hs_data_en))
+           (portRef i_Global_Enable_c (instanceRef mux_hs_clk_en))
+           (portRef i_Global_Enable_c (instanceRef mux_hsxx_clk_en))
+           (portRef i_Global_Enable_c (instanceRef mux_lp1_out))
+           (portRef i_Global_Enable_c (instanceRef mux_byte_D0))
+           (portRef i_Global_Enable_c (instanceRef mux_byte_D1))
+          ))
+          (net (rename byte_D0_out_0 "byte_D0_out[0]") (joined
+           (portRef (member byte_d0_out 7) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 7))
+          ))
+          (net (rename byte_D0_out_1 "byte_D0_out[1]") (joined
+           (portRef (member byte_d0_out 6) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 6))
+          ))
+          (net (rename byte_D0_out_2 "byte_D0_out[2]") (joined
+           (portRef (member byte_d0_out 5) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 5))
+          ))
+          (net (rename byte_D0_out_3 "byte_D0_out[3]") (joined
+           (portRef (member byte_d0_out 4) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 4))
+          ))
+          (net (rename byte_D0_out_4 "byte_D0_out[4]") (joined
+           (portRef (member byte_d0_out 3) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 3))
+          ))
+          (net (rename byte_D0_out_5 "byte_D0_out[5]") (joined
+           (portRef (member byte_d0_out 2) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 2))
+          ))
+          (net (rename byte_D0_out_6 "byte_D0_out[6]") (joined
+           (portRef (member byte_d0_out 1) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 1))
+          ))
+          (net (rename byte_D0_out_7 "byte_D0_out[7]") (joined
+           (portRef (member byte_d0_out 0) (instanceRef mux_byte_D0))
+           (portRef (member byte_d0_out 0))
+          ))
+          (net (rename w_byte_D0_a_0 "w_byte_D0_a[0]") (joined
+           (portRef (member w_byte_d0_a 7))
+           (portRef (member w_byte_d0_a 7) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_1 "w_byte_D0_a[1]") (joined
+           (portRef (member w_byte_d0_a 6))
+           (portRef (member w_byte_d0_a 6) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_2 "w_byte_D0_a[2]") (joined
+           (portRef (member w_byte_d0_a 5))
+           (portRef (member w_byte_d0_a 5) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_3 "w_byte_D0_a[3]") (joined
+           (portRef (member w_byte_d0_a 4))
+           (portRef (member w_byte_d0_a 4) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_4 "w_byte_D0_a[4]") (joined
+           (portRef (member w_byte_d0_a 3))
+           (portRef (member w_byte_d0_a 3) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_5 "w_byte_D0_a[5]") (joined
+           (portRef (member w_byte_d0_a 2))
+           (portRef (member w_byte_d0_a 2) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_6 "w_byte_D0_a[6]") (joined
+           (portRef (member w_byte_d0_a 1))
+           (portRef (member w_byte_d0_a 1) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_byte_D0_a_7 "w_byte_D0_a[7]") (joined
+           (portRef (member w_byte_d0_a 0))
+           (portRef (member w_byte_d0_a 0) (instanceRef mux_byte_D0))
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1))
+           (portRef (member w_data_a 1) (instanceRef mux_hs_data_en))
+           (portRef (member w_data_a 1) (instanceRef mux_lp1_out))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0))
+           (portRef (member w_data_a 0) (instanceRef mux_hs_data_en))
+           (portRef (member w_data_a 0) (instanceRef mux_lp1_out))
+          ))
+          (net un1_lp1_out0 (joined
+           (portRef un1_lp1_out0 (instanceRef mux_lp1_out))
+           (portRef un1_lp1_out0)
+          ))
+          (net un1_lp1_out1 (joined
+           (portRef un1_lp1_out1 (instanceRef mux_lp1_out))
+           (portRef un1_lp1_out1)
+          ))
+          (net hsxx_clk_en (joined
+           (portRef hsxx_clk_en (instanceRef mux_hsxx_clk_en))
+           (portRef hsxx_clk_en)
+          ))
+          (net w_hsxx_clk_en_a (joined
+           (portRef w_hsxx_clk_en_a)
+           (portRef w_hsxx_clk_en_a (instanceRef mux_hsxx_clk_en))
+          ))
+          (net (rename lp_clk_0 "lp_clk[0]") (joined
+           (portRef (member lp_clk 1))
+           (portRef (member lp_clk 1) (instanceRef mux_hs_clk_en))
+          ))
+          (net (rename lp_clk_1 "lp_clk[1]") (joined
+           (portRef (member lp_clk 0))
+           (portRef (member lp_clk 0) (instanceRef mux_hs_clk_en))
+          ))
+          (net w_hs_clk_en_out_i (joined
+           (portRef w_hs_clk_en_out_i_1z (instanceRef mux_hs_clk_en))
+           (portRef w_hs_clk_en_out_i)
+          ))
+          (net done (joined
+           (portRef done)
+           (portRef done (instanceRef mux_hs_data_en))
+           (portRef done (instanceRef mux_hs_clk_en))
+          ))
+          (net w_hs_data_en_out_i (joined
+           (portRef w_hs_data_en_out_i_1z (instanceRef mux_hs_data_en))
+           (portRef w_hs_data_en_out_i)
+          ))
+         )
+        (property orig_inst_of (string "DataFlow_Switch"))
+       )
+    )
     (cell LP_HS_DELAY_CNTRL (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port (array (rename byte_d1_out "byte_D1_out[7:0]") 8) (direction OUTPUT))
-           (port (array (rename byte_d0_out "byte_D0_out[7:0]") 8) (direction OUTPUT))
+           (port (array (rename w_byte_d1_a "w_byte_D1_a[7:0]") 8) (direction OUTPUT))
+           (port (array (rename w_byte_d0_a "w_byte_D0_a[7:0]") 8) (direction OUTPUT))
            (port (array (rename byte_d1 "byte_D1[7:0]") 8) (direction INPUT))
            (port (array (rename byte_d0 "byte_D0[7:0]") 8) (direction INPUT))
            (port (array (rename lp_clk "lp_clk[1:0]") 2) (direction OUTPUT))
-           (port (array (rename lp1_c "LP1_c[1:0]") 2) (direction OUTPUT))
+           (port (array (rename w_data_a "w_data_a[1:0]") 2) (direction OUTPUT))
            (port hs_en_i (direction INPUT))
-           (port hsxx_clk_en_1z (direction OUTPUT))
+           (port w_hsxx_clk_en_a (direction OUTPUT))
            (port reset_n_c (direction INPUT))
            (port byte_clk (direction INPUT))
            (port hs_en (direction INPUT))
@@ -4304,34 +4950,6 @@
           (instance (rename data_dly_54__hold_data_CF5_5 "data_dly[54].hold_data_CF5[5]") (viewRef PRIM (cellRef FD1S3AX (libraryRef LUCENT)))
            (property GSR (string "DISABLED"))
           )
-          (instance (rename data_dly_54__hold_data_CR31_ram_2_RNIMHON1 "data_dly[54].hold_data_CR31_ram_2_RNIMHON1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_6_RNIUHON1 "data_dly[54].hold_data_CR31_ram_6_RNIUHON1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_2_RNIMHNN4 "data_dly[54].hold_data_CR31_ram_2_RNIMHNN4") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_2 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_2") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_1 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_1") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_0 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
-          )
-          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_0") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
           (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
           )
@@ -4416,6 +5034,34 @@
            (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
           )
           (instance (rename data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_0 "data_dly[54].hold_data_CR31_ram_2_RNIMHNN4_0") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_2_RNIMHON1 "data_dly[54].hold_data_CR31_ram_2_RNIMHON1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_6_RNIUHON1 "data_dly[54].hold_data_CR31_ram_6_RNIUHON1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_2_RNIMHNN4 "data_dly[54].hold_data_CR31_ram_2_RNIMHNN4") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_2 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_2") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_2") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_1 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_1") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_1") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0 "data_dly[54].hold_data_CR31_ram_1_RNIDGII1_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_5_RNISHON1_0 "data_dly[54].hold_data_CR31_ram_5_RNISHON1_0") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (B !A)+C (B+A))+D (!C (B A)+C (B+!A)))"))
+          )
+          (instance (rename data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0 "data_dly[54].hold_data_CR31_ram_1_RNIBGHI4_0") (viewRef PRIM (cellRef PFUMX (libraryRef LUCENT)))          )
           (instance (rename lp_clk_RNO_1 "lp_clk_RNO[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D+(!C+(!B+!A)))"))
           )
@@ -4426,7 +5072,7 @@
            (property lut_function (string "(!D A+D (!C A+C (B+A)))"))
           )
           (instance (rename lp_data_RNO_0 "lp_data_RNO[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C+(!B+!A))"))
+           (property lut_function (string "(!D+(C+(!B+!A)))"))
           )
           (instance (rename hs_en_low_cnt_RNIFFOA5_1 "hs_en_low_cnt_RNIFFOA5[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C+(!B+A)))"))
@@ -4437,11 +5083,11 @@
           (instance un72_lp_data_i_0 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D A+D (!C A+C (B+A)))"))
           )
-          (instance un24_hsxx_clk_en_0_a3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (!C (B A)))"))
-          )
           (instance un72_lp_clk_i_a3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (B A)))"))
+          )
+          (instance un24_hsxx_clk_en_0_a3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (!C (B A)))"))
           )
           (instance un72_lp_data_i_a3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (B A)))"))
@@ -4551,11 +5197,11 @@
           (instance (rename hs_en_high_cnt_RNIJJLT1_14 "hs_en_high_cnt_RNIJJLT1[14]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (!B !A)))"))
           )
-          (instance un72_lp_clk_i_o3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!C (!B A)+C (B !A))"))
-          )
           (instance un72_lp_data_i_o3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (B A))+D (!C (!B !A)))"))
+          )
+          (instance un72_lp_clk_i_o3 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!C (!B A)+C (B !A))"))
           )
           (instance (rename hs_extended_RNIN95C2_1 "hs_extended_RNIN95C2[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D+(!C (!B+!A)))"))
@@ -4566,7 +5212,7 @@
           (instance un72_lp_clk_i_a2_0_8 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (!C (!B !A)))"))
           )
-          (instance un48_hsxx_clk_en_i_a3_2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance un48_hsxx_clk_en_i_a3_1 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (C (B A)))"))
           )
           (instance un72_lp_clk_i_a3_0_2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -4587,14 +5233,11 @@
           (instance q_hs_en_RNI1Q6E (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(B+!A)"))
           )
+          (instance un72_lp_data_i_a2 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(D (!C (!B !A)))"))
+          )
           (instance q_hs_en_RNI0TV61 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C+(!B+A))+D (!C+!B))"))
-          )
-          (instance un72_lp_clk_i_a2_0_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (!B !A)))"))
-          )
-          (instance un72_lp_clk_i_a2_0_7 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(!D (!C (!B !A)))"))
           )
           (instance (rename hs_en_high_cnt_RNIPGKT_12 "hs_en_high_cnt_RNIPGKT[12]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (!B !A)))"))
@@ -4602,11 +5245,14 @@
           (instance (rename hs_en_high_cnt_RNIVR6H_0_10 "hs_en_high_cnt_RNIVR6H_0[10]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D (!C (!B !A)))"))
           )
+          (instance un72_lp_clk_i_a2_0_6 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (!B !A)))"))
+          )
+          (instance un72_lp_clk_i_a2_0_7 (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+           (property lut_function (string "(!D (!C (!B !A)))"))
+          )
           (instance (rename hs_extended_RNIOVHH1_1 "hs_extended_RNIOVHH1[1]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(!D+(!C+(!B+!A)))"))
-          )
-          (instance (rename lp_data_RNO_0_0 "lp_data_RNO_0[0]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(D (C (!B !A)))"))
           )
           (instance (rename hs_en_high_cnt_RNI417H_12 "hs_en_high_cnt_RNI417H[12]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B A)))"))
@@ -4614,7 +5260,7 @@
           (instance (rename hs_en_high_cnt_RNIVR6H_10 "hs_en_high_cnt_RNIVR6H[10]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B A)))"))
           )
-          (instance (rename hs_en_high_cnt_RNIN3FM1_7 "hs_en_high_cnt_RNIN3FM1[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
+          (instance (rename hs_en_high_cnt_RNIO4FM1_7 "hs_en_high_cnt_RNIO4FM1[7]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
            (property lut_function (string "(D (C (B A)))"))
           )
           (instance (rename hs_en_low_cnt_RNIQIRR1_12 "hs_en_low_cnt_RNIQIRR1[12]") (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
@@ -4897,10 +5543,10 @@
            (portRef Q (instanceRef hs_en_high_cnt_2))
            (portRef A1 (instanceRef hs_en_high_cnt_cry_0_1))
            (portRef B (instanceRef un24_hsxx_clk_en_0_a3_1))
-           (portRef A (instanceRef hs_en_high_cnt_RNIN3FM1_7))
-           (portRef C (instanceRef lp_data_RNO_0_0))
+           (portRef C (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
            (portRef C (instanceRef un72_lp_clk_i_o3))
            (portRef D (instanceRef un72_lp_data_i_a3))
+           (portRef D (instanceRef lp_data_RNO_0))
            (portRef A (instanceRef lp_data_RNO_1))
           ))
           (net (rename hs_en_high_cnt_0 "hs_en_high_cnt[0]") (joined
@@ -4908,27 +5554,27 @@
            (portRef A1 (instanceRef hs_en_high_cnt_cry_0_0))
            (portRef B (instanceRef lp_clk_RNO_0))
            (portRef A (instanceRef un24_hsxx_clk_en_0_a3_1))
-           (portRef A (instanceRef lp_data_RNO_0_0))
            (portRef B (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
            (portRef A (instanceRef un72_lp_clk_i_o3))
            (portRef C (instanceRef un72_lp_data_i_a3))
+           (portRef C (instanceRef lp_data_RNO_0))
            (portRef B (instanceRef lp_data_RNO_1))
           ))
-          (net (rename hs_en_high_cnt_RNIJJLT1_14 "hs_en_high_cnt_RNIJJLT1[14]") (joined
+          (net N_98 (joined
            (portRef Z (instanceRef hs_en_high_cnt_RNIJJLT1_14))
            (portRef B (instanceRef un72_lp_data_i_a3))
-           (portRef B (instanceRef un72_lp_clk_i_a3))
            (portRef A (instanceRef un24_hsxx_clk_en_0_a3))
-           (portRef A (instanceRef lp_data_RNO_0))
+           (portRef B (instanceRef un72_lp_clk_i_a3))
+           (portRef B (instanceRef lp_data_RNO_0))
            (portRef B (instanceRef lp_clk_RNO_1))
            (portRef C (instanceRef lp_data_RNO_1))
           ))
-          (net N_72 (joined
+          (net N_69 (joined
            (portRef Z (instanceRef un72_lp_data_i_o3))
            (portRef A (instanceRef un72_lp_data_i_a3))
            (portRef D (instanceRef lp_data_RNO_1))
           ))
-          (net N_84_i (joined
+          (net N_81_i (joined
            (portRef Z (instanceRef lp_data_RNO_1))
            (portRef D (instanceRef lp_data_1))
           ))
@@ -5032,7 +5678,7 @@
           (net reset_n_c (joined
            (portRef reset_n_c)
           ))
-          (net N_79_i (joined
+          (net N_76_i (joined
            (portRef Z (instanceRef lp_data_RNO_0))
            (portRef D (instanceRef lp_data_0))
           ))
@@ -5041,15 +5687,15 @@
            (portRef SP (instanceRef lp_data_1))
            (portRef SP (instanceRef lp_data_0))
           ))
-          (net (rename LP1_c_0 "LP1_c[0]") (joined
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
            (portRef Q (instanceRef lp_data_0))
-           (portRef (member lp1_c 1))
+           (portRef (member w_data_a 1))
           ))
-          (net (rename LP1_c_1 "LP1_c[1]") (joined
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
            (portRef Q (instanceRef lp_data_1))
-           (portRef (member lp1_c 0))
+           (portRef (member w_data_a 0))
           ))
-          (net N_80_i (joined
+          (net N_77_i (joined
            (portRef Z (instanceRef lp_clk_RNO_0))
            (portRef D (instanceRef lp_clk_0))
           ))
@@ -5062,7 +5708,7 @@
            (portRef Q (instanceRef lp_clk_0))
            (portRef (member lp_clk 1))
           ))
-          (net N_82_i (joined
+          (net N_79_i (joined
            (portRef Z (instanceRef lp_clk_RNO_1))
            (portRef D (instanceRef lp_clk_1))
           ))
@@ -5079,9 +5725,9 @@
            (portRef Z (instanceRef un48_hsxx_clk_en_i_0))
            (portRef SP (instanceRef hsxx_clk_en))
           ))
-          (net (rename hsxx_clk_en_1z "hsxx_clk_en") (joined
+          (net w_hsxx_clk_en_a (joined
            (portRef Q (instanceRef hsxx_clk_en))
-           (portRef hsxx_clk_en_1z)
+           (portRef w_hsxx_clk_en_a)
           ))
           (net (rename hs_extended_s_0 "hs_extended_s[0]") (joined
            (portRef S1 (instanceRef hs_extended_cry_0_0))
@@ -5178,7 +5824,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_0))
            (portRef A1 (instanceRef hs_en_low_cnt_cry_0_0))
            (portRef A (instanceRef hs_en_low_cnt_RNIOIQ1_0))
-           (portRef A (instanceRef un72_lp_clk_i_a2_0_7))
+           (portRef A (instanceRef un72_lp_clk_i_a2_0_6))
           ))
           (net (rename hs_en_low_cnt_lm_1 "hs_en_low_cnt_lm[1]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_1))
@@ -5190,7 +5836,7 @@
            (portRef B (instanceRef hs_en_low_cnt_RNIC1L3_1))
            (portRef A (instanceRef un72_lp_data_i_a3_0_3))
            (portRef B (instanceRef un72_lp_clk_i_a3_0_2))
-           (portRef B (instanceRef un48_hsxx_clk_en_i_a3_2))
+           (portRef B (instanceRef un48_hsxx_clk_en_i_a3_1))
           ))
           (net (rename hs_en_low_cnt_lm_2 "hs_en_low_cnt_lm[2]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_2))
@@ -5212,7 +5858,7 @@
            (portRef C (instanceRef hs_en_low_cnt_RNIC1L3_1))
            (portRef B (instanceRef un72_lp_data_i_a3_0_3))
            (portRef C (instanceRef un72_lp_clk_i_a3_0_2))
-           (portRef C (instanceRef un48_hsxx_clk_en_i_a3_2))
+           (portRef C (instanceRef un48_hsxx_clk_en_i_a3_1))
           ))
           (net (rename hs_en_low_cnt_lm_4 "hs_en_low_cnt_lm[4]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_4))
@@ -5224,7 +5870,7 @@
            (portRef B (instanceRef hs_en_low_cnt_RNIOIQ1_0))
            (portRef C (instanceRef un72_lp_data_i_a3_0_3))
            (portRef D (instanceRef un72_lp_clk_i_a3_0_2))
-           (portRef D (instanceRef un48_hsxx_clk_en_i_a3_2))
+           (portRef D (instanceRef un48_hsxx_clk_en_i_a3_1))
           ))
           (net (rename hs_en_low_cnt_lm_5 "hs_en_low_cnt_lm[5]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_5))
@@ -5234,7 +5880,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_5))
            (portRef A0 (instanceRef hs_en_low_cnt_cry_0_5))
            (portRef C (instanceRef hs_en_low_cnt_RNIOIQ1_0))
-           (portRef B (instanceRef un72_lp_clk_i_a2_0_7))
+           (portRef B (instanceRef un72_lp_clk_i_a2_0_6))
           ))
           (net (rename hs_en_low_cnt_lm_6 "hs_en_low_cnt_lm[6]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_6))
@@ -5254,7 +5900,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_7))
            (portRef A0 (instanceRef hs_en_low_cnt_cry_0_7))
            (portRef D (instanceRef hs_en_low_cnt_RNIOIQ1_0))
-           (portRef C (instanceRef un72_lp_clk_i_a2_0_7))
+           (portRef C (instanceRef un72_lp_clk_i_a2_0_6))
           ))
           (net (rename hs_en_low_cnt_lm_8 "hs_en_low_cnt_lm[8]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_8))
@@ -5264,7 +5910,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_8))
            (portRef A1 (instanceRef hs_en_low_cnt_cry_0_7))
            (portRef A (instanceRef hs_en_low_cnt_RNIS5RU_8))
-           (portRef A (instanceRef un72_lp_clk_i_a2_0_6))
+           (portRef A (instanceRef un72_lp_clk_i_a2_0_7))
           ))
           (net (rename hs_en_low_cnt_lm_9 "hs_en_low_cnt_lm[9]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_9))
@@ -5274,7 +5920,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_9))
            (portRef A0 (instanceRef hs_en_low_cnt_cry_0_9))
            (portRef B (instanceRef hs_en_low_cnt_RNIS5RU_8))
-           (portRef D (instanceRef un72_lp_clk_i_a2_0_7))
+           (portRef D (instanceRef un72_lp_clk_i_a2_0_6))
           ))
           (net (rename hs_en_low_cnt_lm_10 "hs_en_low_cnt_lm[10]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_10))
@@ -5284,7 +5930,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_10))
            (portRef A1 (instanceRef hs_en_low_cnt_cry_0_9))
            (portRef C (instanceRef hs_en_low_cnt_RNIS5RU_8))
-           (portRef B (instanceRef un72_lp_clk_i_a2_0_6))
+           (portRef B (instanceRef un72_lp_clk_i_a2_0_7))
           ))
           (net (rename hs_en_low_cnt_lm_11 "hs_en_low_cnt_lm[11]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_11))
@@ -5294,7 +5940,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_11))
            (portRef A0 (instanceRef hs_en_low_cnt_cry_0_11))
            (portRef D (instanceRef hs_en_low_cnt_RNIS5RU_8))
-           (portRef C (instanceRef un72_lp_clk_i_a2_0_6))
+           (portRef C (instanceRef un72_lp_clk_i_a2_0_7))
           ))
           (net (rename hs_en_low_cnt_lm_12 "hs_en_low_cnt_lm[12]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_12))
@@ -5314,7 +5960,7 @@
            (portRef Q (instanceRef hs_en_low_cnt_13))
            (portRef A0 (instanceRef hs_en_low_cnt_cry_0_13))
            (portRef B (instanceRef hs_en_low_cnt_RNIQIRR1_12))
-           (portRef D (instanceRef un72_lp_clk_i_a2_0_6))
+           (portRef D (instanceRef un72_lp_clk_i_a2_0_7))
           ))
           (net (rename hs_en_low_cnt_lm_14 "hs_en_low_cnt_lm[14]") (joined
            (portRef Z (instanceRef hs_en_low_cnt_lm_0_14))
@@ -5367,9 +6013,9 @@
            (portRef Q (instanceRef hs_en_high_cnt_1))
            (portRef A0 (instanceRef hs_en_high_cnt_cry_0_1))
            (portRef A (instanceRef un24_hsxx_clk_en_0_a2))
-           (portRef B (instanceRef lp_data_RNO_0_0))
-           (portRef A (instanceRef un72_lp_data_i_o3))
+           (portRef A (instanceRef un72_lp_data_i_a2))
            (portRef B (instanceRef un72_lp_clk_i_o3))
+           (portRef A (instanceRef un72_lp_data_i_o3))
           ))
           (net (rename hs_en_high_cnt_lm_2 "hs_en_high_cnt_lm[2]") (joined
            (portRef Z (instanceRef hs_en_high_cnt_lm_0_2))
@@ -5384,7 +6030,8 @@
            (portRef A0 (instanceRef hs_en_high_cnt_cry_0_3))
            (portRef A (instanceRef hs_en_high_cnt_RNI7D7R_4))
            (portRef C (instanceRef un24_hsxx_clk_en_0_a3_1))
-           (portRef C (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
+           (portRef A (instanceRef hs_en_high_cnt_RNIO4FM1_7))
+           (portRef B (instanceRef un72_lp_data_i_a2))
            (portRef B (instanceRef un72_lp_data_i_o3))
           ))
           (net (rename hs_en_high_cnt_lm_4 "hs_en_high_cnt_lm[4]") (joined
@@ -5396,6 +6043,7 @@
            (portRef A1 (instanceRef hs_en_high_cnt_cry_0_3))
            (portRef B (instanceRef hs_en_high_cnt_RNI7D7R_4))
            (portRef B (instanceRef un24_hsxx_clk_en_0_a2))
+           (portRef C (instanceRef un72_lp_data_i_a2))
            (portRef C (instanceRef un72_lp_data_i_o3))
           ))
           (net (rename hs_en_high_cnt_lm_5 "hs_en_high_cnt_lm[5]") (joined
@@ -5405,11 +6053,11 @@
           (net (rename hs_en_high_cnt_5 "hs_en_high_cnt[5]") (joined
            (portRef Q (instanceRef hs_en_high_cnt_5))
            (portRef A0 (instanceRef hs_en_high_cnt_cry_0_5))
-           (portRef B (instanceRef hs_en_high_cnt_RNIN3FM1_7))
-           (portRef D (instanceRef lp_data_RNO_0_0))
+           (portRef B (instanceRef hs_en_high_cnt_RNIO4FM1_7))
+           (portRef D (instanceRef un72_lp_data_i_a2))
            (portRef D (instanceRef un72_lp_data_i_o3))
-           (portRef D (instanceRef un72_lp_clk_i_a3))
            (portRef C (instanceRef un24_hsxx_clk_en_0_a3))
+           (portRef D (instanceRef un72_lp_clk_i_a3))
            (portRef D (instanceRef lp_clk_RNO_1))
           ))
           (net (rename hs_en_high_cnt_lm_6 "hs_en_high_cnt_lm[6]") (joined
@@ -5429,7 +6077,7 @@
           (net (rename hs_en_high_cnt_7 "hs_en_high_cnt[7]") (joined
            (portRef Q (instanceRef hs_en_high_cnt_7))
            (portRef A0 (instanceRef hs_en_high_cnt_cry_0_7))
-           (portRef C (instanceRef hs_en_high_cnt_RNIN3FM1_7))
+           (portRef C (instanceRef hs_en_high_cnt_RNIO4FM1_7))
            (portRef A (instanceRef hs_en_high_cnt_RNIPGKT_12))
           ))
           (net (rename hs_en_high_cnt_lm_8 "hs_en_high_cnt_lm[8]") (joined
@@ -5449,7 +6097,7 @@
           (net (rename hs_en_high_cnt_9 "hs_en_high_cnt[9]") (joined
            (portRef Q (instanceRef hs_en_high_cnt_9))
            (portRef A0 (instanceRef hs_en_high_cnt_cry_0_9))
-           (portRef D (instanceRef hs_en_high_cnt_RNIN3FM1_7))
+           (portRef D (instanceRef hs_en_high_cnt_RNIO4FM1_7))
            (portRef B (instanceRef hs_en_high_cnt_RNIPGKT_12))
           ))
           (net (rename hs_en_high_cnt_lm_10 "hs_en_high_cnt_lm[10]") (joined
@@ -5837,6 +6485,14 @@
            (portRef B (instanceRef data_dly_54__hold_data_CF5_RNI5B3K_0_4))
            (portRef B (instanceRef data_dly_54__hold_data_CF5_RNI5B3K_1_4))
            (portRef B (instanceRef data_dly_54__hold_data_CF5_RNI5B3K_2_4))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
+           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_0))
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1_0))
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_1))
@@ -5861,17 +6517,17 @@
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_0_RNIBGII1_2))
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1))
            (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
-           (portRef D (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
           ))
           (net hold_data_CA5_c5 (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CF5_RNI2E681_4))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
+           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_0))
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1_0))
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_1))
@@ -5896,145 +6552,6 @@
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_0_RNIBGII1_2))
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1))
            (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
-           (portRef A (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
-          ))
-          (net hold_data_CR31_ram_11 (joined
-           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_2))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
-          ))
-          (net hold_data_CR31_ram_43 (joined
-           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_10))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
-          ))
-          (net hold_data_CR31_ram_2_RNIMHON1 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
-           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
-          ))
-          (net hold_data_CR31_ram_27 (joined
-           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_6))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
-          ))
-          (net hold_data_CR31_ram_59 (joined
-           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_14))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
-          ))
-          (net hold_data_CR31_ram_6_RNIUHON1 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
-           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
-          ))
-          (net (rename tmp3_4 "tmp3[4]") (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CF5_RNI2E681_0_4))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_0))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_1))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_2))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_0))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_1))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_2))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_0))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_1))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_2))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
-           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
-          ))
-          (net (rename byte_D1_out_4 "byte_D1_out[4]") (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
-           (portRef (member byte_d1_out 3))
-          ))
-          (net hold_data_CR31_ram_10 (joined
-           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_1))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
-          ))
-          (net hold_data_CR31_ram_42 (joined
-           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_9))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
-          ))
-          (net hold_data_CR31_ram_1_RNIDGII1_2 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
-           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
-          ))
-          (net hold_data_CR31_ram_26 (joined
-           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_5))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
-          ))
-          (net hold_data_CR31_ram_58 (joined
-           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_13))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
-          ))
-          (net hold_data_CR31_ram_5_RNISHON1_2 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
-           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
-          ))
-          (net (rename byte_D1_out_3 "byte_D1_out[3]") (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
-           (portRef (member byte_d1_out 4))
-          ))
-          (net hold_data_CR31_ram_9 (joined
-           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_1))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
-          ))
-          (net hold_data_CR31_ram_41 (joined
-           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_9))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
-          ))
-          (net hold_data_CR31_ram_1_RNIDGII1_1 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
-           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
-          ))
-          (net hold_data_CR31_ram_25 (joined
-           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_5))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
-          ))
-          (net hold_data_CR31_ram_57 (joined
-           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_13))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
-          ))
-          (net hold_data_CR31_ram_5_RNISHON1_1 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
-           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
-          ))
-          (net (rename byte_D1_out_2 "byte_D1_out[2]") (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
-           (portRef (member byte_d1_out 5))
-          ))
-          (net hold_data_CR31_ram_8 (joined
-           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_1))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
-          ))
-          (net hold_data_CR31_ram_40 (joined
-           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_9))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
-          ))
-          (net hold_data_CR31_ram_1_RNIDGII1_0 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
-           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
-          ))
-          (net hold_data_CR31_ram_24 (joined
-           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_5))
-           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
-          ))
-          (net hold_data_CR31_ram_56 (joined
-           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_13))
-           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
-          ))
-          (net hold_data_CR31_ram_5_RNISHON1_0 (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
-           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
-          ))
-          (net (rename byte_D1_out_1 "byte_D1_out[1]") (joined
-           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
-           (portRef (member byte_d1_out 6))
           ))
           (net hold_data_CR31_ram_7 (joined
            (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_1))
@@ -6060,9 +6577,28 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4))
           ))
-          (net (rename byte_D1_out_0 "byte_D1_out[0]") (joined
+          (net (rename tmp3_4 "tmp3[4]") (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CF5_RNI2E681_0_4))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_0))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_1))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_2))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_0))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_1))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_2))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_0))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_1))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_2))
+           (portRef C0 (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4))
+          ))
+          (net (rename w_byte_D1_a_0 "w_byte_D1_a[0]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4))
-           (portRef (member byte_d1_out 7))
+           (portRef (member w_byte_d1_a 7))
           ))
           (net hold_data_CR31_ram_6 (joined
            (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_0))
@@ -6088,9 +6624,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_4_RNIQHON1_2))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_2))
           ))
-          (net (rename byte_D0_out_7 "byte_D0_out[7]") (joined
+          (net (rename w_byte_D0_a_7 "w_byte_D0_a[7]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_2))
-           (portRef (member byte_d0_out 0))
+           (portRef (member w_byte_d0_a 0))
           ))
           (net hold_data_CR31_ram_5 (joined
            (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_0))
@@ -6116,9 +6652,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_4_RNIQHON1_1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_1))
           ))
-          (net (rename byte_D0_out_6 "byte_D0_out[6]") (joined
+          (net (rename w_byte_D0_a_6 "w_byte_D0_a[6]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_1))
-           (portRef (member byte_d0_out 1))
+           (portRef (member w_byte_d0_a 1))
           ))
           (net hold_data_CR31_ram_4 (joined
            (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_0))
@@ -6144,9 +6680,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_4_RNIQHON1_0))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_0))
           ))
-          (net (rename byte_D0_out_5 "byte_D0_out[5]") (joined
+          (net (rename w_byte_D0_a_5 "w_byte_D0_a[5]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4_0))
-           (portRef (member byte_d0_out 2))
+           (portRef (member w_byte_d0_a 2))
           ))
           (net hold_data_CR31_ram_3 (joined
            (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_0))
@@ -6172,9 +6708,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_4_RNIQHON1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4))
           ))
-          (net (rename byte_D0_out_4 "byte_D0_out[4]") (joined
+          (net (rename w_byte_D0_a_4 "w_byte_D0_a[4]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_0_RNI7GHI4))
-           (portRef (member byte_d0_out 3))
+           (portRef (member w_byte_d0_a 3))
           ))
           (net hold_data_CR31_ram_2 (joined
            (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram))
@@ -6200,9 +6736,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNIOHON1_2))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_2))
           ))
-          (net (rename byte_D0_out_3 "byte_D0_out[3]") (joined
+          (net (rename w_byte_D0_a_3 "w_byte_D0_a[3]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_2))
-           (portRef (member byte_d0_out 4))
+           (portRef (member w_byte_d0_a 4))
           ))
           (net hold_data_CR31_ram_1 (joined
            (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram))
@@ -6228,9 +6764,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNIOHON1_1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_1))
           ))
-          (net (rename byte_D0_out_2 "byte_D0_out[2]") (joined
+          (net (rename w_byte_D0_a_2 "w_byte_D0_a[2]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_1))
-           (portRef (member byte_d0_out 5))
+           (portRef (member w_byte_d0_a 5))
           ))
           (net hold_data_CR31_ram_0 (joined
            (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram))
@@ -6256,9 +6792,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNIOHON1_0))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_0))
           ))
-          (net (rename byte_D0_out_1 "byte_D0_out[1]") (joined
+          (net (rename w_byte_D0_a_1 "w_byte_D0_a[1]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4_0))
-           (portRef (member byte_d0_out 6))
+           (portRef (member w_byte_d0_a 6))
           ))
           (net hold_data_CR31_ram (joined
            (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram))
@@ -6284,9 +6820,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNIOHON1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4))
           ))
-          (net (rename byte_D0_out_0 "byte_D0_out[0]") (joined
+          (net (rename w_byte_D0_a_0 "w_byte_D0_a[0]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_3_RNILCPL4))
-           (portRef (member byte_d0_out 7))
+           (portRef (member w_byte_d0_a 7))
           ))
           (net hold_data_CR31_ram_14 (joined
            (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_2))
@@ -6312,9 +6848,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_2))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_2))
           ))
-          (net (rename byte_D1_out_7 "byte_D1_out[7]") (joined
+          (net (rename w_byte_D1_a_7 "w_byte_D1_a[7]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_2))
-           (portRef (member byte_d1_out 0))
+           (portRef (member w_byte_d1_a 0))
           ))
           (net hold_data_CR31_ram_13 (joined
            (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_2))
@@ -6340,9 +6876,9 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_1))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_1))
           ))
-          (net (rename byte_D1_out_6 "byte_D1_out[6]") (joined
+          (net (rename w_byte_D1_a_6 "w_byte_D1_a[6]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_1))
-           (portRef (member byte_d1_out 1))
+           (portRef (member w_byte_d1_a 1))
           ))
           (net hold_data_CR31_ram_12 (joined
            (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_2))
@@ -6368,23 +6904,134 @@
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1_0))
            (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_0))
           ))
-          (net (rename byte_D1_out_5 "byte_D1_out[5]") (joined
+          (net (rename w_byte_D1_a_5 "w_byte_D1_a[5]") (joined
            (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4_0))
-           (portRef (member byte_d1_out 2))
+           (portRef (member w_byte_d1_a 2))
           ))
-          (net N_71 (joined
+          (net hold_data_CR31_ram_11 (joined
+           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_2))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
+          ))
+          (net hold_data_CR31_ram_43 (joined
+           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_10))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
+          ))
+          (net hold_data_CR31_ram_2_RNIMHON1 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHON1))
+           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
+          ))
+          (net hold_data_CR31_ram_27 (joined
+           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_6))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
+          ))
+          (net hold_data_CR31_ram_59 (joined
+           (portRef DO0 (instanceRef data_dly_54__hold_data_CR31_ram_14))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
+          ))
+          (net hold_data_CR31_ram_6_RNIUHON1 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_6_RNIUHON1))
+           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
+          ))
+          (net (rename w_byte_D1_a_4 "w_byte_D1_a[4]") (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_2_RNIMHNN4))
+           (portRef (member w_byte_d1_a 3))
+          ))
+          (net hold_data_CR31_ram_10 (joined
+           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_1))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
+          ))
+          (net hold_data_CR31_ram_42 (joined
+           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_9))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
+          ))
+          (net hold_data_CR31_ram_1_RNIDGII1_2 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_2))
+           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
+          ))
+          (net hold_data_CR31_ram_26 (joined
+           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_5))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
+          ))
+          (net hold_data_CR31_ram_58 (joined
+           (portRef DO3 (instanceRef data_dly_54__hold_data_CR31_ram_13))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
+          ))
+          (net hold_data_CR31_ram_5_RNISHON1_2 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_2))
+           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
+          ))
+          (net (rename w_byte_D1_a_3 "w_byte_D1_a[3]") (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_2))
+           (portRef (member w_byte_d1_a 4))
+          ))
+          (net hold_data_CR31_ram_9 (joined
+           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_1))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
+          ))
+          (net hold_data_CR31_ram_41 (joined
+           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_9))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
+          ))
+          (net hold_data_CR31_ram_1_RNIDGII1_1 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_1))
+           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
+          ))
+          (net hold_data_CR31_ram_25 (joined
+           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_5))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
+          ))
+          (net hold_data_CR31_ram_57 (joined
+           (portRef DO2 (instanceRef data_dly_54__hold_data_CR31_ram_13))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
+          ))
+          (net hold_data_CR31_ram_5_RNISHON1_1 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_1))
+           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
+          ))
+          (net (rename w_byte_D1_a_2 "w_byte_D1_a[2]") (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_1))
+           (portRef (member w_byte_d1_a 5))
+          ))
+          (net hold_data_CR31_ram_8 (joined
+           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_1))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
+          ))
+          (net hold_data_CR31_ram_40 (joined
+           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_9))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
+          ))
+          (net hold_data_CR31_ram_1_RNIDGII1_0 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIDGII1_0))
+           (portRef BLUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
+          ))
+          (net hold_data_CR31_ram_24 (joined
+           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_5))
+           (portRef B (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
+          ))
+          (net hold_data_CR31_ram_56 (joined
+           (portRef DO1 (instanceRef data_dly_54__hold_data_CR31_ram_13))
+           (portRef C (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
+          ))
+          (net hold_data_CR31_ram_5_RNISHON1_0 (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_5_RNISHON1_0))
+           (portRef ALUT (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
+          ))
+          (net (rename w_byte_D1_a_1 "w_byte_D1_a[1]") (joined
+           (portRef Z (instanceRef data_dly_54__hold_data_CR31_ram_1_RNIBGHI4_0))
+           (portRef (member w_byte_d1_a 6))
+          ))
+          (net N_68 (joined
            (portRef Z (instanceRef un72_lp_clk_i_o3))
            (portRef A (instanceRef un72_lp_clk_i_a3))
            (portRef A (instanceRef lp_clk_RNO_1))
           ))
-          (net N_126 (joined
+          (net N_118 (joined
            (portRef Z (instanceRef hs_en_high_cnt_RNI7D7R_4))
            (portRef C (instanceRef un72_lp_clk_i_a3))
-           (portRef B (instanceRef lp_data_RNO_0))
            (portRef C (instanceRef lp_clk_RNO_1))
           ))
-          (net un48_hsxx_clk_en_i_a3_2 (joined
-           (portRef Z (instanceRef un48_hsxx_clk_en_i_a3_2))
+          (net un48_hsxx_clk_en_i_a3_1 (joined
+           (portRef Z (instanceRef un48_hsxx_clk_en_i_a3_1))
            (portRef B (instanceRef un48_hsxx_clk_en_i_0))
           ))
           (net un72_lp_clk_i_a2_0_7 (joined
@@ -6399,7 +7046,7 @@
            (portRef C (instanceRef un72_lp_clk_i_0))
            (portRef D (instanceRef un48_hsxx_clk_en_i_0))
           ))
-          (net N_82 (joined
+          (net N_79 (joined
            (portRef Z (instanceRef un72_lp_clk_i_a3))
            (portRef A (instanceRef lp_clk_RNO_0))
            (portRef A (instanceRef un72_lp_clk_i_0))
@@ -6408,9 +7055,91 @@
            (portRef Z (instanceRef un72_lp_clk_i_a3_0_2))
            (portRef D (instanceRef un72_lp_clk_i_0))
           ))
-          (net un46_lp_data_i_i_a3_0 (joined
-           (portRef Z (instanceRef lp_data_RNO_0_0))
-           (portRef C (instanceRef lp_data_RNO_0))
+          (net N_85 (joined
+           (portRef Z (instanceRef un72_lp_data_i_a2))
+           (portRef A (instanceRef lp_data_RNO_0))
+          ))
+          (net N_75 (joined
+           (portRef Z (instanceRef hs_extended_RNIDLCC2_0))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_15))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_14))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_13))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_12))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_11))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_10))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_9))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_8))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_7))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_6))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_5))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_4))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_3))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_2))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_1))
+           (portRef A (instanceRef hs_en_high_cnt_lm_0_0))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_15))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_14))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_13))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_12))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_11))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_10))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_9))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_8))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_7))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_6))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_5))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_4))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_3))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_2))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_1))
+           (portRef A (instanceRef hs_en_low_cnt_lm_0_0))
+           (portRef A (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
+           (portRef A (instanceRef hs_en_low_cnt_RNIFFOA5_1))
+          ))
+          (net hs_en_low_cntlde_i_a2_0_a3_6 (joined
+           (portRef Z (instanceRef hs_en_low_cnt_RNIQIRR1_12))
+           (portRef B (instanceRef hs_en_low_cnt_RNIFFOA5_1))
+          ))
+          (net hs_en_low_cntlde_i_a2_0_a3_7 (joined
+           (portRef Z (instanceRef hs_en_low_cnt_RNIS5RU_8))
+           (portRef C (instanceRef hs_en_low_cnt_RNIFFOA5_1))
+          ))
+          (net hs_en_low_cntlde_i_a2_0_a3_11 (joined
+           (portRef Z (instanceRef hs_en_low_cnt_RNIC1L3_1))
+           (portRef D (instanceRef hs_en_low_cnt_RNIFFOA5_1))
+          ))
+          (net hs_en_high_cntlde_i_a2_0_a3_7 (joined
+           (portRef Z (instanceRef hs_en_high_cnt_RNI417H_12))
+           (portRef B (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
+          ))
+          (net hs_en_high_cntlde_i_a2_0_a3_8 (joined
+           (portRef Z (instanceRef hs_en_high_cnt_RNIVR6H_10))
+           (portRef C (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
+          ))
+          (net hs_en_high_cntlde_i_a2_0_a3_12 (joined
+           (portRef Z (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
+           (portRef D (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
+          ))
+          (net N_81 (joined
+           (portRef Z (instanceRef un72_lp_data_i_a3))
+           (portRef A (instanceRef un72_lp_data_i_0))
+          ))
+          (net un72_lp_data_i_a3_0_3 (joined
+           (portRef Z (instanceRef un72_lp_data_i_a3_0_3))
+           (portRef D (instanceRef un72_lp_data_i_0))
+          ))
+          (net N_124 (joined
+           (portRef Z (instanceRef un24_hsxx_clk_en_0_a2))
+           (portRef A (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
+           (portRef B (instanceRef un24_hsxx_clk_en_0_a3))
+          ))
+          (net un24_hsxx_clk_en_0_a3_1 (joined
+           (portRef Z (instanceRef un24_hsxx_clk_en_0_a3_1))
+           (portRef D (instanceRef un24_hsxx_clk_en_0_a3))
+          ))
+          (net (rename hs_en_low_cnt_s_0 "hs_en_low_cnt_s[0]") (joined
+           (portRef S1 (instanceRef hs_en_low_cnt_cry_0_0))
+           (portRef B (instanceRef hs_en_low_cnt_lm_0_0))
           ))
           (net GND (joined
            (portRef Z (instanceRef GND))
@@ -6569,88 +7298,6 @@
            (portRef C0 (instanceRef hs_en_low_cnt_s_0_15))
            (portRef B0 (instanceRef hs_en_low_cnt_s_0_15))
           ))
-          (net N_78 (joined
-           (portRef Z (instanceRef hs_extended_RNIDLCC2_0))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_15))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_14))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_13))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_12))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_11))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_10))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_9))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_8))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_7))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_6))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_5))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_4))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_3))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_2))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_1))
-           (portRef A (instanceRef hs_en_high_cnt_lm_0_0))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_15))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_14))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_13))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_12))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_11))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_10))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_9))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_8))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_7))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_6))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_5))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_4))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_3))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_2))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_1))
-           (portRef A (instanceRef hs_en_low_cnt_lm_0_0))
-           (portRef A (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
-           (portRef A (instanceRef hs_en_low_cnt_RNIFFOA5_1))
-          ))
-          (net hs_en_low_cntlde_i_a2_0_a3_7 (joined
-           (portRef Z (instanceRef hs_en_low_cnt_RNIQIRR1_12))
-           (portRef B (instanceRef hs_en_low_cnt_RNIFFOA5_1))
-          ))
-          (net hs_en_low_cntlde_i_a2_0_a3_8 (joined
-           (portRef Z (instanceRef hs_en_low_cnt_RNIS5RU_8))
-           (portRef C (instanceRef hs_en_low_cnt_RNIFFOA5_1))
-          ))
-          (net hs_en_low_cntlde_i_a2_0_a3_12 (joined
-           (portRef Z (instanceRef hs_en_low_cnt_RNIC1L3_1))
-           (portRef D (instanceRef hs_en_low_cnt_RNIFFOA5_1))
-          ))
-          (net hs_en_high_cntlde_i_a2_0_a3_7 (joined
-           (portRef Z (instanceRef hs_en_high_cnt_RNI417H_12))
-           (portRef B (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
-          ))
-          (net hs_en_high_cntlde_i_a2_0_a3_8 (joined
-           (portRef Z (instanceRef hs_en_high_cnt_RNIVR6H_10))
-           (portRef C (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
-          ))
-          (net hs_en_high_cntlde_i_a2_0_a3_12 (joined
-           (portRef Z (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
-           (portRef D (instanceRef un24_hsxx_clk_en_0_a2_RNIH9616))
-          ))
-          (net N_84 (joined
-           (portRef Z (instanceRef un72_lp_data_i_a3))
-           (portRef A (instanceRef un72_lp_data_i_0))
-          ))
-          (net un72_lp_data_i_a3_0_3 (joined
-           (portRef Z (instanceRef un72_lp_data_i_a3_0_3))
-           (portRef D (instanceRef un72_lp_data_i_0))
-          ))
-          (net un24_hsxx_clk_en_0_a2 (joined
-           (portRef Z (instanceRef un24_hsxx_clk_en_0_a2))
-           (portRef A (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
-           (portRef B (instanceRef un24_hsxx_clk_en_0_a3))
-          ))
-          (net un24_hsxx_clk_en_0_a3_1 (joined
-           (portRef Z (instanceRef un24_hsxx_clk_en_0_a3_1))
-           (portRef D (instanceRef un24_hsxx_clk_en_0_a3))
-          ))
-          (net (rename hs_en_low_cnt_s_0 "hs_en_low_cnt_s[0]") (joined
-           (portRef S1 (instanceRef hs_en_low_cnt_cry_0_0))
-           (portRef B (instanceRef hs_en_low_cnt_lm_0_0))
-          ))
           (net (rename hs_en_low_cnt_s_1 "hs_en_low_cnt_s[1]") (joined
            (portRef S0 (instanceRef hs_en_low_cnt_cry_0_1))
            (portRef B (instanceRef hs_en_low_cnt_lm_0_1))
@@ -6795,21 +7442,21 @@
            (portRef Z (instanceRef un72_lp_clk_i_a2_0_6))
            (portRef D (instanceRef un72_lp_clk_i_a2_0_8))
           ))
-          (net N_138 (joined
+          (net N_125 (joined
            (portRef Z (instanceRef hs_en_low_cnt_RNIC9T_2))
            (portRef A (instanceRef hs_en_low_cnt_RNIC1L3_1))
            (portRef A (instanceRef un72_lp_clk_i_a3_0_2))
-           (portRef A (instanceRef un48_hsxx_clk_en_i_a3_2))
+           (portRef A (instanceRef un48_hsxx_clk_en_i_a3_1))
           ))
           (net un72_lp_data_i_a3_0_0 (joined
            (portRef Z (instanceRef un72_lp_data_i_a3_0_0_0))
            (portRef D (instanceRef un72_lp_data_i_a3_0_3))
           ))
           (net hs_en_high_cntlde_i_a2_0_a3_9 (joined
-           (portRef Z (instanceRef hs_en_high_cnt_RNIN3FM1_7))
+           (portRef Z (instanceRef hs_en_high_cnt_RNIO4FM1_7))
            (portRef D (instanceRef un24_hsxx_clk_en_0_a2_RNI1NBI2))
           ))
-          (net hs_en_low_cntlde_i_a2_0_a3_9 (joined
+          (net hs_en_low_cntlde_i_a2_0_a3_8 (joined
            (portRef Z (instanceRef hs_en_low_cnt_RNIOIQ1_0))
            (portRef D (instanceRef hs_en_low_cnt_RNIC1L3_1))
           ))
@@ -7726,6 +8373,7 @@
            (port HSYNC (direction INPUT))
            (port DE (direction INPUT))
            (port (array (rename pixdata "PIXDATA[23:0]") 24) (direction INPUT))
+           (port i_Global_Enable (direction INPUT))
          )
          (contents
           (instance VCC (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
@@ -7733,17 +8381,15 @@
           (instance reset_n_pad_RNI49NB (viewRef PRIM (cellRef INV (libraryRef LUCENT)))          )
           (instance GSR_INST (viewRef PRIM (cellRef GSR (libraryRef LUCENT)))
           )
-          (instance (rename LP0_pad_1 "LP0_pad[1]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
-          (instance (rename LP0_pad_0 "LP0_pad[0]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
-          (instance (rename LP1_pad_1 "LP1_pad[1]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
-          (instance (rename LP1_pad_0 "LP1_pad[0]") (viewRef PRIM (cellRef OB (libraryRef LUCENT)))          )
+          (instance i_Global_Enable_pad (viewRef PRIM (cellRef IB (libraryRef LUCENT)))          )
+          (instance (rename LP0_pad_1 "LP0_pad[1]") (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
+          (instance (rename LP0_pad_0 "LP0_pad[0]") (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
+          (instance (rename LP1_pad_1 "LP1_pad[1]") (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
+          (instance (rename LP1_pad_0 "LP1_pad[0]") (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
           (instance D0_pad (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
           (instance D1_pad (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
           (instance DCK_pad (viewRef PRIM (cellRef OBZ (libraryRef LUCENT)))          )
           (instance reset_n_pad (viewRef PRIM (cellRef IB (libraryRef LUCENT)))          )
-          (instance DCK_pad_RNO (viewRef PRIM (cellRef ORCALUT4 (libraryRef LUCENT)))
-           (property lut_function (string "(C+(B+!A))"))
-          )
           (instance (rename genblk5_u_OSCH "genblk5.u_OSCH") (viewRef PRIM (cellRef OSCH (libraryRef LUCENT)))
            (property NOM_FREQ (string "24.18"))
           )
@@ -7756,6 +8402,8 @@
            (property crc16 (integer 0))
           )
           (instance u_LP_HS_DELAY_CNTRL (viewRef netlist (cellRef LP_HS_DELAY_CNTRL))
+          )
+          (instance DataSPDT (viewRef netlist (cellRef DataFlow_Switch))
           )
           (instance u_DCS_ROM (viewRef netlist (cellRef DCS_ROM))
           )
@@ -7923,81 +8571,159 @@
            (portRef (member byte_d0 0) (instanceRef u_BYTE_PACKETIZER))
            (portRef (member byte_d0 0) (instanceRef u_LP_HS_DELAY_CNTRL))
           ))
-          (net hsxx_clk_en (joined
-           (portRef hsxx_clk_en_1z (instanceRef u_LP_HS_DELAY_CNTRL))
-           (portRef hsxx_clk_en (instanceRef u_DPHY_TX_INST))
+          (net w_hsxx_clk_en_a (joined
+           (portRef w_hsxx_clk_en_a (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef w_hsxx_clk_en_a (instanceRef DataSPDT))
           ))
           (net (rename lp_clk_0 "lp_clk[0]") (joined
            (portRef (member lp_clk 1) (instanceRef u_LP_HS_DELAY_CNTRL))
-           (portRef B (instanceRef DCK_pad_RNO))
+           (portRef (member lp_clk 1) (instanceRef DataSPDT))
           ))
           (net (rename lp_clk_1 "lp_clk[1]") (joined
            (portRef (member lp_clk 0) (instanceRef u_LP_HS_DELAY_CNTRL))
-           (portRef C (instanceRef DCK_pad_RNO))
+           (portRef (member lp_clk 0) (instanceRef DataSPDT))
+          ))
+          (net (rename w_data_a_0 "w_data_a[0]") (joined
+           (portRef (member w_data_a 1) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_data_a 1) (instanceRef u_DPHY_TX_INST))
+           (portRef (member w_data_a 1) (instanceRef DataSPDT))
+          ))
+          (net (rename w_data_a_1 "w_data_a[1]") (joined
+           (portRef (member w_data_a 0) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_data_a 0) (instanceRef u_DPHY_TX_INST))
+           (portRef (member w_data_a 0) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_0 "w_byte_D1_a[0]") (joined
+           (portRef (member w_byte_d1_a 7) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 7) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_1 "w_byte_D1_a[1]") (joined
+           (portRef (member w_byte_d1_a 6) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 6) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_2 "w_byte_D1_a[2]") (joined
+           (portRef (member w_byte_d1_a 5) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 5) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_3 "w_byte_D1_a[3]") (joined
+           (portRef (member w_byte_d1_a 4) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 4) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_4 "w_byte_D1_a[4]") (joined
+           (portRef (member w_byte_d1_a 3) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 3) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_5 "w_byte_D1_a[5]") (joined
+           (portRef (member w_byte_d1_a 2) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 2) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_6 "w_byte_D1_a[6]") (joined
+           (portRef (member w_byte_d1_a 1) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 1) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D1_a_7 "w_byte_D1_a[7]") (joined
+           (portRef (member w_byte_d1_a 0) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d1_a 0) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_0 "w_byte_D0_a[0]") (joined
+           (portRef (member w_byte_d0_a 7) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 7) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_1 "w_byte_D0_a[1]") (joined
+           (portRef (member w_byte_d0_a 6) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 6) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_2 "w_byte_D0_a[2]") (joined
+           (portRef (member w_byte_d0_a 5) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 5) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_3 "w_byte_D0_a[3]") (joined
+           (portRef (member w_byte_d0_a 4) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 4) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_4 "w_byte_D0_a[4]") (joined
+           (portRef (member w_byte_d0_a 3) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 3) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_5 "w_byte_D0_a[5]") (joined
+           (portRef (member w_byte_d0_a 2) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 2) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_6 "w_byte_D0_a[6]") (joined
+           (portRef (member w_byte_d0_a 1) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 1) (instanceRef DataSPDT))
+          ))
+          (net (rename w_byte_D0_a_7 "w_byte_D0_a[7]") (joined
+           (portRef (member w_byte_d0_a 0) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member w_byte_d0_a 0) (instanceRef DataSPDT))
           ))
           (net (rename byte_D1_out_0 "byte_D1_out[0]") (joined
-           (portRef (member byte_d1_out 7) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 7) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 7) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_1 "byte_D1_out[1]") (joined
-           (portRef (member byte_d1_out 6) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 6) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 6) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_2 "byte_D1_out[2]") (joined
-           (portRef (member byte_d1_out 5) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 5) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 5) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_3 "byte_D1_out[3]") (joined
-           (portRef (member byte_d1_out 4) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 4) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 4) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_4 "byte_D1_out[4]") (joined
-           (portRef (member byte_d1_out 3) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 3) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 3) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_5 "byte_D1_out[5]") (joined
-           (portRef (member byte_d1_out 2) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 2) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 2) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_6 "byte_D1_out[6]") (joined
-           (portRef (member byte_d1_out 1) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 1) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 1) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D1_out_7 "byte_D1_out[7]") (joined
-           (portRef (member byte_d1_out 0) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d1_out 0) (instanceRef DataSPDT))
            (portRef (member byte_d1_out 0) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_0 "byte_D0_out[0]") (joined
-           (portRef (member byte_d0_out 7) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 7) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 7) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_1 "byte_D0_out[1]") (joined
-           (portRef (member byte_d0_out 6) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 6) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 6) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_2 "byte_D0_out[2]") (joined
-           (portRef (member byte_d0_out 5) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 5) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 5) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_3 "byte_D0_out[3]") (joined
-           (portRef (member byte_d0_out 4) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 4) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 4) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_4 "byte_D0_out[4]") (joined
-           (portRef (member byte_d0_out 3) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 3) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 3) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_5 "byte_D0_out[5]") (joined
-           (portRef (member byte_d0_out 2) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 2) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 2) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_6 "byte_D0_out[6]") (joined
-           (portRef (member byte_d0_out 1) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 1) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 1) (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename byte_D0_out_7 "byte_D0_out[7]") (joined
-           (portRef (member byte_d0_out 0) (instanceRef u_LP_HS_DELAY_CNTRL))
+           (portRef (member byte_d0_out 0) (instanceRef DataSPDT))
            (portRef (member byte_d0_out 0) (instanceRef u_DPHY_TX_INST))
+          ))
+          (net hsxx_clk_en (joined
+           (portRef hsxx_clk_en (instanceRef DataSPDT))
+           (portRef hsxx_clk_en (instanceRef u_DPHY_TX_INST))
           ))
           (net dcs_data_en (joined
            (portRef dcs_data_en (instanceRef u_DCS_ROM))
@@ -8045,8 +8771,16 @@
           ))
           (net done (joined
            (portRef done_1z (instanceRef u_DCS_ROM))
-           (portRef done (instanceRef u_DCS_Encoder))
-           (portRef A (instanceRef DCK_pad_RNO))
+           (portRef done (instanceRef u_DPHY_TX_INST))
+           (portRef done (instanceRef DataSPDT))
+          ))
+          (net Lp (joined
+           (portRef Lp (instanceRef u_DCS_Encoder))
+           (portRef Lp (instanceRef u_DPHY_TX_INST))
+          ))
+          (net Ln (joined
+           (portRef Ln (instanceRef u_DCS_Encoder))
+           (portRef Ln (instanceRef u_DPHY_TX_INST))
           ))
           (net (rename genblk5_un1_u_OSCH "genblk5.un1_u_OSCH") (joined
            (portRef SEDSTDBY (instanceRef genblk5_u_OSCH))
@@ -8063,6 +8797,14 @@
            (portRef hs_D0 (instanceRef u_DPHY_TX_INST))
            (portRef I (instanceRef D0_pad))
           ))
+          (net un1_lp1_out0 (joined
+           (portRef un1_lp1_out0 (instanceRef DataSPDT))
+           (portRef I (instanceRef LP1_pad_0))
+          ))
+          (net un1_lp1_out1 (joined
+           (portRef un1_lp1_out1 (instanceRef DataSPDT))
+           (portRef I (instanceRef LP1_pad_1))
+          ))
           (net (rename u_DCS_Encoder_bitcntr_4 "u_DCS_Encoder.bitcntr[4]") (joined
            (portRef (member bitcntr 0) (instanceRef u_DCS_Encoder))
            (portRef (member bitcntr 0) (instanceRef u_DCS_ROM))
@@ -8075,13 +8817,21 @@
            (portRef (member bitcntr 2) (instanceRef u_DCS_Encoder))
            (portRef (member bitcntr 2) (instanceRef u_DCS_ROM))
           ))
-          (net un1_done_1_i (joined
-           (portRef un1_done_1_i_1z (instanceRef u_DCS_Encoder))
+          (net N_57_i (joined
+           (portRef N_57_i (instanceRef u_DPHY_TX_INST))
+           (portRef I (instanceRef LP0_pad_1))
+          ))
+          (net N_56_i (joined
+           (portRef N_56_i (instanceRef u_DPHY_TX_INST))
+           (portRef I (instanceRef LP0_pad_0))
+          ))
+          (net w_hs_data_en_out_i (joined
+           (portRef w_hs_data_en_out_i (instanceRef DataSPDT))
            (portRef T (instanceRef D1_pad))
            (portRef T (instanceRef D0_pad))
           ))
-          (net un1_done_i (joined
-           (portRef Z (instanceRef DCK_pad_RNO))
+          (net w_hs_clk_en_out_i (joined
+           (portRef w_hs_clk_en_out_i (instanceRef DataSPDT))
            (portRef T (instanceRef DCK_pad))
           ))
           (net (rename bitcntr_RNIJM5S_1 "bitcntr_RNIJM5S[1]") (joined
@@ -8118,35 +8868,17 @@
            (portRef O (instanceRef D0_pad))
            (portRef D0)
           ))
-          (net (rename LP1_c_0 "LP1_c[0]") (joined
-           (portRef (member lp1_c 1) (instanceRef u_LP_HS_DELAY_CNTRL))
-           (portRef (member lp1_c 1) (instanceRef u_DCS_Encoder))
-           (portRef I (instanceRef LP1_pad_0))
-          ))
           (net (rename LP1_0 "LP1[0]") (joined
            (portRef O (instanceRef LP1_pad_0))
            (portRef (member lp1 1))
-          ))
-          (net (rename LP1_c_1 "LP1_c[1]") (joined
-           (portRef (member lp1_c 0) (instanceRef u_LP_HS_DELAY_CNTRL))
-           (portRef (member lp1_c 0) (instanceRef u_DCS_Encoder))
-           (portRef I (instanceRef LP1_pad_1))
           ))
           (net (rename LP1_1 "LP1[1]") (joined
            (portRef O (instanceRef LP1_pad_1))
            (portRef (member lp1 0))
           ))
-          (net (rename LP0_c_0 "LP0_c[0]") (joined
-           (portRef (member lp0_c 1) (instanceRef u_DCS_Encoder))
-           (portRef I (instanceRef LP0_pad_0))
-          ))
           (net (rename LP0_0 "LP0[0]") (joined
            (portRef O (instanceRef LP0_pad_0))
            (portRef (member lp0 1))
-          ))
-          (net (rename LP0_c_1 "LP0_c[1]") (joined
-           (portRef (member lp0_c 0) (instanceRef u_DCS_Encoder))
-           (portRef I (instanceRef LP0_pad_1))
           ))
           (net (rename LP0_1 "LP0[1]") (joined
            (portRef O (instanceRef LP0_pad_1))
@@ -8235,6 +8967,19 @@
           ))
           (net (rename PIXDATA_23 "PIXDATA[23]") (joined
            (portRef (member pixdata 0))
+          ))
+          (net i_Global_Enable_c (joined
+           (portRef O (instanceRef i_Global_Enable_pad))
+           (portRef i_Global_Enable_c (instanceRef u_DPHY_TX_INST))
+           (portRef i_Global_Enable_c (instanceRef DataSPDT))
+           (portRef T (instanceRef LP1_pad_0))
+           (portRef T (instanceRef LP1_pad_1))
+           (portRef T (instanceRef LP0_pad_0))
+           (portRef T (instanceRef LP0_pad_1))
+          ))
+          (net i_Global_Enable (joined
+           (portRef i_Global_Enable)
+           (portRef I (instanceRef i_Global_Enable_pad))
           ))
           (net reset_n_c_i (joined
            (portRef Z (instanceRef reset_n_pad_RNI49NB))

@@ -103,7 +103,7 @@ module top #(
      input [word_width-1:0] PIXDATA,                       //Pixel data bus for parallel interface
 	 input 				i_Global_Enable
 );
-	 wire w_Global_Enable,
+	 wire w_Global_Enable; 
      wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
      wire [7:0] byte_D3_out, byte_D2_out, byte_D1_out, byte_D0_out;
      wire [15:0] word_cnt;
@@ -111,6 +111,13 @@ module top #(
      wire [1:0] lp_data;
      wire [word_width-1:0] w_pixdata;
      wire w_pixclk, CLKOP, CLKOS, byte_clk;
+	 
+	 wire [7:0]   w_byte_D1_a;
+wire [7:0]   w_byte_D0_a;              
+wire   [1:0] w_data_a;
+wire  w_lp1_dir_a;       
+wire w_lp0_dir_a;
+wire w_hsxx_clk_en_a;
 
      parameter  lane_width = `ifdef HS_3  4
                              `elsif HS_2  3
@@ -124,11 +131,11 @@ generate
 endgenerate
 generate
     if(DT=='h3E & lane_width==2) 
-         pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
+         pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(.RST(~reset_n), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
 endgenerate
 generate
     if(DT=='h3E & lane_width==4) 
-         pll_pix2byte_RGB888_4lane u_pll_pix2byte_RGB888_4lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
+         pll_pix2byte_RGB888_4lane u_pll_pix2byte_RGB888_4lane(.RST(~reset_n), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
 endgenerate
   assign word_cnt = w_de? WC : 16'h0000;
      BYTE_PACKETIZER #(
@@ -168,16 +175,89 @@ endgenerate
          .byte_D1_in(byte_D1),
          .byte_D0_in(byte_D0),
 		  .hs_clk_en  (hs_clk_en)               ,
-    .hsxx_clk_en(hsxx_clk_en)         ,
+    .hsxx_clk_en(w_hsxx_clk_en_a)         ,
     .hs_data_en (hs_data_en)          ,
          .lp_clk  (lp_clk),
-         .lp_data (lp_data),
+         .lp_data (w_data_a),
          .byte_D3_out(byte_D3_out),
          .byte_D2_out(byte_D2_out),
-         .byte_D1_out(byte_D1_out),
-         .byte_D0_out(byte_D0_out)
+         .byte_D1_out(w_byte_D1_a),
+         .byte_D0_out(w_byte_D0_a)
 );
 
+ 
+wire w_reset_n;
+
+
+
+wire [7:0]   w_byte_D1_b;
+wire [7:0]   w_byte_D0_b;              
+wire   [1:0] w_lp1_out_b;
+wire  w_lp1_dir_b;
+
+wire  [1:0] w_lp0_out_b;         
+wire w_lp0_dir_b;
+wire w_hs_clk_en_b ;                                                       
+wire w_hs_data_en_b;
+wire w_hsxx_clk_en_b;
+
+wire  w_lp1_dir_out;     
+wire w_lp0_dir_out;
+wire w_hs_clk_en_out;
+
+assign w_lp1_dir_a = 1'b1;
+assign w_lp0_dir_a = 1'b1;
+
+Commando_Inicial Comand(
+	.i_clk(PIXCLK),
+	.o_Global_Enable (w_Global_Enable),
+	.reset_n (reset_n)         ,      //Resets the Design      
+    .CLKOP(CLKOP)            ,      //HS Clock  
+    .CLKOS (CLKOS)           ,      //HS Clock + 90 deg phase shift
+	
+    .byte_D1 (w_byte_D1_b)         ,
+    .byte_D0(w_byte_D0_b)          ,                    
+    .lp1_out(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+    .lp1_dir(w_lp1_dir_b)          ,        //LP (Low Power) Data Receive/Transmit Control for Data Lane 1 
+    .lp0_out(w_lp0_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 0         
+    .lp0_dir (w_lp0_dir_b)         ,        //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 
+    .hs_clk_en(w_hs_clk_en_b)        ,        //HS (High Speed) Clock Enable                                                          
+    .hs_data_en(w_hs_data_en_b)      ,            //HS (High Speed) Data Enable      
+    .hsxx_clk_en(w_hsxx_clk_en_b)	
+);
+
+DataFlow_Switch DataSPDT ( 
+    .i_state(i_Global_Enable),
+    .byte_D1_a(w_byte_D1_a)          ,
+    .byte_D0_a(w_byte_D0_a)          ,                                                                
+    .lp1_out_a(w_data_a)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+    .lp1_dir_a(w_lp1_dir_a)         ,                                                             
+    .lp0_out_a (done ? lp_data : {Lp,Ln})         ,        //LP (Low Power) Data Receiving Signals for Data Lane 0         
+    .lp0_dir_a  (w_lp0_dir_a)        ,                                                  
+    .hs_clk_en_a(~(|lp_clk)& done)        ,        //HS (High Speed) Clock Enable                                                          
+    .hs_data_en_a(~(|lp_data) & done)     ,            //HS (High Speed) Data Enable      
+    .hsxx_clk_en_a(w_hsxx_clk_en_a)	   , 
+	 
+	.byte_D1_b (w_byte_D1_b)         ,
+    .byte_D0_b (w_byte_D0_b)         ,                                                               
+    .lp1_out_b(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+	.lp1_dir_b(w_lp1_dir_b)          ,                                                               
+    .lp0_out_b(w_lp0_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 0         
+    .lp0_dir_b(w_lp0_dir_b)          ,                                                     
+    .hs_clk_en_b(w_hs_clk_en_b)        ,        //HS (High Speed) Clock Enable                                                          
+    .hs_data_en_b(w_hs_data_en_b)     ,            //HS (High Speed) Data Enable      
+    .hsxx_clk_en_b(w_hsxx_clk_en_b)	   ,
+	
+    .byte_D1(byte_D1_out)          ,
+    .byte_D0(byte_D0_out)          ,                                                                  
+    .lp1_out(lp_data)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
+    .lp1_dir(w_lp1_dir_out)          ,                                                                                                 
+    .lp0_out(w_LP0)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 0         
+    .lp0_dir (w_lp0_dir_out)         ,                                                           
+    .hs_clk_en(w_hs_clk_en_out)        ,        //HS (High Speed) Clock Enable                                                          
+    .hs_data_en(w_hs_data_en_out)     ,            //HS (High Speed) Data Enable      
+    .hsxx_clk_en(hsxx_clk_en)
+);
 
    DPHY_TX_INST u_DPHY_TX_INST (
           .reset_n         (reset_n)       ,      //Resets the Design                   
@@ -240,21 +320,20 @@ endgenerate
                .LP1        (LP1)           ,        
                .lp1_out    (lp_data)         ,        
                .lp1_in     ()              ,        
-               .lp1_dir    (1'b1)             ,        
+               .lp1_dir    (w_lp1_dir_out)             ,        
           `endif                                              
           `ifdef LP_0                                         
                .LP0        (LP0)           ,        
                .lp0_out    (w_LP0)         ,        
                .lp0_in     ()              ,        
-               .lp0_dir    (1'b1)             ,        
+               .lp0_dir    (w_lp0_dir_out)             ,        
           `endif                                         
-               .hs_clk_en  (~(|lp_clk)& done)         ,
+               .hs_clk_en  (w_hs_clk_en_out)         ,
                .hsxx_clk_en(hsxx_clk_en ),				   
-               .hs_data_en (~(|lp_data) & done)                  
+               .hs_data_en (w_hs_data_en_out)                  
 );      
 wire [1:0] w_LP0;	
 wire done_sim;
-assign w_LP0 = done ? lp_data : {Lp,Ln};	
 
 assign done_sim = done;
 
@@ -327,4 +406,7 @@ generate
         assign w_pixclk  = PIXCLK;
     end
 endgenerate
+
+
+
 endmodule

@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\xo3l_verilog\\synwork\\xo3l_verilog_xo3l_verilog_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog|-I|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\xo3l_verilog\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\xo3l_verilog\\synwork\\xo3l_verilog_xo3l_verilog_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog|-I|C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\xo3l_verilog\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_ver.exe":1603988322
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v":1603988454
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v":1603988454
@@ -8,14 +8,14 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603988590
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\compiler_directives.v":1644629925
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\colorbar_gen.v":1644625571
-#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\top.v":1644629944
+#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\top.v":1644877151
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\../../source/verilog/compiler_directives.v":1644629925
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\xo3l\\oddrx4.v":1418948052
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\xo3l\\ipexpress\\pll_pix2byte_RGB888_2lane.v":1419533930
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\lp_hs_dly_ctrl.v":1418948102
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\io_controller_tx.v":1419209014
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\compiler_directives.v":1644629925
-#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\dphy_tx_inst.v":1419209032
+#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\dphy_tx_inst.v":1644872176
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\../../source/verilog/compiler_directives.v":1644629925
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\dcs_rom.v":1373983610
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\dcs_encoder.v":1373983602
@@ -23,6 +23,9 @@
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\crc16_2lane_bb.v":1374595460
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\parallel2byte_bb.v":1419580044
 #CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\source\\verilog\\packetheader_bb.v":1374525792
+#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\Commando_Inicial.v":1644876802
+#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\Mux_mod.v":1644874142
+#CUR:"C:\\Users\\migue\\Downloads\\DSITXReferenceDesign(2)\\rd1184\\project\\xo3l\\verilog\\DataFlow_Switch.v":1644874782
 0			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\compiler_directives.v" verilog
 1			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\colorbar_gen.v" verilog
 2			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\top.v" verilog
@@ -38,10 +41,13 @@
 12			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\crc16_2lane_bb.v" verilog
 13			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\parallel2byte_bb.v" verilog
 14			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\source\verilog\packetheader_bb.v" verilog
+15			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Commando_Inicial.v" verilog
+16			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\Mux_mod.v" verilog
+17			"C:\Users\migue\Downloads\DSITXReferenceDesign(2)\rd1184\project\xo3l\verilog\DataFlow_Switch.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
-2 1 10 9 8 6 11 5 3
+2 1 10 9 8 17 15 6 11 5 3
 3 -1
 4 -1
 5 -1
@@ -54,23 +60,30 @@
 12 -1
 13 -1
 14 -1
+15 3 8
+16 -1
+17 3 8 16
 #Dependency Lists(Users Of)
 0 8 7
 1 2
 2 -1
-3 8 2
+3 17 15 8 2
 4 8
 5 2
 6 2
 7 8
-8 2
+8 17 15 2
 9 2
 10 2
 11 2
 12 11
 13 11
 14 11
+15 2
+16 17
+17 2
 #Design Unit to File Association
+module work Mux_mod 16
 module work crc16_2lane 12
 module work packetheader 14
 module work parallel2byte 13
@@ -79,6 +92,8 @@ module work oDDRx4 4
 module work DCS_Encoder 10
 module work DCS_ROM 9
 module work DPHY_TX_INST 8
+module work DataFlow_Switch 17
+module work Commando_Inicial 15
 module work LP_HS_DELAY_CNTRL 6
 module work BYTE_PACKETIZER 11
 module work pll_pix2byte_RGB888_2lane 5

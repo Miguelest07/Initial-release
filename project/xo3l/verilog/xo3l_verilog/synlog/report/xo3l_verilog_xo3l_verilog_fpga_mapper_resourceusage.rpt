@@ -3,7 +3,7 @@ Part: lcmxo3l_6900c-5
 
 Register bits: 170 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       8
+I/O cells:       9
 
 Details:
 CCU2D:          58
@@ -19,13 +19,12 @@ FD1S3AX:        85
 FD1S3AY:        2
 FD1S3IX:        18
 GSR:            1
-IB:             1
+IB:             2
 INV:            4
 L6MUX21:        2
-OB:             4
-OBZ:            3
+OBZ:            7
 ODDRX4B:        3
-ORCALUT4:       262
+ORCALUT4:       281
 OSCH:           1
 PFUMX:          20
 PUR:            1
@@ -33,4 +32,4 @@ ROM128X1A:      8
 ROM16X1A:       9
 ROM32X1A:       8
 VHI:            5
-VLO:            8
+VLO:            12
