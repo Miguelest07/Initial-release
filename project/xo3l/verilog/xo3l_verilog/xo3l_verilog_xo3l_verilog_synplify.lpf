@@ -4,8 +4,9 @@
 
 # Period Constraints 
 #FREQUENCY NET "u_DPHY_TX_INST/u_oDDRx4/sclk" 200.0 MHz;
-#FREQUENCY NET "w_pixclk" 24.2 MHz;
+#FREQUENCY PORT "PIXCLK" 200.0 MHz;
 #FREQUENCY NET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk" 200.0 MHz;
+#FREQUENCY NET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP" 200.0 MHz;
 
 
 # Output Constraints 
@@ -17,12 +18,18 @@
 
 
 # Block Path Constraints 
-#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk" TO CLKNET "w_pixclk";
+#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk";
+#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP" TO CLKNET "PIXCLK_c";
+#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP";
+#BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk" TO CLKNET "PIXCLK_c";
 #BLOCK PATH FROM CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
-#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk";
-#BLOCK PATH FROM CLKNET "w_pixclk" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "PIXCLK_c" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP";
+#BLOCK PATH FROM CLKNET "PIXCLK_c" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk";
+#BLOCK PATH FROM CLKNET "PIXCLK_c" TO CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk";
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/CLKOP";
 #BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "genblk2.u_pll_pix2byte_RGB888_2lane/byte_clk";
-#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "w_pixclk";
+#BLOCK PATH FROM CLKNET "u_DPHY_TX_INST/u_oDDRx4/sclk" TO CLKNET "PIXCLK_c";
 
 BLOCK ASYNCPATHS;
 

@@ -1,4 +1,4 @@
-# Mon Feb 14 16:44:52 2022
+# Tue Feb 15 16:14:44 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,13 +11,13 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DESKTOP-NE8NF87
+Hostname: LAPTOP-BQ95DNMF
 
 Implementation : xo3l_verilog
 Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
 
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 118MB peak: 118MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
 
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
@@ -26,7 +26,7 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
@@ -38,18 +38,9 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
 
-@N: MO111 :|Tristate driver w_byte_D1_b_t[0] (in view: work.top(verilog)) on net w_byte_D1_b[0] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[1] (in view: work.top(verilog)) on net w_byte_D1_b[1] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[2] (in view: work.top(verilog)) on net w_byte_D1_b[2] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[3] (in view: work.top(verilog)) on net w_byte_D1_b[3] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[4] (in view: work.top(verilog)) on net w_byte_D1_b[4] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[5] (in view: work.top(verilog)) on net w_byte_D1_b[5] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[6] (in view: work.top(verilog)) on net w_byte_D1_b[6] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D1_b_t[7] (in view: work.top(verilog)) on net w_byte_D1_b[7] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D0_b_t[0] (in view: work.top(verilog)) on net w_byte_D0_b[0] (in view: work.top(verilog)) has its enable tied to GND.
-@N: MO111 :|Tristate driver w_byte_D0_b_t[1] (in view: work.top(verilog)) on net w_byte_D0_b[1] (in view: work.top(verilog)) has its enable tied to GND.
-@W: BN114 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
-@W: BN114 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@N: MO111 :|Tristate driver w_lp_clk_out_t (in view: work.top(verilog)) on net w_lp_clk_out (in view: work.top(verilog)) has its enable tied to GND.
+@W: BN114 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
+@W: BN114 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.
 
 Available hyper_sources - for debug and ip models
 	None Found
@@ -57,90 +48,102 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
-@A: BN291 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
-@N: MO231 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog) instance color_cntr[11:0] 
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Removing sequential instance u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Boundary register u_BYTE_PACKETIZER.q_WC[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][31] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][30] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][29] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][28] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][27] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][26] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][25] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][24] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][23] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][22] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][21] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][20] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][19] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][18] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][17] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":113:4:113:9|Removing sequential instance hold_data\[0\][16] (in view: work.LP_HS_DELAY_CNTRL(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance data_dly\[54\]\.hold_data_CF5[5:0] 
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_low_cnt[15:0] 
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_en_high_cnt[15:0] 
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Found counter in view:work.LP_HS_DELAY_CNTRL(verilog) instance hs_extended[5:0] 
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":67:3:67:8|Found counter in view:work.DCS_ROM(verilog) instance wait_cnt[11:0] 
+@N: MO231 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":104:1:104:6|Found counter in view:work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog) instance color_cntr[11:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 177MB peak: 177MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
-@N: FO126 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
-@N: FX214 :"c:\users\roman perez\documents\github\initial-release\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
+@N: FO126 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
+@N: FX214 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    -2.97ns		 289 /       166
-   2		0h:00m:02s		    -2.97ns		 281 /       166
-   3		0h:00m:02s		    -2.35ns		 281 /       166
+   1		0h:00m:01s		    -3.24ns		 290 /       169
+   2		0h:00m:01s		    -3.24ns		 281 /       169
+   3		0h:00m:01s		    -2.73ns		 281 /       169
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[7] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[0] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[3] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
 
-   4		0h:00m:02s		    -2.78ns		 282 /       166
-   5		0h:00m:02s		    -1.75ns		 283 /       166
-   6		0h:00m:02s		    -2.15ns		 285 /       166
-   7		0h:00m:02s		    -1.70ns		 285 /       166
+   4		0h:00m:01s		    -3.20ns		 284 /       172
+   5		0h:00m:01s		    -3.20ns		 285 /       172
 
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[8] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[6] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[9] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
+Added 3 Registers via timing driven replication
+Added 3 LUTs via timing driven replication
 
-   8		0h:00m:02s		    -1.70ns		 285 /       166
+   6		0h:00m:02s		    -2.94ns		 289 /       175
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 183MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 185MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 
 Warning: Forcing use of GSR for flip-flops and
 latches that do not specify sets or resets
+   Comand.r_hs_data_en (in view: work.top(verilog))
+   Comand.r_lp0_out[1] (in view: work.top(verilog))
+   Comand.r_lp0_out[0] (in view: work.top(verilog))
    u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[5] (in view: work.top(verilog))
    u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[4] (in view: work.top(verilog))
    u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CF5[3] (in view: work.top(verilog))
@@ -165,42 +168,43 @@ latches that do not specify sets or resets
    u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 183MB peak: 183MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 185MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 184MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 186MB)
 
-Writing Analyst data base C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
+Writing Analyst data base C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 184MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 186MB)
 
 Writing EDIF Netlist and constraint files
-@N: FX1056 |Writing EDF file: C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
+@N: FX1056 |Writing EDF file: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 188MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 190MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 191MB)
 
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
-@W: MT246 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_DPHY_TX_INST.u_oDDRx4.sclk.
-@W: MT420 |Found inferred clock top|w_pixclk_inferred_clock with period 41.36ns. Please declare a user-defined clock on net w_pixclk.
+@W: MT420 |Found inferred clock top|PIXCLK with period 5.00ns. Please declare a user-defined clock on port PIXCLK.
 @W: MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net genblk2\.u_pll_pix2byte_RGB888_2lane.byte_clk.
+@W: MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOP.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon Feb 14 16:44:56 2022
+# Timing report written on Tue Feb 15 16:14:47 2022
 #
 
 
 Top view:               top
-Requested Frequency:    24.2 MHz
+Requested Frequency:    200.0 MHz
 Wire load mode:         top
 Paths requested:        3
 Constraint File(s):    
@@ -214,16 +218,18 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -3.164
+Worst slack in design: -4.448
 
                                                     Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                      Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 oDDRx4|sclk_inferred_clock                          200.0 MHz     360.7 MHz     5.000         2.772         2.228      inferred     Inferred_clkgroup_0
+pll_pix2byte_RGB888_2lane|CLKOP_inferred_clock      200.0 MHz     NA            5.000         NA            NA         inferred     Inferred_clkgroup_3
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     200.0 MHz     122.5 MHz     5.000         8.165         -3.164     inferred     Inferred_clkgroup_2
-top|w_pixclk_inferred_clock                         24.2 MHz      102.8 MHz     41.356        9.728         31.629     inferred     Inferred_clkgroup_1
+top|PIXCLK                                          200.0 MHz     105.8 MHz     5.000         9.448         -4.448     inferred     Inferred_clkgroup_1
 System                                              200.0 MHz     918.4 MHz     5.000         1.089         3.911      system       system_clkgroup    
 =======================================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
 
 
@@ -240,9 +246,9 @@ System                                           System                         
 System                                           pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       0.267   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       System                                           |  5.000       2.875   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  5.000       2.228   |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                      System                                           |  41.356      40.089  |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                      top|w_pixclk_inferred_clock                      |  41.356      31.629  |  No paths    -      |  No paths    -      |  No paths    -    
-top|w_pixclk_inferred_clock                      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       System                                           |  5.000       3.732   |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       top|PIXCLK                                       |  5.000       -4.448  |  No paths    -      |  No paths    -      |  No paths    -    
+top|PIXCLK                                       pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       0.668   |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       -3.165  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================================================================================================
@@ -397,21 +403,21 @@ Detailed Report for Clock: pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                           Starting                                                                                  Arrival           
-Instance                   Reference                                           Type        Pin     Net               Time        Slack 
-                           Clock                                                                                                       
----------------------------------------------------------------------------------------------------------------------------------------
-u_DCS_ROM.escape_en        pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3IX     Q       dcs_escape_en     1.272       -3.164
-u_DCS_ROM.wait_cnt[1]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[1]       1.180       -3.072
-u_DCS_ROM.wait_cnt[3]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[3]       1.180       -3.072
-u_DCS_ROM.wait_cnt[4]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[4]       1.180       -3.072
-u_DCS_ROM.wait_cnt[6]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[6]       1.180       -3.072
-u_DCS_ROM.wait_cnt[7]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[7]       1.180       -3.072
-u_DCS_ROM.wait_cnt[8]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[8]       1.180       -3.072
-u_DCS_ROM.wait_cnt[9]      pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[9]       1.180       -3.072
-u_DCS_ROM.wait_cnt[10]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[10]      1.180       -3.072
-u_DCS_ROM.data_en          pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       dcs_data_en       1.108       -3.001
-=======================================================================================================================================
+                             Starting                                                                                  Arrival           
+Instance                     Reference                                           Type        Pin     Net               Time        Slack 
+                             Clock                                                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en          pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3IX     Q       dcs_escape_en     1.272       -3.164
+u_DCS_Encoder.bitcntr[0]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       bitcntr[0]        1.232       -3.124
+u_DCS_Encoder.bitcntr[1]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       bitcntr[1]        1.204       -3.096
+u_DCS_Encoder.bitcntr[3]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       bitcntr[3]        1.188       -3.080
+u_DCS_Encoder.bitcntr[2]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       bitcntr[2]        1.180       -3.072
+u_DCS_Encoder.bitcntr[4]     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       bitcntr[4]        1.148       -3.041
+u_DCS_ROM.wait_cnt[0]        pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[0]       1.148       -3.041
+u_DCS_ROM.data_en            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       dcs_data_en       1.108       -3.001
+u_DCS_ROM.wait_cnt[1]        pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[1]       1.148       -2.096
+u_DCS_ROM.wait_cnt[2]        pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     FD1S3AX     Q       wait_cnt[2]       1.044       -2.096
+=========================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -447,7 +453,7 @@ Path information for path number 1:
 
     - Propagation time:                      8.059
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -3.164
+    = Slack (non-critical) :                 -3.164
 
     Number of logic level(s):                9
     Starting point:                          u_DCS_ROM.escape_en / Q
@@ -455,40 +461,40 @@ Path information for path number 1:
     The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                   Pin      Pin               Arrival     No. of    
-Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------
-u_DCS_ROM.escape_en                 FD1S3IX      Q        Out     1.272     1.272 r     -         
-dcs_escape_en                       Net          -        -       -         -           18        
-u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     B        In      0.000     1.272 r     -         
-u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     Z        Out     1.017     2.289 f     -         
-data_en_RNI5KSK                     Net          -        -       -         -           1         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     A        In      0.000     2.289 f     -         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.305 f     -         
-G_1                                 Net          -        -       -         -           1         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.305 f     -         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.394 f     -         
-escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.394 f     -         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.939 r     -         
-un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.939 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     6.082 r     -         
-un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     6.082 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.224 r     -         
-un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.224 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.367 r     -         
-un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.367 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.510 r     -         
-un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.510 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S1       Out     1.549     8.059 r     -         
-un1_byte_cnt_cry_9_0_S1             Net          -        -       -         -           1         
-u_DCS_ROM.byte_cnt[10]              FD1S3AX      D        In      0.000     8.059 r     -         
-==================================================================================================
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en                FD1S3IX      Q        Out     1.272     1.272 r     -         
+dcs_escape_en                      Net          -        -       -         -           18        
+u_DCS_ROM.un22_byte_cnt_0_a2_3     ORCALUT4     B        In      0.000     1.272 r     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_3     ORCALUT4     Z        Out     1.017     2.289 f     -         
+un22_byte_cnt_0_a2_3               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     A        In      0.000     2.289 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     Z        Out     1.017     3.305 f     -         
+un22_byte_cnt_0_a2_1               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     D        In      0.000     3.305 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     Z        Out     1.089     4.394 f     -         
+un22_byte_cnt_0_a2                 Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        B0       In      0.000     4.394 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        COUT     Out     1.544     5.939 r     -         
+un1_byte_cnt_cry_0                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        CIN      In      0.000     5.939 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        COUT     Out     0.143     6.082 r     -         
+un1_byte_cnt_cry_2                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        CIN      In      0.000     6.082 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        COUT     Out     0.143     6.224 r     -         
+un1_byte_cnt_cry_4                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        CIN      In      0.000     6.224 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        COUT     Out     0.143     6.367 r     -         
+un1_byte_cnt_cry_6                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        CIN      In      0.000     6.367 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        COUT     Out     0.143     6.510 r     -         
+un1_byte_cnt_cry_8                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        CIN      In      0.000     6.510 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        S1       Out     1.549     8.059 r     -         
+un1_byte_cnt_cry_9_0_S1            Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[10]             FD1S3AX      D        In      0.000     8.059 r     -         
+=================================================================================================
 
 
 Path information for path number 2: 
@@ -499,7 +505,7 @@ Path information for path number 2:
 
     - Propagation time:                      8.059
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -3.164
+    = Slack (non-critical) :                 -3.164
 
     Number of logic level(s):                9
     Starting point:                          u_DCS_ROM.escape_en / Q
@@ -507,40 +513,40 @@ Path information for path number 2:
     The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                   Pin      Pin               Arrival     No. of    
-Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------
-u_DCS_ROM.escape_en                 FD1S3IX      Q        Out     1.272     1.272 r     -         
-dcs_escape_en                       Net          -        -       -         -           18        
-u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     B        In      0.000     1.272 r     -         
-u_DCS_ROM.data_en_RNI5KSK           ORCALUT4     Z        Out     1.017     2.289 f     -         
-data_en_RNI5KSK                     Net          -        -       -         -           1         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     A        In      0.000     2.289 f     -         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.305 f     -         
-G_1                                 Net          -        -       -         -           1         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.305 f     -         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.394 f     -         
-escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.394 f     -         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.939 r     -         
-un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.939 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     6.082 r     -         
-un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     6.082 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.224 r     -         
-un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.224 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.367 r     -         
-un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.367 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.510 r     -         
-un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.510 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S0       Out     1.549     8.059 r     -         
-un1_byte_cnt_cry_9_0_S0             Net          -        -       -         -           1         
-u_DCS_ROM.byte_cnt[9]               FD1S3AX      D        In      0.000     8.059 r     -         
-==================================================================================================
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DCS_ROM.escape_en                FD1S3IX      Q        Out     1.272     1.272 r     -         
+dcs_escape_en                      Net          -        -       -         -           18        
+u_DCS_ROM.un22_byte_cnt_0_a2_3     ORCALUT4     B        In      0.000     1.272 r     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_3     ORCALUT4     Z        Out     1.017     2.289 f     -         
+un22_byte_cnt_0_a2_3               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     A        In      0.000     2.289 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     Z        Out     1.017     3.305 f     -         
+un22_byte_cnt_0_a2_1               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     D        In      0.000     3.305 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     Z        Out     1.089     4.394 f     -         
+un22_byte_cnt_0_a2                 Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        B0       In      0.000     4.394 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        COUT     Out     1.544     5.939 r     -         
+un1_byte_cnt_cry_0                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        CIN      In      0.000     5.939 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        COUT     Out     0.143     6.082 r     -         
+un1_byte_cnt_cry_2                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        CIN      In      0.000     6.082 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        COUT     Out     0.143     6.224 r     -         
+un1_byte_cnt_cry_4                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        CIN      In      0.000     6.224 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        COUT     Out     0.143     6.367 r     -         
+un1_byte_cnt_cry_6                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        CIN      In      0.000     6.367 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        COUT     Out     0.143     6.510 r     -         
+un1_byte_cnt_cry_8                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        CIN      In      0.000     6.510 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        S0       Out     1.549     8.059 r     -         
+un1_byte_cnt_cry_9_0_S0            Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[9]              FD1S3AX      D        In      0.000     8.059 r     -         
+=================================================================================================
 
 
 Path information for path number 3: 
@@ -549,56 +555,56 @@ Path information for path number 3:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         4.894
 
-    - Propagation time:                      7.967
+    - Propagation time:                      8.019
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -3.072
+    = Slack (non-critical) :                 -3.125
 
     Number of logic level(s):                9
-    Starting point:                          u_DCS_ROM.wait_cnt[1] / Q
+    Starting point:                          u_DCS_Encoder.bitcntr[0] / Q
     Ending point:                            u_DCS_ROM.byte_cnt[10] / D
     The start point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
     The end   point is clocked by            pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                   Pin      Pin               Arrival     No. of    
-Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------
-u_DCS_ROM.wait_cnt[1]               FD1S3AX      Q        Out     1.180     1.180 r     -         
-wait_cnt[1]                         Net          -        -       -         -           5         
-u_DCS_ROM.wait_cnt_RNIPBOA[1]       ORCALUT4     A        In      0.000     1.180 r     -         
-u_DCS_ROM.wait_cnt_RNIPBOA[1]       ORCALUT4     Z        Out     1.017     2.197 f     -         
-wait_cnt_RNIPBOA[1]                 Net          -        -       -         -           1         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     C        In      0.000     2.197 f     -         
-u_DCS_ROM.wait_cnt_RNI44OI1[11]     ORCALUT4     Z        Out     1.017     3.213 f     -         
-G_1                                 Net          -        -       -         -           1         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     A        In      0.000     3.213 f     -         
-u_DCS_ROM.escape_enc_0_RNIJ4VC4     ORCALUT4     Z        Out     1.089     4.302 f     -         
-escape_enc_0_RNIJ4VC4               Net          -        -       -         -           2         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        B0       In      0.000     4.302 f     -         
-u_DCS_ROM.un1_byte_cnt_cry_0_0      CCU2D        COUT     Out     1.544     5.847 r     -         
-un1_byte_cnt_cry_0                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        CIN      In      0.000     5.847 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_1_0      CCU2D        COUT     Out     0.143     5.989 r     -         
-un1_byte_cnt_cry_2                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        CIN      In      0.000     5.989 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_3_0      CCU2D        COUT     Out     0.143     6.132 r     -         
-un1_byte_cnt_cry_4                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        CIN      In      0.000     6.132 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_5_0      CCU2D        COUT     Out     0.143     6.275 r     -         
-un1_byte_cnt_cry_6                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        CIN      In      0.000     6.275 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_7_0      CCU2D        COUT     Out     0.143     6.418 r     -         
-un1_byte_cnt_cry_8                  Net          -        -       -         -           1         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        CIN      In      0.000     6.418 r     -         
-u_DCS_ROM.un1_byte_cnt_cry_9_0      CCU2D        S1       Out     1.549     7.967 r     -         
-un1_byte_cnt_cry_9_0_S1             Net          -        -       -         -           1         
-u_DCS_ROM.byte_cnt[10]              FD1S3AX      D        In      0.000     7.967 r     -         
-==================================================================================================
+Instance / Net                                  Pin      Pin               Arrival     No. of    
+Name                               Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+u_DCS_Encoder.bitcntr[0]           FD1S3AX      Q        Out     1.232     1.232 r     -         
+bitcntr[0]                         Net          -        -       -         -           10        
+u_DCS_ROM.un22_byte_cnt_0_a2_4     ORCALUT4     A        In      0.000     1.232 r     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_4     ORCALUT4     Z        Out     1.017     2.249 f     -         
+un22_byte_cnt_0_a2_4               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     B        In      0.000     2.249 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2_1     ORCALUT4     Z        Out     1.017     3.265 f     -         
+un22_byte_cnt_0_a2_1               Net          -        -       -         -           1         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     D        In      0.000     3.265 f     -         
+u_DCS_ROM.un22_byte_cnt_0_a2       ORCALUT4     Z        Out     1.089     4.354 f     -         
+un22_byte_cnt_0_a2                 Net          -        -       -         -           2         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        B0       In      0.000     4.354 f     -         
+u_DCS_ROM.un1_byte_cnt_cry_0_0     CCU2D        COUT     Out     1.544     5.899 r     -         
+un1_byte_cnt_cry_0                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        CIN      In      0.000     5.899 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_1_0     CCU2D        COUT     Out     0.143     6.042 r     -         
+un1_byte_cnt_cry_2                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        CIN      In      0.000     6.042 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_3_0     CCU2D        COUT     Out     0.143     6.184 r     -         
+un1_byte_cnt_cry_4                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        CIN      In      0.000     6.184 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_5_0     CCU2D        COUT     Out     0.143     6.327 r     -         
+un1_byte_cnt_cry_6                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        CIN      In      0.000     6.327 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_7_0     CCU2D        COUT     Out     0.143     6.470 r     -         
+un1_byte_cnt_cry_8                 Net          -        -       -         -           1         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        CIN      In      0.000     6.470 r     -         
+u_DCS_ROM.un1_byte_cnt_cry_9_0     CCU2D        S1       Out     1.549     8.019 r     -         
+un1_byte_cnt_cry_9_0_S1            Net          -        -       -         -           1         
+u_DCS_ROM.byte_cnt[10]             FD1S3AX      D        In      0.000     8.019 r     -         
+=================================================================================================
 
 
 
 
 ====================================
-Detailed Report for Clock: top|w_pixclk_inferred_clock
+Detailed Report for Clock: top|PIXCLK
 ====================================
 
 
@@ -606,41 +612,41 @@ Detailed Report for Clock: top|w_pixclk_inferred_clock
 Starting Points with Worst Slack
 ********************************
 
-                                        Starting                                                            Arrival           
-Instance                                Reference                       Type        Pin     Net             Time        Slack 
-                                        Clock                                                                                 
-------------------------------------------------------------------------------------------------------------------------------
-genblk4\.u_colorbar_gen.pixcnt[0]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[0]       1.188       31.629
-genblk4\.u_colorbar_gen.pixcnt[1]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[1]       1.180       31.637
-genblk4\.u_colorbar_gen.pixcnt[2]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[2]       1.180       31.637
-genblk4\.u_colorbar_gen.pixcnt[3]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[3]       1.180       31.637
-genblk4\.u_colorbar_gen.pixcnt[9]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[9]       1.180       32.517
-genblk4\.u_colorbar_gen.pixcnt[8]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[8]       1.148       32.550
-genblk4\.u_colorbar_gen.pixcnt[5]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[5]       1.188       32.645
-genblk4\.u_colorbar_gen.pixcnt[4]       top|w_pixclk_inferred_clock     FD1S3AX     Q       pixcnt[4]       1.180       32.654
-genblk4\.u_colorbar_gen.linecnt[8]      top|w_pixclk_inferred_clock     FD1S3AX     Q       linecnt[8]      1.148       32.702
-genblk4\.u_colorbar_gen.linecnt[10]     top|w_pixclk_inferred_clock     FD1S3AX     Q       linecnt[10]     1.148       32.702
-==============================================================================================================================
+                                           Starting                                              Arrival           
+Instance                                   Reference      Type        Pin     Net                Time        Slack 
+                                           Clock                                                                   
+-------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[10]        top|PIXCLK     FD1S3AX     Q       linecnt[10]        1.188       -4.448
+genblk4\.u_colorbar_gen.linecnt[1]         top|PIXCLK     FD1S3AX     Q       linecnt[1]         1.180       -4.440
+genblk4\.u_colorbar_gen.linecnt[2]         top|PIXCLK     FD1S3AX     Q       linecnt[2]         1.180       -4.440
+genblk4\.u_colorbar_gen.linecnt[4]         top|PIXCLK     FD1S3AX     Q       linecnt[4]         1.180       -4.440
+genblk4\.u_colorbar_gen.linecnt[0]         top|PIXCLK     FD1S3AX     Q       linecnt[0]         1.108       -4.368
+genblk4\.u_colorbar_gen.linecnt[6]         top|PIXCLK     FD1S3AX     Q       linecnt[6]         1.108       -4.368
+genblk4\.u_colorbar_gen.pixcnt[7]          top|PIXCLK     FD1S3AX     Q       pixcnt[7]          1.108       -3.933
+genblk4\.u_colorbar_gen.pixcnt_fast[6]     top|PIXCLK     FD1S3AX     Q       pixcnt_fast[6]     0.972       -3.797
+genblk4\.u_colorbar_gen.pixcnt_fast[8]     top|PIXCLK     FD1S3AX     Q       pixcnt_fast[8]     0.972       -3.797
+genblk4\.u_colorbar_gen.pixcnt_fast[9]     top|PIXCLK     FD1S3AX     Q       pixcnt_fast[9]     0.972       -3.797
+===================================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                        Starting                                                                 Required           
-Instance                                Reference                       Type        Pin     Net                  Time         Slack 
-                                        Clock                                                                                       
-------------------------------------------------------------------------------------------------------------------------------------
-genblk4\.u_colorbar_gen.linecnt[10]     top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[10]     41.445       31.629
-genblk4\.u_colorbar_gen.linecnt[8]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[8]      41.445       31.771
-genblk4\.u_colorbar_gen.linecnt[6]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[6]      41.445       31.914
-genblk4\.u_colorbar_gen.linecnt[9]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[9]       41.251       32.051
-genblk4\.u_colorbar_gen.linecnt[3]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[3]      41.445       32.057
-genblk4\.u_colorbar_gen.linecnt[4]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[4]      41.445       32.057
-genblk4\.u_colorbar_gen.linecnt[7]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[7]       41.251       32.194
-genblk4\.u_colorbar_gen.linecnt[1]      top|w_pixclk_inferred_clock     FD1S3AX     D       un65_linecnt[1]      41.445       32.200
-genblk4\.u_colorbar_gen.linecnt[5]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[5]       41.251       32.337
-genblk4\.u_colorbar_gen.linecnt[2]      top|w_pixclk_inferred_clock     FD1S3AX     D       un2_linecnt[2]       41.251       32.622
-====================================================================================================================================
+                                        Starting                                                Required           
+Instance                                Reference      Type        Pin     Net                  Time         Slack 
+                                        Clock                                                                      
+-------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[10]     top|PIXCLK     FD1S3AX     D       un65_linecnt[10]     5.089        -4.448
+genblk4\.u_colorbar_gen.linecnt[8]      top|PIXCLK     FD1S3AX     D       un65_linecnt[8]      5.089        -4.305
+genblk4\.u_colorbar_gen.linecnt[6]      top|PIXCLK     FD1S3AX     D       un65_linecnt[6]      5.089        -4.162
+genblk4\.u_colorbar_gen.linecnt[9]      top|PIXCLK     FD1S3AX     D       un2_linecnt[9]       4.894        -4.025
+genblk4\.u_colorbar_gen.linecnt[3]      top|PIXCLK     FD1S3AX     D       un65_linecnt[3]      5.089        -4.019
+genblk4\.u_colorbar_gen.linecnt[4]      top|PIXCLK     FD1S3AX     D       un65_linecnt[4]      5.089        -4.019
+genblk4\.u_colorbar_gen.linecnt[7]      top|PIXCLK     FD1S3AX     D       un2_linecnt[7]       4.894        -3.882
+genblk4\.u_colorbar_gen.linecnt[1]      top|PIXCLK     FD1S3AX     D       un65_linecnt[1]      5.089        -3.877
+genblk4\.u_colorbar_gen.linecnt[5]      top|PIXCLK     FD1S3AX     D       un2_linecnt[5]       4.894        -3.740
+genblk4\.u_colorbar_gen.linecnt[2]      top|PIXCLK     FD1S3AX     D       un2_linecnt[2]       4.894        -3.454
+===================================================================================================================
 
 
 
@@ -649,177 +655,177 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      41.356
+      Requested Period:                      5.000
     - Setup time:                            -0.089
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         41.445
+    = Required time:                         5.089
 
-    - Propagation time:                      9.816
+    - Propagation time:                      9.537
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 31.629
+    = Slack (critical) :                     -4.448
 
     Number of logic level(s):                11
-    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[0] / Q
+    Starting point:                          genblk4\.u_colorbar_gen.linecnt[10] / Q
     Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
-    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
-    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The start point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-genblk4\.u_colorbar_gen.pixcnt[0]                   FD1S3AX      Q        Out     1.188     1.188 r     -         
-pixcnt[0]                                           Net          -        -       -         -           6         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     A        In      0.000     1.188 r     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.205 f     -         
-un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.205 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.221 f     -         
-N_50                                                Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.221 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.518 f     -         
-un5_pixcnt                                          Net          -        -       -         -           13        
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.518 f     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.535 r     -         
-N_26_i                                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.535 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.080 r     -         
-un2_linecnt_cry_0                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.080 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.222 r     -         
-un2_linecnt_cry_2                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.222 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.365 r     -         
-un2_linecnt_cry_4                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.365 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.508 r     -         
-un2_linecnt_cry_6                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.508 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.651 r     -         
-un2_linecnt_cry_8                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.651 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.200 r     -         
-un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.200 r     -         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.816 r     -         
-un65_linecnt[10]                                    Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.816 r     -         
-==================================================================================================================
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[10]                   FD1S3AX      Q        Out     1.188     1.188 r     -         
+linecnt[10]                                           Net          -        -       -         -           6         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_4     ORCALUT4     C        In      0.000     1.188 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_4     ORCALUT4     Z        Out     1.017     2.205 r     -         
+m15_i_a5_1_2_0                                        Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     D        In      0.000     2.205 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     Z        Out     1.017     3.221 r     -         
+N_8_0                                                 Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     A        In      0.000     3.221 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     4.238 f     -         
+un2_linecnt_cry_0_0_RNO_0                             Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     B        In      0.000     4.238 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     5.255 f     -         
+un38_N_5_mux                                          Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     5.255 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     6.800 r     -         
+un2_linecnt_cry_0                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     6.800 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.942 r     -         
+un2_linecnt_cry_2                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.942 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     7.085 r     -         
+un2_linecnt_cry_4                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     7.085 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     7.228 r     -         
+un2_linecnt_cry_6                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     7.228 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     7.371 r     -         
+un2_linecnt_cry_8                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        CIN      In      0.000     7.371 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        S1       Out     1.549     8.920 r     -         
+un2_linecnt_cry_9_0_S1                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     B        In      0.000     8.920 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     Z        Out     0.617     9.537 r     -         
+un65_linecnt[10]                                      Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                   FD1S3AX      D        In      0.000     9.537 r     -         
+====================================================================================================================
 
 
 Path information for path number 2: 
-      Requested Period:                      41.356
+      Requested Period:                      5.000
     - Setup time:                            -0.089
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         41.445
+    = Required time:                         5.089
 
-    - Propagation time:                      9.809
+    - Propagation time:                      9.528
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 31.637
+    = Slack (non-critical) :                 -4.440
 
     Number of logic level(s):                11
-    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[1] / Q
+    Starting point:                          genblk4\.u_colorbar_gen.linecnt[1] / Q
     Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
-    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
-    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The start point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-genblk4\.u_colorbar_gen.pixcnt[1]                   FD1S3AX      Q        Out     1.180     1.180 r     -         
-pixcnt[1]                                           Net          -        -       -         -           5         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     B        In      0.000     1.180 r     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.197 f     -         
-un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
-N_50                                                Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
-un5_pixcnt                                          Net          -        -       -         -           13        
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
-N_26_i                                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
-un2_linecnt_cry_0                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.072 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.214 r     -         
-un2_linecnt_cry_2                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.214 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.357 r     -         
-un2_linecnt_cry_4                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.357 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.500 r     -         
-un2_linecnt_cry_6                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.500 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.643 r     -         
-un2_linecnt_cry_8                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.643 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.192 r     -         
-un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.192 r     -         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.809 r     -         
-un65_linecnt[10]                                    Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.809 r     -         
-==================================================================================================================
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[1]                    FD1S3AX      Q        Out     1.180     1.180 r     -         
+linecnt[1]                                            Net          -        -       -         -           5         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_3     ORCALUT4     B        In      0.000     1.180 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_3     ORCALUT4     Z        Out     1.017     2.197 f     -         
+un2_linecnt_cry_0_0_RNO_3                             Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     A        In      0.000     2.197 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     Z        Out     1.017     3.213 r     -         
+N_8_0                                                 Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     A        In      0.000     3.213 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     4.230 f     -         
+un2_linecnt_cry_0_0_RNO_0                             Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     B        In      0.000     4.230 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     5.247 f     -         
+un38_N_5_mux                                          Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     5.247 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     6.792 r     -         
+un2_linecnt_cry_0                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     6.792 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.934 r     -         
+un2_linecnt_cry_2                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.934 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     7.077 r     -         
+un2_linecnt_cry_4                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     7.077 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     7.220 r     -         
+un2_linecnt_cry_6                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     7.220 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     7.363 r     -         
+un2_linecnt_cry_8                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        CIN      In      0.000     7.363 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        S1       Out     1.549     8.912 r     -         
+un2_linecnt_cry_9_0_S1                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     B        In      0.000     8.912 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     Z        Out     0.617     9.528 r     -         
+un65_linecnt[10]                                      Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                   FD1S3AX      D        In      0.000     9.528 r     -         
+====================================================================================================================
 
 
 Path information for path number 3: 
-      Requested Period:                      41.356
+      Requested Period:                      5.000
     - Setup time:                            -0.089
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         41.445
+    = Required time:                         5.089
 
-    - Propagation time:                      9.809
+    - Propagation time:                      9.528
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 31.637
+    = Slack (non-critical) :                 -4.440
 
     Number of logic level(s):                11
-    Starting point:                          genblk4\.u_colorbar_gen.pixcnt[2] / Q
+    Starting point:                          genblk4\.u_colorbar_gen.linecnt[2] / Q
     Ending point:                            genblk4\.u_colorbar_gen.linecnt[10] / D
-    The start point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
-    The end   point is clocked by            top|w_pixclk_inferred_clock [rising] (rise=0.000 fall=20.678 period=41.356) on pin CK
+    The start point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            top|PIXCLK [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                                                   Pin      Pin               Arrival     No. of    
-Name                                                Type         Name     Dir     Delay     Time        Fan Out(s)
-------------------------------------------------------------------------------------------------------------------
-genblk4\.u_colorbar_gen.pixcnt[2]                   FD1S3AX      Q        Out     1.180     1.180 r     -         
-pixcnt[2]                                           Net          -        -       -         -           5         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     C        In      0.000     1.180 r     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3_0       ORCALUT4     Z        Out     1.017     2.197 f     -         
-un5_pixcntlto9_0_a3_0                               Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     A        In      0.000     2.197 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_a3         ORCALUT4     Z        Out     1.017     3.213 f     -         
-N_50                                                Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     B        In      0.000     3.213 f     -         
-genblk4\.u_colorbar_gen.un5_pixcntlto9_0_o6         ORCALUT4     Z        Out     1.297     4.510 f     -         
-un5_pixcnt                                          Net          -        -       -         -           13        
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     C        In      0.000     4.510 f     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO     ORCALUT4     Z        Out     1.017     5.527 r     -         
-N_26_i                                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        B0       In      0.000     5.527 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0         CCU2D        COUT     Out     1.544     7.072 r     -         
-un2_linecnt_cry_0                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        CIN      In      0.000     7.072 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0         CCU2D        COUT     Out     0.143     7.214 r     -         
-un2_linecnt_cry_2                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        CIN      In      0.000     7.214 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0         CCU2D        COUT     Out     0.143     7.357 r     -         
-un2_linecnt_cry_4                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        CIN      In      0.000     7.357 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0         CCU2D        COUT     Out     0.143     7.500 r     -         
-un2_linecnt_cry_6                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        CIN      In      0.000     7.500 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0         CCU2D        COUT     Out     0.143     7.643 r     -         
-un2_linecnt_cry_8                                   Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        CIN      In      0.000     7.643 r     -         
-genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0         CCU2D        S1       Out     1.549     9.192 r     -         
-un2_linecnt_cry_9_0_S1                              Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     B        In      0.000     9.192 r     -         
-genblk4\.u_colorbar_gen.un65_linecnt[10]            ORCALUT4     Z        Out     0.617     9.809 r     -         
-un65_linecnt[10]                                    Net          -        -       -         -           1         
-genblk4\.u_colorbar_gen.linecnt[10]                 FD1S3AX      D        In      0.000     9.809 r     -         
-==================================================================================================================
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+genblk4\.u_colorbar_gen.linecnt[2]                    FD1S3AX      Q        Out     1.180     1.180 r     -         
+linecnt[2]                                            Net          -        -       -         -           5         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_3     ORCALUT4     C        In      0.000     1.180 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_3     ORCALUT4     Z        Out     1.017     2.197 f     -         
+un2_linecnt_cry_0_0_RNO_3                             Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     A        In      0.000     2.197 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_1     ORCALUT4     Z        Out     1.017     3.213 r     -         
+N_8_0                                                 Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     A        In      0.000     3.213 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     4.230 f     -         
+un2_linecnt_cry_0_0_RNO_0                             Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     B        In      0.000     4.230 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     5.247 f     -         
+un38_N_5_mux                                          Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     5.247 f     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     6.792 r     -         
+un2_linecnt_cry_0                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     6.792 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.934 r     -         
+un2_linecnt_cry_2                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.934 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     7.077 r     -         
+un2_linecnt_cry_4                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     7.077 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     7.220 r     -         
+un2_linecnt_cry_6                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     7.220 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     7.363 r     -         
+un2_linecnt_cry_8                                     Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        CIN      In      0.000     7.363 r     -         
+genblk4\.u_colorbar_gen.un2_linecnt_cry_9_0           CCU2D        S1       Out     1.549     8.912 r     -         
+un2_linecnt_cry_9_0_S1                                Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     B        In      0.000     8.912 r     -         
+genblk4\.u_colorbar_gen.un65_linecnt[10]              ORCALUT4     Z        Out     0.617     9.528 r     -         
+un65_linecnt[10]                                      Net          -        -       -         -           1         
+genblk4\.u_colorbar_gen.linecnt[10]                   FD1S3AX      D        In      0.000     9.528 r     -         
+====================================================================================================================
 
 
 
@@ -1000,18 +1006,18 @@ u_LP_HS_DELAY_CNTRL.hs_extended[5]           FD1P3AX             D              
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 189MB peak: 191MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 189MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 189MB peak: 191MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lcmxo3l_6900c-5
 
-Register bits: 170 of 54912 (0%)
+Register bits: 179 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       15
 
 
 Details:
@@ -1024,29 +1030,30 @@ FD1P3AX:        41
 FD1P3AY:        20
 FD1P3BX:        1
 FD1P3DX:        3
-FD1S3AX:        85
+FD1S3AX:        91
 FD1S3AY:        2
 FD1S3IX:        18
 GSR:            1
-IB:             2
-INV:            4
+IB:             6
+IFS1P3DX:       3
+INV:            5
 L6MUX21:        2
-OBZ:            7
+OB:             6
+OBZ:            3
 ODDRX4B:        3
-ORCALUT4:       281
-OSCH:           1
-PFUMX:          20
+ORCALUT4:       284
+PFUMX:          23
 PUR:            1
 ROM128X1A:      8
 ROM16X1A:       9
 ROM32X1A:       8
 VHI:            5
-VLO:            12
+VLO:            13
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 67MB peak: 189MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 69MB peak: 191MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Mon Feb 14 16:44:56 2022
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Tue Feb 15 16:14:48 2022
 
 ###########################################################]

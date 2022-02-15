@@ -15,6 +15,7 @@ module DataFlow_Switch (
          input         hs_clk_en_a        ,        //HS (High Speed) Clock Enable                                                          
          input         hs_data_en_a     ,            //HS (High Speed) Data Enable      
          input          hsxx_clk_en_a	   ,
+		 input lpclk_out_a,
 		 //-----------------------------------------
      `ifdef HS_1 
           input [7:0]   byte_D1_b          ,
@@ -31,6 +32,7 @@ module DataFlow_Switch (
          input         hs_clk_en_b        ,        //HS (High Speed) Clock Enable                                                          
          input         hs_data_en_b     ,            //HS (High Speed) Data Enable      
          input          hsxx_clk_en_b	   ,
+		 input lpclk_out_b,
 		 //---------------------
      `ifdef HS_1 
           output [7:0]   byte_D1          ,
@@ -46,7 +48,8 @@ module DataFlow_Switch (
      `endif                                                                                                 
          output         hs_clk_en        ,        //HS (High Speed) Clock Enable                                                          
          output         hs_data_en     ,            //HS (High Speed) Data Enable      
-         output          hsxx_clk_en	
+         output          hsxx_clk_en,
+		 output lpclk_out
 );
  
 Mux_mod  #(.MuxWide(8)) mux_byte_D1(

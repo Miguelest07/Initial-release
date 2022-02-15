@@ -48,10 +48,10 @@
         <Source name="Commando_Inicial.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="Mux_mod.v" type="Verilog" type_short="Verilog">
+        <Source name="DataFlow_Switch.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="DataFlow_Switch.v" type="Verilog" type_short="Verilog">
+        <Source name="Mux_mod.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="xo3l_verilog.lpf" type="Logic Preference" type_short="LPF">

@@ -1,9 +1,9 @@
 ----------------------------------------------------------------------
 Report for cell top.verilog
 
-Register bits: 170 of 54912 (0%)
+Register bits: 179 of 54912 (0%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       15
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       58       100.0
@@ -15,24 +15,25 @@ I/O cells:       9
                             FD1P3AY       20       100.0
                             FD1P3BX        1       100.0
                             FD1P3DX        3       100.0
-                            FD1S3AX       85       100.0
+                            FD1S3AX       91       100.0
                             FD1S3AY        2       100.0
                             FD1S3IX       18       100.0
                                 GSR        1       100.0
-                                 IB        2       100.0
-                                INV        4       100.0
+                                 IB        6       100.0
+                           IFS1P3DX        3       100.0
+                                INV        5       100.0
                             L6MUX21        2       100.0
-                                OBZ        7       100.0
+                                 OB        6       100.0
+                                OBZ        3       100.0
                             ODDRX4B        3       100.0
-                           ORCALUT4      281       100.0
-                               OSCH        1       100.0
-                              PFUMX       20       100.0
+                           ORCALUT4      284       100.0
+                              PFUMX       23       100.0
                                 PUR        1       100.0
                           ROM128X1A        8       100.0
                            ROM16X1A        9       100.0
                            ROM32X1A        8       100.0
                                 VHI        5       100.0
-                                VLO       12       100.0
+                                VLO       13       100.0
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
 SUB MODULES 
@@ -43,17 +44,17 @@ SUB MODULES
                     DataFlow_Switch        1       100.0
                    IO_Controller_TX        1       100.0
                   LP_HS_DELAY_CNTRL        1       100.0
-                       Mux_mod_1s_4        1       100.0
-                     Mux_mod_1s_4_0        1       100.0
-                     Mux_mod_1s_4_1        1       100.0
-                         Mux_mod_2s        1       100.0
-                         Mux_mod_8s        1       100.0
+                         Mux_mod_1s        1       100.0
+                       Mux_mod_1s_0        1       100.0
+                       Mux_mod_1s_1        1       100.0
+                       Mux_mod_2s_1        1       100.0
                        Mux_mod_8s_0        1       100.0
+                       Mux_mod_8s_1        1       100.0
           colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s        1       100.0
                              oDDRx4        1       100.0
           pll_pix2byte_RGB888_2lane        1       100.0
                             
-                         TOTAL           630           
+                         TOTAL           652           
 ----------------------------------------------------------------------
 Report for cell DPHY_TX_INST.netlist
      Instance path:  u_DPHY_TX_INST
@@ -67,7 +68,7 @@ Report for cell DPHY_TX_INST.netlist
                            ORCALUT4        2         0.7
                            ROM16X1A        2        22.2
                                 VHI        1        20.0
-                                VLO        1         8.3
+                                VLO        1         7.7
 SUB MODULES 
                    IO_Controller_TX        1       100.0
                              oDDRx4        1       100.0
@@ -93,7 +94,7 @@ Report for cell oDDRx4.netlist
                             ODDRX4B        3       100.0
                            ROM16X1A        2        22.2
                                 VHI        1        20.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL            14           
 ----------------------------------------------------------------------
@@ -102,25 +103,26 @@ Report for cell colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       19        32.8
-                            FD1S3AX       36        42.4
-                                INV        1        25.0
-                           ORCALUT4       43        15.3
+                            FD1S3AX       42        46.2
+                                INV        2        40.0
+                           ORCALUT4       46        16.2
+                              PFUMX        1         4.3
                                 VHI        1        20.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
-                         TOTAL           101           
+                         TOTAL           112           
 ----------------------------------------------------------------------
 Report for cell DCS_Encoder.netlist
      Instance path:  u_DCS_Encoder
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX       17        41.5
-                            FD1S3AX        8         9.4
+                            FD1S3AX        8         8.8
                             FD1S3AY        2       100.0
                             L6MUX21        2       100.0
-                           ORCALUT4       43        15.3
-                              PFUMX        4        20.0
-                                VLO        1         8.3
+                           ORCALUT4       41        14.4
+                              PFUMX        6        26.1
+                                VLO        1         7.7
                             
                          TOTAL            77           
 ----------------------------------------------------------------------
@@ -129,43 +131,44 @@ Report for cell DCS_ROM.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       13        22.4
-                            FD1S3AX       33        38.8
+                            FD1S3AX       33        36.3
                             FD1S3IX        2        11.1
-                           ORCALUT4       56        19.9
+                           ORCALUT4       54        19.0
                           ROM128X1A        8       100.0
                            ROM16X1A        7        77.8
                            ROM32X1A        8       100.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
-                         TOTAL           128           
+                         TOTAL           126           
 ----------------------------------------------------------------------
 Report for cell DataFlow_Switch.netlist
      Instance path:  DataSPDT
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4       21         7.5
-                                VLO        4        33.3
+                           ORCALUT4       25         8.8
+                                VLO        5        38.5
 SUB MODULES 
-                       Mux_mod_1s_4        1       100.0
-                     Mux_mod_1s_4_0        1       100.0
-                     Mux_mod_1s_4_1        1       100.0
-                         Mux_mod_2s        1       100.0
-                         Mux_mod_8s        1       100.0
+                         Mux_mod_1s        1       100.0
+                       Mux_mod_1s_0        1       100.0
+                       Mux_mod_1s_1        1       100.0
+                       Mux_mod_2s_1        1       100.0
                        Mux_mod_8s_0        1       100.0
+                       Mux_mod_8s_1        1       100.0
                             
-                         TOTAL            31           
+                         TOTAL            36           
 ----------------------------------------------------------------------
-Report for cell Mux_mod_1s_4_1.netlist
-  Original Cell name Mux_mod_1s_4
+Report for cell Mux_mod_1s_0.netlist
+  Original Cell name Mux_mod_1s
      Instance path:  DataSPDT.mux_hs_data_en
                                           Cell usage:
                                cell       count    Res Usage(%)
-                           ORCALUT4        1         0.4
+                           ORCALUT4        5         1.8
+                                VLO        1         7.7
                             
-                         TOTAL             1           
+                         TOTAL             6           
 ----------------------------------------------------------------------
-Report for cell Mux_mod_1s_4_0.netlist
-  Original Cell name Mux_mod_1s_4
+Report for cell Mux_mod_1s_1.netlist
+  Original Cell name Mux_mod_1s
      Instance path:  DataSPDT.mux_hs_clk_en
                                           Cell usage:
                                cell       count    Res Usage(%)
@@ -173,23 +176,23 @@ Report for cell Mux_mod_1s_4_0.netlist
                             
                          TOTAL             1           
 ----------------------------------------------------------------------
-Report for cell Mux_mod_1s_4.netlist
+Report for cell Mux_mod_1s.netlist
   Original Cell name Mux_mod_1s
      Instance path:  DataSPDT.mux_hsxx_clk_en
                                           Cell usage:
                                cell       count    Res Usage(%)
                            ORCALUT4        1         0.4
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL             2           
 ----------------------------------------------------------------------
-Report for cell Mux_mod_2s.netlist
+Report for cell Mux_mod_2s_1.netlist
   Original Cell name Mux_mod_2s
      Instance path:  DataSPDT.mux_lp1_out
                                           Cell usage:
                                cell       count    Res Usage(%)
                            ORCALUT4        2         0.7
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL             3           
 ----------------------------------------------------------------------
@@ -199,17 +202,17 @@ Report for cell Mux_mod_8s_0.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                            ORCALUT4        8         2.8
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL             9           
 ----------------------------------------------------------------------
-Report for cell Mux_mod_8s.netlist
+Report for cell Mux_mod_8s_1.netlist
   Original Cell name Mux_mod_8s
      Instance path:  DataSPDT.mux_byte_D1
                                           Cell usage:
                                cell       count    Res Usage(%)
                            ORCALUT4        8         2.8
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL             9           
 ----------------------------------------------------------------------
@@ -221,13 +224,13 @@ Report for cell LP_HS_DELAY_CNTRL.netlist
                            DPR16X4C       16       100.0
                             FD1P3AX       23        56.1
                             FD1P3AY       20       100.0
-                            FD1S3AX        7         8.2
+                            FD1S3AX        7         7.7
                             FD1S3IX       16        88.9
-                                INV        1        25.0
-                           ORCALUT4      114        40.6
-                              PFUMX       16        80.0
+                                INV        1        20.0
+                           ORCALUT4      114        40.1
+                              PFUMX       16        69.6
                                 VHI        1        20.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL           241           
 ----------------------------------------------------------------------
@@ -236,11 +239,11 @@ Report for cell BYTE_PACKETIZER_24s_2s_62_0s_1s.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX        1         2.4
-                            FD1S3AX        1         1.2
-                                INV        1        25.0
+                            FD1S3AX        1         1.1
+                                INV        1        20.0
                            ORCALUT4        2         0.7
                                 VHI        1        20.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
                             
@@ -251,6 +254,6 @@ Report for cell pll_pix2byte_RGB888_2lane.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             EHXPLLJ        1       100.0
-                                VLO        1         8.3
+                                VLO        1         7.7
                             
                          TOTAL             2           

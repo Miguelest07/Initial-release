@@ -56,7 +56,7 @@ module top #(
      parameter              testmode   = 1             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset
      parameter              crc16      = 0             ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
      parameter              EoTp       = 1            ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
-     parameter              reserved   = 1 //reserved=0 at all times
+     parameter              reserved   = 0 //reserved=0 at all times
 )(
      input                  reset_n                    ,  // resets design (active low)
                                                                           
@@ -101,7 +101,9 @@ module top #(
      input                  HSYNC                      ,  //Horizontal Sync input for parallel interface
      input                  DE                         ,  //Data Enable input for parallel interface
      input [word_width-1:0] PIXDATA,                       //Pixel data bus for parallel interface
-	 input 				i_Global_Enable
+	 input 				i_Global_Enable,
+	 input [1:0] 		i_LP,
+	 input 		i_HS
 );
 	 wire w_Global_Enable; 
      wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
@@ -124,7 +126,8 @@ wire w_hsxx_clk_en_a;
                              `elsif HS_1  2
                              `elsif HS_0  1
                              `endif ;  
-       
+      
+	   
 generate
     if(DT=='h3E & lane_width==1) // s
          pll_pix2byte_RGB888_1lane u_pll_pix2byte_RGB888_1lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
@@ -205,15 +208,21 @@ wire  w_lp1_dir_out;
 wire w_lp0_dir_out;
 wire w_hs_clk_en_out;
 
+wire w_lp_clk_b;
+wire w_lp_clk_out;
+
 assign w_lp1_dir_a = 1'b1;
 assign w_lp0_dir_a = 1'b1;
 
 Commando_Inicial Comand(
-	.i_clk(PIXCLK),
+	.i_clk(PIXCLK), 
 	.o_Global_Enable (w_Global_Enable),
 	.reset_n (reset_n)         ,      //Resets the Design      
     .CLKOP(CLKOP)            ,      //HS Clock  
     .CLKOS (CLKOS)           ,      //HS Clock + 90 deg phase shift
+	
+	.i_LP(i_LP),
+	.i_HS(i_HS),
 	
     .byte_D1 (w_byte_D1_b)         ,
     .byte_D0(w_byte_D0_b)          ,                    
@@ -223,7 +232,8 @@ Commando_Inicial Comand(
     .lp0_dir (w_lp0_dir_b)         ,        //LP (Low Power) Data Receive/Transmit Control for Data Lane 0 
     .hs_clk_en(w_hs_clk_en_b)        ,        //HS (High Speed) Clock Enable                                                          
     .hs_data_en(w_hs_data_en_b)      ,            //HS (High Speed) Data Enable      
-    .hsxx_clk_en(w_hsxx_clk_en_b)	
+    .hsxx_clk_en(w_hsxx_clk_en_b)	 ,
+	.lp_clk(w_lp_clk_b) 
 );
 
 DataFlow_Switch DataSPDT ( 
@@ -236,7 +246,9 @@ DataFlow_Switch DataSPDT (
     .lp0_dir_a  (w_lp0_dir_a)        ,                                                  
     .hs_clk_en_a(~(|lp_clk)& done)        ,        //HS (High Speed) Clock Enable                                                          
     .hs_data_en_a(~(|lp_data) & done)     ,            //HS (High Speed) Data Enable      
-    .hsxx_clk_en_a(w_hsxx_clk_en_a)	   , 
+    .hsxx_clk_en_a(w_hsxx_clk_en_a)	   ,
+    .lpclk_out_a  (lp_clk)         ,
+	
 	 
 	.byte_D1_b (w_byte_D1_b)         , 
     .byte_D0_b (w_byte_D0_b)         ,                                                               
@@ -247,6 +259,7 @@ DataFlow_Switch DataSPDT (
     .hs_clk_en_b(w_hs_clk_en_b)        ,        //HS (High Speed) Clock Enable                                                          
     .hs_data_en_b(w_hs_data_en_b)     ,            //HS (High Speed) Data Enable      
     .hsxx_clk_en_b(w_hsxx_clk_en_b)	   ,
+	.lpclk_out_b  (w_lp_clk_b)         ,
 	
     .byte_D1(byte_D1_out)          ,
     .byte_D0(byte_D0_out)          ,                                                                  
@@ -256,13 +269,14 @@ DataFlow_Switch DataSPDT (
     .lp0_dir (w_lp0_dir_out)         ,                                                           
     .hs_clk_en(w_hs_clk_en_out)        ,        //HS (High Speed) Clock Enable                                                          
     .hs_data_en(w_hs_data_en_out)     ,            //HS (High Speed) Data Enable      
-    .hsxx_clk_en(hsxx_clk_en)
-);
+    .hsxx_clk_en(hsxx_clk_en),
+	.lpclk_out  (w_lp_clk_out)         
+); 
 
    DPHY_TX_INST u_DPHY_TX_INST (
           .reset_n         (reset_n)       ,      //Resets the Design                   
           .DCK             (DCK)           ,      //HS (High Speed) Clock
-		  `ifdef PLL         
+		  `ifdef PLL          
               .byte_clk (byte_clk)         ,      //Byte Clock
 		   `else  
           .CLKOP           (CLKOP)         ,      //Byte Clock                    
@@ -300,7 +314,7 @@ DataFlow_Switch DataSPDT (
           `endif                           
           `ifdef LP_CLK                    
                .LPCLK      (LPCLK)         ,        
-               .lpclk_out  (lp_clk)         ,        
+               .lpclk_out  (w_lp_clk_out)         ,        
                .lpclk_in   ()              ,        
                .lpclk_dir  (1'b1)             ,        
           `endif                                              

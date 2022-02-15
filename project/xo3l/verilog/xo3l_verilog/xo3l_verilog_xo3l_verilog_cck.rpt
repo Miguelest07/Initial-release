@@ -9,11 +9,11 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DESKTOP-NE8NF87
+Hostname: LAPTOP-BQ95DNMF
 
 Implementation : xo3l_verilog
 
-# Written on Mon Feb 14 16:44:51 2022
+# Written on Tue Feb 15 16:14:44 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -41,9 +41,9 @@ System                                              System                      
 System                                              pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 oDDRx4|sclk_inferred_clock                          System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 oDDRx4|sclk_inferred_clock                          oDDRx4|sclk_inferred_clock                          |     5.000            |     No paths         |     No paths         |     No paths                         
-top|w_pixclk_inferred_clock                         System                                              |     41.356           |     No paths         |     No paths         |     No paths                         
-top|w_pixclk_inferred_clock                         top|w_pixclk_inferred_clock                         |     41.356           |     No paths         |     No paths         |     No paths                         
-top|w_pixclk_inferred_clock                         pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+top|PIXCLK                                          System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
+top|PIXCLK                                          top|PIXCLK                                          |     5.000            |     No paths         |     No paths         |     No paths                         
+top|PIXCLK                                          pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 ===================================================================================================================================================================================================================
@@ -63,7 +63,8 @@ p:LP0[0]
 p:LP0[1]
 p:LP1[0]
 p:LP1[1]
-p:PIXCLK
+p:LPCLK[0]
+p:LPCLK[1]
 p:PIXDATA[0]
 p:PIXDATA[1]
 p:PIXDATA[2]
@@ -90,6 +91,9 @@ p:PIXDATA[22]
 p:PIXDATA[23]
 p:VSYNC
 p:i_Global_Enable
+p:i_HS
+p:i_LP[0]
+p:i_LP[1]
 p:reset_n
 
 

@@ -6,7 +6,7 @@
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-3 non-gated/non-generated clock tree(s) driving 202 clock pin(s) of sequential element(s)
+4 non-gated/non-generated clock tree(s) driving 205 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
@@ -14,8 +14,9 @@
 Clock Tree ID     Driving Element                                           Drive Element Type     Fanout     Sample Instance                      
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 @KP:ckid0_0       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX               CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_3         
-@KP:ckid0_1       genblk5\.u_OSCH.OSC                                       OSCH                   36         genblk4\.u_colorbar_gen.linecnt[10:0]
+@KP:ckid0_1       PIXCLK                                                    port                   36         genblk4\.u_colorbar_gen.linecnt[10:0]
 @KP:ckid0_2       genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2     EHXPLLJ                162        u_DCS_Encoder.LP[1:0]                
+@KP:ckid0_3       genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOP      EHXPLLJ                3          Comand.r_lp0_out[1:0]                
 ===================================================================================================================================================
 
 

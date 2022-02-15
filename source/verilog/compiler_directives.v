@@ -46,7 +46,7 @@
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 `define HS_1                                    //Defines the number of HS (High Speed) Data Lanes;  HS_3 = 4 lanes, HS_2 = 3 lanes, HS_1 = 2 lanes, HS_0 = 1 lanes        
-//`define LP_CLK                                  //Defines IO control for the LP (Low Power) Clock Lane                                                                     
+`define LP_CLK                                  //Defines IO control for the LP (Low Power) Clock Lane                                                                     
 `define LP_0                                    //Defines IO control for the LP (Low Power) Data Lane 0                                                                    
 `define LP_1                                    //Defines IO control for the LP (Low Power) Data Lane 1                                                                    
 //`define LP_2                                    //Defines IO control for the LP (Low Power) Data Lane 2                                                                    

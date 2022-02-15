@@ -9,11 +9,11 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DESKTOP-NE8NF87
+Hostname: LAPTOP-BQ95DNMF
 
 Implementation : xo3l_verilog
 
-# Written on Mon Feb 14 16:44:50 2022
+# Written on Tue Feb 15 16:14:43 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -37,9 +37,11 @@ Level     Clock                                               Frequency     Peri
                                                                                                                                     
 0 -       pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_2     177  
                                                                                                                                     
-0 -       top|w_pixclk_inferred_clock                         24.2 MHz      41.356        inferred     Inferred_clkgroup_1     36   
+0 -       top|PIXCLK                                          200.0 MHz     5.000         inferred     Inferred_clkgroup_1     36   
                                                                                                                                     
 0 -       oDDRx4|sclk_inferred_clock                          200.0 MHz     5.000         inferred     Inferred_clkgroup_0     4    
+                                                                                                                                    
+0 -       pll_pix2byte_RGB888_2lane|CLKOP_inferred_clock      200.0 MHz     5.000         inferred     Inferred_clkgroup_3     3    
 ====================================================================================================================================
 
 
@@ -53,7 +55,9 @@ System                                              0         -                 
                                                                                                                                                                                                     
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     177       genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2(EHXPLLJ)     u_DCS_Encoder.q_enable.C            -                 -            
                                                                                                                                                                                                     
-top|w_pixclk_inferred_clock                         36        genblk5\.u_OSCH.OSC(OSCH)                                          genblk4\.u_colorbar_gen.hsync.C     -                 -            
+top|PIXCLK                                          36        PIXCLK(port)                                                       genblk4\.u_colorbar_gen.hsync.C     -                 -            
                                                                                                                                                                                                     
 oDDRx4|sclk_inferred_clock                          4         u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX(CLKDIVC)               u_DPHY_TX_INST.u_oDDRx4.FF_0.CK     -                 -            
+                                                                                                                                                                                                    
+pll_pix2byte_RGB888_2lane|CLKOP_inferred_clock      3         genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOP(EHXPLLJ)      Comand.r_hs_data_en.C               -                 -            
 ====================================================================================================================================================================================================
