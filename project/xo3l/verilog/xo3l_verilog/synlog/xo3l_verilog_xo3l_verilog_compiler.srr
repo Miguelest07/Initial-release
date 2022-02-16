@@ -68,7 +68,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v" (library work)
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v changed - recompiling
+File C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
 
@@ -306,7 +306,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]
 ###########################################################[
@@ -334,7 +334,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]
 
@@ -349,6 +349,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]

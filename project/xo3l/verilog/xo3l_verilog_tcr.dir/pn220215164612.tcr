@@ -1,0 +1,52 @@
+#Start recording tcl command: 2/15/2022 13:57:44
+#Project Location: C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog; Project name: xo3l_verilog
+prj_project open "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.ldf"
+prj_src add "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Commando_Inicial.v" "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/DataFlow_Switch.v" "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Mux_mod.v"
+prj_run Export -impl xo3l_verilog
+pgr_project open "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog/xo3l_verilog.xcf"
+pgr_program run
+pgr_program run
+pgr_project save "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog/xo3l_verilog.xcf"
+prj_run Export -impl xo3l_verilog
+pgr_program run
+pgr_program run
+pgr_program run
+prj_run Map -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+pgr_program run
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+pgr_program run
+prj_run Export -impl xo3l_verilog
+pgr_program run
+pgr_program run
+prj_run Map -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run PAR -impl xo3l_verilog -task PARTrace
+prj_run PAR -impl xo3l_verilog -task PARTrace
+pgr_program run
+prj_run Map -impl xo3l_verilog
+prj_run PAR -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Map -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+pgr_program run
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+prj_run Export -impl xo3l_verilog
+pgr_program run
+pgr_project save "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog/xo3l_verilog.xcf"
+prj_project save
+prj_project close
+#Stop recording: 2/15/2022 16:46:12

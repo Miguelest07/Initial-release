@@ -16,48 +16,17 @@ Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-57       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35)
+42       C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v (2022-02-15 16:13:17, 2022-02-15 16:20:11)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 16
+Modules that may have changed as a result of file changes: 1
 MID:  lib.cell.view
-0        work.BYTE_PACKETIZER.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-13       work.Commando_Inicial.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-1        work.DCS_Encoder.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-2        work.DCS_ROM.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-3        work.DPHY_TX_INST.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-14       work.DataFlow_Switch.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-4        work.IO_Controller_TX.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-5        work.LP_HS_DELAY_CNTRL.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-15       work.Mux_mod.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-6        work.colorbar_gen.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-7        work.crc16_2lane.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-8        work.oDDRx4.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
 9        work.packetheader.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-10       work.parallel2byte.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-11       work.pll_pix2byte_RGB888_2lane.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (may instantiate this module)
-12       work.top.verilog may have changed because the following files changed:
-                        C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 15:51:08, 2022-02-15 16:14:35) <-- (module definition)
+                        C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v (2022-02-15 16:13:17, 2022-02-15 16:20:11) <-- (module definition)
 
 *******************************************************************
 Unmodified files: 23
 FID:  path (timestamp)
-42       C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v (2022-02-15 16:13:17)
 43       C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v (2022-02-15 15:48:28)
 44       C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v (2022-02-15 12:03:12)
 45       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\../../source/verilog/compiler_directives.v (2022-02-15 15:52:17)
@@ -72,6 +41,7 @@ FID:  path (timestamp)
 54       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v (2022-02-15 12:03:12)
 55       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v (2022-02-15 12:03:12)
 56       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v (2022-02-15 12:03:12)
+57       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v (2022-02-15 16:14:35)
 58       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v (2022-02-15 12:03:12)
 59       C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v (2022-02-15 12:03:12)
 15       C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v (2020-10-29 10:20:54)
@@ -82,5 +52,20 @@ FID:  path (timestamp)
 20       C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
-Unchanged modules: 0
+Unchanged modules: 15
 MID:  lib.cell.view
+0        work.BYTE_PACKETIZER.verilog
+13       work.Commando_Inicial.verilog
+1        work.DCS_Encoder.verilog
+2        work.DCS_ROM.verilog
+3        work.DPHY_TX_INST.verilog
+14       work.DataFlow_Switch.verilog
+4        work.IO_Controller_TX.verilog
+5        work.LP_HS_DELAY_CNTRL.verilog
+15       work.Mux_mod.verilog
+6        work.colorbar_gen.verilog
+7        work.crc16_2lane.verilog
+8        work.oDDRx4.verilog
+10       work.parallel2byte.verilog
+11       work.pll_pix2byte_RGB888_2lane.verilog
+12       work.top.verilog

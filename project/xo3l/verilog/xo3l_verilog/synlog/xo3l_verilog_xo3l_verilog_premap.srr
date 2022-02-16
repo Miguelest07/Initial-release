@@ -1,4 +1,4 @@
-# Tue Feb 15 16:14:43 2022
+# Tue Feb 15 17:04:13 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -45,16 +45,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
 
 Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 
@@ -139,13 +139,13 @@ Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 176MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 15 16:14:44 2022
+# Tue Feb 15 17:04:14 2022
 
 ###########################################################]

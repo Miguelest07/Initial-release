@@ -1,10 +1,10 @@
 [ START MERGED ]
 u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+hs_en_i hs_en
+u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
-hs_en_i hs_en
-u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
 [ END MERGED ]
@@ -140,7 +140,7 @@ u_DPHY_TX_INST/u_oDDRx4/cdiv1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue Feb 15 16:14:49 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue Feb 15 17:04:20 2022
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "DCK" SITE "D8" ;

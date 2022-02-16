@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: LAPTOP-BQ95DNMF
 
-# Tue Feb 15 16:14:39 2022
+# Tue Feb 15 17:04:09 2022
 
 #Implementation: xo3l_verilog
 
@@ -77,7 +77,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v" (library work)
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v changed - recompiling
+File C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
 
@@ -315,7 +315,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]
 ###########################################################[
@@ -343,7 +343,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]
 
@@ -358,7 +358,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:42 2022
+# Tue Feb 15 17:04:12 2022
 
 ###########################################################]
 ###########################################################[
@@ -386,10 +386,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Tue Feb 15 16:14:43 2022
+# Tue Feb 15 17:04:13 2022
 
 ###########################################################]
-# Tue Feb 15 16:14:43 2022
+# Tue Feb 15 17:04:13 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -436,16 +436,16 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
 
 Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 
@@ -530,17 +530,17 @@ Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:0
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 176MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 15 16:14:44 2022
+# Tue Feb 15 17:04:14 2022
 
 ###########################################################]
-# Tue Feb 15 16:14:44 2022
+# Tue Feb 15 17:04:14 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -641,7 +641,7 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 178MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
@@ -649,7 +649,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 @N: FO126 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
 @N: FX214 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":79:29:79:47|Generating ROM u_DCS_ROM.current_data_2[7:0] (in view: work.top(verilog)).
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 179MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 182MB peak: 182MB)
@@ -666,8 +666,8 @@ Timing driven replication report
 Added 3 Registers via timing driven replication
 Added 1 LUTs via timing driven replication
 
-   4		0h:00m:01s		    -3.20ns		 284 /       172
-   5		0h:00m:01s		    -3.20ns		 285 /       172
+   4		0h:00m:02s		    -3.20ns		 284 /       172
+   5		0h:00m:02s		    -3.20ns		 285 /       172
 
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[8] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance genblk4\.u_colorbar_gen.pixcnt[6] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
@@ -713,7 +713,7 @@ latches that do not specify sets or resets
 Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 185MB peak: 185MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 186MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 186MB)
 
 Writing Analyst data base C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
@@ -726,7 +726,7 @@ Writing EDIF Netlist and constraint files
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 190MB peak: 190MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 191MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 191MB)
 
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -741,7 +741,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Tue Feb 15 16:14:47 2022
+# Timing report written on Tue Feb 15 17:04:17 2022
 #
 
 
@@ -1593,9 +1593,9 @@ VHI:            5
 VLO:            13
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 69MB peak: 191MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 68MB peak: 191MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Tue Feb 15 16:14:48 2022
+# Tue Feb 15 17:04:18 2022
 
 ###########################################################]

@@ -16,7 +16,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3L-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00a,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  02/15/22  16:14:49
+Mapped on:  02/15/22  17:04:20
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Design Summary (cont)
 ---------------------
@@ -198,7 +198,7 @@ WARNING - map: IO buffer missing for top level port PIXDATA[23:0](15)...logic
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -264,7 +264,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -330,7 +330,7 @@ Signal u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/GND undriven or does not
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Removed logic (cont)
 --------------------
@@ -396,7 +396,7 @@ Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15] undriven or does
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Removed logic (cont)
 --------------------
@@ -462,7 +462,7 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO5 undriven or does not
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Removed logic (cont)
 --------------------
@@ -528,7 +528,7 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO1_1 undriven or does not
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Removed logic (cont)
 --------------------
@@ -594,7 +594,7 @@ Signal genblk4.u_colorbar_gen/N_3 undriven or does not drive anything - clipped.
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Removed logic (cont)
 --------------------
@@ -660,7 +660,7 @@ Memory Usage
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Memory Usage (cont)
 -------------------
@@ -726,7 +726,7 @@ Memory Usage (cont)
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Memory Usage (cont)
 -------------------
@@ -792,7 +792,7 @@ PLL 1:                                     Pin/Node Value
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -858,7 +858,7 @@ PLL/DLL Summary (cont)
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 PLL/DLL Summary (cont)
 ----------------------
@@ -924,7 +924,7 @@ Instance Name: genblk2.u_pll_pix2byte_RGB888_2lane/PLLInst_0
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 
 GSR Usage
@@ -990,7 +990,7 @@ GSR Component:
 
 
 
-Design:  top                                           Date:  02/15/22  16:14:49
+Design:  top                                           Date:  02/15/22  17:04:20
 
 Run Time and Memory Usage
 -------------------------
