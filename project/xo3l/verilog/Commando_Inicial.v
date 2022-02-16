@@ -35,6 +35,54 @@ reg       r_hs_data_en;          //HS (High Speed) Data Enable
 reg       r_hsxx_clk_en;
 reg       r_lp_clk;
 
+always@(posedge PIXCLK)
+begin
+	if(init == 0)
+	begin
+		idle_start <= idle_start + 1;
+		MIPI_clk_d <= 1'b1;
+		
+		if(Type >= 1)
+		begin
+			MIPI_clk_DAC_d <= 8'b1011_1111;
+		end
+		else if(Type == 0)
+		begin
+			MIPI_clk_DAC_d <= 8'b1111_1111;
+		end
+		
+		if(Serial_s >=1)
+		begin
+			stateq <= 2'b10;
+			lvlq <= 2'b11;
+		end
+		else if(Serial_s == 0)
+		begin
+			stateq <= 2'b10;
+			lvlq <= 2'b01;
+		end
+		if(eoc_d == 1)
+		begin
+			Start_sd <= 0;
+		end
+		else if(idle_start == 18360000)// 183.6ms ~ 18360000
+		begin
+			idle_start <= 23'b0;
+			init <= 1;
+		end
+		else if (idle_start == 11886000)// 118.86ms ~ 11886000
+		begin
+				Start_sd <= 1;
+				State_sd <= 0;
+		end
+		else if (idle_start == 1080000)// 10.8ms ~ 1080000
+		begin
+				Start_sd <= 1;
+				State_sd <= 1;
+		end
+	end
+end
+
 always@(posedge CLKOP)
 begin
 	//HS DATA
