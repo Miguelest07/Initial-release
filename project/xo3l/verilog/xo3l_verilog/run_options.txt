@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\run_options.txt
-#--  Written on Tue Feb 15 17:04:09 2022
+#--  Written on Wed Feb 16 16:55:30 2022
 
 
 #project files
@@ -22,6 +22,8 @@ add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/sour
 add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Commando_Inicial.v"
 add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/DataFlow_Switch.v"
 add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Mux_mod.v"
+add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Serial_Protocol.v"
+add_file -verilog -vlog_std v2001 "C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/PLL_12_24_100.v"
 
 
 #implementation: "xo3l_verilog"

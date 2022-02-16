@@ -1,4 +1,5 @@
 ckid0_0:@|S:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX@|E:u_DPHY_TX_INST.u_oDDRx4.FF_3@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
-ckid0_1:@|S:PIXCLK@|E:genblk4\.u_colorbar_gen.linecnt[10:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
-ckid0_2:@|S:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2@|E:u_DCS_Encoder.LP[1:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
-ckid0_3:@|S:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOP@|E:Comand.r_lp0_out[1:0]@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_1:@|S:PLL_12_24_100_mod.PLLInst_0.CLKOP@|E:genblk1\.u_colorbar_gen.linecnt[10:0]@|F:@syn_dgcc_clockid0_1==1@|M:ClockId_0_1
+ckid0_2:@|S:u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2@|E:u_DCS_Encoder.LP[1:0]@|F:@syn_dgcc_clockid0_2==1@|M:ClockId_0_2
+ckid0_3:@|S:PLL_12_24_100_mod.PLLInst_0.CLKOS2@|E:Serial_busN.o@|F:@syn_dgcc_clockid0_3==1@|M:ClockId_0_3
+ckid0_4:@|S:PLL_12_24_100_mod.PLLInst_0.CLKOS@|E:Comand.r_init@|F:@syn_dgcc_clockid0_4==1@|M:ClockId_0_4

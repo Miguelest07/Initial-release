@@ -4,28 +4,34 @@ u 4 4
 p {t:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX}{t:u_DPHY_TX_INST.u_oDDRx4.sclk_inferred_clock.I[0]}{t:u_DPHY_TX_INST.u_oDDRx4.sclk_inferred_clock.OUT[0]}{p:u_DPHY_TX_INST.u_oDDRx4.sclk}{t:u_DPHY_TX_INST.u_oDDRx4.sclk}{t:u_DPHY_TX_INST.u_oDDRx4.clk_s}{p:u_DPHY_TX_INST.u_oDDRx4.clk_s}{t:u_DPHY_TX_INST.u_oDDRx4.FF_3.CK}
 e ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.FF_3.CK} FD1P3BX
 c ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX} CLKDIVC Unsupported/too complex instance on clock path
-i PIXCLK
+i PLL_12_24_100_mod.CLKOP_i
 m 0 0
 u 6 36
-p {p:PIXCLK}{t:genblk4\.u_colorbar_gen.m148_5_clk}{p:genblk4\.u_colorbar_gen.m148_5_clk}{t:genblk4\.u_colorbar_gen.linecnt[10:0].C}
-e ckid0_1 {t:genblk4\.u_colorbar_gen.linecnt[10:0].C} dffr
-c ckid0_1 {p:PIXCLK} port Unsupported/too complex instance on clock path
-i genblk2®u_pll_pix2byte_RGB888_2lane.CLKOS2_i
+p {t:PLL_12_24_100_mod.PLLInst_0.CLKOP}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOP}{t:PLL_12_24_100_mod.CLKOP}{t:genblk1\.u_colorbar_gen.m148_5_clk}{p:genblk1\.u_colorbar_gen.m148_5_clk}{t:genblk1\.u_colorbar_gen.linecnt[10:0].C}
+e ckid0_1 {t:genblk1\.u_colorbar_gen.linecnt[10:0].C} dffr
+c ckid0_1 {t:PLL_12_24_100_mod.PLLInst_0.CLKOP} EHXPLLJ Unsupported/too complex instance on clock path
+i u_pll_pix2byte_RGB888_2lane.CLKOS2_i
 m 0 0
 u 32 162
-p {t:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOS2_inferred_clock.I[0]}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOS2_inferred_clock.OUT[0]}{p:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOS2}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOS2}{t:u_DCS_Encoder.clk}{p:u_DCS_Encoder.clk}{t:u_DCS_Encoder.LP[1:0].C}
+p {t:u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2}{t:u_pll_pix2byte_RGB888_2lane.CLKOS2_inferred_clock.I[0]}{t:u_pll_pix2byte_RGB888_2lane.CLKOS2_inferred_clock.OUT[0]}{p:u_pll_pix2byte_RGB888_2lane.CLKOS2}{t:u_pll_pix2byte_RGB888_2lane.CLKOS2}{t:u_DCS_Encoder.clk}{p:u_DCS_Encoder.clk}{t:u_DCS_Encoder.LP[1:0].C}
 e ckid0_2 {t:u_DCS_Encoder.LP[1:0].C} dffs
-c ckid0_2 {t:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2} EHXPLLJ Unsupported/too complex instance on clock path
-i genblk2®u_pll_pix2byte_RGB888_2lane.CLKOP_i
+c ckid0_2 {t:u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2} EHXPLLJ Unsupported/too complex instance on clock path
+i PLL_12_24_100_mod.CLKOS2_i
 m 0 0
-u 2 3
-p {t:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOP}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOP_inferred_clock.I[0]}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOP_inferred_clock.OUT[0]}{p:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOP}{t:genblk2\.u_pll_pix2byte_RGB888_2lane.CLKOP}{t:Comand.CLKOP}{p:Comand.CLKOP}{t:Comand.r_lp0_out[1:0].C}
-e ckid0_3 {t:Comand.r_lp0_out[1:0].C} dff
-c ckid0_3 {t:genblk2\.u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOP} EHXPLLJ Unsupported/too complex instance on clock path
-i genblk2®u_pll_pix2byte_RGB888_2lane.LOCK
+u 5 5
+p {t:PLL_12_24_100_mod.PLLInst_0.CLKOS2}{t:PLL_12_24_100_mod.CLKOS2_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOS2_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOS2}{t:PLL_12_24_100_mod.CLKOS2}{t:Serial_busN.clk}{p:Serial_busN.clk}{t:Serial_busN.o.C}
+e ckid0_3 {t:Serial_busN.o.C} dffs
+c ckid0_3 {t:PLL_12_24_100_mod.PLLInst_0.CLKOS2} EHXPLLJ Unsupported/too complex instance on clock path
+i PLL_12_24_100_mod.CLKOS_i
+m 0 0
+u 2 26
+p {t:PLL_12_24_100_mod.PLLInst_0.CLKOS}{t:PLL_12_24_100_mod.CLKOS_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOS_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOS}{t:PLL_12_24_100_mod.CLKOS}{t:Comand.i_CLK_100MHZ}{p:Comand.i_CLK_100MHZ}{t:Comand.r_init.C}
+e ckid0_4 {t:Comand.r_init.C} dffre
+c ckid0_4 {t:PLL_12_24_100_mod.PLLInst_0.CLKOS} EHXPLLJ Unsupported/too complex instance on clock path
+i u_pll_pix2byte_RGB888_2lane.CLKOS
 m 0 0
 u 0 0
-i genblk2®u_pll_pix2byte_RGB888_2lane.CLKOS
+i u_pll_pix2byte_RGB888_2lane.CLKOP
 m 0 0
 u 0 0
 l 0 0 0 0 0

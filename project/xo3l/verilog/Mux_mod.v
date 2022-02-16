@@ -12,11 +12,11 @@ begin
 	case(i_state)
 		1'b0:
 		begin
-			r_x = i_a; 
+			r_x <= i_a; 
 		end
 		1'b1:
 		begin
-			r_x = i_b;
+			r_x <= i_b;
 		end
 	endcase
 end

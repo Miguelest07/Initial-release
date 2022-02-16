@@ -1,15 +1,17 @@
 [ START MERGED ]
 u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
+Comand/w_init_i w_init
 hs_en_i hs_en
-u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
-u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i w_init
+u_BYTE_PACKETIZER/u_packetheader/reset_n_i w_init
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
 [ END MERGED ]
 [ START CLIPPED ]
-genblk2.u_pll_pix2byte_RGB888_2lane/GND
+PLL_12_24_100_mod/GND
+u_pll_pix2byte_RGB888_2lane/GND
 u_BYTE_PACKETIZER/VCC
 u_BYTE_PACKETIZER/GND
 u_BYTE_PACKETIZER/byte_D2[0]
@@ -21,27 +23,43 @@ u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_15_8/GND
 u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/VCC
 u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/GND
 u_LP_HS_DELAY_CNTRL/GND
+Comand/GND
 u_DCS_ROM/GND
-genblk4.u_colorbar_gen/GND
+genblk1.u_colorbar_gen/GND
 u_DPHY_TX_INST/u_oDDRx4/GND
 u_DPHY_TX_INST/u_oDDRx4/VCC
 u_BYTE_PACKETIZER/u_parallel2byte/VCC
-VCC
-genblk2.u_pll_pix2byte_RGB888_2lane/CLKINTFB
-genblk2.u_pll_pix2byte_RGB888_2lane/DPHSRC
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLACK
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO0
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO1
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO2
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO3
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO4
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO5
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO6
-genblk2.u_pll_pix2byte_RGB888_2lane/PLLDATO7
-genblk2.u_pll_pix2byte_RGB888_2lane/REFCLK
-genblk2.u_pll_pix2byte_RGB888_2lane/INTLOCK
-genblk2.u_pll_pix2byte_RGB888_2lane/un1_u_pll_pix2byte_RGB888_2lane
-genblk2.u_pll_pix2byte_RGB888_2lane/CLKOS3
+PLL_12_24_100_mod/CLKINTFB
+PLL_12_24_100_mod/DPHSRC
+PLL_12_24_100_mod/PLLACK
+PLL_12_24_100_mod/PLLDATO0
+PLL_12_24_100_mod/PLLDATO1
+PLL_12_24_100_mod/PLLDATO2
+PLL_12_24_100_mod/PLLDATO3
+PLL_12_24_100_mod/PLLDATO4
+PLL_12_24_100_mod/PLLDATO5
+PLL_12_24_100_mod/PLLDATO6
+PLL_12_24_100_mod/PLLDATO7
+PLL_12_24_100_mod/REFCLK
+PLL_12_24_100_mod/INTLOCK
+PLL_12_24_100_mod/LOCK
+PLL_12_24_100_mod/CLKOS3
+PLL_12_24_100_mod/CLKOS2_i
+u_pll_pix2byte_RGB888_2lane/CLKINTFB_0
+u_pll_pix2byte_RGB888_2lane/DPHSRC_0
+u_pll_pix2byte_RGB888_2lane/PLLACK_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO0_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO1_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO2_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO3_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO4_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO5_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO6_0
+u_pll_pix2byte_RGB888_2lane/PLLDATO7_0
+u_pll_pix2byte_RGB888_2lane/REFCLK_0
+u_pll_pix2byte_RGB888_2lane/INTLOCK_0
+u_pll_pix2byte_RGB888_2lane/LOCK
+u_pll_pix2byte_RGB888_2lane/CLKOS3_0
 u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15]
 u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15]
 u_BYTE_PACKETIZER/u_packetheader/un9_wc_end_flag_a_4_cry_0_0_S1
@@ -117,6 +135,10 @@ u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_S1[15]
 u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]
 u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]
 u_LP_HS_DELAY_CNTRL/N_1
+Comand/idle_start_2_cry_0_0_S1
+Comand/idle_start_2_cry_0_0_S0
+Comand/N_1
+Comand/idle_start_2_cry_23_0_COUT
 u_DCS_ROM/wait_cnt_cry_0_S0[0]
 u_DCS_ROM/N_1
 u_DCS_ROM/wait_cnt_s_0_S1[11]
@@ -124,33 +146,32 @@ u_DCS_ROM/wait_cnt_s_0_COUT[11]
 u_DCS_ROM/un1_byte_cnt_cry_0_0_S0
 u_DCS_ROM/N_2
 u_DCS_ROM/un1_byte_cnt_cry_9_0_COUT
-genblk4.u_colorbar_gen/color_cntr_cry_0_S0[0]
-genblk4.u_colorbar_gen/N_2
-genblk4.u_colorbar_gen/color_cntr_s_0_S1[11]
-genblk4.u_colorbar_gen/color_cntr_s_0_COUT[11]
-genblk4.u_colorbar_gen/un7_pixcnt_cry_0_0_S1
-genblk4.u_colorbar_gen/un7_pixcnt_cry_0_0_S0
-genblk4.u_colorbar_gen/N_3
-genblk4.u_colorbar_gen/un7_pixcnt_s_9_0_S1
-genblk4.u_colorbar_gen/un7_pixcnt_s_9_0_COUT
-genblk4.u_colorbar_gen/un2_linecnt_cry_0_0_S0
-genblk4.u_colorbar_gen/N_4
-genblk4.u_colorbar_gen/un2_linecnt_cry_9_0_COUT
+genblk1.u_colorbar_gen/color_cntr_cry_0_S0[0]
+genblk1.u_colorbar_gen/N_2
+genblk1.u_colorbar_gen/color_cntr_s_0_S1[11]
+genblk1.u_colorbar_gen/color_cntr_s_0_COUT[11]
+genblk1.u_colorbar_gen/un7_pixcnt_cry_0_0_S1
+genblk1.u_colorbar_gen/un7_pixcnt_cry_0_0_S0
+genblk1.u_colorbar_gen/N_3
+genblk1.u_colorbar_gen/un7_pixcnt_s_9_0_S1
+genblk1.u_colorbar_gen/un7_pixcnt_s_9_0_COUT
+genblk1.u_colorbar_gen/un2_linecnt_cry_0_0_S0
+genblk1.u_colorbar_gen/N_4
+genblk1.u_colorbar_gen/un2_linecnt_cry_9_0_COUT
 u_DPHY_TX_INST/u_oDDRx4/cdiv1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue Feb 15 17:04:20 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Wed Feb 16 16:55:42 2022
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "DCK" SITE "D8" ;
 LOCATE COMP "LPCLK[0]" SITE "J15" ;
 LOCATE COMP "reset_n" SITE "B3" ;
-LOCATE COMP "i_HS" SITE "M3" ;
-LOCATE COMP "i_LP[1]" SITE "N1" ;
-LOCATE COMP "i_LP[0]" SITE "P1" ;
+LOCATE COMP "SerialN" SITE "H6" ;
+LOCATE COMP "SerialP" SITE "N3" ;
 LOCATE COMP "i_Global_Enable" SITE "N2" ;
-LOCATE COMP "PIXCLK" SITE "C8" ;
+LOCATE COMP "i_clk" SITE "C8" ;
 LOCATE COMP "LP0[1]" SITE "H16" ;
 LOCATE COMP "LP0[0]" SITE "G15" ;
 LOCATE COMP "LP1[1]" SITE "J16" ;
@@ -158,7 +179,9 @@ LOCATE COMP "LP1[0]" SITE "H15" ;
 LOCATE COMP "LPCLK[1]" SITE "H14" ;
 LOCATE COMP "D0" SITE "E6" ;
 LOCATE COMP "D1" SITE "D6" ;
-FREQUENCY NET "PIXCLK_c" 50.000000 MHz ;
+FREQUENCY NET "PIXCLK" 24.000000 MHz ;
+FREQUENCY NET "w_CLK_100MHZ" 100.000000 MHz ;
+FREQUENCY NET "i_clk_c" 12.000000 MHz ;
 FREQUENCY NET "CLKOP" 300.000000 MHz ;
 FREQUENCY NET "CLKOS" 300.000000 MHz ;
 FREQUENCY NET "byte_clk" 75.000000 MHz ;

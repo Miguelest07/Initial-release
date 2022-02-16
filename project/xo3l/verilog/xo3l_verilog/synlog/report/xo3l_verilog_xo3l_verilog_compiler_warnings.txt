@@ -1,4 +1,4 @@
-@W: CG1249 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":349:11:349:15|Redeclaration of implicit signal w_LP0
+@W: CG1249 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":378:11:378:15|Redeclaration of implicit signal w_LP0
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":99:11:99:14|Net clk0 is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":100:11:100:14|Net clk2 is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":101:11:101:14|Net clk4 is not declared.
@@ -8,11 +8,29 @@
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":68:12:68:21|Net start_data is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":69:12:69:23|Net start_escape is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":70:12:70:20|Net stop_data is not declared.
+@W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":128:7:128:13|Net Start_s is not declared.
+@W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":129:7:129:13|Net State_s is not declared.
 @W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v":49:7:49:19|Creating black box for empty module parallel2byte_24s_2s_62
 @W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v":49:7:49:18|Creating black box for empty module packetheader_2s
 @W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|Removing wire crc, as there is no assignment to it.
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":3:8:3:22|Removing wire o_Global_Enable, as there is no assignment to it.
-@W: CL318 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":3:8:3:22|*Output o_Global_Enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":4:8:4:22|Removing wire o_Global_Enable, as there is no assignment to it.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":29:12:29:20|Object r_byte_D1 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":30:12:30:20|Object r_byte_D0 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":31:12:31:20|Object r_lp1_out is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":32:4:32:12|Object r_lp1_dir is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":33:10:33:18|Object r_lp0_out is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":34:4:34:12|Object r_lp0_dir is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":35:4:35:14|Object r_hs_clk_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":36:4:36:15|Object r_hs_data_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":37:4:37:16|Object r_hsxx_clk_en is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":38:4:38:11|Object r_lp_clk is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL318 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":4:8:4:22|*Output o_Global_Enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL169 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":45:0:45:5|Pruning unused register Start_sd. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":45:0:45:5|Pruning unused register State_sd. Make sure that there are no unused intermediate registers.
+@W: CG1340 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v":42:16:42:24|Index into variable buff1 could be out of range ; a simulation mismatch is possible.
+@W: CG1340 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v":44:16:44:24|Index into variable buff2 could be out of range ; a simulation mismatch is possible.
+@W: CG1340 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v":48:16:48:24|Index into variable buff3 could be out of range ; a simulation mismatch is possible.
+@W: CG1340 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v":50:16:50:24|Index into variable buff4 could be out of range ; a simulation mismatch is possible.
 @W: CG296 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
 @W: CG290 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":12:6:12:12|Referenced variable i_state is not in sensitivity list.
 @W: CG296 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
@@ -34,16 +52,24 @@
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":158:28:158:29|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":168:28:168:31|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":250:19:250:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":317:28:317:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":192:5:192:13|Removing wire w_reset_n, as there is no assignment to it.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":194:19:194:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":204:19:204:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CG781 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":228:17:228:22|Input i_Serial_P on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":228:17:228:22|Input i_Serial_N on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":279:19:279:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":346:28:346:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":128:5:128:13|Removing wire w_reset_n, as there is no assignment to it.
+@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":149:5:149:11|Removing wire Start_w, as there is no assignment to it.
+@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":150:5:150:11|Removing wire State_w, as there is no assignment to it.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":149:5:149:11|*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":150:5:150:11|*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":149:5:149:11|*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":150:5:150:11|*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.

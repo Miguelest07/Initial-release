@@ -85,7 +85,7 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 
 set scuba "$Para(FPGAPath)/scuba"
-set modulename "simulation_fifo_24bit_to_24bit"
+set modulename "pll_pix2byte_RGB888_2lane"
 set lang "verilog"
 set lpcfile "$Para(sbp_path)/$modulename.lpc"
 set arch "xo3c00a"
@@ -94,7 +94,7 @@ set fdcfile "$Para(sbp_path)/$modulename.fdc"
 if {[file exists $fdcfile] == 0} {
 	append scuba " " $cmd_line
 } else {
-	append scuba " " $cmd_line " " -fdc " " $fdcfile
+	append scuba " " $cmd_line " " -fdc " " \"$fdcfile\"
 }
 set Para(result) [catch {eval exec "$scuba"} msg]
 #puts $msg

@@ -50,22 +50,72 @@ set Para(install_dir) $env(TOOLRTF)
 set Para(FPGAPath) "[file join $Para(install_dir) ispfpga bin $platformpath]"
 set Para(bin_dir) "[file join $Para(install_dir) bin $platformpath]"
 
-set Para(ModuleName) "simulation_fifo_24bit_to_24bit"
-set Para(Module) "FIFO_DC"
+set Para(ModuleName) "pll_pix2byte_RGB888_2lane"
+set Para(Module) "PLL"
 set Para(libname) machxo3l
 set Para(arch_name) xo3c00a
-set Para(PartType) "LCMXO3L-4300C"
+set Para(PartType) "LCMXO3L-6900C"
 
 set Para(tech_syn) machxo3l
 set Para(tech_cae) machxo3l
 set Para(Package) "CABGA256"
-set Para(SpeedGrade) "6"
+set Para(SpeedGrade) "5"
 set Para(FMax) "100"
 set fdcfile "$Para(sbp_path)/$Para(ModuleName).fdc"
 
-#edif2ngd
-set edif2ngd "$Para(FPGAPath)/edif2ngd"
-set Para(result) [catch {eval exec $edif2ngd -l $Para(libname) -d $Para(PartType) -nopropwarn $Para(ModuleName).edn $Para(ModuleName).ngo} msg]
+#create LSE project file(*.synproj)
+proc CreateSynprojFile {} {
+	global Para
+
+	if [catch {open $Para(ModuleName).synproj w} synprojFile] {
+		puts "Cannot create LSE project file $Para(ModuleName).synproj."
+		exit -1
+	} else {
+		puts $synprojFile "-a \"$Para(tech_syn)\"
+-d $Para(PartType)
+-t $Para(Package)
+-s $Para(SpeedGrade)
+-frequency 200
+-optimization_goal Balanced
+-bram_utilization 100
+-ramstyle auto
+-romstyle auto
+-use_carry_chain 1
+-carry_chain_length 0
+-force_gsr auto
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+-mux_style Auto
+-max_fanout 1000
+-fsm_encoding_style Auto
+-twr_paths 3
+-fix_gated_clocks 1
+-use_io_insertion 0
+-resolve_mixed_drivers 0
+-use_io_reg 1
+
+-lpf 1
+-p $Para(sbp_path)
+-ver \"$Para(install_dir)/cae_library/synthesis/verilog/$Para(tech_cae).v\"
+\"$Para(install_dir)/cae_library/synthesis/verilog/pmi_def.v\"
+\"$Para(sbp_path)/$Para(ModuleName).v\"
+-top $Para(ModuleName)
+-ngo \"$Para(sbp_path)/$Para(ModuleName).ngo\"
+		"
+		close $synprojFile
+	}
+}
+
+#LSE
+CreateSynprojFile
+set ldcfile "$Para(sbp_path)/$Para(ModuleName).ldc"
+set synthesis "$Para(FPGAPath)/synthesis"
+if {[file exists $ldcfile] == 0} {
+	set Para(result) [catch {eval exec $synthesis -f \"$Para(ModuleName).synproj\" -gui} msg]
+} else {
+	set Para(result) [catch {eval exec $synthesis -f \"$Para(ModuleName).synproj\" -sdc \"$ldcfile\" -gui} msg]
+}
 #puts $msg
 
 #ngdbuild

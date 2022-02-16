@@ -1,33 +1,29 @@
-SCUBA, Version Diamond (64-bit) 3.3.0.109
-Thu Dec 25 22:49:38 2014
+SCUBA, Version Diamond (64-bit) 3.12.0.240.2
+Wed Feb 16 16:05:57 2022
   
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2014 Lattice Semiconductor Corporation,  All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
   
 BEGIN SCUBA Module Synthesis
   
-    Issued command   : C:\lscc\diamond\3.3_x64\ispfpga\bin\nt64\scuba.exe -w -n simulation_fifo_24bit_to_24bit -lang verilog -synth synplify -bus_exp 7 -bb -arch xo3c00a -type ebfifo -depth 2048 -width 24 -rwidth 24 -pfu_fifo -no_enable -pe 10 -pf 2040 
-    Circuit name     : simulation_fifo_24bit_to_24bit
-    Module type      : ebfifo
+    Issued command   : C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n pll_pix2byte_RGB888_2lane -lang verilog -synth lse -arch xo3c00a -type pll -fin 24 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -fclkos2 75 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phases2 0 -phase_cntl STATIC -rst -fb_mode 1 -lock 
+    Circuit name     : pll_pix2byte_RGB888_2lane
+    Module type      : pll
     Module Version   : 5.7
     Ports            : 
-    Inputs       : Data[23:0], WrClock, RdClock, WrEn, RdEn, Reset, RPReset
-    Outputs      : Q[23:0], Empty, Full, AlmostEmpty, AlmostFull
+    Inputs       : CLKI, RST
+    Outputs      : CLKOP, CLKOS, CLKOS2, LOCK
     I/O buffer       : not inserted
-    EDIF output      : simulation_fifo_24bit_to_24bit.edn
-    Verilog output   : simulation_fifo_24bit_to_24bit.v
-    Verilog template : simulation_fifo_24bit_to_24bit_tmpl.v
-    Verilog testbench: tb_simulation_fifo_24bit_to_24bit_tmpl.v
+    EDIF output      : pll_pix2byte_RGB888_2lane.edn
+    Verilog output   : pll_pix2byte_RGB888_2lane.v
+    Verilog template : pll_pix2byte_RGB888_2lane_tmpl.v
     Verilog purpose  : for synthesis and simulation
     Bus notation     : big endian
-    Report output    : simulation_fifo_24bit_to_24bit.srp
+    Report output    : pll_pix2byte_RGB888_2lane.srp
     Estimated Resource Usage:
-            LUT : 1357
-           DRAM : 768
-            Reg : 172
   
 END   SCUBA Module Synthesis
 

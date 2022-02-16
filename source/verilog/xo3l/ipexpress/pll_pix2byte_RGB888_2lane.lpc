@@ -1,8 +1,8 @@
 [Device]
 Family=machxo3l
-PartType=LCMXO3L-4300C
-PartName=LCMXO3L-4300C-6BG256C
-SpeedGrade=6
+PartType=LCMXO3L-6900C
+PartName=LCMXO3L-6900C-5BG256C
+SpeedGrade=5
 Package=CABGA256
 OperatingCondition=COM
 Status=S
@@ -12,12 +12,12 @@ VendorName=Lattice Semiconductor Corporation
 CoreType=LPM
 CoreStatus=Demo
 CoreName=PLL
-CoreRevision=5.6
+CoreRevision=5.8
 ModuleName=pll_pix2byte_RGB888_2lane
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=12/25/2014
-Time=12:58:48
+Date=02/16/2022
+Time=16:05:57
 
 [Parameters]
 Verilog=1
@@ -28,12 +28,12 @@ Expression=None
 Order=None
 IO=0
 mode=Frequency
-CLKI=50
-CLKI_DIV=1
-BW=4.775
+CLKI=24
+CLKI_DIV=2
+BW=1.146
 VCO=600.000
 fb_mode=CLKOP
-CLKFB_DIV=6
+CLKFB_DIV=25
 FRACN_ENABLE=0
 FRACN_DIV=0
 DynamicPhase=STATIC
@@ -84,4 +84,4 @@ CLKOS3_AFREQ=
 CLKOS3_PHASEADJ=0
 
 [Command]
-cmd_line= -w -n pll_pix2byte_RGB888_2lane -lang verilog -synth synplify -arch xo3c00a -type pll -fin 50 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -fclkos2 75 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phases2 0 -phase_cntl STATIC -rst -fb_mode 1 -lock
+cmd_line= -w -n pll_pix2byte_RGB888_2lane -lang verilog -synth lse -arch xo3c00a -type pll -fin 24 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -fclkos2 75 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phases2 0 -phase_cntl STATIC -rst -fb_mode 1 -lock

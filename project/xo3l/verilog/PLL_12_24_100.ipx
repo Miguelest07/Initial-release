@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="PLL_12_24_100" module="PLL_12_24_100" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 02 16 16:18:23.654" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
+  <Package>
+		<File name="PLL_12_24_100.lpc" type="lpc" modified="2022 02 16 16:18:22.119"/>
+		<File name="PLL_12_24_100.v" type="top_level_verilog" modified="2022 02 16 16:18:22.167"/>
+		<File name="PLL_12_24_100_tmpl.v" type="template_verilog" modified="2022 02 16 16:18:22.167"/>
+  </Package>
+</DiamondModule>

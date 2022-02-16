@@ -63,6 +63,8 @@ add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/sour
 add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Commando_Inicial.v}
 add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/DataFlow_Switch.v}
 add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Mux_mod.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Serial_Protocol.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/PLL_12_24_100.v}
 
 #-- top module name
 set_option -top_module top

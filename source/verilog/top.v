@@ -95,103 +95,37 @@ module top #(
      `ifdef LP_0                                                                                                         
           inout   [1:0] LP0                            ,  //LP (Low Power) External Interface Signals for Data Lane 0    
      `endif                                                                                                               
-                                                       
-     input                  PIXCLK                     ,  //Pixel clock input for parallel interface
+     input 					i_clk,                                                  
+     //input                  PIXCLK                     ,  //Pixel clock input for parallel interface
      input                  VSYNC                      ,  //Vertical Sync input for parallel interface
      input                  HSYNC                      ,  //Horizontal Sync input for parallel interface
      input                  DE                         ,  //Data Enable input for parallel interface
      input [word_width-1:0] PIXDATA,                       //Pixel data bus for parallel interface
 	 input 				i_Global_Enable,
-	 input [1:0] 		i_LP,
-	 input 		i_HS
+	 input [3:0] 		i_test,
+	 output SerialP,
+	 output SerialN
 );
-	 wire w_Global_Enable; 
-     wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
-     wire [7:0] byte_D3_out, byte_D2_out, byte_D1_out, byte_D0_out;
-     wire [15:0] word_cnt;
-     wire [1:0] lp_clk;
-     wire [1:0] lp_data;
-     wire [word_width-1:0] w_pixdata;
-     wire w_pixclk, CLKOP, CLKOS, byte_clk;
-	 
-	 wire [7:0]   w_byte_D1_a;
+wire w_Global_Enable; 
+wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
+wire [7:0] byte_D3_out, byte_D2_out, byte_D1_out, byte_D0_out;
+wire [15:0] word_cnt;
+wire [1:0] lp_clk;
+wire [1:0] lp_data;
+wire [word_width-1:0] w_pixdata;
+wire w_pixclk, CLKOP, CLKOS, byte_clk;
+
+wire [7:0]   w_byte_D1_a;
 wire [7:0]   w_byte_D0_a;              
 wire   [1:0] w_data_a;
 wire  w_lp1_dir_a;       
 wire w_lp0_dir_a;
 wire w_hsxx_clk_en_a;
+wire PIXCLK;
+wire w_CLK_100MHZ;
+wire w_CLK_20MHZ;
 
-     parameter  lane_width = `ifdef HS_3  4
-                             `elsif HS_2  3
-                             `elsif HS_1  2
-                             `elsif HS_0  1
-                             `endif ;  
-      
-	   
-generate
-    if(DT=='h3E & lane_width==1) // s
-         pll_pix2byte_RGB888_1lane u_pll_pix2byte_RGB888_1lane(.RST(~w_Global_Enable), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
-endgenerate
-generate
-    if(DT=='h3E & lane_width==2) 
-         pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(.RST(~reset_n), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
-endgenerate
-generate
-    if(DT=='h3E & lane_width==4) 
-         pll_pix2byte_RGB888_4lane u_pll_pix2byte_RGB888_4lane(.RST(~reset_n), .CLKI(w_pixclk), .CLKOP(CLKOP), .CLKOS(CLKOS), .CLKOS2(byte_clk), .LOCK());
-endgenerate
-  assign word_cnt = w_de? WC : 16'h0000;
-     BYTE_PACKETIZER #(
-          .word_width(word_width) ,
-          .lane_width(lane_width) ,
-          .dt        (DT        ) ,
-          .crc16     (crc16     )   
-     )
-     u_BYTE_PACKETIZER (
-          .reset_n         (reset_n)  ,
-          .PIXCLK          (w_pixclk)   ,
-          .VSYNC           (w_vsync)    ,
-          .HSYNC           (w_hsync)    ,
-          .DE              (w_de)       ,
-          .PIXDATA         (w_pixdata)  ,
-                                      
-          .VC              (VC)       ,
-          .WC              (word_cnt)       ,
-          
-          .byte_clk        (byte_clk) ,   
-          
-          .hs_en           (hs_en)    ,
-          .byte_D3         (byte_D3)  ,
-          .byte_D2         (byte_D2)  ,
-          .byte_D1         (byte_D1)  ,
-          .byte_D0         (byte_D0)  ,
-          .EoTp            (EoTp)      
-     );
-    
-     LP_HS_DELAY_CNTRL 
-     u_LP_HS_DELAY_CNTRL(
-         .reset_n   (reset_n),
-         .byte_clk  (byte_clk),
-         .hs_en     (hs_en),
-         .byte_D3_in(byte_D3),
-         .byte_D2_in(byte_D2),
-         .byte_D1_in(byte_D1),
-         .byte_D0_in(byte_D0),
-		  .hs_clk_en  (hs_clk_en)               ,
-    .hsxx_clk_en(w_hsxx_clk_en_a)         ,
-    .hs_data_en (hs_data_en)          ,
-         .lp_clk  (lp_clk),
-         .lp_data (w_data_a),
-         .byte_D3_out(byte_D3_out),
-         .byte_D2_out(byte_D2_out),
-         .byte_D1_out(w_byte_D1_a),
-         .byte_D0_out(w_byte_D0_a)
-);
-
- 
 wire w_reset_n;
-
-
 
 wire [7:0]   w_byte_D1_b;
 wire [7:0]   w_byte_D0_b;              
@@ -211,19 +145,94 @@ wire w_hs_clk_en_out;
 wire w_lp_clk_b;
 wire w_lp_clk_out;
 
+wire w_eoc;
+wire Start_w;
+wire State_w;
+wire w_init;
+
 assign w_lp1_dir_a = 1'b1;
 assign w_lp0_dir_a = 1'b1;
+
+parameter  lane_width = `ifdef HS_3  4
+                        `elsif HS_2  3
+                        `elsif HS_1  2
+                        `elsif HS_0  1
+                        `endif ;  
+ 
+PLL_12_24_100 PLL_12_24_100_mod (
+	.CLKI(i_clk), 
+	.CLKOP(PIXCLK), 
+	.CLKOS(w_CLK_100MHZ),
+	.CLKOS2(w_CLK_20MHZ)
+);
+	 
+pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(
+	.RST(~reset_n), 
+	.CLKI(w_pixclk), 
+	.CLKOP(CLKOP), 
+	.CLKOS(CLKOS), 
+	.CLKOS2(byte_clk), 
+	.LOCK()
+);
+
+
+  assign word_cnt = w_de? WC : 16'h0000;
+
+BYTE_PACKETIZER #(
+	.word_width(word_width) ,
+	.lane_width(lane_width) ,
+	.dt        (DT        ) ,
+	.crc16     (crc16     )   
+)u_BYTE_PACKETIZER (
+	.reset_n         (w_init)  ,
+	.PIXCLK          (w_pixclk)   ,
+	.VSYNC           (w_vsync)    ,
+	.HSYNC           (w_hsync)    ,
+	.DE              (w_de)       ,
+	.PIXDATA         (w_pixdata)  ,
+							  
+	.VC              (VC)       ,
+	.WC              (word_cnt)       ,
+
+	.byte_clk        (byte_clk) ,   
+
+	.hs_en           (hs_en)    ,
+	.byte_D3         (byte_D3)  ,
+	.byte_D2         (byte_D2)  , 
+	.byte_D1         (byte_D1)  ,
+	.byte_D0         (byte_D0)  ,
+	.EoTp            (EoTp)      
+);
+
+LP_HS_DELAY_CNTRL u_LP_HS_DELAY_CNTRL(
+	.reset_n   (w_init),
+	.byte_clk  (byte_clk),
+	.hs_en     (hs_en),
+	.byte_D3_in(byte_D3),
+	.byte_D2_in(byte_D2),
+	.byte_D1_in(byte_D1),
+	.byte_D0_in(byte_D0),
+	.hs_clk_en  (hs_clk_en),
+	.hsxx_clk_en(w_hsxx_clk_en_a),
+	.hs_data_en (hs_data_en),
+	.lp_clk  (lp_clk),
+	.lp_data (w_data_a),
+	.byte_D3_out(byte_D3_out),
+	.byte_D2_out(byte_D2_out),
+	.byte_D1_out(w_byte_D1_a),
+	.byte_D0_out(w_byte_D0_a)
+);
+
+
 
 Commando_Inicial Comand(
 	.i_clk(PIXCLK), 
 	.o_Global_Enable (w_Global_Enable),
 	.reset_n (reset_n)         ,      //Resets the Design      
-    .CLKOP(CLKOP)            ,      //HS Clock  
-    .CLKOS (CLKOS)           ,      //HS Clock + 90 deg phase shift
-	
-	.i_LP(i_LP),
-	.i_HS(i_HS),
-	
+    .i_CLK_100MHZ(w_CLK_100MHZ),
+	.i_eoc(w_eoc),
+	.i_test(i_test),
+	.o_init(w_init),
     .byte_D1 (w_byte_D1_b)         ,
     .byte_D0(w_byte_D0_b)          ,                    
     .lp1_out(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
@@ -234,6 +243,26 @@ Commando_Inicial Comand(
     .hs_data_en(w_hs_data_en_b)      ,            //HS (High Speed) Data Enable      
     .hsxx_clk_en(w_hsxx_clk_en_b)	 ,
 	.lp_clk(w_lp_clk_b) 
+);
+ 
+Serial_Protocol Serial_busP(
+	.rst(reset_n),
+	.clk(w_CLK_20MHZ),
+	.eoc(w_eoc),
+	.Start(Start_w),
+	.State(State_w),
+	.Polarity(1'b1),
+	.tx(SerialP)
+);
+
+Serial_Protocol Serial_busN(
+	.rst(reset_n),
+	.clk(w_CLK_20MHZ),
+	.eoc(eoc),
+	.Start(Start_w),
+	.State(State_w),
+	.Polarity(1'b0),
+	.tx(SerialN)
 );
 
 DataFlow_Switch DataSPDT ( 
@@ -357,7 +386,7 @@ wire [7:0] dcs_data;
 
      DCS_ROM u_DCS_ROM
      (
-        .resetn    (reset_n      ) ,
+        .resetn    (w_init) ,
         .clk       (byte_clk     ) ,
         .data_en   (dcs_data_en  ) ,
         .escape_en (dcs_escape_en) ,
@@ -394,7 +423,7 @@ generate
             .mode          (testmode)
         ) u_colorbar_gen
         ( 
-            .rstn       (reset_n  ) , 
+            .rstn       (w_init) , 
             .m148_5_clk (w_pixclk) , 
             .fv         () , 
             .lv         (w_de) , 
