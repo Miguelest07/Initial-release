@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synlog\xo3l_verilog_xo3l_verilog_fpga_mapper.srr</data>
+<data>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\synlog\xo3l_verilog_xo3l_verilog_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -21,10 +21,16 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data>-4.448</data>
 </row>
 <row>
+<data>PLL_12_24_100|CLKOS2_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>171.5 MHz</data>
+<data>-0.832</data>
+</row>
+<row>
 <data>PLL_12_24_100|CLKOS_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>170.1 MHz</data>
-<data>-0.878</data>
+<data>169.0 MHz</data>
+<data>-0.918</data>
 </row>
 <row>
 <data>oDDRx4|sclk_inferred_clock</data>

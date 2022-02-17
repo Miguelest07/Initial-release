@@ -233,6 +233,8 @@ Commando_Inicial Comand(
 	.i_eoc(w_eoc),
 	.i_test(i_test),
 	.o_init(w_init),
+	.Start_s(Start_w),
+	.State_s(State_w),
     .byte_D1 (w_byte_D1_b)         ,
     .byte_D0(w_byte_D0_b)          ,                    
     .lp1_out(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
@@ -242,7 +244,7 @@ Commando_Inicial Comand(
     .hs_clk_en(w_hs_clk_en_b)        ,        //HS (High Speed) Clock Enable                                                          
     .hs_data_en(w_hs_data_en_b)      ,            //HS (High Speed) Data Enable      
     .hsxx_clk_en(w_hsxx_clk_en_b)	 ,
-	.lp_clk(w_lp_clk_b) 
+	.lp_clk(w_lp_clk_b)
 );
  
 Serial_Protocol Serial_busP(

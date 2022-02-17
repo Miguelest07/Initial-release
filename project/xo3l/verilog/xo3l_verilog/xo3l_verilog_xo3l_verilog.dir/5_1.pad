@@ -6,7 +6,7 @@ Performance Grade:      5
 PACKAGE:          CABGA256
 Package Status:                     Final          Version 1.16
 
-Wed Feb 16 16:48:06 2022
+Wed Feb 16 17:53:24 2022
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -21,10 +21,10 @@ Pinout by Port Name:
 | LP1[1]          | J16/1    | LVCMOS12_OUT | PR15A |           |           | DRIVE:6mA PULL:DOWN SLEW:SLOW        |
 | LPCLK[0]        | J15/1    | LVCMOS12_OUT | PR16A |           |           | DRIVE:6mA PULL:DOWN SLEW:SLOW        |
 | LPCLK[1]        | H14/1    | LVCMOS12_OUT | PR12A |           |           | DRIVE:6mA PULL:DOWN SLEW:SLOW        |
-| SerialN         | D9/0     | LVCMOS25_OUT | PT22B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
-| SerialP         | C9/0     | LVCMOS25_OUT | PT22D |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| SerialN         | H6/5     | LVCMOS25_OUT | PL9D  |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
+| SerialP         | N3/3     | LVCMOS25_OUT | PL25B |           |           | DRIVE:8mA PULL:DOWN SLEW:SLOW        |
 | i_Global_Enable | N2/3     | LVCMOS25_IN  | PL23C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| i_clk           | T7/2     | LVCMOS25_IN  | PB16A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| i_clk           | C8/0     | LVCMOS25_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | reset_n         | B3/0     | LVCMOS25_IN  | PT9C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 +-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
@@ -36,6 +36,7 @@ Vccio by Bank:
 | 1    | 1.2V  |
 | 2    | 2.5V  |
 | 3    | 2.5V  |
+| 5    | 2.5V  |
 +------+-------+
 
 Vref by Bank:
@@ -81,8 +82,8 @@ Pinout by Pin Number:
 | C5/0     |     unused, PULL:DOWN |            |               | PT10B |                |           |           |
 | C6/0     | Reserved: sysCONFIG   |            |               | PT14C | TDO            |           |           |
 | C7/0     |     unused, PULL:DOWN |            |               | PT15B |                |           |           |
-| C8/0     |     unused, PULL:DOWN |            |               | PT18A | PCLKT0_1       |           |           |
-| C9/0     | SerialP               |            | LVCMOS25_OUT  | PT22D | SDA/PCLKC0_0   |           |           |
+| C8/0     | i_clk                 | LOCATED    | LVCMOS25_IN   | PT18A | PCLKT0_1       |           |           |
+| C9/0     |     unused, PULL:DOWN |            |               | PT22D | SDA/PCLKC0_0   |           |           |
 | C10/0    |     unused, PULL:DOWN |            |               | PT27C | JTAGENB        |           |           |
 | C11/0    |     unused, PULL:DOWN |            |               | PT28B |                |           |           |
 | C12/0    |     unused, PULL:DOWN |            |               | PT35A |                |           |           |
@@ -95,7 +96,7 @@ Pinout by Pin Number:
 | D6/0     | D1+                   | LOCATED    | LVDS25E_OUT   | PT14A |                |           |           |
 | D7/0     | D0-                   |            | LVDS25E_OUT   | PT16B |                |           |           |
 | D8/0     | DCK+                  | LOCATED    | LVDS25E_OUT   | PT21A |                |           |           |
-| D9/0     | SerialN               |            | LVCMOS25_OUT  | PT22B |                |           |           |
+| D9/0     |     unused, PULL:DOWN |            |               | PT22B |                |           |           |
 | D10/0    |     unused, PULL:DOWN |            |               | PT27A |                |           |           |
 | D11/0    |     unused, PULL:DOWN |            |               | PT32B |                |           |           |
 | D14/1    |     unused, PULL:DOWN |            |               | PR2A  | R_GPLLT_FB/DQ0 |           |           |
@@ -144,7 +145,7 @@ Pinout by Pin Number:
 | H3/4     |     unused, PULL:DOWN |            |               | PL11A |                |           |           |
 | H4/4     |     unused, PULL:DOWN |            |               | PL10C |                |           |           |
 | H5/4     |     unused, PULL:DOWN |            |               | PL15C |                |           |           |
-| H6/5     |     unused, PULL:DOWN |            |               | PL9D  |                |           |           |
+| H6/5     | SerialN               | LOCATED    | LVCMOS25_OUT  | PL9D  |                |           |           |
 | H11/1    |     unused, PULL:DOWN |            |               | PR16C |                |           |           |
 | H12/1    |     unused, PULL:DOWN |            |               | PR10D |                |           |           |
 | H13/1    |     unused, PULL:DOWN |            |               | PR11C |                |           |           |
@@ -203,7 +204,7 @@ Pinout by Pin Number:
 | M16/1    |     unused, PULL:DOWN |            |               | PR21B | DQ1            |           |           |
 | N1/3     |     unused, PULL:DOWN |            |               | PL24B |                |           |           |
 | N2/3     | i_Global_Enable       | LOCATED    | LVCMOS25_IN   | PL23C |                |           |           |
-| N3/3     |     unused, PULL:DOWN |            |               | PL25B |                |           |           |
+| N3/3     | SerialP               | LOCATED    | LVCMOS25_OUT  | PL25B |                |           |           |
 | N6/2     |     unused, PULL:DOWN |            |               | PB10A |                |           |           |
 | N7/2     |     unused, PULL:DOWN |            |               | PB13D |                |           |           |
 | N8/2     |     unused, PULL:DOWN |            |               | PB18C |                |           |           |
@@ -375,7 +376,7 @@ Pinout by Pin Number:
 | T4/2     |     unused, PULL:DOWN |            |               | PB4B  |                |           |           |
 | T5/2     |     unused, PULL:DOWN |            |               | PB9A  |                |           |           |
 | T6/2     | Reserved: sysCONFIG   |            | LVCMOS25_BIDI | PB12B | SO/SPISO       |           |           |
-| T7/2     | i_clk                 |            | LVCMOS25_IN   | PB16A | PCLKT2_0       |           |           |
+| T7/2     |     unused, PULL:DOWN |            |               | PB16A | PCLKT2_0       |           |           |
 | T8/2     |     unused, PULL:DOWN |            |               | PB18B |                |           |           |
 | T9/2     |     unused, PULL:DOWN |            |               | PB23A | PCLKT2_1       |           |           |
 | T10/2    |     unused, PULL:DOWN |            |               | PB26B |                |           |           |
@@ -415,10 +416,10 @@ LOCATE  COMP  "LP1[0]"  SITE  "H15";
 LOCATE  COMP  "LP1[1]"  SITE  "J16";
 LOCATE  COMP  "LPCLK[0]"  SITE  "J15";
 LOCATE  COMP  "LPCLK[1]"  SITE  "H14";
-LOCATE  COMP  "SerialN"  SITE  "D9";
-LOCATE  COMP  "SerialP"  SITE  "C9";
+LOCATE  COMP  "SerialN"  SITE  "H6";
+LOCATE  COMP  "SerialP"  SITE  "N3";
 LOCATE  COMP  "i_Global_Enable"  SITE  "N2";
-LOCATE  COMP  "i_clk"  SITE  "T7";
+LOCATE  COMP  "i_clk"  SITE  "C8";
 LOCATE  COMP  "reset_n"  SITE  "B3";
 
 #PLL
@@ -435,5 +436,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Feb 16 16:48:06 2022
+Wed Feb 16 17:53:24 2022
 

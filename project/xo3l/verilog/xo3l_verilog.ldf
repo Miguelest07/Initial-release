@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="xo3l_verilog" device="LCMXO3L-6900C-5BG256C" default_implementation="xo3l_verilog">
     <Options/>
     <Implementation title="xo3l_verilog" dir="xo3l_verilog" description="xo3l_verilog" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="top" top="top"/>
+        <Options top="top"/>
         <Source name="../../../source/verilog/compiler_directives.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
@@ -52,6 +52,12 @@
             <Options/>
         </Source>
         <Source name="Mux_mod.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Serial_Protocol.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="PLL_12_24_100.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="xo3l_verilog.lpf" type="Logic Preference" type_short="LPF">

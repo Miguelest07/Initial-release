@@ -4,11 +4,16 @@
 @P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Period : 9.448
 @P:  PLL_12_24_100|CLKOP_inferred_clock - Requested Period : 5.000
 @P:  PLL_12_24_100|CLKOP_inferred_clock - Slack : -4.448
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Frequency : 170.1 MHz
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Frequency : 171.5 MHz
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Period : 5.832
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Period : 5.000
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Slack : -0.832
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Frequency : 169.0 MHz
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Period : 5.878
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Period : 5.918
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Requested Period : 5.000
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Slack : -0.878
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Slack : -0.918
 @P:  oDDRx4|sclk_inferred_clock - Estimated Frequency : 360.7 MHz
 @P:  oDDRx4|sclk_inferred_clock - Requested Frequency : 200.0 MHz
 @P:  oDDRx4|sclk_inferred_clock - Estimated Period : 2.772
@@ -24,7 +29,7 @@
 @P:  System - Estimated Period : 1.089
 @P:  System - Requested Period : 5.000
 @P:  System - Slack : 3.911
-@P:  Total Area : 299.0
+@P:  Total Area : 371.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -43,4 +48,6 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:05s

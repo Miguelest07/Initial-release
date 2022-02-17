@@ -5,41 +5,41 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="0" update_result="2" update_time="1645052141"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1645055631"/>
             <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1645052142">
-            <Task name="Map" build_result="2" update_result="0" update_time="1645052142"/>
+        <Milestone name="Map" build_result="2" build_time="1645055592">
+            <Task name="Map" build_result="2" update_result="0" update_time="1645055592"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="PAR" build_result="0" build_time="1645052141">
-            <Task name="PAR" build_result="0" update_result="2" update_time="1645052141"/>
-            <Task name="PARTrace" build_result="0" update_result="2" update_time="1645052141"/>
+        <Milestone name="PAR" build_result="2" build_time="1645055621">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1645055621"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1645055623"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1645052140">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1645052140"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1645055589">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1645055589"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1645052121"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1645052121"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1645055561"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1645055561"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1645052141">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1645052141"/>
+        <Milestone name="Translate" build_result="2" build_time="1645055590">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1645055590"/>
         </Milestone>
-        <Report name="xo3l_verilog_xo3l_verilog.bgn" last_build_time="1644963306" last_build_size="5501"/>
-        <Report name="xo3l_verilog_xo3l_verilog.bit" last_build_time="1644963306" last_build_size="34269"/>
-        <Report name="xo3l_verilog_xo3l_verilog.edi" last_build_time="1645052138" last_build_size="515333"/>
+        <Report name="xo3l_verilog_xo3l_verilog.bgn" last_build_time="1645055631" last_build_size="5527"/>
+        <Report name="xo3l_verilog_xo3l_verilog.bit" last_build_time="1645055631" last_build_size="35478"/>
+        <Report name="xo3l_verilog_xo3l_verilog.edi" last_build_time="1645055586" last_build_size="583731"/>
         <Report name="xo3l_verilog_xo3l_verilog.lsedata" last_build_time="1644624376" last_build_size="2019983"/>
-        <Report name="xo3l_verilog_xo3l_verilog.ncd" last_build_time="1645051694" last_build_size="942594"/>
-        <Report name="xo3l_verilog_xo3l_verilog.ngd" last_build_time="1645052141" last_build_size="688328"/>
-        <Report name="xo3l_verilog_xo3l_verilog.twr" last_build_time="1645051696" last_build_size="307341"/>
-        <Report name="xo3l_verilog_xo3l_verilog_map.ncd" last_build_time="1645052142" last_build_size="666048"/>
+        <Report name="xo3l_verilog_xo3l_verilog.ncd" last_build_time="1645055621" last_build_size="1037981"/>
+        <Report name="xo3l_verilog_xo3l_verilog.ngd" last_build_time="1645055590" last_build_size="751023"/>
+        <Report name="xo3l_verilog_xo3l_verilog.twr" last_build_time="1645055623" last_build_size="363791"/>
+        <Report name="xo3l_verilog_xo3l_verilog_map.ncd" last_build_time="1645055592" last_build_size="733063"/>
     </Strategy>
 </BuildStatus>
-                               
+                                        

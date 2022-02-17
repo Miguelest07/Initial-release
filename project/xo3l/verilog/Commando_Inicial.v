@@ -7,6 +7,8 @@ module Commando_Inicial (
 	input 		[3:0] i_test,
 	input 		i_Serial_P,
 	input 		i_Serial_N,
+	output 		Start_s,
+	output 		State_s,
 	output 	    o_init,
      `ifdef HS_1  
           output [7:0]   byte_D1          ,
@@ -69,17 +71,17 @@ begin
 		begin
 			Start_sd <= 0;
 		end
-		else if(idle_start == 18360000)// 183.6ms ~ 18360000
+		else if(idle_start == 183600)// 183.6ms ~ 18360000
 		begin
 			idle_start <= 23'b0;
 			r_init <= 1;
 		end
-		else if (idle_start == 11886000)// 118.86ms ~ 11886000
+		else if (idle_start == 118860)// 118.86ms ~ 11886000
 		begin
 				Start_sd <= 1;
 				State_sd <= 0;
 		end
-		else if (idle_start == 1080000)// 10.8ms ~ 1080000
+		else if (idle_start == 10800)// 10.8ms ~ 1080000
 		begin
 				Start_sd <= 1;
 				State_sd <= 1;

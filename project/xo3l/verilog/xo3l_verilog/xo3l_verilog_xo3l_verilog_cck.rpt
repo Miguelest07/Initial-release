@@ -9,11 +9,11 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: LAPTOP-BQ95DNMF
+Hostname: DESKTOP-NE8NF87
 
 Implementation : xo3l_verilog
 
-# Written on Wed Feb 16 16:55:35 2022
+# Written on Wed Feb 16 17:53:00 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -51,6 +51,7 @@ PLL_12_24_100|CLKOS2_inferred_clock                 PLL_12_24_100|CLKOS_inferred
 PLL_12_24_100|CLKOS_inferred_clock                  System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 PLL_12_24_100|CLKOS_inferred_clock                  PLL_12_24_100|CLKOP_inferred_clock                  |     Diff grp         |     No paths         |     No paths         |     No paths                         
 PLL_12_24_100|CLKOS_inferred_clock                  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+PLL_12_24_100|CLKOS_inferred_clock                  PLL_12_24_100|CLKOS2_inferred_clock                 |     Diff grp         |     No paths         |     No paths         |     No paths                         
 PLL_12_24_100|CLKOS_inferred_clock                  PLL_12_24_100|CLKOS_inferred_clock                  |     5.000            |     No paths         |     No paths         |     No paths                         
 ===================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.

@@ -4,67 +4,67 @@
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_61</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_82</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_67</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_88</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_71</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_92</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_72</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_93</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_433</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_511</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_434</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_512</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_435</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_513</Dynamic>
         </Message>
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_436</Dynamic>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_514</Dynamic>
         </Message>
     </Task>
     <Task name="Map">
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf(28): Semantic error in &quot;LOCATE COMP &quot;i_HS&quot; SITE &quot;M3&quot; ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf(28): Semantic error in &quot;LOCATE COMP &quot;i_HS&quot; SITE &quot;M3&quot; ;&quot;: </Dynamic>
             <Dynamic>i_HS</Dynamic>
-            <Navigation>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
+            <Navigation>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf(29): Semantic error in &quot;LOCATE COMP &quot;i_LP[0]&quot; SITE &quot;P1&quot; ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf(29): Semantic error in &quot;LOCATE COMP &quot;i_LP[0]&quot; SITE &quot;P1&quot; ;&quot;: </Dynamic>
             <Dynamic>i_LP[0]</Dynamic>
-            <Navigation>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
+            <Navigation>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
             <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>1100679</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf(30): Semantic error in &quot;LOCATE COMP &quot;i_LP[1]&quot; SITE &quot;N1&quot; ;&quot;: </Dynamic>
+            <Dynamic>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf(30): Semantic error in &quot;LOCATE COMP &quot;i_LP[1]&quot; SITE &quot;N1&quot; ;&quot;: </Dynamic>
             <Dynamic>i_LP[1]</Dynamic>
-            <Navigation>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
+            <Navigation>C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog.lpf</Navigation>
             <Navigation>30</Navigation>
         </Message>
         <Message>
@@ -1568,6 +1568,66 @@
         <Message>
             <ID>1121028</ID>
             <Severity>Warning</Severity>
+            <Dynamic>rs</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff4</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff3</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff2</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rs</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>HS</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff4</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff3</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff2</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>buff1</Dynamic>
+        </Message>
+        <Message>
+            <ID>1121028</ID>
+            <Severity>Warning</Severity>
             <Dynamic>p_LP11_clk_end</Dynamic>
         </Message>
         <Message>
@@ -2085,21 +2145,21 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1249 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:378:11:378:15|Redeclaration of implicit signal w_LP0</Dynamic>
+            <Dynamic>CG1249 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:380:11:380:15|Redeclaration of implicit signal w_LP0</Dynamic>
             <Navigation>CG1249</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>378</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
+            <Navigation>380</Navigation>
             <Navigation>11</Navigation>
-            <Navigation>378</Navigation>
+            <Navigation>380</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Redeclaration of implicit signal w_LP0</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v&quot;:99:11:99:14|Net clk0 is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v&quot;:99:11:99:14|Net clk0 is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>99</Navigation>
             <Navigation>11</Navigation>
             <Navigation>99</Navigation>
@@ -2109,9 +2169,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v&quot;:100:11:100:14|Net clk2 is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v&quot;:100:11:100:14|Net clk2 is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>100</Navigation>
             <Navigation>11</Navigation>
             <Navigation>100</Navigation>
@@ -2121,9 +2181,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v&quot;:101:11:101:14|Net clk4 is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v&quot;:101:11:101:14|Net clk4 is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>101</Navigation>
             <Navigation>11</Navigation>
             <Navigation>101</Navigation>
@@ -2133,9 +2193,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v&quot;:102:11:102:14|Net clk6 is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v&quot;:102:11:102:14|Net clk6 is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>102</Navigation>
             <Navigation>11</Navigation>
             <Navigation>102</Navigation>
@@ -2145,9 +2205,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:126:18:126:24|Net bit_clk is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:126:18:126:24|Net bit_clk is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>126</Navigation>
             <Navigation>18</Navigation>
             <Navigation>126</Navigation>
@@ -2157,9 +2217,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:127:15:127:24|Net bit_clk_90 is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:127:15:127:24|Net bit_clk_90 is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>127</Navigation>
             <Navigation>15</Navigation>
             <Navigation>127</Navigation>
@@ -2169,9 +2229,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:68:12:68:21|Net start_data is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:68:12:68:21|Net start_data is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>68</Navigation>
             <Navigation>12</Navigation>
             <Navigation>68</Navigation>
@@ -2181,9 +2241,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:69:12:69:23|Net start_escape is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:69:12:69:23|Net start_escape is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>69</Navigation>
             <Navigation>12</Navigation>
             <Navigation>69</Navigation>
@@ -2193,9 +2253,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:70:12:70:20|Net stop_data is not declared.</Dynamic>
+            <Dynamic>CG1337 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:70:12:70:20|Net stop_data is not declared.</Dynamic>
             <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>70</Navigation>
             <Navigation>12</Navigation>
             <Navigation>70</Navigation>
@@ -2205,33 +2265,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:128:7:128:13|Net Start_s is not declared.</Dynamic>
-            <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>128</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>128</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>Net Start_s is not declared.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG1337 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:129:7:129:13|Net State_s is not declared.</Dynamic>
-            <Navigation>CG1337</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>129</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>129</Navigation>
-            <Navigation>13</Navigation>
-            <Navigation>Net State_s is not declared.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG146 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v&quot;:49:7:49:19|Creating black box for empty module parallel2byte_24s_2s_62</Dynamic>
+            <Dynamic>CG146 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\parallel2byte_bb.v&quot;:49:7:49:19|Creating black box for empty module parallel2byte_24s_2s_62</Dynamic>
             <Navigation>CG146</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\parallel2byte_bb.v</Navigation>
             <Navigation>49</Navigation>
             <Navigation>7</Navigation>
             <Navigation>49</Navigation>
@@ -2241,9 +2277,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG146 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v&quot;:49:7:49:18|Creating black box for empty module packetheader_2s</Dynamic>
+            <Dynamic>CG146 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\packetheader_bb.v&quot;:49:7:49:18|Creating black box for empty module packetheader_2s</Dynamic>
             <Navigation>CG146</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\packetheader_bb.v</Navigation>
             <Navigation>49</Navigation>
             <Navigation>7</Navigation>
             <Navigation>49</Navigation>
@@ -2253,9 +2289,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v&quot;:83:12:83:14|Removing wire crc, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v&quot;:83:12:83:14|Removing wire crc, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>83</Navigation>
             <Navigation>12</Navigation>
             <Navigation>83</Navigation>
@@ -2265,9 +2301,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:4:8:4:22|Removing wire o_Global_Enable, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:4:8:4:22|Removing wire o_Global_Enable, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
             <Navigation>4</Navigation>
             <Navigation>8</Navigation>
             <Navigation>4</Navigation>
@@ -2277,129 +2313,129 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:29:12:29:20|Object r_byte_D1 is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:31:12:31:20|Object r_byte_D1 is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>29</Navigation>
+            <Navigation>31</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Object r_byte_D1 is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:30:12:30:20|Object r_byte_D0 is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:32:12:32:20|Object r_byte_D0 is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>30</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>32</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>30</Navigation>
+            <Navigation>32</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Object r_byte_D0 is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:31:12:31:20|Object r_lp1_out is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:33:12:33:20|Object r_lp1_out is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>31</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>33</Navigation>
             <Navigation>12</Navigation>
-            <Navigation>31</Navigation>
+            <Navigation>33</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Object r_lp1_out is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:32:4:32:12|Object r_lp1_dir is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:34:4:34:12|Object r_lp1_dir is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>32</Navigation>
+            <Navigation>34</Navigation>
             <Navigation>12</Navigation>
             <Navigation>Object r_lp1_dir is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:33:10:33:18|Object r_lp0_out is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:35:10:35:18|Object r_lp0_out is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>33</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>35</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>33</Navigation>
+            <Navigation>35</Navigation>
             <Navigation>18</Navigation>
             <Navigation>Object r_lp0_out is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:34:4:34:12|Object r_lp0_dir is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:36:4:36:12|Object r_lp0_dir is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>34</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>36</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>34</Navigation>
+            <Navigation>36</Navigation>
             <Navigation>12</Navigation>
             <Navigation>Object r_lp0_dir is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:35:4:35:14|Object r_hs_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:37:4:37:14|Object r_hs_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>35</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>37</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>35</Navigation>
+            <Navigation>37</Navigation>
             <Navigation>14</Navigation>
             <Navigation>Object r_hs_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:36:4:36:15|Object r_hs_data_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:38:4:38:15|Object r_hs_data_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>36</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>38</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>36</Navigation>
+            <Navigation>38</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Object r_hs_data_en is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:37:4:37:16|Object r_hsxx_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:39:4:39:16|Object r_hsxx_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>37</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>39</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>37</Navigation>
+            <Navigation>39</Navigation>
             <Navigation>16</Navigation>
             <Navigation>Object r_hsxx_clk_en is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:38:4:38:11|Object r_lp_clk is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:40:4:40:11|Object r_lp_clk is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>38</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>40</Navigation>
             <Navigation>4</Navigation>
-            <Navigation>38</Navigation>
+            <Navigation>40</Navigation>
             <Navigation>11</Navigation>
             <Navigation>Object r_lp_clk is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL318 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:4:8:4:22|*Output o_Global_Enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Dynamic>CL318 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v&quot;:4:8:4:22|*Output o_Global_Enable has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
             <Navigation>CL318</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v</Navigation>
             <Navigation>4</Navigation>
             <Navigation>8</Navigation>
             <Navigation>4</Navigation>
@@ -2409,33 +2445,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:45:0:45:5|Pruning unused register Start_sd. Make sure that there are no unused intermediate registers.</Dynamic>
-            <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Pruning unused register Start_sd. Make sure that there are no unused intermediate registers.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v&quot;:45:0:45:5|Pruning unused register State_sd. Make sure that there are no unused intermediate registers.</Dynamic>
-            <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>45</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Pruning unused register State_sd. Make sure that there are no unused intermediate registers.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v&quot;:42:16:42:24|Index into variable buff1 could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v&quot;:42:16:42:24|Index into variable buff1 could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v</Navigation>
             <Navigation>42</Navigation>
             <Navigation>16</Navigation>
             <Navigation>42</Navigation>
@@ -2445,9 +2457,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v&quot;:44:16:44:24|Index into variable buff2 could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v&quot;:44:16:44:24|Index into variable buff2 could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v</Navigation>
             <Navigation>44</Navigation>
             <Navigation>16</Navigation>
             <Navigation>44</Navigation>
@@ -2457,9 +2469,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v&quot;:48:16:48:24|Index into variable buff3 could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v&quot;:48:16:48:24|Index into variable buff3 could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v</Navigation>
             <Navigation>48</Navigation>
             <Navigation>16</Navigation>
             <Navigation>48</Navigation>
@@ -2469,9 +2481,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v&quot;:50:16:50:24|Index into variable buff4 could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v&quot;:50:16:50:24|Index into variable buff4 could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v</Navigation>
             <Navigation>50</Navigation>
             <Navigation>16</Navigation>
             <Navigation>50</Navigation>
@@ -2481,9 +2493,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG296 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Dynamic>CG296 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
             <Navigation>CG296</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>10</Navigation>
             <Navigation>8</Navigation>
             <Navigation>10</Navigation>
@@ -2493,9 +2505,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG290 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
+            <Dynamic>CG290 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
             <Navigation>CG290</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>12</Navigation>
             <Navigation>6</Navigation>
             <Navigation>12</Navigation>
@@ -2505,9 +2517,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG296 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Dynamic>CG296 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
             <Navigation>CG296</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>10</Navigation>
             <Navigation>8</Navigation>
             <Navigation>10</Navigation>
@@ -2517,9 +2529,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG290 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
+            <Dynamic>CG290 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
             <Navigation>CG290</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>12</Navigation>
             <Navigation>6</Navigation>
             <Navigation>12</Navigation>
@@ -2529,9 +2541,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG296 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
+            <Dynamic>CG296 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:10:8:10:18|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.</Dynamic>
             <Navigation>CG296</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>10</Navigation>
             <Navigation>8</Navigation>
             <Navigation>10</Navigation>
@@ -2541,9 +2553,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG290 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
+            <Dynamic>CG290 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v&quot;:12:6:12:12|Referenced variable i_state is not in sensitivity list.</Dynamic>
             <Navigation>CG290</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v</Navigation>
             <Navigation>12</Navigation>
             <Navigation>6</Navigation>
             <Navigation>12</Navigation>
@@ -2553,9 +2565,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v&quot;:52:10:52:18|Removing wire lpclk_out, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v&quot;:52:10:52:18|Removing wire lpclk_out, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v</Navigation>
             <Navigation>52</Navigation>
             <Navigation>10</Navigation>
             <Navigation>52</Navigation>
@@ -2565,9 +2577,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL318 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v&quot;:52:10:52:18|*Output lpclk_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Dynamic>CL318 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v&quot;:52:10:52:18|*Output lpclk_out has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
             <Navigation>CL318</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v</Navigation>
             <Navigation>52</Navigation>
             <Navigation>10</Navigation>
             <Navigation>52</Navigation>
@@ -2577,9 +2589,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:131:162:131:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 18. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:131:162:131:196|Port-width mismatch for port dataout. The port definition is 32 bits, but the actual port connection bit width is 18. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>131</Navigation>
             <Navigation>162</Navigation>
             <Navigation>131</Navigation>
@@ -2589,9 +2601,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:163:20:163:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:163:20:163:26|Port-width mismatch for port lp2_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>163</Navigation>
             <Navigation>20</Navigation>
             <Navigation>163</Navigation>
@@ -2601,9 +2613,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:164:20:164:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:164:20:164:26|Port-width mismatch for port lp3_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>164</Navigation>
             <Navigation>20</Navigation>
             <Navigation>164</Navigation>
@@ -2613,9 +2625,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:168:19:168:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:168:19:168:24|Port-width mismatch for port lp2_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>168</Navigation>
             <Navigation>19</Navigation>
             <Navigation>168</Navigation>
@@ -2625,9 +2637,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:169:19:169:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:169:19:169:24|Port-width mismatch for port lp3_in. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>169</Navigation>
             <Navigation>19</Navigation>
             <Navigation>169</Navigation>
@@ -2637,9 +2649,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:113:53:113:64|Index into variable q_oneh_data could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:113:53:113:64|Index into variable q_oneh_data could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>113</Navigation>
             <Navigation>53</Navigation>
             <Navigation>113</Navigation>
@@ -2649,9 +2661,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1340 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:116:53:116:64|Index into variable q_oneh_data could be out of range ; a simulation mismatch is possible.</Dynamic>
+            <Dynamic>CG1340 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:116:53:116:64|Index into variable q_oneh_data could be out of range ; a simulation mismatch is possible.</Dynamic>
             <Navigation>CG1340</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>116</Navigation>
             <Navigation>53</Navigation>
             <Navigation>116</Navigation>
@@ -2661,9 +2673,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2673,9 +2685,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2685,9 +2697,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2697,9 +2709,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit q_oneh_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2709,9 +2721,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2721,9 +2733,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2733,9 +2745,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:194:19:194:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:194:19:194:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
             <Navigation>194</Navigation>
             <Navigation>19</Navigation>
             <Navigation>194</Navigation>
@@ -2745,9 +2757,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:204:19:204:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:204:19:204:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
             <Navigation>204</Navigation>
             <Navigation>19</Navigation>
             <Navigation>204</Navigation>
@@ -2757,9 +2769,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:228:17:228:22|Input i_Serial_P on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Dynamic>CG781 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:228:17:228:22|Input i_Serial_P on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
             <Navigation>CG781</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
             <Navigation>228</Navigation>
             <Navigation>17</Navigation>
             <Navigation>228</Navigation>
@@ -2769,9 +2781,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG781 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:228:17:228:22|Input i_Serial_N on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
+            <Dynamic>CG781 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:228:17:228:22|Input i_Serial_N on instance Comand is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration.</Dynamic>
             <Navigation>CG781</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
             <Navigation>228</Navigation>
             <Navigation>17</Navigation>
             <Navigation>228</Navigation>
@@ -2781,33 +2793,33 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:279:19:279:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:281:19:281:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>279</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
+            <Navigation>281</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>279</Navigation>
+            <Navigation>281</Navigation>
             <Navigation>24</Navigation>
             <Navigation>Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:346:28:346:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:348:28:348:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>346</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
+            <Navigation>348</Navigation>
             <Navigation>28</Navigation>
-            <Navigation>346</Navigation>
+            <Navigation>348</Navigation>
             <Navigation>39</Navigation>
             <Navigation>Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:128:5:128:13|Removing wire w_reset_n, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v&quot;:128:5:128:13|Removing wire w_reset_n, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v</Navigation>
             <Navigation>128</Navigation>
             <Navigation>5</Navigation>
             <Navigation>128</Navigation>
@@ -2817,33 +2829,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:149:5:149:11|Removing wire Start_w, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>Removing wire Start_w, as there is no assignment to it.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:150:5:150:11|Removing wire State_w, as there is no assignment to it.</Dynamic>
-            <Navigation>CG360</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>Removing wire State_w, as there is no assignment to it.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -2853,9 +2841,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -2865,9 +2853,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -2877,9 +2865,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Pruning register bit 11 of linecnt[11:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -2889,9 +2877,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Pruning register bits 11 to 10 of pixcnt[11:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -2901,57 +2889,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:149:5:149:11|*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
-            <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:150:5:150:11|*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
-            <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:149:5:149:11|*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
-            <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>149</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>*Input Start_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:150:5:150:11|*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
-            <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>150</Navigation>
-            <Navigation>11</Navigation>
-            <Navigation>*Input State_w to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Optimizing register bit bitcntr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2961,9 +2901,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bit 5 of bitcntr[5:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2973,9 +2913,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 29 to 28 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2985,9 +2925,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 25 to 24 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -2997,9 +2937,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 21 to 20 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -3009,9 +2949,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 17 to 16 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -3021,9 +2961,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bits 13 to 12 of q_oneh_data[31:6]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -3033,9 +2973,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Pruning register bit 9 of q_oneh_data[31:6]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>5</Navigation>
             <Navigation>89</Navigation>
@@ -3045,9 +2985,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3057,9 +2997,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 15 of wait_cnt[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3069,9 +3009,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3081,9 +3021,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 14 of wait_cnt[14:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3093,9 +3033,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3105,9 +3045,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 13 of wait_cnt[13:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3117,9 +3057,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Optimizing register bit wait_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3129,9 +3069,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL260 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Dynamic>CL260 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v&quot;:67:3:67:8|Pruning register bit 12 of wait_cnt[12:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
             <Navigation>CL260</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v</Navigation>
             <Navigation>67</Navigation>
             <Navigation>3</Navigation>
             <Navigation>67</Navigation>
@@ -3141,9 +3081,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:131:162:131:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:131:162:131:196|*Input un1_byte_D0[31:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>131</Navigation>
             <Navigation>162</Navigation>
             <Navigation>131</Navigation>
@@ -3153,9 +3093,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:158:20:158:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:158:20:158:26|*Input lp2_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>158</Navigation>
             <Navigation>20</Navigation>
             <Navigation>158</Navigation>
@@ -3165,9 +3105,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:159:20:159:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:159:20:159:26|*Input lp3_dir to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>159</Navigation>
             <Navigation>20</Navigation>
             <Navigation>159</Navigation>
@@ -3177,9 +3117,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:163:20:163:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:163:20:163:26|*Input un1_lp2_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>163</Navigation>
             <Navigation>20</Navigation>
             <Navigation>163</Navigation>
@@ -3189,9 +3129,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v&quot;:164:20:164:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v&quot;:164:20:164:26|*Input un1_lp3_out[1:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v</Navigation>
             <Navigation>164</Navigation>
             <Navigation>20</Navigation>
             <Navigation>164</Navigation>
@@ -3201,9 +3141,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3213,9 +3153,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3225,9 +3165,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3237,9 +3177,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3249,9 +3189,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3261,9 +3201,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3273,9 +3213,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3285,9 +3225,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3297,9 +3237,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3309,9 +3249,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL190 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>CL190 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>CL190</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3321,9 +3261,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL279 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Dynamic>CL279 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v&quot;:119:4:119:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
             <Navigation>CL279</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v</Navigation>
             <Navigation>119</Navigation>
             <Navigation>4</Navigation>
             <Navigation>119</Navigation>
@@ -3333,9 +3273,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v&quot;:134:21:134:30|*Input chksum_rdy to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v&quot;:134:21:134:30|*Input chksum_rdy to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>134</Navigation>
             <Navigation>21</Navigation>
             <Navigation>134</Navigation>
@@ -3345,9 +3285,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL156 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v&quot;:83:12:83:14|*Input crc[15:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
+            <Dynamic>CL156 :&quot;C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v&quot;:83:12:83:14|*Input crc[15:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.</Dynamic>
             <Navigation>CL156</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>83</Navigation>
             <Navigation>12</Navigation>
             <Navigation>83</Navigation>
@@ -3364,9 +3304,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>81</Navigation>
             <Navigation>12</Navigation>
             <Navigation>81</Navigation>
@@ -3376,9 +3316,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 36 sequential elements including genblk1\.u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 36 sequential elements including genblk1\.u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
@@ -3388,9 +3328,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock which controls 177 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock which controls 177 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3400,33 +3340,33 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 5 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 19 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v</Navigation>
             <Navigation>24</Navigation>
             <Navigation>0</Navigation>
             <Navigation>24</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 5 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 19 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v&quot;:45:0:45:5|Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 26 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\commando_inicial.v&quot;:47:0:47:5|Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 28 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\commando_inicial.v</Navigation>
+            <Navigation>47</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>45</Navigation>
+            <Navigation>47</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 26 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 28 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN114 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
+            <Dynamic>BN114 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:112:12:112:25|Removing instance u_oDDRx4.Inst5_ODDRX4B2 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
             <Navigation>BN114</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>112</Navigation>
             <Navigation>12</Navigation>
             <Navigation>112</Navigation>
@@ -3436,9 +3376,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN114 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
+            <Dynamic>BN114 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:108:12:108:25|Removing instance u_oDDRx4.Inst5_ODDRX4B3 (in view: work.DPHY_TX_INST(verilog)) of black box view:work.ODDRX4B(verilog) because it does not drive other instances.</Dynamic>
             <Navigation>BN114</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>108</Navigation>
             <Navigation>12</Navigation>
             <Navigation>108</Navigation>
@@ -3448,57 +3388,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Removing sequential instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing sequential instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO161 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Register bit Serial_busN.o (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>MO161</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Register bit Serial_busN.o (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO161 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Register bit Serial_busP.o (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>MO161</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Register bit Serial_busP.o (in view view:work.top(verilog)) is always 1. To keep the instance, apply syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO160 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Register bit Serial_busP.eocd (in view view:work.top(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>MO160</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Register bit Serial_busP.eocd (in view view:work.top(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3508,9 +3400,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3520,9 +3412,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3532,9 +3424,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3544,9 +3436,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[9] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3556,9 +3448,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[8] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3568,9 +3460,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3580,9 +3472,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3592,9 +3484,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3604,9 +3496,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3616,9 +3508,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3628,9 +3520,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3640,9 +3532,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3652,9 +3544,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
@@ -3664,9 +3556,28 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
+            <Navigation>FX474</Navigation>
+            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>132</Navigation>
             <Navigation>14</Navigation>
             <Navigation>132</Navigation>
@@ -3676,9 +3587,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>129</Navigation>
             <Navigation>12</Navigation>
             <Navigation>129</Navigation>
@@ -3688,9 +3599,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v&quot;:120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v&quot;:120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v</Navigation>
             <Navigation>120</Navigation>
             <Navigation>12</Navigation>
             <Navigation>120</Navigation>
@@ -3700,9 +3611,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>123</Navigation>
             <Navigation>8</Navigation>
             <Navigation>123</Navigation>
@@ -3712,9 +3623,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v&quot;:89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>89</Navigation>
             <Navigation>8</Navigation>
             <Navigation>89</Navigation>
@@ -3724,9 +3635,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT246 :&quot;c:\users\miguel estrada\documents\github\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v&quot;:69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
+            <Dynamic>MT246 :&quot;c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v&quot;:69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)</Dynamic>
             <Navigation>MT246</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v</Navigation>
+            <Navigation>c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v</Navigation>
             <Navigation>69</Navigation>
             <Navigation>12</Navigation>
             <Navigation>69</Navigation>
@@ -3753,6 +3664,13 @@
             <Dynamic>MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll_pix2byte_RGB888_2lane.byte_clk.</Dynamic>
             <Navigation>MT420</Navigation>
             <Navigation>Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll_pix2byte_RGB888_2lane.byte_clk.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019993</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MT420 |Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.w_CLK_20MHZ.</Dynamic>
+            <Navigation>MT420</Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.w_CLK_20MHZ.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

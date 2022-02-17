@@ -1,4 +1,4 @@
-# Wed Feb 16 16:55:34 2022
+# Wed Feb 16 17:52:58 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,7 +11,7 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: LAPTOP-BQ95DNMF
+Hostname: DESKTOP-NE8NF87
 
 Implementation : xo3l_verilog
 Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
@@ -20,51 +20,49 @@ Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
 
 @A: MF827 |No constraint file specified.
-@L: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog_scck.rpt 
-See clock summary report "C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog_scck.rpt"
+@L: C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog_scck.rpt 
+See clock summary report "C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog_scck.rpt"
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 128MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 @N: FX493 |Applying initial value "0" on instance r_init.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "0" on instance rst_d.
 @N: FX493 |Applying initial value "0" on instance eocd.
 @N: FX493 |Applying initial value "1" on instance o.
-@N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance eocd (in view: work.Serial_Protocol_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance pars[6:0] (in view: work.Serial_Protocol_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance pars[6:0] (in view: work.Serial_Protocol_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: MO111 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance eocd (in view: work.Serial_Protocol_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 
 
@@ -80,9 +78,9 @@ Level     Clock                                               Frequency     Peri
                                                                                                                                     
 0 -       PLL_12_24_100|CLKOP_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_1     36   
                                                                                                                                     
-0 -       PLL_12_24_100|CLKOS_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_4     26   
+0 -       PLL_12_24_100|CLKOS_inferred_clock                  200.0 MHz     5.000         inferred     Inferred_clkgroup_4     28   
                                                                                                                                     
-0 -       PLL_12_24_100|CLKOS2_inferred_clock                 200.0 MHz     5.000         inferred     Inferred_clkgroup_3     5    
+0 -       PLL_12_24_100|CLKOS2_inferred_clock                 200.0 MHz     5.000         inferred     Inferred_clkgroup_3     19   
                                                                                                                                     
 0 -       oDDRx4|sclk_inferred_clock                          200.0 MHz     5.000         inferred     Inferred_clkgroup_0     4    
 ====================================================================================================================================
@@ -101,18 +99,18 @@ pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     177       u_pll_pix2byte_RGB
                                                                                                                                                                                            
 PLL_12_24_100|CLKOP_inferred_clock                  36        PLL_12_24_100_mod.PLLInst_0.CLKOP(EHXPLLJ)                genblk1\.u_colorbar_gen.hsync.C     -                 -            
                                                                                                                                                                                            
-PLL_12_24_100|CLKOS_inferred_clock                  26        PLL_12_24_100_mod.PLLInst_0.CLKOS(EHXPLLJ)                Comand.idle_start[24:0].C           -                 -            
+PLL_12_24_100|CLKOS_inferred_clock                  28        PLL_12_24_100_mod.PLLInst_0.CLKOS(EHXPLLJ)                Comand.idle_start[24:0].C           -                 -            
                                                                                                                                                                                            
-PLL_12_24_100|CLKOS2_inferred_clock                 5         PLL_12_24_100_mod.PLLInst_0.CLKOS2(EHXPLLJ)               Serial_busN.rst_d.C                 -                 -            
+PLL_12_24_100|CLKOS2_inferred_clock                 19        PLL_12_24_100_mod.PLLInst_0.CLKOS2(EHXPLLJ)               Serial_busN.pars[6:0].C             -                 -            
                                                                                                                                                                                            
 oDDRx4|sclk_inferred_clock                          4         u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX(CLKDIVC)      u_DPHY_TX_INST.u_oDDRx4.FF_0.CK     -                 -            
 ===========================================================================================================================================================================================
 
-@W: MT529 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 36 sequential elements including genblk1\.u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":109:5:109:10|Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock which controls 177 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 5 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
-@W: MT529 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v":45:0:45:5|Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 26 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\roman perez\documents\github\initial-release\source\verilog\xo3l\oddrx4.v":81:12:81:15|Found inferred clock oDDRx4|sclk_inferred_clock which controls 4 sequential elements including u_DPHY_TX_INST.u_oDDRx4.FF_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 36 sequential elements including genblk1\.u_colorbar_gen.linecnt[10:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\roman perez\documents\github\initial-release\source\verilog\byte_packetizer.v":109:5:109:10|Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock which controls 177 sequential elements including u_BYTE_PACKETIZER.q_WC[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock which controls 19 sequential elements including Serial_busP.o. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\commando_inicial.v":47:0:47:5|Found inferred clock PLL_12_24_100|CLKOS_inferred_clock which controls 28 sequential elements including Comand.r_init. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -125,7 +123,7 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-5 non-gated/non-generated clock tree(s) driving 233 clock pin(s) of sequential element(s)
+5 non-gated/non-generated clock tree(s) driving 249 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
@@ -135,8 +133,8 @@ Clock Tree ID     Driving Element                                  Drive Element
 @KP:ckid0_0       u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX      CLKDIVC                4          u_DPHY_TX_INST.u_oDDRx4.FF_3         
 @KP:ckid0_1       PLL_12_24_100_mod.PLLInst_0.CLKOP                EHXPLLJ                36         genblk1\.u_colorbar_gen.linecnt[10:0]
 @KP:ckid0_2       u_pll_pix2byte_RGB888_2lane.PLLInst_0.CLKOS2     EHXPLLJ                162        u_DCS_Encoder.LP[1:0]                
-@KP:ckid0_3       PLL_12_24_100_mod.PLLInst_0.CLKOS2               EHXPLLJ                5          Serial_busN.o                        
-@KP:ckid0_4       PLL_12_24_100_mod.PLLInst_0.CLKOS                EHXPLLJ                26         Comand.r_init                        
+@KP:ckid0_3       PLL_12_24_100_mod.PLLInst_0.CLKOS2               EHXPLLJ                19         Serial_busN.o                        
+@KP:ckid0_4       PLL_12_24_100_mod.PLLInst_0.CLKOS                EHXPLLJ                28         Comand.r_init                        
 ==========================================================================================================================================
 
 
@@ -145,19 +143,19 @@ Clock Tree ID     Driving Element                                  Drive Element
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 94MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 176MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 16 16:55:35 2022
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Wed Feb 16 17:53:01 2022
 
 ###########################################################]

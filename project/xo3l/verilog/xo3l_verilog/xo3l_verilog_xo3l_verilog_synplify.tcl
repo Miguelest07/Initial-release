@@ -45,32 +45,32 @@ set_option -resolve_multiple_driver 0
 set_option -seqshift_no_replicate 0
 
 #-- add_file options
-set_option -include_path {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/compiler_directives.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/colorbar_gen.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/top.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/xo3l/oddrx4.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/xo3l/ipexpress/pll_pix2byte_RGB888_2lane.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/lp_hs_dly_ctrl.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/io_controller_tx.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/dphy_tx_inst.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/dcs_rom.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/dcs_encoder.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/byte_packetizer.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/crc16_2lane_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/parallel2byte_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/source/verilog/packetheader_bb.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Commando_Inicial.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/DataFlow_Switch.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Mux_mod.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/Serial_Protocol.v}
-add_file -verilog -vlog_std v2001 {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/PLL_12_24_100.v}
+set_option -include_path {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/compiler_directives.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/colorbar_gen.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/top.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/xo3l/oddrx4.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/xo3l/ipexpress/pll_pix2byte_RGB888_2lane.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/lp_hs_dly_ctrl.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/io_controller_tx.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/dphy_tx_inst.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/dcs_rom.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/dcs_encoder.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/byte_packetizer.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/crc16_2lane_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/parallel2byte_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/source/verilog/packetheader_bb.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/Commando_Inicial.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/DataFlow_Switch.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/Mux_mod.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/Serial_Protocol.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/PLL_12_24_100.v}
 
 #-- top module name
 set_option -top_module top
 
 #-- set result format/file last
-project -result_file {C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.edi}
+project -result_file {C:/Users/Roman Perez/Documents/GitHub/Initial-release/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.edi}
 
 #-- error message log file
 project -log_file {xo3l_verilog_xo3l_verilog.srf}

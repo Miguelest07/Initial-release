@@ -2,25 +2,25 @@
 @N|Running in 64-bit mode
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1124:7:1124:9|Synthesizing module VLO in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1696:7:1696:13|Synthesizing module EHXPLLJ in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\PLL_12_24_100.v":8:7:8:19|Synthesizing module PLL_12_24_100 in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_2lane in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":117:53:117:56|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":118:53:118:56|Removing redundant assignment.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":48:7:48:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":156:78:156:88|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":159:78:159:87|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":163:78:163:83|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":167:78:167:84|Removing redundant assignment.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":1:7:1:22|Synthesizing module Commando_Inicial in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v":1:7:1:21|Synthesizing module Serial_Protocol in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v":1:7:1:21|Synthesizing module DataFlow_Switch in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\PLL_12_24_100.v":8:7:8:19|Synthesizing module PLL_12_24_100 in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v":8:7:8:31|Synthesizing module pll_pix2byte_RGB888_2lane in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\parallel2byte_bb.v":49:7:49:19|Synthesizing module parallel2byte in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\packetheader_bb.v":49:7:49:18|Synthesizing module packetheader in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v":117:53:117:56|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":48:7:48:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":156:78:156:88|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":159:78:159:87|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":163:78:163:83|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":167:78:167:84|Removing redundant assignment.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":1:7:1:22|Synthesizing module Commando_Inicial in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v":1:7:1:21|Synthesizing module Serial_Protocol in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v":1:7:1:13|Synthesizing module Mux_mod in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v":1:7:1:21|Synthesizing module DataFlow_Switch in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1051:7:1051:14|Synthesizing module ROM16X1A in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":176:7:176:13|Synthesizing module FD1P3BX in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
@@ -28,27 +28,27 @@
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1608:7:1608:13|Synthesizing module ODDRX4B in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1525:7:1525:15|Synthesizing module ECLKSYNCA in library work.
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1512:7:1512:13|Synthesizing module CLKDIVC in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\io_controller_tx.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v":51:7:51:18|Synthesizing module DPHY_TX_INST in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":107:53:107:63|Removing redundant assignment.
-@N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":115:41:115:46|Removing redundant assignment.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":51:7:51:9|Synthesizing module top in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":100:28:100:32|Input VSYNC is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":102:28:102:29|Input DE is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\io_controller_tx.v":50:11:50:17|Input reset_n is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v":18:9:18:19|Input lpclk_out_a is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v":35:9:35:19|Input lpclk_out_b is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":2:7:2:11|Input i_clk is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":5:15:5:21|Input reset_n is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":7:15:7:20|Input i_test is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":8:9:8:18|Input i_Serial_P is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":9:9:9:18|Input i_Serial_N is unused.
-@N: CL135 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v":8:7:8:12|Synthesizing module oDDRx4 in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\io_controller_tx.v":49:7:49:22|Synthesizing module IO_Controller_TX in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v":51:7:51:18|Synthesizing module DPHY_TX_INST in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v":48:7:48:13|Synthesizing module DCS_ROM in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v":48:7:48:17|Synthesizing module DCS_Encoder in library work.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v":107:53:107:63|Removing redundant assignment.
+@N: CG179 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v":115:41:115:46|Removing redundant assignment.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v":51:7:51:9|Synthesizing module top in library work.
+@N: CG364 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v":100:28:100:32|Input VSYNC is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v":101:28:101:32|Input HSYNC is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v":102:28:102:29|Input DE is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\io_controller_tx.v":50:11:50:17|Input reset_n is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v":18:9:18:19|Input lpclk_out_a is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v":35:9:35:19|Input lpclk_out_b is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":2:7:2:11|Input i_clk is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":5:15:5:21|Input reset_n is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":7:15:7:20|Input i_test is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":8:9:8:18|Input i_Serial_P is unused.
+@N: CL159 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v":9:9:9:18|Input i_Serial_N is unused.
+@N: CL135 :"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Found sequential shift data_dly[54].hold_data with address depth of 54 words and data bit width of 32.
 @N|Running in 64-bit mode
 
