@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------
 Report for cell top.verilog
 
-Register bits: 219 of 54912 (0%)
+Register bits: 217 of 54912 (0%)
 Latch bits:      17
 PIC Latch:       0
 I/O cells:       17
@@ -12,29 +12,29 @@ I/O cells:       17
                            DPR16X4C       16       100.0
                           ECLKSYNCA        2       100.0
                             EHXPLLJ        2       100.0
-                            FD1P3AX       53       100.0
+                            FD1P3AX       52       100.0
                             FD1P3AY       19       100.0
                             FD1P3BX        1       100.0
                             FD1P3DX        3       100.0
                              FD1S1D       17       100.0
-                            FD1S3AX       51       100.0
+                            FD1S3AX       52       100.0
                             FD1S3AY        5       100.0
                             FD1S3BX       17       100.0
-                            FD1S3DX       49       100.0
+                            FD1S3DX       47       100.0
                             FD1S3IX       21       100.0
                                 GSR        1       100.0
                                  IB        2       100.0
-                                INV       10       100.0
+                                INV        9       100.0
                                  OB       12       100.0
                                 OBZ        3       100.0
                             ODDRX4B        3       100.0
-                           ORCALUT4      403       100.0
-                              PFUMX       19       100.0
+                           ORCALUT4      405       100.0
+                              PFUMX       16       100.0
                                 PUR        1       100.0
                            ROM16X1A        5       100.0
                            ROM32X1A        4       100.0
                            ROM64X1A        4       100.0
-                                VHI        9       100.0
+                                VHI        8       100.0
                                 VLO       17       100.0
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
@@ -56,11 +56,11 @@ SUB MODULES
                       PLL_12_24_100        1       100.0
                   Serial_Protocol_0        1       100.0
                   Serial_Protocol_1        1       100.0
-          colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s        1       100.0
+          colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s        1       100.0
                              oDDRx4        1       100.0
           pll_pix2byte_RGB888_2lane        1       100.0
                             
-                         TOTAL           836           
+                         TOTAL           831           
 ----------------------------------------------------------------------
 Report for cell DPHY_TX_INST.netlist
      Instance path:  u_DPHY_TX_INST
@@ -72,7 +72,7 @@ Report for cell DPHY_TX_INST.netlist
                             FD1P3DX        3       100.0
                             ODDRX4B        3       100.0
                            ROM16X1A        2        40.0
-                                VHI        1        11.1
+                                VHI        1        12.5
                                 VLO        1         5.9
 SUB MODULES 
                              oDDRx4        1       100.0
@@ -89,33 +89,33 @@ Report for cell oDDRx4.netlist
                             FD1P3DX        3       100.0
                             ODDRX4B        3       100.0
                            ROM16X1A        2        40.0
-                                VHI        1        11.1
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
                          TOTAL            14           
 ----------------------------------------------------------------------
-Report for cell colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s.netlist
+Report for cell colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s.netlist
      Instance path:  u_colorbar_gen
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       12        18.8
-                            FD1S3DX       32        65.3
-                                INV        2        20.0
-                           ORCALUT4       36         8.9
-                                VHI        1        11.1
+                            FD1S3DX       30        63.8
+                                INV        2        22.2
+                           ORCALUT4       49        12.1
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
-                         TOTAL            84           
+                         TOTAL            95           
 ----------------------------------------------------------------------
 Report for cell DCS_Encoder.netlist
      Instance path:  u_DCS_Encoder
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX        2         3.8
-                            FD1S3AX       12        23.5
+                            FD1S3AX       12        23.1
                             FD1S3AY        3        60.0
                             FD1S3IX        3        14.3
-                                INV        1        10.0
+                                INV        1        11.1
                            ORCALUT4       27         6.7
                                 VLO        1         5.9
                             
@@ -126,10 +126,10 @@ Report for cell DCS_ROM.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       13        20.3
-                            FD1S3AX       27        52.9
+                            FD1S3AX       27        51.9
                             FD1S3IX        2         9.5
-                           ORCALUT4       35         8.7
-                                VHI        1        11.1
+                           ORCALUT4       35         8.6
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
                          TOTAL            79           
@@ -227,16 +227,15 @@ Report for cell Serial_Protocol_0.netlist
                              FD1S1D        8        47.1
                             FD1S3AY        1        20.0
                             FD1S3BX        8        47.1
-                            FD1S3DX        8        16.3
-                           ORCALUT4       54        13.4
-                              PFUMX        2        10.5
+                            FD1S3DX        8        17.0
+                           ORCALUT4       54        13.3
                            ROM16X1A        2        40.0
                            ROM32X1A        2        50.0
                            ROM64X1A        2        50.0
-                                VHI        1        11.1
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
-                         TOTAL            89           
+                         TOTAL            87           
 ----------------------------------------------------------------------
 Report for cell Serial_Protocol_1.netlist
   Original Cell name Serial_Protocol
@@ -245,30 +244,29 @@ Report for cell Serial_Protocol_1.netlist
                                cell       count    Res Usage(%)
                              FD1S1D        9        52.9
                             FD1S3BX        9        52.9
-                            FD1S3DX        9        18.4
-                           ORCALUT4       58        14.4
-                              PFUMX        1         5.3
+                            FD1S3DX        9        19.1
+                           ORCALUT4       58        14.3
                            ROM16X1A        1        20.0
                            ROM32X1A        2        50.0
                            ROM64X1A        2        50.0
-                                VHI        1        11.1
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
-                         TOTAL            93           
+                         TOTAL            92           
 ----------------------------------------------------------------------
 Report for cell Commando_Inicial.netlist
      Instance path:  Comand
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2D       13        20.3
-                            FD1P3AX       27        50.9
-                            FD1S3AX        3         5.9
-                                INV        3        30.0
-                           ORCALUT4       52        12.9
-                                VHI        1        11.1
+                            FD1P3AX       26        50.0
+                            FD1S3AX        4         7.7
+                                INV        2        22.2
+                           ORCALUT4       41        10.1
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
-                         TOTAL           100           
+                         TOTAL            88           
 ----------------------------------------------------------------------
 Report for cell LP_HS_DELAY_CNTRL.netlist
      Instance path:  u_LP_HS_DELAY_CNTRL
@@ -276,15 +274,15 @@ Report for cell LP_HS_DELAY_CNTRL.netlist
                                cell       count    Res Usage(%)
                               CCU2D       26        40.6
                            DPR16X4C       16       100.0
-                            FD1P3AX       23        43.4
+                            FD1P3AX       23        44.2
                             FD1P3AY       19       100.0
-                            FD1S3AX        7        13.7
+                            FD1S3AX        7        13.5
                             FD1S3AY        1        20.0
                             FD1S3IX       16        76.2
-                                INV        1        10.0
-                           ORCALUT4      116        28.8
-                              PFUMX       16        84.2
-                                VHI        1        11.1
+                                INV        1        11.1
+                           ORCALUT4      116        28.6
+                              PFUMX       16       100.0
+                                VHI        1        12.5
                                 VLO        1         5.9
                             
                          TOTAL           243           
@@ -294,15 +292,14 @@ Report for cell BYTE_PACKETIZER_24s_2s_62_0s_1s.netlist
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX        1         1.9
-                            FD1S3AX        1         2.0
-                                INV        1        10.0
+                            FD1S3AX        1         1.9
+                                INV        1        11.1
                            ORCALUT4        2         0.5
-                                VHI        1        11.1
                                 VLO        1         5.9
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
                             
-                         TOTAL             9           
+                         TOTAL             8           
 ----------------------------------------------------------------------
 Report for cell pll_pix2byte_RGB888_2lane.netlist
      Instance path:  u_pll_pix2byte_RGB888_2lane

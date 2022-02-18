@@ -133,21 +133,19 @@ Running optimization stage 1 on DCS_Encoder .......
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
 
-	h_active=32'b00000000000000000000010101010110
-	h_total=32'b00000000000000000000011100000000
-	v_active=32'b00000000000000000000001100000000
-	v_total=32'b00000000000000000000001100011110
-	H_FRONT_PORCH=32'b00000000000000000000000000000000
-	H_SYNCH=32'b00000000000000000000000000000000
+	h_active=32'b00000000000000000000010100000000
+	h_total=32'b00000000000000000000011001110010
+	v_active=32'b00000000000000000000001011010000
+	v_total=32'b00000000000000000000001011101110
+	H_FRONT_PORCH=32'b00000000000000000000000001101110
+	H_SYNCH=32'b00000000000000000000000000101000
 	H_BACK_PORCH=32'b00000000000000000000000000101000
-	V_FRONT_PORCH=32'b00000000000000000000000000000000
-	V_SYNCH=32'b00000000000000000000000000000000
+	V_FRONT_PORCH=32'b00000000000000000000000000000101
+	V_SYNCH=32'b00000000000000000000000000000101
 	mode=32'b00000000000000000000000000000001
-   Generated name = colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s
-Running optimization stage 1 on colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s .......
+   Generated name = colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s
+Running optimization stage 1 on colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s .......
 @W: CL169 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":104:1:104:6|Pruning unused register color_cntr[11:0]. Make sure that there are no unused intermediate registers.
-@W: CL207 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|All reachable assignments to vsync assign 0, register removed by optimization.
-@W: CL207 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|All reachable assignments to hsync assign 0, register removed by optimization.
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":51:7:51:9|Synthesizing module top in library work.
 @W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":205:19:205:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
 @W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":215:19:215:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
@@ -158,7 +156,7 @@ Running optimization stage 1 on top .......
 Running optimization stage 2 on top .......
 @N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":102:28:102:29|Input DE is unused.
 @N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
-Running optimization stage 2 on colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s .......
+Running optimization stage 2 on colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s .......
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.

@@ -8,7 +8,7 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603988590
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\compiler_directives.v":1644961937
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\colorbar_gen.v":1645133408
-#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\top.v":1645150342
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\top.v":1645220925
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\../../source/verilog/compiler_directives.v":1644961937
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\xo3l\\oddrx4.v":1644948192
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\xo3l\\ipexpress\\pll_pix2byte_RGB888_2lane.v":1645049157
@@ -26,7 +26,7 @@
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Commando_Inicial.v":1645147703
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\DataFlow_Switch.v":1644961708
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Mux_mod.v":1645051293
-#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Serial_Protocol.v":1645126661
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Serial_Protocol.v":1645213324
 #CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\PLL_12_24_100.v":1645049902
 #numinternalfiles:6
 #defaultlanguage:verilog

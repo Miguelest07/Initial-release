@@ -45,16 +45,12 @@
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":48:10:48:25|Generating ROM Serial_busN.o_6 (in view: work.top(verilog)).
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":44:10:44:25|Generating ROM Serial_busP.o_4 (in view: work.top(verilog)).
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":42:10:42:25|Generating ROM Serial_busP.o_3 (in view: work.top(verilog)).
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[10] (in view: work.top(verilog)) with 6 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[6] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[0] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[7] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[2] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[5] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[4] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[8] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[7] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[3] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[1] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
-@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[9] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[0] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
+@N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[10] (in view: work.top(verilog)) with 7 loads 1 time to improve timing.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 

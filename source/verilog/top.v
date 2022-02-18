@@ -50,12 +50,12 @@
 
 module top #(
      parameter              VC         = 0             ,  //2-bit Virtual Channel Number
-     parameter              WC         = 16'h1002      ,  //16-bit Word Count in byte packets.  16'h08CA = 16'd2250 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
+     parameter              WC         = 16'h0F00      ,  //16-bit Word Count in byte packets.  16'h08CA = 16'd2250 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
      parameter              word_width = 24            ,  //Pixel Bus Width.  Example: RGB888 = 8-bits Red, 8-bits Green, 8-bits Blue = 24 bits/pixel
      parameter              DT         = 6'h3E         ,  //6-bit MIPI DSI Data Type.  Example: dt = 6'h3E = RGB888
      parameter              testmode   = 1             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset
      parameter              crc16      = 0             ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
-     parameter              EoTp       = 1            ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
+     parameter              EoTp       = 0            ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
      parameter              reserved   = 0 //reserved=0 at all times
 )(
      input                  reset_n                    ,  // resets design (active low)
@@ -448,20 +448,29 @@ colorbar_gen 	#(
             .V_SYNCH       ('d0),
             .mode          (testmode)
         ) 		
-		Pixel CLK 	85.800960 	MHz
-		Bandwith 	686.407680 	MHz
-		line rate 	343.203840	MHZ
-		MIPI BCLK	171.601920 	MHz
+		
+colorbar_gen 	#(
+	        .h_active  ('d1280 ),
+	        .h_total   ('d1650 ),
+	        .v_active  ('d720 ),
+	        .v_total   ('d750 ),
+	        .H_FRONT_PORCH ('d110),
+            .H_SYNCH       ('d40),
+            .V_FRONT_PORCH ('d5),
+            .V_SYNCH       ('d5),
+            .mode          (testmode)
+        )
+		
 		*/
 		colorbar_gen 	#(
-	        .h_active  ('d1366 ),
-	        .h_total   ('d1792 ),
-	        .v_active  ('d768 ),
-	        .v_total   ('d798 ),
-	        .H_FRONT_PORCH ('d0),
-            .H_SYNCH       ('d0),
-            .V_FRONT_PORCH ('d0),
-            .V_SYNCH       ('d0),
+	        .h_active  ('d1280 ),
+	        .h_total   ('d1650 ),
+	        .v_active  ('d720 ),
+	        .v_total   ('d750 ),
+	        .H_FRONT_PORCH ('d110),
+            .H_SYNCH       ('d40),
+            .V_FRONT_PORCH ('d5),
+            .V_SYNCH       ('d5),
             .mode          (testmode)
         ) 
         u_colorbar_gen

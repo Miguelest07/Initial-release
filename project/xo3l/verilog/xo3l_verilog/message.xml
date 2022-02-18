@@ -14,6 +14,11 @@
         <Message>
             <ID>71061149</ID>
             <Severity>Warning</Severity>
+            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_77</Dynamic>
+        </Message>
+        <Message>
+            <ID>71061149</ID>
+            <Severity>Warning</Severity>
             <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_78</Dynamic>
         </Message>
         <Message>
@@ -35,11 +40,6 @@
             <ID>71061149</ID>
             <Severity>Warning</Severity>
             <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_504</Dynamic>
-        </Message>
-        <Message>
-            <ID>71061149</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>u_BYTE_PACKETIZER/u_packetheader/SLICE_541</Dynamic>
         </Message>
     </Task>
     <Task name="Map">
@@ -1400,9 +1400,9 @@
    Signal=Serial_busN/un1_rst_1_0 loads=2 clock_loads=1
    Signal=Serial_busN/un1_rst_5_0 loads=2 clock_loads=1
      ....   s=1
+   Signal=Serial_busP/un1_rst_1 loads=2 clock_loads=1
    Signal=Serial_busP/un1_rst_5 loads=2 clock_loads=1
-   Signal=Serial_busP/un1_rst_8 loads=2 clock_loads=1
-   Signal=Serial_busP/un1_rst_9 loads=2 clock_loads=1</Dynamic>
+   Signal=Serial_busP/un1_rst_8 loads=2 clock_loads=1</Dynamic>
         </Message>
         <Message>
             <ID>66011008</ID>
@@ -1415,9 +1415,9 @@
    Signal=Serial_busN/un1_rst_1_0 loads=2 clock_loads=1
    Signal=Serial_busN/un1_rst_5_0 loads=2 clock_loads=1
      ....   s=1
+   Signal=Serial_busP/un1_rst_1 loads=2 clock_loads=1
    Signal=Serial_busP/un1_rst_5 loads=2 clock_loads=1
-   Signal=Serial_busP/un1_rst_8 loads=2 clock_loads=1
-   Signal=Serial_busP/un1_rst_9 loads=2 clock_loads=1</Dynamic>
+   Signal=Serial_busP/un1_rst_8 loads=2 clock_loads=1</Dynamic>
         </Message>
     </Task>
     <Task name="Translate">
@@ -2732,30 +2732,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL207 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|All reachable assignments to vsync assign 0, register removed by optimization.</Dynamic>
-            <Navigation>CL207</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
-            <Navigation>78</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>78</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>All reachable assignments to vsync assign 0, register removed by optimization.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CL207 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v&quot;:78:4:78:9|All reachable assignments to hsync assign 0, register removed by optimization.</Dynamic>
-            <Navigation>CL207</Navigation>
-            <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v</Navigation>
-            <Navigation>78</Navigation>
-            <Navigation>4</Navigation>
-            <Navigation>78</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>All reachable assignments to hsync assign 0, register removed by optimization.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:205:19:205:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
@@ -3327,6 +3303,18 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>BN288 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Register o with set has an initial value of 0. Ignoring initial value.</Dynamic>
+            <Navigation>BN288</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Register o with set has an initial value of 0. Ignoring initial value.  </Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\top.v&quot;:161:0:161:5|Found inferred clock top|i_clk which controls 1 sequential elements including r_globalRST. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\top.v</Navigation>
@@ -3351,14 +3339,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 22 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
             <Navigation>9</Navigation>
-            <Navigation>Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 22 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -3447,54 +3435,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>109</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[11] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
@@ -3531,86 +3471,134 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[15] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[14] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[13] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[7] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[6] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[5] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
             <Navigation>109</Navigation>
             <Navigation>5</Navigation>
             <Navigation>109</Navigation>
             <Navigation>10</Navigation>
-            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[10] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[4] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[3] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[2] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[1] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v&quot;:109:5:109:10|Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>109</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>Removing instance u_BYTE_PACKETIZER.q_WC[12] because it is equivalent to instance u_BYTE_PACKETIZER.q_WC[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

@@ -17,20 +17,20 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>PLL_12_24_100|CLKOP_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>119.7 MHz</data>
-<data>-3.351</data>
+<data>117.3 MHz</data>
+<data>-3.527</data>
 </row>
 <row>
 <data>PLL_12_24_100|CLKOS2_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>116.5 MHz</data>
-<data>-3.584</data>
+<data>115.7 MHz</data>
+<data>-3.640</data>
 </row>
 <row>
 <data>PLL_12_24_100|CLKOS_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>153.4 MHz</data>
-<data>-1.519</data>
+<data>142.7 MHz</data>
+<data>-2.008</data>
 </row>
 <row>
 <data>oDDRx4|sclk_inferred_clock</data>

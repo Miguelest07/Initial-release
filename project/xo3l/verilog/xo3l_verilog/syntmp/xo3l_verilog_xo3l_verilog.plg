@@ -1,19 +1,19 @@
-@P:  Worst Slack : -3.584
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Frequency : 119.7 MHz
+@P:  Worst Slack : -3.640
+@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Frequency : 117.3 MHz
 @P:  PLL_12_24_100|CLKOP_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Period : 8.351
+@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Period : 8.527
 @P:  PLL_12_24_100|CLKOP_inferred_clock - Requested Period : 5.000
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Slack : -3.351
-@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Frequency : 116.5 MHz
+@P:  PLL_12_24_100|CLKOP_inferred_clock - Slack : -3.527
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Frequency : 115.7 MHz
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Period : 8.584
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Period : 8.640
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Period : 5.000
-@P:  PLL_12_24_100|CLKOS2_inferred_clock - Slack : -3.584
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Frequency : 153.4 MHz
+@P:  PLL_12_24_100|CLKOS2_inferred_clock - Slack : -3.640
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Frequency : 142.7 MHz
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Period : 6.519
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Period : 7.008
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Requested Period : 5.000
-@P:  PLL_12_24_100|CLKOS_inferred_clock - Slack : -1.519
+@P:  PLL_12_24_100|CLKOS_inferred_clock - Slack : -2.008
 @P:  oDDRx4|sclk_inferred_clock - Estimated Frequency : 360.7 MHz
 @P:  oDDRx4|sclk_inferred_clock - Requested Frequency : 200.0 MHz
 @P:  oDDRx4|sclk_inferred_clock - Estimated Period : 2.772
@@ -34,7 +34,7 @@
 @P:  System - Estimated Period : 1.089
 @P:  System - Requested Period : 5.000
 @P:  System - Slack : 3.911
-@P:  Total Area : 413.0
+@P:  Total Area : 414.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
@@ -55,4 +55,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  CPU Time : 0h:00m:04s

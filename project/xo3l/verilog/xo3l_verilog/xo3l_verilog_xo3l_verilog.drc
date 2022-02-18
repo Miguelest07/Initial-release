@@ -1,10 +1,10 @@
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_67, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_73, CEMUX is tied to low in LOGIC/RIPPLE mode.
+WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_77, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_78, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_501, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_502, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_503, CEMUX is tied to low in LOGIC/RIPPLE mode.
 WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_504, CEMUX is tied to low in LOGIC/RIPPLE mode.
-WARNING - blockcheck: SLICE u_BYTE_PACKETIZER/u_packetheader/SLICE_541, CEMUX is tied to low in LOGIC/RIPPLE mode.
 INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
 DRC detected 0 errors and 8 warnings.

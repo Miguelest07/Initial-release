@@ -6,7 +6,7 @@ e ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.FF_3.CK} FD1P3BX
 c ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX} CLKDIVC Unsupported/too complex instance on clock path
 i PLL_12_24_100_mod.CLKOP_i
 m 0 0
-u 3 22
+u 5 24
 p {t:PLL_12_24_100_mod.PLLInst_0.CLKOP}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOP}{t:PLL_12_24_100_mod.CLKOP}{t:u_colorbar_gen.m148_5_clk}{p:u_colorbar_gen.m148_5_clk}{t:u_colorbar_gen.linecnt[9:0].C}
 e ckid0_1 {t:u_colorbar_gen.linecnt[9:0].C} dffr
 c ckid0_1 {t:PLL_12_24_100_mod.PLLInst_0.CLKOP} EHXPLLJ Unsupported/too complex instance on clock path
