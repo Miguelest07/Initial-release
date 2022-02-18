@@ -108,9 +108,10 @@ module colorbar_gen #(
 	         color_cntr <= lv ? color_cntr+1 : 0;
 generate
     if (mode==1)	                 	         
-        assign data = color_cntr;
+        assign data = color_cntr<160 ? {8'h00, 8'h00, 8'h00} :
+             color_cntr<320 ? {8'h00, 8'h00, 8'h00} : {8'h00, 8'h00, 8'h00} ;
     else 
-        assign data = color_cntr<160 ? {8'hFF, 8'h00, 8'h00} :
-             color_cntr<320 ? {8'h00, 8'hFF, 8'h00} : {8'h00, 8'h00, 8'hFF} ;	          
+        assign data = color_cntr<160 ? {8'h00, 8'h00, 8'h00} :
+             color_cntr<320 ? {8'h00, 8'h00, 8'h00} : {8'h00, 8'h00, 8'h00} ;	          
 endgenerate   	      
 endmodule                  

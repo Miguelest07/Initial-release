@@ -2,14 +2,22 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: FX493 |Applying initial value "0" on instance r_init.
-@N: FX493 |Applying initial value "0" on instance rst_d.
-@N: FX493 |Applying initial value "0" on instance eocd.
-@N: FX493 |Applying initial value "1" on instance o.
-@N: MO111 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_750_850_1334_1372_8_32_40_24_8_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: BN362 :"c:\users\roman perez\documents\github\initial-release\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance eocd (in view: work.Serial_Protocol_0(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "0" on instance Start_sd.
+@N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_1 (in view: work.DCS_ROM(verilog)) on net data_1 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_2 (in view: work.DCS_ROM(verilog)) on net data_2 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_3 (in view: work.DCS_ROM(verilog)) on net data_3 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_4 (in view: work.DCS_ROM(verilog)) on net data_4 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_5 (in view: work.DCS_ROM(verilog)) on net data_5 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_6 (in view: work.DCS_ROM(verilog)) on net data_6 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_7 (in view: work.DCS_ROM(verilog)) on net data_7 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_8 (in view: work.DCS_ROM(verilog)) on net data_8 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
+@N: BN115 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":83:24:83:34|Removing instance mux_lp1_dir (in view: work.DataFlow_Switch(verilog)) of type view:work.Mux_mod_1s_4(verilog) because it does not drive other instances.
+@N: BN115 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":90:24:90:34|Removing instance mux_lp0_dir (in view: work.DataFlow_Switch(verilog)) of type view:work.Mux_mod_1s_3(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Removing sequential instance fv (in view: work.colorbar_gen_1366_1792_768_798_0_0_40_0_0_1s(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_clk_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":142:4:142:9|Removing sequential instance hs_data_en (in view: work.LP_HS_DELAY_CNTRL(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Removing sequential instance eocd (in view: work.Serial_Protocol_0(verilog)) of type view:PrimLib.dffrse(prim) because it does not drive other instances.
 @N: FX1184 |Applying syn_allowed_resources blockrams=240 on top level netlist top 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

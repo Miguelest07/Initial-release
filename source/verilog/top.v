@@ -50,7 +50,7 @@
 
 module top #(
      parameter              VC         = 0             ,  //2-bit Virtual Channel Number
-     parameter              WC         = 16'h08CA      ,  //16-bit Word Count in byte packets.  16'h08CA = 16'd2250 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
+     parameter              WC         = 16'h1002      ,  //16-bit Word Count in byte packets.  16'h08CA = 16'd2250 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
      parameter              word_width = 24            ,  //Pixel Bus Width.  Example: RGB888 = 8-bits Red, 8-bits Green, 8-bits Blue = 24 bits/pixel
      parameter              DT         = 6'h3E         ,  //6-bit MIPI DSI Data Type.  Example: dt = 6'h3E = RGB888
      parameter              testmode   = 1             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset
@@ -97,16 +97,18 @@ module top #(
      `endif                                                                                                               
      input 					i_clk,                                                  
      //input                  PIXCLK                     ,  //Pixel clock input for parallel interface
-     input                  VSYNC                      ,  //Vertical Sync input for parallel interface
-     input                  HSYNC                      ,  //Horizontal Sync input for parallel interface
+     output                  VSYNC                      ,  //Vertical Sync input for parallel interface
+     output                  HSYNC                      ,  //Horizontal Sync input for parallel interface
      input                  DE                         ,  //Data Enable input for parallel interface
-     input [word_width-1:0] PIXDATA,                       //Pixel data bus for parallel interface
-	 input 				i_Global_Enable,
+     input [word_width-1:0] PIXDATA,     
 	 input [3:0] 		i_test,
 	 output SerialP,
-	 output SerialN
+	 output SerialN,
+	 output o_test,
+	 output o_test2
 );
-wire w_Global_Enable; 
+
+reg r_globalRST;
 wire [7:0] byte_D3, byte_D2, byte_D1, byte_D0;
 wire [7:0] byte_D3_out, byte_D2_out, byte_D1_out, byte_D0_out;
 wire [15:0] word_cnt;
@@ -124,6 +126,7 @@ wire w_hsxx_clk_en_a;
 wire PIXCLK;
 wire w_CLK_100MHZ;
 wire w_CLK_20MHZ;
+wire w_init_d;
 
 wire w_reset_n;
 
@@ -149,9 +152,16 @@ wire w_eoc;
 wire Start_w;
 wire State_w;
 wire w_init;
+wire w_SerialP;
+wire w_SerialN;
 
 assign w_lp1_dir_a = 1'b1;
 assign w_lp0_dir_a = 1'b1;
+
+always@(posedge i_clk)
+begin
+	r_globalRST = w_init_d;
+end
 
 parameter  lane_width = `ifdef HS_3  4
                         `elsif HS_2  3
@@ -176,6 +186,7 @@ pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(
 );
 
 
+
   assign word_cnt = w_de? WC : 16'h0000;
 
 BYTE_PACKETIZER #(
@@ -184,7 +195,7 @@ BYTE_PACKETIZER #(
 	.dt        (DT        ) ,
 	.crc16     (crc16     )   
 )u_BYTE_PACKETIZER (
-	.reset_n         (w_init)  ,
+	.reset_n         (reset_n)  ,
 	.PIXCLK          (w_pixclk)   ,
 	.VSYNC           (w_vsync)    ,
 	.HSYNC           (w_hsync)    ,
@@ -205,7 +216,7 @@ BYTE_PACKETIZER #(
 );
 
 LP_HS_DELAY_CNTRL u_LP_HS_DELAY_CNTRL(
-	.reset_n   (w_init),
+	.reset_n   (reset_n),
 	.byte_clk  (byte_clk),
 	.hs_en     (hs_en),
 	.byte_D3_in(byte_D3),
@@ -228,13 +239,16 @@ LP_HS_DELAY_CNTRL u_LP_HS_DELAY_CNTRL(
 Commando_Inicial Comand(
 	.i_clk(PIXCLK), 
 	.o_Global_Enable (w_Global_Enable),
-	.reset_n (reset_n)         ,      //Resets the Design      
+	.reset_n (reset_n)         ,       //Resets the Design      
     .i_CLK_100MHZ(w_CLK_100MHZ),
 	.i_eoc(w_eoc),
 	.i_test(i_test),
-	.o_init(w_init),
+	.o_init(w_init), 
+	.o_init_d(w_init_d),
 	.Start_s(Start_w),
-	.State_s(State_w),
+	.State_s(State_w), 
+	.i_Serial_P(w_SerialP), 
+	.i_Serial_N(w_SerialN),
     .byte_D1 (w_byte_D1_b)         ,
     .byte_D0(w_byte_D0_b)          ,                    
     .lp1_out(w_lp1_out_b)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
@@ -246,7 +260,7 @@ Commando_Inicial Comand(
     .hsxx_clk_en(w_hsxx_clk_en_b)	 ,
 	.lp_clk(w_lp_clk_b)
 );
- 
+  
 Serial_Protocol Serial_busP(
 	.rst(reset_n),
 	.clk(w_CLK_20MHZ),
@@ -254,7 +268,7 @@ Serial_Protocol Serial_busP(
 	.Start(Start_w),
 	.State(State_w),
 	.Polarity(1'b1),
-	.tx(SerialP)
+	.tx(w_SerialP)
 );
 
 Serial_Protocol Serial_busN(
@@ -264,11 +278,11 @@ Serial_Protocol Serial_busN(
 	.Start(Start_w),
 	.State(State_w),
 	.Polarity(1'b0),
-	.tx(SerialN)
+	.tx(w_SerialN)
 );
 
 DataFlow_Switch DataSPDT ( 
-    .i_state(i_Global_Enable),
+    .i_state(~r_globalRST),
     .byte_D1_a(w_byte_D1_a)          ,
     .byte_D0_a(w_byte_D0_a)          ,                                                                
     .lp1_out_a(w_data_a)          ,        //LP (Low Power) Data Receiving Signals for Data Lane 1 
@@ -388,7 +402,7 @@ wire [7:0] dcs_data;
 
      DCS_ROM u_DCS_ROM
      (
-        .resetn    (w_init) ,
+        .resetn    (reset_n) ,
         .clk       (byte_clk     ) ,
         .data_en   (dcs_data_en  ) ,
         .escape_en (dcs_escape_en) ,
@@ -409,11 +423,9 @@ wire [7:0] dcs_data;
         .Lp         (Lp           ),
         .Ln         (Ln           )
      );
+/*
 
-
-generate
-    if(testmode==1) begin
-        colorbar_gen 	#(
+colorbar_gen 	#(
 	        .h_active  ('d750 ),
 	        .h_total   ('d850 ),
 	        .v_active  ('d1334 ),
@@ -423,9 +435,38 @@ generate
             .V_FRONT_PORCH ('d24),
             .V_SYNCH       ('d8),
             .mode          (testmode)
-        ) u_colorbar_gen
+        )
+		
+colorbar_gen 	#(
+	        .h_active  ('d1366 ),
+	        .h_total   ('d1792 ),
+	        .v_active  ('d768 ),
+	        .v_total   ('d798 ),
+	        .H_FRONT_PORCH ('d0),
+            .H_SYNCH       ('d0),
+            .V_FRONT_PORCH ('d0),
+            .V_SYNCH       ('d0),
+            .mode          (testmode)
+        ) 		
+		Pixel CLK 	85.800960 	MHz
+		Bandwith 	686.407680 	MHz
+		line rate 	343.203840	MHZ
+		MIPI BCLK	171.601920 	MHz
+		*/
+		colorbar_gen 	#(
+	        .h_active  ('d1366 ),
+	        .h_total   ('d1792 ),
+	        .v_active  ('d768 ),
+	        .v_total   ('d798 ),
+	        .H_FRONT_PORCH ('d0),
+            .H_SYNCH       ('d0),
+            .V_FRONT_PORCH ('d0),
+            .V_SYNCH       ('d0),
+            .mode          (testmode)
+        ) 
+        u_colorbar_gen
         ( 
-            .rstn       (w_init) , 
+            .rstn       (r_globalRST) , 
             .m148_5_clk (w_pixclk) , 
             .fv         () , 
             .lv         (w_de) , 
@@ -433,15 +474,6 @@ generate
             .vsync      (w_vsync),
             .hsync      (w_hsync)
         );
-    end
-    else begin
-        assign w_pixclk  = PIXCLK;
-        assign w_de      = DE;  
-        assign w_vsync   = VSYNC;
-        assign w_hsync   = HSYNC;
-        assign w_pixdata = PIXDATA;
-    end
-endgenerate
 
 generate
     if(reserved==1) begin
@@ -452,6 +484,10 @@ generate
     end
 endgenerate
 
-
-
+assign SerialN = w_SerialN;
+assign SerialP = w_SerialP;
+assign o_test = w_init;
+assign o_test2 = w_init_d; 
+assign VSYNC = w_vsync;
+assign HSYNC = w_hsync;
 endmodule

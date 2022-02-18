@@ -10,6 +10,7 @@ module Commando_Inicial (
 	output 		Start_s,
 	output 		State_s,
 	output 	    o_init,
+	output 	    o_init_d,
      `ifdef HS_1  
           output [7:0]   byte_D1          ,
           output [7:0]   byte_D0          ,                    
@@ -40,55 +41,84 @@ reg r_hsxx_clk_en;
 reg r_lp_clk;
 localparam INICIO = 0;
 reg	r_init = INICIO;
-reg Start_sd;
+reg r_init_d = INICIO;
+reg Start_sd = INICIO;
 reg State_sd;
 reg [24:0] idle_start; 
 
-always@(posedge i_CLK_100MHZ)
+always@(negedge i_CLK_100MHZ)
 begin
-	if(r_init != 1)
+	if(i_Serial_P)
 	begin
-		r_init 	   <= 1'b0;
-		idle_start <= idle_start + 1;
-	
-		if(i_Serial_P >=1)
-		begin
-			// Estado Pin positivo del LP cuando es 1 en serial
-		end
-		else if(i_Serial_P == 0)
-		begin
-			//Estado Pin positivo del LP cuando es 0 en serial
-		end
-		if(i_Serial_N >=1)
-		begin
-			//Estado Pin negativo del LP cuando es 1 en serial
-		end
-		else if(i_Serial_N == 0)
-		begin
-			//Estado Pin negativo del LP cuando es 0 en serial
-		end
-		if(i_eoc == 1)
-		begin
-			Start_sd <= 0;
-		end
-		else if(idle_start == 183600)// 183.6ms ~ 18360000
-		begin
-			idle_start <= 23'b0;
-			r_init <= 1;
-		end
-		else if (idle_start == 118860)// 118.86ms ~ 11886000
-		begin
-				Start_sd <= 1;
-				State_sd <= 0;
-		end
-		else if (idle_start == 10800)// 10.8ms ~ 1080000
-		begin
-				Start_sd <= 1;
-				State_sd <= 1;
-		end
+		r_lp1_out[0] 		<= 1'b1;
+		r_lp0_out[0] 		<= 1'b1;
 	end
 	else
 	begin
+		r_lp1_out[0] 		<= 1'b0;
+		r_lp0_out[0] 		<= 1'b0;
+	end
+	if(i_Serial_N)
+	begin
+		r_lp1_out[1] 		<= 1'b1;
+		r_lp0_out[1] 		<= 1'b1;
+	end
+	else
+	begin
+		r_lp1_out[1] 		<= 1'b0;
+		r_lp0_out[1] 		<= 1'b0;
+	end
+	r_lp1_dir 		<= 'b1;
+	r_lp0_dir 		<= 'b1;
+end
+
+
+always@(posedge i_CLK_100MHZ or negedge reset_n)
+begin
+	if(!reset_n)
+	begin
+		idle_start <= 25'b0;
+		r_init <= 1'b0;
+	end
+	else 
+	begin
+		case(r_init)
+			1'b0:
+			begin
+				idle_start <= idle_start + 1;
+				if(i_eoc)
+				begin
+					Start_sd <= 0;
+				end
+				
+				if(idle_start >= 18360000)// 183.6ms ~ 18360000
+				begin
+					r_init <= 1'b1;
+					//r_init_d <= 1'b1;
+					Start_sd <= 0;
+					State_sd <= 1;
+				end
+				else if (idle_start == 11886000)// 118.86ms ~ 11886000
+				begin
+						Start_sd <= 1;
+						State_sd <= 0;
+				end
+				else if (idle_start == 1080000)// 10.8ms ~ 1080000
+				begin
+						Start_sd <= 1;
+						State_sd <= 1;
+				end
+				else if (idle_start < 1080000)// 10.8ms ~ 1080000
+				begin
+						Start_sd <= 0;
+						State_sd <= 1;
+				end
+			end
+			1'b1:
+			begin
+				r_init <= 1'b1;
+			end
+		endcase
 	end
 end
 /*
@@ -117,6 +147,7 @@ begin
 	
 end
 */
+
 assign byte_D1 = r_byte_D1; 
 assign byte_D0 = r_byte_D0;                    
 assign lp1_out = r_lp1_out;         
@@ -129,5 +160,6 @@ assign  hsxx_clk_en	=r_hsxx_clk_en;
 assign lp_clk = r_lp_clk;
 assign Start_s = Start_sd;
 assign State_s = State_sd; 
-assign o_init = r_init;
+assign o_init_d = r_init;
+assign o_init = r_init_d;
 endmodule

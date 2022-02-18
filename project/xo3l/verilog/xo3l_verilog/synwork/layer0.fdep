@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\xo3l_verilog\\synwork\\xo3l_verilog_xo3l_verilog_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog|-I|C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\xo3l_verilog\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\xo3l_verilog\\synwork\\xo3l_verilog_xo3l_verilog_comp.srs|-top|top|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog|-I|C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\xo3l_verilog\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_ver.exe":1603988322
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\machxo3l.v":1603988454
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v":1603988454
@@ -6,50 +6,50 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\umr_capim.v":1603988590
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_objects.v":1603988590
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603988590
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\compiler_directives.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\colorbar_gen.v":1644878445
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\top.v":1645055556
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\../../source/verilog/compiler_directives.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\xo3l\\oddrx4.v":1644878446
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\xo3l\\ipexpress\\pll_pix2byte_RGB888_2lane.v":1645052266
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\lp_hs_dly_ctrl.v":1644878446
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\io_controller_tx.v":1644878446
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\compiler_directives.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\dphy_tx_inst.v":1644879357
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\../../source/verilog/compiler_directives.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\dcs_rom.v":1644878445
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\dcs_encoder.v":1644878445
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\byte_packetizer.v":1644878445
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\crc16_2lane_bb.v":1644878445
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\parallel2byte_bb.v":1644878446
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\source\\verilog\\packetheader_bb.v":1644878446
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\Commando_Inicial.v":1645055560
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\DataFlow_Switch.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\Mux_mod.v":1645052265
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\Serial_Protocol.v":1645048603
-#CUR:"C:\\Users\\Roman Perez\\Documents\\GitHub\\Initial-release\\project\\xo3l\\verilog\\PLL_12_24_100.v":1645052265
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\compiler_directives.v":1644961937
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\colorbar_gen.v":1645133408
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\top.v":1645150342
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\../../source/verilog/compiler_directives.v":1644961937
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\xo3l\\oddrx4.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\xo3l\\ipexpress\\pll_pix2byte_RGB888_2lane.v":1645049157
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\lp_hs_dly_ctrl.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\io_controller_tx.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\compiler_directives.v":1644961937
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\dphy_tx_inst.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\../../source/verilog/compiler_directives.v":1644961937
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\dcs_rom.v":1645135344
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\dcs_encoder.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\byte_packetizer.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\crc16_2lane_bb.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\parallel2byte_bb.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\source\\verilog\\packetheader_bb.v":1644948192
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Commando_Inicial.v":1645147703
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\DataFlow_Switch.v":1644961708
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Mux_mod.v":1645051293
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\Serial_Protocol.v":1645126661
+#CUR:"C:\\Users\\Miguel Estrada\\Documents\\GitHub\\project\\xo3l\\verilog\\PLL_12_24_100.v":1645049902
 #numinternalfiles:6
 #defaultlanguage:verilog
-0			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\compiler_directives.v" verilog
-1			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\colorbar_gen.v" verilog
-2			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\top.v" verilog
-3		*	"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\../../source/verilog\compiler_directives.v" verilog
-4			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\oddrx4.v" verilog
-5			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v" verilog
-6			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\lp_hs_dly_ctrl.v" verilog
-7			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\io_controller_tx.v" verilog
-8			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dphy_tx_inst.v" verilog
-9			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_rom.v" verilog
-10			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\dcs_encoder.v" verilog
-11			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\byte_packetizer.v" verilog
-12			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\crc16_2lane_bb.v" verilog
-13			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\parallel2byte_bb.v" verilog
-14			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\source\verilog\packetheader_bb.v" verilog
-15			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Commando_Inicial.v" verilog
-16			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\DataFlow_Switch.v" verilog
-17			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Mux_mod.v" verilog
-18			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\Serial_Protocol.v" verilog
-19			"C:\Users\Roman Perez\Documents\GitHub\Initial-release\project\xo3l\verilog\PLL_12_24_100.v" verilog
+0			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\compiler_directives.v" verilog
+1			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v" verilog
+2			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v" verilog
+3		*	"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\../../source/verilog\compiler_directives.v" verilog
+4			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v" verilog
+5			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\ipexpress\pll_pix2byte_RGB888_2lane.v" verilog
+6			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v" verilog
+7			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\io_controller_tx.v" verilog
+8			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dphy_tx_inst.v" verilog
+9			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_rom.v" verilog
+10			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v" verilog
+11			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v" verilog
+12			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v" verilog
+13			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v" verilog
+14			"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v" verilog
+15			"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v" verilog
+16			"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v" verilog
+17			"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Mux_mod.v" verilog
+18			"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v" verilog
+19			"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\PLL_12_24_100.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

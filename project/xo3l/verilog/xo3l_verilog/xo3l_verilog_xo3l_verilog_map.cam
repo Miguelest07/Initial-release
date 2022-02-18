@@ -1,15 +1,22 @@
 [ START MERGED ]
 u_DPHY_TX_INST/u_oDDRx4/opensync_cken u_DPHY_TX_INST/u_oDDRx4/FF_0_Q
-Comand/w_init_i w_init
+r_globalRST_i r_globalRST
+u_DCS_Encoder/q_oneh_data_i[7] u_DCS_Encoder/q_oneh_data[7]
+Comand/CN w_CLK_100MHZ
+Comand/o_test2_c_i o_test2_c
 hs_en_i hs_en
-u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i w_init
-u_BYTE_PACKETIZER/u_packetheader/reset_n_i w_init
+u_BYTE_PACKETIZER/HSYNC_end u_BYTE_PACKETIZER/u_parallel2byte/q_HSYNC
+u_BYTE_PACKETIZER/VSYNC_end u_BYTE_PACKETIZER/u_parallel2byte/q_VSYNC
+u_BYTE_PACKETIZER/u_parallel2byte/reset_n_i reset_n_c
+u_BYTE_PACKETIZER/u_packetheader/reset_n_i reset_n_c
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/dec0_wre3 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/wren_i
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/rRst u_BYTE_PACKETIZER/u_packetheader/un1_q_bytepkt_en_0
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_0 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Empty
 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/invout_1 u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO/Full
 [ END MERGED ]
 [ START CLIPPED ]
+u_BYTE_PACKETIZER/HSYNC_start
+u_BYTE_PACKETIZER/VSYNC_start
 PLL_12_24_100_mod/GND
 u_pll_pix2byte_RGB888_2lane/GND
 u_BYTE_PACKETIZER/VCC
@@ -24,14 +31,12 @@ u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/VCC
 u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/GND
 u_LP_HS_DELAY_CNTRL/GND
 Comand/GND
-Serial_busP/GND
 Serial_busN/GND
 u_DCS_ROM/GND
-genblk1.u_colorbar_gen/GND
+u_colorbar_gen/GND
 u_DPHY_TX_INST/u_oDDRx4/GND
 u_DPHY_TX_INST/u_oDDRx4/VCC
 u_BYTE_PACKETIZER/u_parallel2byte/VCC
-VCC
 PLL_12_24_100_mod/CLKINTFB
 PLL_12_24_100_mod/DPHSRC
 PLL_12_24_100_mod/PLLACK
@@ -137,16 +142,9 @@ u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_S1[15]
 u_LP_HS_DELAY_CNTRL/hs_en_low_cnt_s_0_COUT[15]
 u_LP_HS_DELAY_CNTRL/hs_extended_cry_0_S0[0]
 u_LP_HS_DELAY_CNTRL/N_1
-Comand/idle_start_2_cry_0_0_S1
-Comand/idle_start_2_cry_0_0_S0
+Comand/idle_start_cry_0_S0[0]
 Comand/N_1
-Comand/idle_start_2_cry_23_0_COUT
-Serial_busP/un1_pars_4_cry_0_0_S0_0
-Serial_busP/N_1
-Serial_busP/un1_pars_4_cry_5_0_COUT_0
-Serial_busN/un1_pars_4_cry_0_0_S0
-Serial_busN/N_1
-Serial_busN/un1_pars_4_cry_5_0_COUT
+Comand/idle_start_cry_0_COUT[23]
 u_DCS_ROM/wait_cnt_cry_0_S0[0]
 u_DCS_ROM/N_1
 u_DCS_ROM/wait_cnt_s_0_S1[11]
@@ -154,31 +152,30 @@ u_DCS_ROM/wait_cnt_s_0_COUT[11]
 u_DCS_ROM/un1_byte_cnt_cry_0_0_S0
 u_DCS_ROM/N_2
 u_DCS_ROM/un1_byte_cnt_cry_9_0_COUT
-genblk1.u_colorbar_gen/color_cntr_cry_0_S0[0]
-genblk1.u_colorbar_gen/N_2
-genblk1.u_colorbar_gen/color_cntr_s_0_S1[11]
-genblk1.u_colorbar_gen/color_cntr_s_0_COUT[11]
-genblk1.u_colorbar_gen/un7_pixcnt_cry_0_0_S1
-genblk1.u_colorbar_gen/un7_pixcnt_cry_0_0_S0
-genblk1.u_colorbar_gen/N_3
-genblk1.u_colorbar_gen/un7_pixcnt_s_9_0_S1
-genblk1.u_colorbar_gen/un7_pixcnt_s_9_0_COUT
-genblk1.u_colorbar_gen/un2_linecnt_cry_0_0_S0
-genblk1.u_colorbar_gen/N_4
-genblk1.u_colorbar_gen/un2_linecnt_cry_9_0_COUT
+u_colorbar_gen/un7_pixcnt_cry_0_0_S1
+u_colorbar_gen/un7_pixcnt_cry_0_0_S0
+u_colorbar_gen/N_2
+u_colorbar_gen/un7_pixcnt_cry_9_0_COUT
+u_colorbar_gen/un2_linecnt_cry_0_0_S0
+u_colorbar_gen/N_3
+u_colorbar_gen/un2_linecnt_s_9_0_S1
+u_colorbar_gen/un2_linecnt_s_9_0_COUT
 u_DPHY_TX_INST/u_oDDRx4/cdiv1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Wed Feb 16 17:53:12 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Thu Feb 17 20:12:35 2022
 
 SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=ENABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE DUALBOOTGOLDEN=INTERNAL BACKGROUND_RECONFIG=OFF INBUF=ON ;
 LOCATE COMP "DCK" SITE "D8" ;
 LOCATE COMP "LPCLK[0]" SITE "J15" ;
 LOCATE COMP "reset_n" SITE "B3" ;
+LOCATE COMP "o_test2" SITE "M1" ;
+LOCATE COMP "o_test" SITE "M2" ;
 LOCATE COMP "SerialN" SITE "H6" ;
 LOCATE COMP "SerialP" SITE "N3" ;
-LOCATE COMP "i_Global_Enable" SITE "N2" ;
+LOCATE COMP "HSYNC" SITE "E3" ;
+LOCATE COMP "VSYNC" SITE "F3" ;
 LOCATE COMP "i_clk" SITE "C8" ;
 LOCATE COMP "LP0[1]" SITE "H16" ;
 LOCATE COMP "LP0[0]" SITE "G15" ;
@@ -187,10 +184,10 @@ LOCATE COMP "LP1[0]" SITE "H15" ;
 LOCATE COMP "LPCLK[1]" SITE "H14" ;
 LOCATE COMP "D0" SITE "E6" ;
 LOCATE COMP "D1" SITE "D6" ;
-FREQUENCY NET "w_CLK_20MHZ" 20.000000 MHz ;
-FREQUENCY NET "PIXCLK" 24.000000 MHz ;
-FREQUENCY NET "w_CLK_100MHZ" 100.000000 MHz ;
 FREQUENCY NET "i_clk_c" 12.000000 MHz ;
+FREQUENCY NET "PIXCLK" 24.000000 MHz ;
+FREQUENCY NET "w_CLK_20MHZ" 20.000000 MHz ;
+FREQUENCY NET "w_CLK_100MHZ" 100.000000 MHz ;
 FREQUENCY NET "CLKOP" 300.000000 MHz ;
 FREQUENCY NET "CLKOS" 300.000000 MHz ;
 FREQUENCY NET "byte_clk" 75.000000 MHz ;

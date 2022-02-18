@@ -21,9 +21,9 @@ reg eocd = init;
 localparam rs = 0;
 reg rst_d = rs;
 
-always@(posedge clk)
+always@(posedge clk or negedge rst)
 begin
-	if(rst == 0)
+	if(~rst)
 	begin
 		if(rst_d == 1)begin
 			pars <= init; //parser used in buffer

@@ -1,0 +1,2 @@
+@E: CL123 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":75:0:75:5|Logic for r_init does not match a standard flip-flop
+
