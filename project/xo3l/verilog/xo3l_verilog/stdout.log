@@ -3,7 +3,7 @@ Running in Lattice mode
 Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
 Install:     C:\lscc\diamond\3.12\synpbase
 Hostname:    LAPTOP-BQ95DNMF
-Date:        Fri Feb 18 15:48:46 2022
+Date:        Fri Feb 18 17:59:59 2022
 Version:     Q-2020.03L-SP1
 
 Arguments:   -product synplify_pro -batch xo3l_verilog_xo3l_verilog_synplify.tcl
@@ -18,26 +18,26 @@ Running: xo3l_verilog in foreground
 Running proj_1|xo3l_verilog
 
 Running Flow: compile (Compile) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:46 2022
+# Fri Feb 18 17:59:59 2022
 
 Running Flow: compile_flow (Compile Process) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:46 2022
+# Fri Feb 18 17:59:59 2022
 
 Running: compiler (Compile Input) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:46 2022
+# Fri Feb 18 17:59:59 2022
 Copied C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_comp.srs to C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srs
 
 compiler completed
-# Fri Feb 18 15:48:50 2022
+# Fri Feb 18 18:00:03 2022
 
 Return Code: 0
 Run Time:00h:00m:04s
 
 Running: multi_srs_gen (Multi-srs Generator) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:50 2022
+# Fri Feb 18 18:00:03 2022
 
 multi_srs_gen completed
-# Fri Feb 18 15:48:50 2022
+# Fri Feb 18 18:00:03 2022
 
 Return Code: 0
 Run Time:00h:00m:00s
@@ -46,27 +46,27 @@ Copied C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilo
 Complete: Compile Process on proj_1|xo3l_verilog
 
 Running: premap (Premap) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:50 2022
+# Fri Feb 18 18:00:03 2022
 
 premap completed with warnings
-# Fri Feb 18 15:48:51 2022
+# Fri Feb 18 18:00:04 2022
 
 Return Code: 1
 Run Time:00h:00m:01s
 Complete: Compile on proj_1|xo3l_verilog
 
 Running Flow: map (Map) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:51 2022
+# Fri Feb 18 18:00:04 2022
 
 Running: fpga_mapper (Map & Optimize) on proj_1|xo3l_verilog
-# Fri Feb 18 15:48:51 2022
+# Fri Feb 18 18:00:04 2022
 Copied C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm to C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srm
 
 fpga_mapper completed with warnings
-# Fri Feb 18 15:48:56 2022
+# Fri Feb 18 18:00:08 2022
 
 Return Code: 1
-Run Time:00h:00m:05s
+Run Time:00h:00m:04s
 Complete: Map on proj_1|xo3l_verilog
 Copied C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srr to C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.srf
 Complete: Logic Synthesis on proj_1|xo3l_verilog

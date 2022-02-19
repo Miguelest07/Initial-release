@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2022 2 16 16 5 57)
+      (timestamp 2022 2 18 16 30 4)
       (program "SCUBA" (version "Diamond (64-bit) 3.12.0.240.2"))))
-      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n pll_pix2byte_RGB888_2lane -lang verilog -synth lse -arch xo3c00a -type pll -fin 24 -fclkop 300 -fclkop_tol 0.0 -fclkos 300 -fclkos_tol 0.0 -fclkos2 75 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phases2 0 -phase_cntl STATIC -rst -fb_mode 1 -lock ")
+      (comment "C:\lscc\diamond\3.12\ispfpga\bin\nt64\scuba.exe -w -n pll_pix2byte_RGB888_2lane -lang verilog -synth synplify -arch xo3c00a -type pll -fin 75 -fclkop 450 -fclkop_tol 0.0 -fclkos 450 -fclkos_tol 0.0 -fclkos2 112.5 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phases2 0 -phase_cntl STATIC -rst -fb_mode 1 -lock ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -175,15 +175,15 @@
             (property CLKOS2_FPHASE
               (string "0"))
             (property CLKOS2_CPHASE
-              (string "7"))
+              (string "3"))
             (property CLKOS_FPHASE
-              (string "4"))
+              (string "2"))
             (property CLKOS_CPHASE
-              (string "1"))
+              (string "0"))
             (property CLKOP_FPHASE
               (string "0"))
             (property CLKOP_CPHASE
-              (string "1"))
+              (string "0"))
             (property PLL_LOCK_MODE
               (string "0"))
             (property CLKOS_TRIM_DELAY
@@ -207,7 +207,7 @@
             (property CLKOS3_ENABLE
               (string "DISABLED"))
             (property FREQUENCY_PIN_CLKOS2
-              (string "75.000000"))
+              (string "112.500000"))
             (property OUTDIVIDER_MUXC2
               (string "DIVC"))
             (property PREDIVIDER_MUXC1
@@ -217,7 +217,7 @@
             (property CLKOS2_ENABLE
               (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOS
-              (string "300.000000"))
+              (string "450.000000"))
             (property OUTDIVIDER_MUXB2
               (string "DIVB"))
             (property PREDIVIDER_MUXB1
@@ -227,7 +227,7 @@
             (property CLKOS_ENABLE
               (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOP
-              (string "300.000000"))
+              (string "450.000000"))
             (property OUTDIVIDER_MUXA2
               (string "DIVA"))
             (property PREDIVIDER_MUXA1
@@ -237,23 +237,23 @@
             (property CLKOP_ENABLE
               (string "ENABLED"))
             (property FREQUENCY_PIN_CLKI
-              (string "24.000000"))
+              (string "75.000000"))
             (property ICP_CURRENT
-              (string "9"))
-            (property LPF_RESISTOR
               (string "8"))
+            (property LPF_RESISTOR
+              (string "72"))
             (property CLKOS3_DIV
               (string "1"))
             (property CLKOS2_DIV
-              (string "8"))
+              (string "4"))
             (property CLKOS_DIV
-              (string "2"))
+              (string "1"))
             (property CLKOP_DIV
-              (string "2"))
+              (string "1"))
             (property CLKFB_DIV
-              (string "25"))
+              (string "6"))
             (property CLKI_DIV
-              (string "2"))
+              (string "1"))
             (property FEEDBK_PATH
               (string "CLKOP")))
           (net scuba_vlo

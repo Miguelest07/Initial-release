@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="pll_pix2byte_RGB888_2lane" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 02 16 16:05:59.492" version="5.8" type="Module" synthesis="lse" source_format="Verilog">
+<DiamondModule name="pll_pix2byte_RGB888_2lane" module="pll_pix2byte_RGB888_2lane" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2022 02 18 16:30:06.280" version="5.8" type="Module" synthesis="synplify" source_format="Verilog HDL">
   <Package>
-		<File name="pll_pix2byte_RGB888_2lane.lpc" type="lpc" modified="2022 02 16 16:05:57.770"/>
-		<File name="pll_pix2byte_RGB888_2lane.v" type="top_level_verilog" modified="2022 02 16 16:05:57.818"/>
-		<File name="pll_pix2byte_RGB888_2lane_tmpl.v" type="template_verilog" modified="2022 02 16 16:05:57.819"/>
+		<File name="pll_pix2byte_RGB888_2lane.lpc" type="lpc" modified="2022 02 18 16:30:04.491"/>
+		<File name="pll_pix2byte_RGB888_2lane.v" type="top_level_verilog" modified="2022 02 18 16:30:04.553"/>
+		<File name="pll_pix2byte_RGB888_2lane_tmpl.v" type="template_verilog" modified="2022 02 18 16:30:04.554"/>
   </Package>
 </DiamondModule>

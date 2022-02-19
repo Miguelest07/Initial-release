@@ -2132,12 +2132,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG1249 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:394:11:394:15|Redeclaration of implicit signal w_LP0</Dynamic>
+            <Dynamic>CG1249 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:399:11:399:15|Redeclaration of implicit signal w_LP0</Dynamic>
             <Navigation>CG1249</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>394</Navigation>
+            <Navigation>399</Navigation>
             <Navigation>11</Navigation>
-            <Navigation>394</Navigation>
+            <Navigation>399</Navigation>
             <Navigation>15</Navigation>
             <Navigation>Redeclaration of implicit signal w_LP0</Navigation>
         </Message>
@@ -2732,60 +2732,60 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:205:19:205:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:210:19:210:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>205</Navigation>
+            <Navigation>210</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>205</Navigation>
+            <Navigation>210</Navigation>
             <Navigation>20</Navigation>
             <Navigation>Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:215:19:215:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:220:19:220:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>215</Navigation>
+            <Navigation>220</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>215</Navigation>
+            <Navigation>220</Navigation>
             <Navigation>22</Navigation>
             <Navigation>Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:295:19:295:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:300:19:300:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>295</Navigation>
+            <Navigation>300</Navigation>
             <Navigation>19</Navigation>
-            <Navigation>295</Navigation>
+            <Navigation>300</Navigation>
             <Navigation>24</Navigation>
             <Navigation>Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:362:28:362:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Dynamic>CS263 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:367:28:367:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Dynamic>
             <Navigation>CS263</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>362</Navigation>
+            <Navigation>367</Navigation>
             <Navigation>28</Navigation>
-            <Navigation>362</Navigation>
+            <Navigation>367</Navigation>
             <Navigation>39</Navigation>
             <Navigation>Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:131:5:131:13|Removing wire w_reset_n, as there is no assignment to it.</Dynamic>
+            <Dynamic>CG360 :&quot;C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v&quot;:135:5:135:13|Removing wire w_reset_n, as there is no assignment to it.</Dynamic>
             <Navigation>CG360</Navigation>
             <Navigation>C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v</Navigation>
-            <Navigation>131</Navigation>
+            <Navigation>135</Navigation>
             <Navigation>5</Navigation>
-            <Navigation>131</Navigation>
+            <Navigation>135</Navigation>
             <Navigation>13</Navigation>
             <Navigation>Removing wire w_reset_n, as there is no assignment to it.</Navigation>
         </Message>
@@ -3315,12 +3315,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\top.v&quot;:161:0:161:5|Found inferred clock top|i_clk which controls 1 sequential elements including r_globalRST. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\top.v&quot;:165:0:165:5|Found inferred clock top|i_clk which controls 1 sequential elements including r_globalRST. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\top.v</Navigation>
-            <Navigation>161</Navigation>
+            <Navigation>165</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>161</Navigation>
+            <Navigation>165</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Found inferred clock top|i_clk which controls 1 sequential elements including r_globalRST. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
@@ -3339,14 +3339,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
+            <Dynamic>MT529 :&quot;c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v&quot;:78:4:78:9|Found inferred clock PLL_12_24_100|CLKOS3_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
             <Navigation>MT529</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v</Navigation>
             <Navigation>78</Navigation>
             <Navigation>4</Navigation>
             <Navigation>78</Navigation>
             <Navigation>9</Navigation>
-            <Navigation>Found inferred clock PLL_12_24_100|CLKOP_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOS3_inferred_clock which controls 24 sequential elements including u_colorbar_gen.linecnt[9:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -3675,18 +3675,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>24</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v&quot;:89:5:89:10|Removing instance u_DCS_Encoder.q_oneh_data[10] because it is equivalent to instance u_DCS_Encoder.q_oneh_data[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v</Navigation>
@@ -3755,6 +3743,18 @@
             <Navigation>89</Navigation>
             <Navigation>10</Navigation>
             <Navigation>Removing instance u_DCS_Encoder.q_oneh_data[30] because it is equivalent to instance u_DCS_Encoder.q_oneh_data[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BN132 :&quot;c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v&quot;:24:0:24:5|Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Navigation>BN132</Navigation>
+            <Navigation>c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>24</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Removing instance Serial_busP.rst_d because it is equivalent to instance Serial_busN.rst_d. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -3936,9 +3936,9 @@
         <Message>
             <ID>2019993</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock PLL_12_24_100|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.</Dynamic>
+            <Dynamic>MT420 |Found inferred clock PLL_12_24_100|CLKOS3_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.</Dynamic>
             <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock PLL_12_24_100|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.</Navigation>
+            <Navigation>Found inferred clock PLL_12_24_100|CLKOS3_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.</Navigation>
         </Message>
         <Message>
             <ID>2019993</ID>

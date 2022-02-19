@@ -24,19 +24,19 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO3L-6900CCABGA256
 Target Performance:   5
 Mapper:  xo3c00a,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  02/18/22  15:48:57
+Mapped on:  02/18/22  18:00:10
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of registers:    429 out of  7485 (6%)
       PFU registers:          429 out of  6864 (6%)
       PIO registers:            0 out of   621 (0%)
-   Number of SLICEs:       479 out of  3432 (14%)
-      SLICEs as Logic/ROM:    419 out of  3432 (12%)
+   Number of SLICEs:       480 out of  3432 (14%)
+      SLICEs as Logic/ROM:    420 out of  3432 (12%)
       SLICEs as RAM:           60 out of  2574 (2%)
       SLICEs as Carry:         96 out of  3432 (3%)
-   Number of LUT4s:        937 out of  6864 (14%)
-      Number used as logic LUTs:        625
+   Number of LUT4s:        938 out of  6864 (14%)
+      Number used as logic LUTs:        626
       Number used as distributed RAM:   120
       Number used as ripple logic:      192
       Number used as shift registers:     0
@@ -93,7 +93,7 @@ Mapped on:  02/18/22  15:48:57
      u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
      Net CLKOP: 2 loads, 2 rising, 0 falling (Driver:
      u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
-     Net PIXCLK: 25 loads, 25 rising, 0 falling (Driver:
+     Net PIXCLK: 24 loads, 24 rising, 0 falling (Driver:
      PLL_12_24_100_mod/PLLInst_0 )
      Net byte_clk: 212 loads, 212 rising, 0 falling (Driver:
      u_pll_pix2byte_RGB888_2lane/PLLInst_0 )
@@ -447,7 +447,6 @@ Signal PLL_12_24_100_mod/PLLDATO7 undriven or does not drive anything - clipped.
 Signal PLL_12_24_100_mod/REFCLK undriven or does not drive anything - clipped.
 Signal PLL_12_24_100_mod/INTLOCK undriven or does not drive anything - clipped.
 Signal PLL_12_24_100_mod/LOCK undriven or does not drive anything - clipped.
-Signal PLL_12_24_100_mod/CLKOS3 undriven or does not drive anything - clipped.
 Signal u_pll_pix2byte_RGB888_2lane/CLKINTFB_0 undriven or does not drive
      anything - clipped.
 Signal u_pll_pix2byte_RGB888_2lane/DPHSRC_0 undriven or does not drive anything
@@ -470,15 +469,15 @@ Signal u_pll_pix2byte_RGB888_2lane/PLLDATO6_0 undriven or does not drive
      anything - clipped.
 Signal u_pll_pix2byte_RGB888_2lane/PLLDATO7_0 undriven or does not drive
      anything - clipped.
-
 Signal u_pll_pix2byte_RGB888_2lane/REFCLK_0 undriven or does not drive anything
+
      - clipped.
 Signal u_pll_pix2byte_RGB888_2lane/INTLOCK_0 undriven or does not drive anything
      - clipped.
 Signal u_pll_pix2byte_RGB888_2lane/LOCK undriven or does not drive anything -
      clipped.
-Signal u_pll_pix2byte_RGB888_2lane/CLKOS3_0 undriven or does not drive anything
-     - clipped.
+Signal u_pll_pix2byte_RGB888_2lane/CLKOS3 undriven or does not drive anything -
+     clipped.
 Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_S1[15] undriven or does not
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_packetheader/lpkt_cnt_s_0_COUT[15] undriven or does
@@ -527,8 +526,8 @@ Signal u_BYTE_PACKETIZER/byte_data[16] undriven or does not drive anything -
      clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AlmostFull undriven or
      does not drive anything - clipped.
-
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/AlmostEmpty undriven or
+
      does not drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_23_16/DO17 undriven or does not
      drive anything - clipped.
@@ -584,8 +583,8 @@ Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO8_1 undriven or does not
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO7_1 undriven or does not
      drive anything - clipped.
-
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO6_1 undriven or does not
+
      drive anything - clipped.
 Signal u_BYTE_PACKETIZER/u_parallel2byte/u_fifo_7_0/DO5_1 undriven or does not
      drive anything - clipped.
@@ -641,8 +640,8 @@ Signal u_DCS_ROM/wait_cnt_s_0_COUT[11] undriven or does not drive anything -
      clipped.
 Signal u_DCS_ROM/un1_byte_cnt_cry_0_0_S0 undriven or does not drive anything -
      clipped.
-
 Signal u_DCS_ROM/N_2 undriven or does not drive anything - clipped.
+
 Signal u_DCS_ROM/un1_byte_cnt_cry_9_0_COUT undriven or does not drive anything -
      clipped.
 Signal u_colorbar_gen/un7_pixcnt_cry_0_0_S1 undriven or does not drive anything
@@ -699,8 +698,8 @@ Block u_DPHY_TX_INST/u_oDDRx4/VCC was optimized away.
 <A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
 
 /u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO:
-
     EBRs: 0
+
     RAM SLICEs: 12
     Logic SLICEs: 10
     PFU Registers: 34
@@ -756,8 +755,8 @@ Block u_DPHY_TX_INST/u_oDDRx4/VCC was optimized away.
     Logic SLICEs: 0
     PFU Registers: 0
 /u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CR31_ram_13:
-
     EBRs: 0
+
     RAM SLICEs: 3
     Logic SLICEs: 0
     PFU Registers: 0
@@ -815,8 +814,8 @@ Block u_DPHY_TX_INST/u_oDDRx4/VCC was optimized away.
 ---------------
 
 PLL 1:                                     Pin/Node Value
-
   PLL Instance Name:
+
        u_pll_pix2byte_RGB888_2lane/PLLInst_0
   PLL Type:                                         EHXPLLJ
   Input Clock:                             NODE     PIXCLK
@@ -857,10 +856,10 @@ PLL 1:                                     Pin/Node Value
   PLL Data Out bus Data5:                           NONE
   PLL Data Out bus Data6:                           NONE
   PLL Data Out bus Data7:                           NONE
-  Input Clock Frequency (MHz):                      24.0000
-  Output Clock(P) Frequency (MHz):                  300.0000
-  Output Clock(S) Frequency (MHz):                  300.0000
-  Output Clock(S2) Frequency (MHz):                 75.0000
+  Input Clock Frequency (MHz):                      75.0000
+  Output Clock(P) Frequency (MHz):                  450.0000
+  Output Clock(S) Frequency (MHz):                  450.0000
+  Output Clock(S2) Frequency (MHz):                 112.5000
   Output Clock(S3) Frequency (MHz):                 NA
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
@@ -872,15 +871,15 @@ PLL 1:                                     Pin/Node Value
   Pre Divider D Input:                              VCO_PHASE
   VCO Bypass A Input:                               VCO_PHASE
   VCO Bypass B Input:                               VCO_PHASE
-
   VCO Bypass C Input:                               VCO_PHASE
+
   VCO Bypass D Input:                               VCO_PHASE
   FB_MODE:                                          CLKOP
-  CLKI Divider:                                     2
-  CLKFB Divider:                                    25
-  CLKOP Divider:                                    2
-  CLKOS Divider:                                    2
-  CLKOS2 Divider:                                   8
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    6
+  CLKOP Divider:                                    1
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   4
   CLKOS3 Divider:                                   1
   Fractional N Divider:                             0
   CLKOP Desired Phase Shift(degree):                0
@@ -895,11 +894,11 @@ PLL 2:                                     Pin/Node Value
   PLL Instance Name:                                PLL_12_24_100_mod/PLLInst_0
   PLL Type:                                         EHXPLLJ
   Input Clock:                             PIN      i_clk_c
-  Output Clock(P):                         NODE     PIXCLK
+  Output Clock(P):                         NODE     PLL_12_24_100_mod/CLKOP
   Output Clock(S):                         NODE     w_CLK_100MHZ
   Output Clock(S2):                        NODE     w_CLK_20MHZ
-  Output Clock(S3):                                 NONE
-  Feedback Signal:                         NODE     PIXCLK
+  Output Clock(S3):                        NODE     PIXCLK
+  Feedback Signal:                         NODE     PLL_12_24_100_mod/CLKOP
   Reset Signal:                                     NONE
   M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
@@ -929,15 +928,15 @@ PLL 2:                                     Pin/Node Value
   PLL Data Out bus Data2:                           NONE
   PLL Data Out bus Data3:                           NONE
   PLL Data Out bus Data4:                           NONE
-
   PLL Data Out bus Data5:                           NONE
+
   PLL Data Out bus Data6:                           NONE
   PLL Data Out bus Data7:                           NONE
   Input Clock Frequency (MHz):                      12.0000
   Output Clock(P) Frequency (MHz):                  24.0000
   Output Clock(S) Frequency (MHz):                  100.0000
   Output Clock(S2) Frequency (MHz):                 20.0000
-  Output Clock(S3) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 75.0000
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
   CLKOS2 Post Divider C Input:                      DIVC
@@ -956,7 +955,7 @@ PLL 2:                                     Pin/Node Value
   CLKOP Divider:                                    25
   CLKOS Divider:                                    6
   CLKOS2 Divider:                                   30
-  CLKOS3 Divider:                                   1
+  CLKOS3 Divider:                                   8
   Fractional N Divider:                             0
   CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
@@ -986,8 +985,8 @@ ECLKSYNC 1:                                     Pin/Node Value
   ECLKSYNC Type:                                         ECLKSYNCA
   ECLKI Input:                             NODE     CLKOS
   STOP Input:                              NODE
-
        u_DPHY_TX_INST/u_oDDRx4/xstop
+
   ECLKO Output:                            NODE
        u_DPHY_TX_INST/u_oDDRx4/eclkc
 ECLKSYNC 2:                                     Pin/Node Value
@@ -1047,8 +1046,8 @@ GSR Component:
 
      Type and number of components of the type: 
    Register = 62 
-
    CLKDIVC = 1, FIFO8KB = 3 
+
 
      Type and instance name of component: 
    Register : r_globalRST
@@ -1104,8 +1103,8 @@ GSR Component:
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][9]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][10]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][11]
-
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][12]
+
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][13]
    Register : u_LP_HS_DELAY_CNTRL/hold_data[0][14]
    Register : u_LP_HS_DELAY_CNTRL/data_dly[54].hold_data_CF5[0]
@@ -1128,6 +1127,7 @@ GSR Component:
    Total REAL Time: 0 secs  
    Peak Memory Usage: 65 MB
         
+
 
 
 

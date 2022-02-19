@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Fri Feb 18 15:39:02 2022
+Fri Feb 18 18:00:31 2022
 
 
 Command: bitgen -g RamCfg:Reset -path C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog -w -gui -msgset C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/promote.xml xo3l_verilog_xo3l_verilog.ncd xo3l_verilog_xo3l_verilog.prf 

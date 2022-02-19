@@ -38,9 +38,9 @@
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":107:53:107:63|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":115:41:115:46|Removing redundant assignment.
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":52:7:52:18|Synthesizing module colorbar_gen in library work.
-@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":51:7:51:9|Synthesizing module top in library work.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":102:28:102:29|Input DE is unused.
-@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":103:28:103:34|Input PIXDATA is unused.
+@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":54:7:54:9|Synthesizing module top in library work.
+@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":105:28:105:29|Input DE is unused.
+@N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":106:28:106:34|Input PIXDATA is unused.
 @N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\io_controller_tx.v":50:11:50:17|Input reset_n is unused.
 @N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v":18:9:18:19|Input lpclk_out_a is unused.
 @N: CL159 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\DataFlow_Switch.v":35:9:35:19|Input lpclk_out_b is unused.

@@ -48,14 +48,17 @@
 
 `include "../../source/verilog/compiler_directives.v"
 
+//720p 16'h0F00
+//1366 16'h1002
+
 module top #(
      parameter              VC         = 0             ,  //2-bit Virtual Channel Number
      parameter              WC         = 16'h0F00      ,  //16-bit Word Count in byte packets.  16'h08CA = 16'd2250 bytes = 1440 * (8-bits per byte) / (24-bits per pixel for RGB888) = 480 pixels
      parameter              word_width = 24            ,  //Pixel Bus Width.  Example: RGB888 = 8-bits Red, 8-bits Green, 8-bits Blue = 24 bits/pixel
      parameter              DT         = 6'h3E         ,  //6-bit MIPI DSI Data Type.  Example: dt = 6'h3E = RGB888
      parameter              testmode   = 1             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset
-     parameter              crc16      = 0             ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
-     parameter              EoTp       = 0            ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
+     parameter              crc16      = 0            ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
+     parameter              EoTp       = 0	 ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
      parameter              reserved   = 0 //reserved=0 at all times
 )(
      input                  reset_n                    ,  // resets design (active low)
@@ -126,6 +129,7 @@ wire w_hsxx_clk_en_a;
 wire PIXCLK;
 wire w_CLK_100MHZ;
 wire w_CLK_20MHZ;
+wire w_CLK_24MHZ;
 wire w_init_d;
 
 wire w_reset_n;
@@ -171,9 +175,10 @@ parameter  lane_width = `ifdef HS_3  4
  
 PLL_12_24_100 PLL_12_24_100_mod (
 	.CLKI(i_clk), 
-	.CLKOP(PIXCLK), 
+	.CLKOP(w_CLK_24MHZ), 
 	.CLKOS(w_CLK_100MHZ),
-	.CLKOS2(w_CLK_20MHZ)
+	.CLKOS2(w_CLK_20MHZ),
+	.CLKOS3(PIXCLK)
 );
 	 
 pll_pix2byte_RGB888_2lane u_pll_pix2byte_RGB888_2lane(
@@ -458,8 +463,9 @@ colorbar_gen 	#(
             .H_SYNCH       ('d40),
             .V_FRONT_PORCH ('d5),
             .V_SYNCH       ('d5),
+			//.H_BACK_PORCH  ('d),
             .mode          (testmode)
-        )
+        ) 
 		
 		*/
 		colorbar_gen 	#(
@@ -471,8 +477,9 @@ colorbar_gen 	#(
             .H_SYNCH       ('d40),
             .V_FRONT_PORCH ('d5),
             .V_SYNCH       ('d5),
+			//.H_BACK_PORCH  ('d),
             .mode          (testmode)
-        ) 
+        )  
         u_colorbar_gen
         ( 
             .rstn       (r_globalRST) , 

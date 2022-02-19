@@ -1,14 +1,14 @@
 @P:  Worst Slack : -3.640
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Frequency : 117.3 MHz
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Estimated Period : 8.527
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Requested Period : 5.000
-@P:  PLL_12_24_100|CLKOP_inferred_clock - Slack : -3.527
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Frequency : 115.7 MHz
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Frequency : 200.0 MHz
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Estimated Period : 8.640
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Requested Period : 5.000
 @P:  PLL_12_24_100|CLKOS2_inferred_clock - Slack : -3.640
+@P:  PLL_12_24_100|CLKOS3_inferred_clock - Estimated Frequency : 117.3 MHz
+@P:  PLL_12_24_100|CLKOS3_inferred_clock - Requested Frequency : 200.0 MHz
+@P:  PLL_12_24_100|CLKOS3_inferred_clock - Estimated Period : 8.527
+@P:  PLL_12_24_100|CLKOS3_inferred_clock - Requested Period : 5.000
+@P:  PLL_12_24_100|CLKOS3_inferred_clock - Slack : -3.527
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Frequency : 142.7 MHz
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Requested Frequency : 200.0 MHz
 @P:  PLL_12_24_100|CLKOS_inferred_clock - Estimated Period : 7.008
@@ -55,4 +55,4 @@
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:04s
+@P:  CPU Time : 0h:00m:03s

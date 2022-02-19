@@ -34,7 +34,7 @@ I/O cells:       17
                            ROM16X1A        5       100.0
                            ROM32X1A        4       100.0
                            ROM64X1A        4       100.0
-                                VHI        8       100.0
+                                VHI        9       100.0
                                 VLO       17       100.0
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
@@ -60,7 +60,7 @@ SUB MODULES
                              oDDRx4        1       100.0
           pll_pix2byte_RGB888_2lane        1       100.0
                             
-                         TOTAL           831           
+                         TOTAL           832           
 ----------------------------------------------------------------------
 Report for cell DPHY_TX_INST.netlist
      Instance path:  u_DPHY_TX_INST
@@ -72,7 +72,7 @@ Report for cell DPHY_TX_INST.netlist
                             FD1P3DX        3       100.0
                             ODDRX4B        3       100.0
                            ROM16X1A        2        40.0
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
 SUB MODULES 
                              oDDRx4        1       100.0
@@ -89,7 +89,7 @@ Report for cell oDDRx4.netlist
                             FD1P3DX        3       100.0
                             ODDRX4B        3       100.0
                            ROM16X1A        2        40.0
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            14           
@@ -102,7 +102,7 @@ Report for cell colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s.netlist
                             FD1S3DX       30        63.8
                                 INV        2        22.2
                            ORCALUT4       49        12.1
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            95           
@@ -129,7 +129,7 @@ Report for cell DCS_ROM.netlist
                             FD1S3AX       27        51.9
                             FD1S3IX        2         9.5
                            ORCALUT4       35         8.6
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            79           
@@ -232,7 +232,7 @@ Report for cell Serial_Protocol_0.netlist
                            ROM16X1A        2        40.0
                            ROM32X1A        2        50.0
                            ROM64X1A        2        50.0
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            87           
@@ -249,7 +249,7 @@ Report for cell Serial_Protocol_1.netlist
                            ROM16X1A        1        20.0
                            ROM32X1A        2        50.0
                            ROM64X1A        2        50.0
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            92           
@@ -263,7 +263,7 @@ Report for cell Commando_Inicial.netlist
                             FD1S3AX        4         7.7
                                 INV        2        22.2
                            ORCALUT4       41        10.1
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL            88           
@@ -282,7 +282,7 @@ Report for cell LP_HS_DELAY_CNTRL.netlist
                                 INV        1        11.1
                            ORCALUT4      116        28.6
                               PFUMX       16       100.0
-                                VHI        1        12.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                             
                          TOTAL           243           
@@ -295,11 +295,12 @@ Report for cell BYTE_PACKETIZER_24s_2s_62_0s_1s.netlist
                             FD1S3AX        1         1.9
                                 INV        1        11.1
                            ORCALUT4        2         0.5
+                                VHI        1        11.1
                                 VLO        1         5.9
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
                             
-                         TOTAL             8           
+                         TOTAL             9           
 ----------------------------------------------------------------------
 Report for cell pll_pix2byte_RGB888_2lane.netlist
      Instance path:  u_pll_pix2byte_RGB888_2lane

@@ -1,4 +1,4 @@
-# Fri Feb 18 15:48:51 2022
+# Fri Feb 18 18:00:04 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -133,7 +133,7 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 @N: MF169 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Pushed in register q_oneh_data[3:2].
 @N: MF169 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Pushed in register q_oneh_data[8:6].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 179MB peak: 179MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
@@ -150,7 +150,7 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 181MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 189MB peak: 189MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 188MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
@@ -222,10 +222,10 @@ latches that do not specify sets or resets
    u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 187MB peak: 193MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 193MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 152MB peak: 193MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 193MB)
 
 Writing Analyst data base C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
@@ -238,7 +238,7 @@ Writing EDIF Netlist and constraint files
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 192MB peak: 193MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 190MB peak: 193MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
 
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -248,14 +248,14 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT420 |Found inferred clock top|i_clk with period 5.00ns. Please declare a user-defined clock on port i_clk.
 @W: MT420 |Found inferred clock oDDRx4|sclk_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_DPHY_TX_INST.u_oDDRx4.sclk.
-@W: MT420 |Found inferred clock PLL_12_24_100|CLKOP_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.
+@W: MT420 |Found inferred clock PLL_12_24_100|CLKOS3_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.PIXCLK.
 @W: MT420 |Found inferred clock pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net u_pll_pix2byte_RGB888_2lane.byte_clk.
 @W: MT420 |Found inferred clock PLL_12_24_100|CLKOS2_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.w_CLK_20MHZ.
 @W: MT420 |Found inferred clock PLL_12_24_100|CLKOS_inferred_clock with period 5.00ns. Please declare a user-defined clock on net PLL_12_24_100_mod.w_CLK_100MHZ.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 18 15:48:55 2022
+# Timing report written on Fri Feb 18 18:00:08 2022
 #
 
 
@@ -279,8 +279,8 @@ Worst slack in design: -3.640
                                                     Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                      Frequency     Frequency     Period        Period        Slack      Type         Group              
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-PLL_12_24_100|CLKOP_inferred_clock                  200.0 MHz     117.3 MHz     5.000         8.527         -3.527     inferred     Inferred_clkgroup_2
 PLL_12_24_100|CLKOS2_inferred_clock                 200.0 MHz     115.7 MHz     5.000         8.640         -3.640     inferred     Inferred_clkgroup_4
+PLL_12_24_100|CLKOS3_inferred_clock                 200.0 MHz     117.3 MHz     5.000         8.527         -3.527     inferred     Inferred_clkgroup_2
 PLL_12_24_100|CLKOS_inferred_clock                  200.0 MHz     142.7 MHz     5.000         7.008         -2.008     inferred     Inferred_clkgroup_5
 oDDRx4|sclk_inferred_clock                          200.0 MHz     360.7 MHz     5.000         2.772         2.228      inferred     Inferred_clkgroup_1
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     200.0 MHz     123.9 MHz     5.000         8.072         -3.072     inferred     Inferred_clkgroup_3
@@ -306,9 +306,9 @@ System                                           PLL_12_24_100|CLKOS_inferred_cl
 top|i_clk                                        System                                           |  5.000       3.255   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       System                                           |  5.000       2.875   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  5.000       2.228   |  No paths    -      |  No paths    -      |  No paths    -    
-PLL_12_24_100|CLKOP_inferred_clock               System                                           |  5.000       3.852   |  No paths    -      |  No paths    -      |  No paths    -    
-PLL_12_24_100|CLKOP_inferred_clock               PLL_12_24_100|CLKOP_inferred_clock               |  5.000       -3.527  |  No paths    -      |  No paths    -      |  No paths    -    
-PLL_12_24_100|CLKOP_inferred_clock               pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
+PLL_12_24_100|CLKOS3_inferred_clock              System                                           |  5.000       3.852   |  No paths    -      |  No paths    -      |  No paths    -    
+PLL_12_24_100|CLKOS3_inferred_clock              PLL_12_24_100|CLKOS3_inferred_clock              |  5.000       -3.527  |  No paths    -      |  No paths    -      |  No paths    -    
+PLL_12_24_100|CLKOS3_inferred_clock              pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       0.668   |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  5.000       -3.073  |  No paths    -      |  No paths    -      |  No paths    -    
 PLL_12_24_100|CLKOS2_inferred_clock              PLL_12_24_100|CLKOS2_inferred_clock              |  5.000       -3.640  |  No paths    -      |  No paths    -      |  No paths    -    
@@ -326,224 +326,6 @@ Interface Information
 *********************
 
 No IO constraint found
-
-
-
-====================================
-Detailed Report for Clock: PLL_12_24_100|CLKOP_inferred_clock
-====================================
-
-
-
-Starting Points with Worst Slack
-********************************
-
-                                  Starting                                                                      Arrival           
-Instance                          Reference                              Type        Pin     Net                Time        Slack 
-                                  Clock                                                                                           
-----------------------------------------------------------------------------------------------------------------------------------
-u_colorbar_gen.pixcnt[2]          PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt[2]          1.108       -3.527
-u_colorbar_gen.pixcnt[9]          PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt[9]          1.204       -3.519
-u_colorbar_gen.pixcnt[4]          PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt[4]          1.188       -3.503
-u_colorbar_gen.pixcnt[5]          PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt[5]          1.188       -3.503
-u_colorbar_gen.pixcnt[6]          PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt[6]          1.188       -3.503
-u_colorbar_gen.pixcnt_fast[7]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt_fast[7]     0.972       -3.475
-u_colorbar_gen.pixcnt_fast[8]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt_fast[8]     0.972       -3.475
-u_colorbar_gen.pixcnt_fast[0]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       pixcnt_fast[0]     1.044       -3.463
-u_colorbar_gen.linecnt[5]         PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       linecnt[5]         1.180       -3.423
-u_colorbar_gen.linecnt[8]         PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     Q       linecnt[8]         1.180       -3.423
-==================================================================================================================================
-
-
-Ending Points with Worst Slack
-******************************
-
-                              Starting                                                                       Required           
-Instance                      Reference                              Type        Pin     Net                 Time         Slack 
-                              Clock                                                                                             
---------------------------------------------------------------------------------------------------------------------------------
-u_colorbar_gen.linecnt[9]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[9]     5.089        -3.527
-u_colorbar_gen.linecnt[7]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[7]     5.089        -3.384
-u_colorbar_gen.linecnt[5]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[5]     5.089        -3.241
-u_colorbar_gen.linecnt[6]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[6]     5.089        -3.241
-u_colorbar_gen.linecnt[3]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[3]     5.089        -3.099
-u_colorbar_gen.linecnt[8]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un2_linecnt[8]      4.894        -2.962
-u_colorbar_gen.linecnt[2]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[2]     5.089        -2.956
-u_colorbar_gen.linecnt[4]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un2_linecnt[4]      4.894        -2.676
-u_colorbar_gen.linecnt[1]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un2_linecnt[1]      4.894        -2.533
-u_colorbar_gen.linecnt[0]     PLL_12_24_100|CLKOP_inferred_clock     FD1S3DX     D       un65_linecnt[0]     5.089        -1.072
-================================================================================================================================
-
-
-
-Worst Path Information
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      5.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.089
-
-    - Propagation time:                      8.616
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -3.527
-
-    Number of logic level(s):                10
-    Starting point:                          u_colorbar_gen.pixcnt[2] / Q
-    Ending point:                            u_colorbar_gen.linecnt[9] / D
-    The start point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-
-Instance / Net                                            Pin      Pin               Arrival     No. of    
-Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------
-u_colorbar_gen.pixcnt[2]                     FD1S3DX      Q        Out     1.108     1.108 r     -         
-pixcnt[2]                                    Net          -        -       -         -           3         
-u_colorbar_gen.pixcnt_fast_RNI1AVT[1]        ORCALUT4     A        In      0.000     1.108 r     -         
-u_colorbar_gen.pixcnt_fast_RNI1AVT[1]        ORCALUT4     Z        Out     1.193     2.301 r     -         
-N_31                                         Net          -        -       -         -           4         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     A        In      0.000     2.301 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.317 r     -         
-un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.317 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.334 r     -         
-un38_N_3_mux                                 Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.334 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.879 r     -         
-un2_linecnt_cry_0                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.879 r     -         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.021 r     -         
-un2_linecnt_cry_2                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.021 r     -         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.164 r     -         
-un2_linecnt_cry_4                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.164 r     -         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.307 r     -         
-un2_linecnt_cry_6                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.307 r     -         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.450 r     -         
-un2_linecnt_cry_8                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.450 r     -         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.999 r     -         
-un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.999 r     -         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.616 r     -         
-un65_linecnt[9]                              Net          -        -       -         -           1         
-u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.616 r     -         
-===========================================================================================================
-
-
-Path information for path number 2: 
-      Requested Period:                      5.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.089
-
-    - Propagation time:                      8.608
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -3.519
-
-    Number of logic level(s):                10
-    Starting point:                          u_colorbar_gen.pixcnt[9] / Q
-    Ending point:                            u_colorbar_gen.linecnt[9] / D
-    The start point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-
-Instance / Net                                            Pin      Pin               Arrival     No. of    
-Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------
-u_colorbar_gen.pixcnt[9]                     FD1S3DX      Q        Out     1.204     1.204 r     -         
-pixcnt[9]                                    Net          -        -       -         -           7         
-u_colorbar_gen.pixcnt_fast_RNI1IOH[10]       ORCALUT4     A        In      0.000     1.204 r     -         
-u_colorbar_gen.pixcnt_fast_RNI1IOH[10]       ORCALUT4     Z        Out     1.089     2.293 f     -         
-g0_0_1                                       Net          -        -       -         -           2         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     C        In      0.000     2.293 f     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.309 r     -         
-un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.309 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.326 r     -         
-un38_N_3_mux                                 Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.326 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.871 r     -         
-un2_linecnt_cry_0                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.871 r     -         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.013 r     -         
-un2_linecnt_cry_2                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.013 r     -         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.156 r     -         
-un2_linecnt_cry_4                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.156 r     -         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.299 r     -         
-un2_linecnt_cry_6                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.299 r     -         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.442 r     -         
-un2_linecnt_cry_8                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.442 r     -         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.991 r     -         
-un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.991 r     -         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.608 r     -         
-un65_linecnt[9]                              Net          -        -       -         -           1         
-u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.608 r     -         
-===========================================================================================================
-
-
-Path information for path number 3: 
-      Requested Period:                      5.000
-    - Setup time:                            -0.089
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.089
-
-    - Propagation time:                      8.592
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -3.503
-
-    Number of logic level(s):                10
-    Starting point:                          u_colorbar_gen.pixcnt[4] / Q
-    Ending point:                            u_colorbar_gen.linecnt[9] / D
-    The start point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            PLL_12_24_100|CLKOP_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-
-Instance / Net                                            Pin      Pin               Arrival     No. of    
-Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------------
-u_colorbar_gen.pixcnt[4]                     FD1S3DX      Q        Out     1.188     1.188 r     -         
-pixcnt[4]                                    Net          -        -       -         -           6         
-u_colorbar_gen.pixcnt_RNIM667[4]             ORCALUT4     A        In      0.000     1.188 r     -         
-u_colorbar_gen.pixcnt_RNIM667[4]             ORCALUT4     Z        Out     1.089     2.277 f     -         
-g3_1_0                                       Net          -        -       -         -           2         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     D        In      0.000     2.277 f     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.293 r     -         
-un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.293 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.310 r     -         
-un38_N_3_mux                                 Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.310 r     -         
-u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.855 r     -         
-un2_linecnt_cry_0                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.855 r     -         
-u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     5.997 r     -         
-un2_linecnt_cry_2                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     5.997 r     -         
-u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.140 r     -         
-un2_linecnt_cry_4                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.140 r     -         
-u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.283 r     -         
-un2_linecnt_cry_6                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.283 r     -         
-u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.426 r     -         
-un2_linecnt_cry_8                            Net          -        -       -         -           1         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.426 r     -         
-u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.975 r     -         
-un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.975 r     -         
-u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.592 r     -         
-un65_linecnt[9]                              Net          -        -       -         -           1         
-u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.592 r     -         
-===========================================================================================================
-
 
 
 
@@ -734,6 +516,224 @@ Serial_busN.o_11_u                   ORCALUT4     Z        Out     1.089     8.5
 o_11                                 Net          -        -       -         -           2         
 Serial_busN.o.II_1                   FD1S3BX      D        In      0.000     8.535 r     -         
 ===================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: PLL_12_24_100|CLKOS3_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                  Starting                                                                       Arrival           
+Instance                          Reference                               Type        Pin     Net                Time        Slack 
+                                  Clock                                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------
+u_colorbar_gen.pixcnt[2]          PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt[2]          1.108       -3.527
+u_colorbar_gen.pixcnt[9]          PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt[9]          1.204       -3.519
+u_colorbar_gen.pixcnt[4]          PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt[4]          1.188       -3.503
+u_colorbar_gen.pixcnt[5]          PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt[5]          1.188       -3.503
+u_colorbar_gen.pixcnt[6]          PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt[6]          1.188       -3.503
+u_colorbar_gen.pixcnt_fast[7]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt_fast[7]     0.972       -3.475
+u_colorbar_gen.pixcnt_fast[8]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt_fast[8]     0.972       -3.475
+u_colorbar_gen.pixcnt_fast[0]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       pixcnt_fast[0]     1.044       -3.463
+u_colorbar_gen.linecnt[5]         PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       linecnt[5]         1.180       -3.423
+u_colorbar_gen.linecnt[8]         PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     Q       linecnt[8]         1.180       -3.423
+===================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                        Required           
+Instance                      Reference                               Type        Pin     Net                 Time         Slack 
+                              Clock                                                                                              
+---------------------------------------------------------------------------------------------------------------------------------
+u_colorbar_gen.linecnt[9]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[9]     5.089        -3.527
+u_colorbar_gen.linecnt[7]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[7]     5.089        -3.384
+u_colorbar_gen.linecnt[5]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[5]     5.089        -3.241
+u_colorbar_gen.linecnt[6]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[6]     5.089        -3.241
+u_colorbar_gen.linecnt[3]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[3]     5.089        -3.099
+u_colorbar_gen.linecnt[8]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un2_linecnt[8]      4.894        -2.962
+u_colorbar_gen.linecnt[2]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[2]     5.089        -2.956
+u_colorbar_gen.linecnt[4]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un2_linecnt[4]      4.894        -2.676
+u_colorbar_gen.linecnt[1]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un2_linecnt[1]      4.894        -2.533
+u_colorbar_gen.linecnt[0]     PLL_12_24_100|CLKOS3_inferred_clock     FD1S3DX     D       un65_linecnt[0]     5.089        -1.072
+=================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.089
+
+    - Propagation time:                      8.616
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.527
+
+    Number of logic level(s):                10
+    Starting point:                          u_colorbar_gen.pixcnt[2] / Q
+    Ending point:                            u_colorbar_gen.linecnt[9] / D
+    The start point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+u_colorbar_gen.pixcnt[2]                     FD1S3DX      Q        Out     1.108     1.108 r     -         
+pixcnt[2]                                    Net          -        -       -         -           3         
+u_colorbar_gen.pixcnt_fast_RNI1AVT[1]        ORCALUT4     A        In      0.000     1.108 r     -         
+u_colorbar_gen.pixcnt_fast_RNI1AVT[1]        ORCALUT4     Z        Out     1.193     2.301 r     -         
+N_31                                         Net          -        -       -         -           4         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     A        In      0.000     2.301 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.317 r     -         
+un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.317 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.334 r     -         
+un38_N_3_mux                                 Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.334 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.879 r     -         
+un2_linecnt_cry_0                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.879 r     -         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.021 r     -         
+un2_linecnt_cry_2                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.021 r     -         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.164 r     -         
+un2_linecnt_cry_4                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.164 r     -         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.307 r     -         
+un2_linecnt_cry_6                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.307 r     -         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.450 r     -         
+un2_linecnt_cry_8                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.450 r     -         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.999 r     -         
+un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.999 r     -         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.616 r     -         
+un65_linecnt[9]                              Net          -        -       -         -           1         
+u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.616 r     -         
+===========================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.089
+
+    - Propagation time:                      8.608
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.519
+
+    Number of logic level(s):                10
+    Starting point:                          u_colorbar_gen.pixcnt[9] / Q
+    Ending point:                            u_colorbar_gen.linecnt[9] / D
+    The start point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+u_colorbar_gen.pixcnt[9]                     FD1S3DX      Q        Out     1.204     1.204 r     -         
+pixcnt[9]                                    Net          -        -       -         -           7         
+u_colorbar_gen.pixcnt_fast_RNI1IOH[10]       ORCALUT4     A        In      0.000     1.204 r     -         
+u_colorbar_gen.pixcnt_fast_RNI1IOH[10]       ORCALUT4     Z        Out     1.089     2.293 f     -         
+g0_0_1                                       Net          -        -       -         -           2         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     C        In      0.000     2.293 f     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.309 r     -         
+un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.309 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.326 r     -         
+un38_N_3_mux                                 Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.326 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.871 r     -         
+un2_linecnt_cry_0                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.871 r     -         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     6.013 r     -         
+un2_linecnt_cry_2                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     6.013 r     -         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.156 r     -         
+un2_linecnt_cry_4                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.156 r     -         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.299 r     -         
+un2_linecnt_cry_6                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.299 r     -         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.442 r     -         
+un2_linecnt_cry_8                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.442 r     -         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.991 r     -         
+un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.991 r     -         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.608 r     -         
+un65_linecnt[9]                              Net          -        -       -         -           1         
+u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.608 r     -         
+===========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.089
+
+    - Propagation time:                      8.592
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -3.503
+
+    Number of logic level(s):                10
+    Starting point:                          u_colorbar_gen.pixcnt[4] / Q
+    Ending point:                            u_colorbar_gen.linecnt[9] / D
+    The start point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            PLL_12_24_100|CLKOS3_inferred_clock [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+u_colorbar_gen.pixcnt[4]                     FD1S3DX      Q        Out     1.188     1.188 r     -         
+pixcnt[4]                                    Net          -        -       -         -           6         
+u_colorbar_gen.pixcnt_RNIM667[4]             ORCALUT4     A        In      0.000     1.188 r     -         
+u_colorbar_gen.pixcnt_RNIM667[4]             ORCALUT4     Z        Out     1.089     2.277 f     -         
+g3_1_0                                       Net          -        -       -         -           2         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     D        In      0.000     2.277 f     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO_0     ORCALUT4     Z        Out     1.017     3.293 r     -         
+un2_linecnt_cry_0_0_RNO_0                    Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     A        In      0.000     3.293 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0_RNO       ORCALUT4     Z        Out     1.017     4.310 r     -         
+un38_N_3_mux                                 Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        B0       In      0.000     4.310 r     -         
+u_colorbar_gen.un2_linecnt_cry_0_0           CCU2D        COUT     Out     1.544     5.855 r     -         
+un2_linecnt_cry_0                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        CIN      In      0.000     5.855 r     -         
+u_colorbar_gen.un2_linecnt_cry_1_0           CCU2D        COUT     Out     0.143     5.997 r     -         
+un2_linecnt_cry_2                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        CIN      In      0.000     5.997 r     -         
+u_colorbar_gen.un2_linecnt_cry_3_0           CCU2D        COUT     Out     0.143     6.140 r     -         
+un2_linecnt_cry_4                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        CIN      In      0.000     6.140 r     -         
+u_colorbar_gen.un2_linecnt_cry_5_0           CCU2D        COUT     Out     0.143     6.283 r     -         
+un2_linecnt_cry_6                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        CIN      In      0.000     6.283 r     -         
+u_colorbar_gen.un2_linecnt_cry_7_0           CCU2D        COUT     Out     0.143     6.426 r     -         
+un2_linecnt_cry_8                            Net          -        -       -         -           1         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        CIN      In      0.000     6.426 r     -         
+u_colorbar_gen.un2_linecnt_s_9_0             CCU2D        S0       Out     1.549     7.975 r     -         
+un2_linecnt_s_9_0_S0                         Net          -        -       -         -           1         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     C        In      0.000     7.975 r     -         
+u_colorbar_gen.un65_linecnt[9]               ORCALUT4     Z        Out     0.617     8.592 r     -         
+un65_linecnt[9]                              Net          -        -       -         -           1         
+u_colorbar_gen.linecnt[9]                    FD1S3DX      D        In      0.000     8.592 r     -         
+===========================================================================================================
 
 
 
@@ -1587,10 +1587,10 @@ Serial_busN.o.II_0                   FD1S3DX      D        In      0.000     8.5
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 191MB peak: 193MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 191MB peak: 193MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -1630,13 +1630,13 @@ PUR:            1
 ROM16X1A:       5
 ROM32X1A:       4
 ROM64X1A:       4
-VHI:            8
+VHI:            9
 VLO:            17
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 71MB peak: 193MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 71MB peak: 193MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Fri Feb 18 15:48:55 2022
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Fri Feb 18 18:00:08 2022
 
 ###########################################################]

@@ -4,12 +4,12 @@ u 4 4
 p {t:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX}{t:u_DPHY_TX_INST.u_oDDRx4.sclk_inferred_clock.I[0]}{t:u_DPHY_TX_INST.u_oDDRx4.sclk_inferred_clock.OUT[0]}{p:u_DPHY_TX_INST.u_oDDRx4.sclk}{t:u_DPHY_TX_INST.u_oDDRx4.sclk}{t:u_DPHY_TX_INST.u_oDDRx4.clk_s}{p:u_DPHY_TX_INST.u_oDDRx4.clk_s}{t:u_DPHY_TX_INST.u_oDDRx4.FF_3.CK}
 e ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.FF_3.CK} FD1P3BX
 c ckid0_0 {t:u_DPHY_TX_INST.u_oDDRx4.Inst3_CLKDIVC.CDIVX} CLKDIVC Unsupported/too complex instance on clock path
-i PLL_12_24_100_mod.CLKOP_i
+i PLL_12_24_100_mod.CLKOS3_i
 m 0 0
 u 5 24
-p {t:PLL_12_24_100_mod.PLLInst_0.CLKOP}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOP_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOP}{t:PLL_12_24_100_mod.CLKOP}{t:u_colorbar_gen.m148_5_clk}{p:u_colorbar_gen.m148_5_clk}{t:u_colorbar_gen.linecnt[9:0].C}
+p {t:PLL_12_24_100_mod.PLLInst_0.CLKOS3}{t:PLL_12_24_100_mod.CLKOS3_inferred_clock.I[0]}{t:PLL_12_24_100_mod.CLKOS3_inferred_clock.OUT[0]}{p:PLL_12_24_100_mod.CLKOS3}{t:PLL_12_24_100_mod.CLKOS3}{t:u_colorbar_gen.m148_5_clk}{p:u_colorbar_gen.m148_5_clk}{t:u_colorbar_gen.linecnt[9:0].C}
 e ckid0_1 {t:u_colorbar_gen.linecnt[9:0].C} dffr
-c ckid0_1 {t:PLL_12_24_100_mod.PLLInst_0.CLKOP} EHXPLLJ Unsupported/too complex instance on clock path
+c ckid0_1 {t:PLL_12_24_100_mod.PLLInst_0.CLKOS3} EHXPLLJ Unsupported/too complex instance on clock path
 i u_pll_pix2byte_RGB888_2lane.CLKOS2_i
 m 0 0
 u 32 162
@@ -38,6 +38,9 @@ i u_pll_pix2byte_RGB888_2lane.CLKOS
 m 0 0
 u 0 0
 i u_pll_pix2byte_RGB888_2lane.CLKOP
+m 0 0
+u 0 0
+i PLL_12_24_100_mod.CLKOP
 m 0 0
 u 0 0
 l 0 0 0 0 0

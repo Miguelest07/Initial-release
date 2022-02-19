@@ -13,7 +13,7 @@ Hostname: LAPTOP-BQ95DNMF
 
 Implementation : xo3l_verilog
 
-# Written on Fri Feb 18 15:48:51 2022
+# Written on Fri Feb 18 18:00:04 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -40,12 +40,12 @@ Starting                                            Ending                      
 System                                              System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 System                                              pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 top|i_clk                                           System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
-top|i_clk                                           PLL_12_24_100|CLKOP_inferred_clock                  |     Diff grp         |     No paths         |     No paths         |     No paths                         
+top|i_clk                                           PLL_12_24_100|CLKOS3_inferred_clock                 |     Diff grp         |     No paths         |     No paths         |     No paths                         
 oDDRx4|sclk_inferred_clock                          System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 oDDRx4|sclk_inferred_clock                          oDDRx4|sclk_inferred_clock                          |     5.000            |     No paths         |     No paths         |     No paths                         
-PLL_12_24_100|CLKOP_inferred_clock                  System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
-PLL_12_24_100|CLKOP_inferred_clock                  PLL_12_24_100|CLKOP_inferred_clock                  |     5.000            |     No paths         |     No paths         |     No paths                         
-PLL_12_24_100|CLKOP_inferred_clock                  pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
+PLL_12_24_100|CLKOS3_inferred_clock                 System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
+PLL_12_24_100|CLKOS3_inferred_clock                 PLL_12_24_100|CLKOS3_inferred_clock                 |     5.000            |     No paths         |     No paths         |     No paths                         
+PLL_12_24_100|CLKOS3_inferred_clock                 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     Diff grp         |     No paths         |     No paths         |     No paths                         
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     System                                              |     5.000            |     No paths         |     No paths         |     No paths                         
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock     |     5.000            |     No paths         |     No paths         |     No paths                         
 PLL_12_24_100|CLKOS2_inferred_clock                 PLL_12_24_100|CLKOS2_inferred_clock                 |     5.000            |     No paths         |     No paths         |     No paths                         

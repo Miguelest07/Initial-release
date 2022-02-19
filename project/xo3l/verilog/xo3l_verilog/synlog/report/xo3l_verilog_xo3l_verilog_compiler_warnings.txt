@@ -1,4 +1,4 @@
-@W: CG1249 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":394:11:394:15|Redeclaration of implicit signal w_LP0
+@W: CG1249 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":399:11:399:15|Redeclaration of implicit signal w_LP0
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":99:11:99:14|Net clk0 is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":100:11:100:14|Net clk2 is not declared.
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\xo3l\oddrx4.v":101:11:101:14|Net clk4 is not declared.
@@ -48,11 +48,11 @@
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 5 to 4 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":89:5:89:10|Pruning register bits 1 to 0 of q_oneh_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 @W: CL169 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":104:1:104:6|Pruning unused register color_cntr[11:0]. Make sure that there are no unused intermediate registers.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":205:19:205:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":215:19:215:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":295:19:295:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.
-@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":362:28:362:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":131:5:131:13|Removing wire w_reset_n, as there is no assignment to it.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":210:19:210:20|Port-width mismatch for port VC. The port definition is 2 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":220:19:220:22|Port-width mismatch for port EoTp. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":300:19:300:24|Port-width mismatch for port lpclk_out_a. The port definition is 1 bits, but the actual port connection bit width is 2. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":367:28:367:39|Port-width mismatch for port lpclk_out. The port definition is 2 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v":135:5:135:13|Removing wire w_reset_n, as there is no assignment to it.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit pixcnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v":78:4:78:9|Optimizing register bit linecnt[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.

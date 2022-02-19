@@ -18,8 +18,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/Miguel Estrada/Documents/GitHub/project/xo3l/verilog/xo3l_verilog/xo3l_verilog_xo3l_verilog.bit</File>
-			<FileTime>02/17/22 20:12:56</FileTime>
-			<JedecChecksum>0xFF94</JedecChecksum>
+			<FileTime>02/18/22 18:00:33</FileTime>
+			<JedecChecksum>0x243B</JedecChecksum>
 			<Operation>SPI Flash Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -65,7 +65,7 @@
 					<AddressBase>0x00000000</AddressBase>
 					<EndAddress>0x00010000</EndAddress>
 					<DeviceSize>8</DeviceSize>
-					<DataSize>35331</DataSize>
+					<DataSize>35235</DataSize>
 					<NumberOfDevices>1</NumberOfDevices>
 					<ReInitialize value="FALSE"/>
 				</Device>
