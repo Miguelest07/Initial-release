@@ -28,7 +28,7 @@ I/O cells:       17
                                  OB       12       100.0
                                 OBZ        3       100.0
                             ODDRX4B        3       100.0
-                           ORCALUT4      405       100.0
+                           ORCALUT4      406       100.0
                               PFUMX       16       100.0
                                 PUR        1       100.0
                            ROM16X1A        5       100.0
@@ -36,10 +36,11 @@ I/O cells:       17
                            ROM64X1A        4       100.0
                                 VHI        9       100.0
                                 VLO       17       100.0
+                        crc16_2lane        1       100.0
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
 SUB MODULES 
-          BYTE_PACKETIZER_24s_2s_62_0s_1s        1       100.0
+          BYTE_PACKETIZER_24s_2s_62_1s_1s        1       100.0
                    Commando_Inicial        1       100.0
                         DCS_Encoder        1       100.0
                             DCS_ROM        1       100.0
@@ -60,7 +61,7 @@ SUB MODULES
                              oDDRx4        1       100.0
           pll_pix2byte_RGB888_2lane        1       100.0
                             
-                         TOTAL           832           
+                         TOTAL           834           
 ----------------------------------------------------------------------
 Report for cell DPHY_TX_INST.netlist
      Instance path:  u_DPHY_TX_INST
@@ -287,20 +288,21 @@ Report for cell LP_HS_DELAY_CNTRL.netlist
                             
                          TOTAL           243           
 ----------------------------------------------------------------------
-Report for cell BYTE_PACKETIZER_24s_2s_62_0s_1s.netlist
+Report for cell BYTE_PACKETIZER_24s_2s_62_1s_1s.netlist
      Instance path:  u_BYTE_PACKETIZER
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3AX        1         1.9
                             FD1S3AX        1         1.9
                                 INV        1        11.1
-                           ORCALUT4        2         0.5
+                           ORCALUT4        3         0.7
                                 VHI        1        11.1
                                 VLO        1         5.9
+                        crc16_2lane        1       100.0
                     packetheader_2s        1       100.0
             parallel2byte_24s_2s_62        1       100.0
                             
-                         TOTAL             9           
+                         TOTAL            11           
 ----------------------------------------------------------------------
 Report for cell pll_pix2byte_RGB888_2lane.netlist
      Instance path:  u_pll_pix2byte_RGB888_2lane

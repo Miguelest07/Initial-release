@@ -9,6 +9,7 @@
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":49:7:49:21|Synthesizing module BYTE_PACKETIZER in library work.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":117:53:117:56|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":118:53:118:56|Removing redundant assignment.
+@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Synthesizing module crc16_2lane in library work.
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":48:7:48:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":156:78:156:88|Removing redundant assignment.

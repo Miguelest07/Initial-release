@@ -1,4 +1,4 @@
-# Fri Feb 18 18:00:03 2022
+# Fri Feb 18 19:38:36 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -32,10 +32,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 @N: FX493 |Applying initial value "0" on instance r_init.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -43,7 +43,6 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register rst_d with set has an initial value of 0. Ignoring initial value.  
 @W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register eocd with set has an initial value of 0. Ignoring initial value.  
 @W: BN287 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register o with reset has an initial value of 1. Ignoring initial value.  
-@W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register o with set has an initial value of 0. Ignoring initial value.  
 @N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_1 (in view: work.DCS_ROM(verilog)) on net data_1 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
@@ -161,19 +160,19 @@ Clock Tree ID     Driving Element                                  Drive Element
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 176MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 18 18:00:04 2022
+# Fri Feb 18 19:38:38 2022
 
 ###########################################################]

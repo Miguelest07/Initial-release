@@ -12,7 +12,7 @@
 #OS: Windows 8 6.2
 #Hostname: LAPTOP-BQ95DNMF
 
-# Fri Feb 18 17:59:59 2022
+# Fri Feb 18 19:38:30 2022
 
 #Implementation: xo3l_verilog
 
@@ -88,7 +88,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v" (library work)
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\PLL_12_24_100.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v changed - recompiling
+File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1124:7:1124:9|Synthesizing module VLO in library work.
 Running optimization stage 1 on VLO .......
@@ -117,13 +117,16 @@ Running optimization stage 1 on pll_pix2byte_RGB888_2lane .......
 	word_width=32'b00000000000000000000000000011000
 	lane_width=32'b00000000000000000000000000000010
 	dt=6'b111110
-	crc16=32'b00000000000000000000000000000000
+	crc16=32'b00000000000000000000000000000001
 	version=32'b00000000000000000000000000000001
-   Generated name = BYTE_PACKETIZER_24s_2s_62_0s_1s
+   Generated name = BYTE_PACKETIZER_24s_2s_62_1s_1s
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":117:53:117:56|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":118:53:118:56|Removing redundant assignment.
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|Removing wire crc, as there is no assignment to it.
-Running optimization stage 1 on BYTE_PACKETIZER_24s_2s_62_0s_1s .......
+@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Synthesizing module crc16_2lane in library work.
+@W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Creating black box for empty module crc16_2lane
+
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":158:27:158:35|Port-width mismatch for port data. The port definition is 16 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+Running optimization stage 1 on BYTE_PACKETIZER_24s_2s_62_1s_1s .......
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":48:7:48:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":156:78:156:88|Removing redundant assignment.
@@ -316,9 +319,7 @@ Running optimization stage 2 on LP_HS_DELAY_CNTRL .......
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Running optimization stage 2 on BYTE_PACKETIZER_24s_2s_62_0s_1s .......
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":134:21:134:30|*Input chksum_rdy to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|*Input crc[15:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Running optimization stage 2 on BYTE_PACKETIZER_24s_2s_62_1s_1s .......
 Running optimization stage 2 on pll_pix2byte_RGB888_2lane .......
 Running optimization stage 2 on PLL_12_24_100 .......
 Running optimization stage 2 on EHXPLLJ .......
@@ -329,12 +330,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 98MB peak: 98MB)
+At c_ver Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 98MB peak: 98MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]
 ###########################################################[
@@ -362,7 +363,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]
 
@@ -372,12 +373,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]
 ###########################################################[
@@ -405,10 +406,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:03 2022
+# Fri Feb 18 19:38:36 2022
 
 ###########################################################]
-# Fri Feb 18 18:00:03 2022
+# Fri Feb 18 19:38:36 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -442,10 +443,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 141MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 142MB)
 
 @N: FX493 |Applying initial value "0" on instance r_init.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -453,7 +454,6 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register rst_d with set has an initial value of 0. Ignoring initial value.  
 @W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register eocd with set has an initial value of 0. Ignoring initial value.  
 @W: BN287 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register o with reset has an initial value of 1. Ignoring initial value.  
-@W: BN288 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":24:0:24:5|Register o with set has an initial value of 0. Ignoring initial value.  
 @N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\commando_inicial.v":4:8:4:22|Tristate driver o_Global_Enable (in view: work.Commando_Inicial(verilog)) on net o_Global_Enable (in view: work.Commando_Inicial(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\dataflow_switch.v":52:10:52:18|Tristate driver lpclk_out (in view: work.DataFlow_Switch(verilog)) on net lpclk_out (in view: work.DataFlow_Switch(verilog)) has its enable tied to GND.
 @N: MO111 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_rom.v":57:16:57:19|Tristate driver data_1 (in view: work.DCS_ROM(verilog)) on net data_1 (in view: work.DCS_ROM(verilog)) has its enable tied to GND.
@@ -571,23 +571,23 @@ Clock Tree ID     Driving Element                                  Drive Element
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 176MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Fri Feb 18 18:00:04 2022
+# Fri Feb 18 19:38:38 2022
 
 ###########################################################]
-# Fri Feb 18 18:00:04 2022
+# Fri Feb 18 19:38:38 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -711,10 +711,10 @@ Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; M
 @W: BN132 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Removing instance u_DCS_Encoder.q_oneh_data[15] because it is equivalent to instance u_DCS_Encoder.q_oneh_data[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @N: BN362 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Removing sequential instance u_DCS_Encoder.q_oneh_data[3] (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 178MB peak: 178MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 @N: FA113 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":113:53:113:64|Pipelining module un18_LP[7:1]. For more information, search for "pipelining" in Online Help.
 @N: MF169 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Pushed in register bitcntr[4:0].
@@ -722,13 +722,13 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CP
 @N: MF169 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Pushed in register q_oneh_data[3:2].
 @N: MF169 :"c:\users\miguel estrada\documents\github\source\verilog\dcs_encoder.v":89:5:89:10|Pushed in register q_oneh_data[8:6].
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 179MB peak: 179MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 179MB peak: 179MB)
 
 
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 181MB)
 
 @N: FO126 :"c:\users\miguel estrada\documents\github\source\verilog\lp_hs_dly_ctrl.v":108:16:108:21|Generating RAM u_LP_HS_DELAY_CNTRL.data_dly\[54\]\.hold_data_CR31[15:0]
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":50:10:50:25|Generating ROM Serial_busN.o_7 (in view: work.top(verilog)).
@@ -736,20 +736,20 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":44:10:44:25|Generating ROM Serial_busP.o_4 (in view: work.top(verilog)).
 @N: FX214 :"c:\users\miguel estrada\documents\github\project\xo3l\verilog\serial_protocol.v":42:10:42:25|Generating ROM Serial_busP.o_3 (in view: work.top(verilog)).
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 181MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 188MB peak: 188MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 188MB peak: 188MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    -3.89ns		 386 /       190
-   2		0h:00m:01s		    -3.89ns		 386 /       190
-   3		0h:00m:01s		    -2.69ns		 386 /       190
-   4		0h:00m:01s		    -3.34ns		 386 /       190
-   5		0h:00m:01s		    -3.34ns		 386 /       190
-   6		0h:00m:01s		    -3.34ns		 386 /       190
-   7		0h:00m:01s		    -3.34ns		 386 /       190
+   1		0h:00m:02s		    -3.89ns		 387 /       190
+   2		0h:00m:02s		    -3.89ns		 387 /       190
+   3		0h:00m:02s		    -2.69ns		 387 /       190
+   4		0h:00m:02s		    -3.34ns		 387 /       190
+   5		0h:00m:02s		    -3.34ns		 387 /       190
+   6		0h:00m:02s		    -3.34ns		 387 /       190
+   7		0h:00m:02s		    -3.34ns		 387 /       190
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[8] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[7] (in view: work.top(verilog)) with 5 loads 1 time to improve timing.
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[3] (in view: work.top(verilog)) with 4 loads 1 time to improve timing.
@@ -759,23 +759,23 @@ Timing driven replication report
 Added 5 Registers via timing driven replication
 Added 2 LUTs via timing driven replication
 
-   8		0h:00m:02s		    -3.17ns		 389 /       195
-   9		0h:00m:02s		    -3.17ns		 390 /       195
-  10		0h:00m:02s		    -3.17ns		 391 /       195
-  11		0h:00m:02s		    -3.17ns		 391 /       195
-  12		0h:00m:02s		    -3.17ns		 391 /       195
+   8		0h:00m:03s		    -3.17ns		 390 /       195
+   9		0h:00m:03s		    -3.17ns		 391 /       195
+  10		0h:00m:03s		    -3.17ns		 392 /       195
+  11		0h:00m:03s		    -3.17ns		 392 /       195
+  12		0h:00m:03s		    -3.17ns		 392 /       195
 
 @N: FX271 :"c:\users\miguel estrada\documents\github\source\verilog\colorbar_gen.v":78:4:78:9|Replicating instance u_colorbar_gen.pixcnt[10] (in view: work.top(verilog)) with 7 loads 1 time to improve timing.
 Added 1 Registers via timing driven replication
 Added 1 LUTs via timing driven replication
 
-  13		0h:00m:02s		    -2.35ns		 395 /       196
-  14		0h:00m:02s		    -2.35ns		 396 /       196
-  15		0h:00m:02s		    -2.35ns		 396 /       196
-  16		0h:00m:02s		    -2.35ns		 396 /       196
-  17		0h:00m:02s		    -2.35ns		 396 /       196
+  13		0h:00m:03s		    -2.35ns		 396 /       196
+  14		0h:00m:03s		    -2.35ns		 397 /       196
+  15		0h:00m:03s		    -2.35ns		 397 /       196
+  16		0h:00m:03s		    -2.35ns		 397 /       196
+  17		0h:00m:03s		    -2.35ns		 397 /       196
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 186MB peak: 193MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 186MB peak: 193MB)
 
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
@@ -811,27 +811,28 @@ latches that do not specify sets or resets
    u_LP_HS_DELAY_CNTRL.hold_data\[0\][0] (in view: work.top(verilog))
 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 187MB peak: 193MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 193MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 150MB peak: 193MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 152MB peak: 193MB)
 
 Writing Analyst data base C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\xo3l_verilog_xo3l_verilog_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 187MB peak: 193MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 193MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\xo3l_verilog_xo3l_verilog.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 192MB peak: 193MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 192MB peak: 193MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 190MB peak: 193MB)
 
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":132:14:132:28|Blackbox ECLKSYNCA is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":129:12:129:24|Blackbox CLKDIVC is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\oddrx4.v":120:12:120:25|Blackbox ODDRX4B is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":154:26:154:32|Blackbox crc16_2lane is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":123:8:123:21|Blackbox packetheader_2s is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\byte_packetizer.v":89:8:89:22|Blackbox parallel2byte_24s_2s_62 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
 @W: MT246 :"c:\users\miguel estrada\documents\github\source\verilog\xo3l\ipexpress\pll_pix2byte_rgb888_2lane.v":69:12:69:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
@@ -844,7 +845,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Fri Feb 18 18:00:08 2022
+# Timing report written on Fri Feb 18 19:38:44 2022
 #
 
 
@@ -895,7 +896,7 @@ System                                           PLL_12_24_100|CLKOS_inferred_cl
 top|i_clk                                        System                                           |  5.000       3.255   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       System                                           |  5.000       2.875   |  No paths    -      |  No paths    -      |  No paths    -    
 oDDRx4|sclk_inferred_clock                       oDDRx4|sclk_inferred_clock                       |  5.000       2.228   |  No paths    -      |  No paths    -      |  No paths    -    
-PLL_12_24_100|CLKOS3_inferred_clock              System                                           |  5.000       3.852   |  No paths    -      |  No paths    -      |  No paths    -    
+PLL_12_24_100|CLKOS3_inferred_clock              System                                           |  5.000       2.803   |  No paths    -      |  No paths    -      |  No paths    -    
 PLL_12_24_100|CLKOS3_inferred_clock              PLL_12_24_100|CLKOS3_inferred_clock              |  5.000       -3.527  |  No paths    -      |  No paths    -      |  No paths    -    
 PLL_12_24_100|CLKOS3_inferred_clock              pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  |  Diff grp    -       |  No paths    -      |  No paths    -      |  No paths    -    
 pll_pix2byte_RGB888_2lane|CLKOS2_inferred_clock  System                                           |  5.000       0.668   |  No paths    -      |  No paths    -      |  No paths    -    
@@ -1994,14 +1995,14 @@ Instance                        Reference     Type       Pin     Net      Time  
 --------------------------------------------------------------------------------------------
 Serial_busN.pars_1_.res_lat     System        FD1S1D     Q       o3_4     1.108       -3.640
 Serial_busN.pars_0_.res_lat     System        FD1S1D     Q       o3_3     1.044       -3.620
-Serial_busP.pars_0_.res_lat     System        FD1S1D     Q       o3_5     1.044       -3.608
+Serial_busP.pars_0_.res_lat     System        FD1S1D     Q       o3_4     1.044       -3.608
 Serial_busN.pars_2_.res_lat     System        FD1S1D     Q       o3_5     1.044       -3.576
 Serial_busN.pars_4_.res_lat     System        FD1S1D     Q       o3       1.044       -3.528
 Serial_busN.pars_3_.res_lat     System        FD1S1D     Q       o3_6     0.972       -3.488
-Serial_busP.pars_1_.res_lat     System        FD1S1D     Q       o3_6     1.148       -3.108
-Serial_busP.pars_2_.res_lat     System        FD1S1D     Q       o3_7     1.044       -3.008
-Serial_busP.pars_3_.res_lat     System        FD1S1D     Q       o3_0     0.972       -2.920
-Serial_busP.pars_4_.res_lat     System        FD1S1D     Q       o3_1     1.044       -2.512
+Serial_busP.pars_1_.res_lat     System        FD1S1D     Q       o3_5     1.148       -3.108
+Serial_busP.pars_2_.res_lat     System        FD1S1D     Q       o3_6     1.044       -3.008
+Serial_busP.pars_3_.res_lat     System        FD1S1D     Q       o3_7     0.972       -2.920
+Serial_busP.pars_4_.res_lat     System        FD1S1D     Q       o3       1.044       -2.512
 ============================================================================================
 
 
@@ -2176,10 +2177,10 @@ Serial_busN.o.II_0                   FD1S3DX      D        In      0.000     8.5
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 191MB peak: 193MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 191MB peak: 193MB)
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 191MB peak: 193MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -2213,7 +2214,7 @@ INV:            9
 OB:             12
 OBZ:            3
 ODDRX4B:        3
-ORCALUT4:       405
+ORCALUT4:       406
 PFUMX:          16
 PUR:            1
 ROM16X1A:       5
@@ -2223,10 +2224,10 @@ VHI:            9
 VLO:            17
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 71MB peak: 193MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 71MB peak: 193MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Fri Feb 18 18:00:08 2022
+Process took 0h:00m:06s realtime, 0h:00m:05s cputime
+# Fri Feb 18 19:38:44 2022
 
 ###########################################################]
 

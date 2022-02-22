@@ -57,8 +57,8 @@ module top #(
      parameter              word_width = 24            ,  //Pixel Bus Width.  Example: RGB888 = 8-bits Red, 8-bits Green, 8-bits Blue = 24 bits/pixel
      parameter              DT         = 6'h3E         ,  //6-bit MIPI DSI Data Type.  Example: dt = 6'h3E = RGB888
      parameter              testmode   = 1             ,  //adds colorbar pattern generator for testing purposes.  Operates off of PIXCLK input clock and reset_n input reset
-     parameter              crc16      = 0            ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
-     parameter              EoTp       = 0	 ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
+     parameter              crc16      = 1            ,  //appends 16-bit checksum to the end of long packet transfers.  0 = off, 1 = on.  Turning off will append 16'hFFFF to end of long packet.  Turning off will reduce resource utilization.
+     parameter              EoTp       = 1	 ,  //appends End of Transfer packet after any short packet or long packet data transfer.  0 = off, 1 = on.  appened as a data burst after packet.
      parameter              reserved   = 0 //reserved=0 at all times
 )(
      input                  reset_n                    ,  // resets design (active low)

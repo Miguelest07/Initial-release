@@ -70,7 +70,7 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Serial_Protocol.v" (library work)
 @I::"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\PLL_12_24_100.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\colorbar_gen.v changed - recompiling
+File C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\top.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\machxo3l.v":1124:7:1124:9|Synthesizing module VLO in library work.
 Running optimization stage 1 on VLO .......
@@ -99,13 +99,16 @@ Running optimization stage 1 on pll_pix2byte_RGB888_2lane .......
 	word_width=32'b00000000000000000000000000011000
 	lane_width=32'b00000000000000000000000000000010
 	dt=6'b111110
-	crc16=32'b00000000000000000000000000000000
+	crc16=32'b00000000000000000000000000000001
 	version=32'b00000000000000000000000000000001
-   Generated name = BYTE_PACKETIZER_24s_2s_62_0s_1s
+   Generated name = BYTE_PACKETIZER_24s_2s_62_1s_1s
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":117:53:117:56|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":118:53:118:56|Removing redundant assignment.
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|Removing wire crc, as there is no assignment to it.
-Running optimization stage 1 on BYTE_PACKETIZER_24s_2s_62_0s_1s .......
+@N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Synthesizing module crc16_2lane in library work.
+@W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Creating black box for empty module crc16_2lane
+
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":158:27:158:35|Port-width mismatch for port data. The port definition is 16 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
+Running optimization stage 1 on BYTE_PACKETIZER_24s_2s_62_1s_1s .......
 @N: CG364 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":48:7:48:23|Synthesizing module LP_HS_DELAY_CNTRL in library work.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":153:78:153:86|Removing redundant assignment.
 @N: CG179 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":156:78:156:88|Removing redundant assignment.
@@ -298,9 +301,7 @@ Running optimization stage 2 on LP_HS_DELAY_CNTRL .......
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-Running optimization stage 2 on BYTE_PACKETIZER_24s_2s_62_0s_1s .......
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":134:21:134:30|*Input chksum_rdy to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|*Input crc[15:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+Running optimization stage 2 on BYTE_PACKETIZER_24s_2s_62_1s_1s .......
 Running optimization stage 2 on pll_pix2byte_RGB888_2lane .......
 Running optimization stage 2 on PLL_12_24_100 .......
 Running optimization stage 2 on EHXPLLJ .......
@@ -311,12 +312,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\xo3l_verilog\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 98MB peak: 98MB)
+At c_ver Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 98MB peak: 98MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]
 ###########################################################[
@@ -344,7 +345,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]
 
@@ -354,11 +355,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
 
 Process completed successfully.
-# Fri Feb 18 18:00:02 2022
+# Fri Feb 18 19:38:35 2022
 
 ###########################################################]

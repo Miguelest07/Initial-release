@@ -10,7 +10,8 @@
 @W: CG1337 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\dcs_encoder.v":70:12:70:20|Net stop_data is not declared.
 @W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\parallel2byte_bb.v":49:7:49:19|Creating black box for empty module parallel2byte_24s_2s_62
 @W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\packetheader_bb.v":49:7:49:18|Creating black box for empty module packetheader_2s
-@W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|Removing wire crc, as there is no assignment to it.
+@W: CG146 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\crc16_2lane_bb.v":49:7:49:17|Creating black box for empty module crc16_2lane
+@W: CS263 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":158:27:158:35|Port-width mismatch for port data. The port definition is 16 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.
 @W: CG360 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":4:8:4:22|Removing wire o_Global_Enable, as there is no assignment to it.
 @W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":32:12:32:20|Object r_byte_D1 is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"C:\Users\Miguel Estrada\Documents\GitHub\project\xo3l\verilog\Commando_Inicial.v":33:12:33:20|Object r_byte_D0 is declared but not assigned. Either assign a value or remove the declaration.
@@ -90,6 +91,4 @@
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Optimizing register bit hs_extended[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL279 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\lp_hs_dly_ctrl.v":119:4:119:9|Pruning register bits 15 to 6 of hs_extended[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":134:21:134:30|*Input chksum_rdy to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
-@W: CL156 :"C:\Users\Miguel Estrada\Documents\GitHub\source\verilog\byte_packetizer.v":83:12:83:14|*Input crc[15:0] to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
 

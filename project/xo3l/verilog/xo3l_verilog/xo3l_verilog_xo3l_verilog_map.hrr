@@ -3,26 +3,26 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     480.00        100.0
-                                  LUT4	     626.00        100.0
+                                  SLIC	     497.00        100.0
+                                  LUT4	     661.00        100.0
                                DISTRAM	      60.00        100.0
                                  IOBUF	         17        100.0
-                                PFUREG	        429        100.0
+                                PFUREG	        446        100.0
                                 RIPPLE	         96        100.0
                                    EBR	          3        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
              pll_pix2byte_RGB888_2lane	          1         0.0
-colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s	          1         8.0
-                     LP_HS_DELAY_CNTRL	          1        28.0
+colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s	          1         7.7
+                     LP_HS_DELAY_CNTRL	          1        27.1
                           DPHY_TX_INST	          1         0.3
-                       DataFlow_Switch	          1         2.4
-                      Commando_Inicial	          1         7.1
-                           DCS_Encoder	          1         2.7
-                               DCS_ROM	          1         6.4
-       BYTE_PACKETIZER_24s_2s_62_0s_1s	          1        27.4
-                     Serial_Protocol_1	          1         9.0
-                     Serial_Protocol_0	          1         8.6
+                       DataFlow_Switch	          1         2.3
+                      Commando_Inicial	          1         6.8
+                           DCS_Encoder	          1         2.6
+                               DCS_ROM	          1         6.2
+       BYTE_PACKETIZER_24s_2s_62_1s_1s	          1        29.7
+                     Serial_Protocol_1	          1         8.7
+                     Serial_Protocol_0	          1         8.3
                          PLL_12_24_100	          1         0.0
 ---------------------------------------------------
 Report for cell DPHY_TX_INST
@@ -48,34 +48,34 @@ Report for cell colorbar_gen_1280_1650_720_750_110_40_40_5_5_1s
    Instance path: top/u_colorbar_gen
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      38.25         8.0
-                                  LUT4	      51.00         8.1
-                                PFUREG	         30         7.0
+                                  SLIC	      38.25         7.7
+                                  LUT4	      51.00         7.7
+                                PFUREG	         30         6.7
                                 RIPPLE	         12        12.5
 ---------------------------------------------------
 Report for cell DCS_Encoder
    Instance path: top/u_DCS_Encoder
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      12.75         2.7
-                                  LUT4	      27.00         4.3
-                                PFUREG	         20         4.7
+                                  SLIC	      13.17         2.6
+                                  LUT4	      27.00         4.1
+                                PFUREG	         20         4.5
 ---------------------------------------------------
 Report for cell DCS_ROM
    Instance path: top/u_DCS_ROM
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      30.83         6.4
-                                  LUT4	      36.00         5.8
-                                PFUREG	         29         6.8
+                                  SLIC	      30.83         6.2
+                                  LUT4	      36.00         5.4
+                                PFUREG	         29         6.5
                                 RIPPLE	         13        13.5
 ---------------------------------------------------
 Report for cell DataFlow_Switch
    Instance path: top/DataSPDT
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      11.33         2.4
-                                  LUT4	      23.00         3.7
+                                  SLIC	      11.33         2.3
+                                  LUT4	      23.00         3.5
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                             Mux_mod_2s	          1         0.2
@@ -126,72 +126,73 @@ Report for cell Mux_mod_8s_0
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       3.83         0.8
-                                  LUT4	       8.00         1.3
+                                  LUT4	       8.00         1.2
 ---------------------------------------------------
 Report for cell Mux_mod_8s
    Instance path: top/DataSPDT/mux_byte_D1
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	       4.00         0.8
-                                  LUT4	       8.00         1.3
+                                  LUT4	       8.00         1.2
 ---------------------------------------------------
 Report for cell Serial_Protocol_0
    Instance path: top/Serial_busN
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      41.25         8.6
-                                  LUT4	      68.00        10.9
-                                PFUREG	         25         5.8
+                                  SLIC	      41.25         8.3
+                                  LUT4	      68.00        10.3
+                                PFUREG	         25         5.6
 ---------------------------------------------------
 Report for cell Serial_Protocol_1
    Instance path: top/Serial_busP
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      43.42         9.0
-                                  LUT4	      70.00        11.2
-                                PFUREG	         27         6.3
+                                  SLIC	      43.42         8.7
+                                  LUT4	      70.00        10.6
+                                PFUREG	         27         6.1
 ---------------------------------------------------
 Report for cell Commando_Inicial
    Instance path: top/Comand
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      34.00         7.1
-                                  LUT4	      41.00         6.5
-                                PFUREG	         30         7.0
+                                  SLIC	      34.00         6.8
+                                  LUT4	      41.00         6.2
+                                PFUREG	         30         6.7
                                 RIPPLE	         13        13.5
 ---------------------------------------------------
 Report for cell LP_HS_DELAY_CNTRL
    Instance path: top/u_LP_HS_DELAY_CNTRL
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     134.50        28.0
-                                  LUT4	     117.00        18.7
+                                  SLIC	     134.83        27.1
+                                  LUT4	     117.00        17.7
                                DISTRAM	      48.00        80.0
-                                PFUREG	         66        15.4
+                                PFUREG	         66        14.8
                                 RIPPLE	         26        27.1
 ---------------------------------------------------
-Report for cell BYTE_PACKETIZER_24s_2s_62_0s_1s
+Report for cell BYTE_PACKETIZER_24s_2s_62_1s_1s
    Instance path: top/u_BYTE_PACKETIZER
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     131.42        27.4
-                                  LUT4	     175.00        28.0
+                                  SLIC	     147.75        29.7
+                                  LUT4	     210.00        31.8
                                DISTRAM	      12.00        20.0
-                                PFUREG	        197        45.9
+                                PFUREG	        214        48.0
                                 RIPPLE	         32        33.3
                                    EBR	          3        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-               parallel2byte_24s_2s_62	          1         4.4
-                       packetheader_2s	          1        22.7
+               parallel2byte_24s_2s_62	          1         4.2
+                       packetheader_2s	          1        22.2
+                           crc16_2lane	          1         3.0
 ---------------------------------------------------
 Report for cell parallel2byte_24s_2s_62
    Instance path: top/u_BYTE_PACKETIZER/u_parallel2byte
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      21.00         4.4
-                                  LUT4	      44.00         7.0
-                                PFUREG	         25         5.8
+                                  SLIC	      21.08         4.2
+                                  LUT4	      44.00         6.7
+                                PFUREG	         25         5.6
                                    EBR	          3        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
@@ -221,24 +222,32 @@ Report for cell packetheader_2s
    Instance path: top/u_BYTE_PACKETIZER/u_packetheader
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     109.00        22.7
-                                  LUT4	     128.00        20.4
+                                  SLIC	     110.17        22.2
+                                  LUT4	     129.00        19.5
                                DISTRAM	      12.00        20.0
-                                PFUREG	        170        39.6
+                                PFUREG	        170        38.1
                                 RIPPLE	         32        33.3
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                           PH_DLY_FIFO	          1         7.1
+                           PH_DLY_FIFO	          1         6.9
 ---------------------------------------------------
 Report for cell PH_DLY_FIFO
    Instance path: top/u_BYTE_PACKETIZER/u_packetheader/u_PH_DLY_FIFO
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      34.25         7.1
-                                  LUT4	      19.00         3.0
+                                  SLIC	      34.33         6.9
+                                  LUT4	      19.00         2.9
                                DISTRAM	      12.00        20.0
-                                PFUREG	         58        13.5
+                                PFUREG	         58        13.0
                                 RIPPLE	         14        14.6
+---------------------------------------------------
+Report for cell crc16_2lane
+   Instance path: top/u_BYTE_PACKETIZER/genblk2.u_crc16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.83         3.0
+                                  LUT4	      33.00         5.0
+                                PFUREG	         17         3.8
 ---------------------------------------------------
 Report for cell pll_pix2byte_RGB888_2lane
    Instance path: top/u_pll_pix2byte_RGB888_2lane
